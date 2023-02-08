@@ -42,10 +42,10 @@ set guifont=Consolas:h9:cANSI
 
 "--- folds -------------------{{{
 set foldmethod=marker
+nnoremap <Leader>fo i -------------------{{{<cr>"----------------------------}}}<cr><esc>
 nnoremap ff za   " toogle fold
 nnoremap fc zm   " close all
 nnoremap fo zr   " open all
-nnoremap <Leader>fo i -------------------{{{<cr>"----------------------------}}}<cr><esc>
 "-----------------------------}}}
 
 
