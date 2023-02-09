@@ -56,7 +56,7 @@ alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 # shortcuts:
 alias c='cat'
 alias e="echo "
-alias g='grep --color=auto'
+alias g='grep -i --color=auto'
 alias hg='cat .bash_history | grep -i '
 alias os='cat /etc/os-release'
 alias wa='whoami'
