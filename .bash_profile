@@ -5,7 +5,7 @@ unalias -a
 stty -ixon
 set -o vi
 
-source .bashrc
+source ~/.bashrc
 
 
 

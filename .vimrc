@@ -41,8 +41,8 @@ let $BASH_ENV      = "~/.bash_aliases"
 
 "--- colorscheme and font ---------------------------------{{{
 syntax on
-"colorscheme 12my.desert
-colorscheme molokai
+colorscheme 12my.desert
+"colorscheme molokai
 set guifont=Consolas:h9:cANSI
 
 "################ DRACULA dracula ###########
@@ -172,8 +172,8 @@ nnoremap o o<esc>:echo"o = open line below"<cr>
 nnoremap O O<esc>:echo"O = Open line above"<cr>
 
 " speed up scrolling
-nnoremap <c-j> 3<C-e>:echo 'ctrl-j = scroll dwn'<CR>
-nnoremap <c-k> 3<C-y>:echo 'ctrl-j = croll up'<CR>
+"nnoremap <c-j> 3<C-e>:echo 'ctrl-j = scroll dwn'<CR>
+"nnoremap <c-k> 3<C-y>:echo 'ctrl-j = croll up'<CR>
 
 nnoremap gg gg:echo"gg=top of page"<cr>
 nnoremap G G:echo"G=bottom of page"<cr>
@@ -187,11 +187,11 @@ set splitright
 nnoremap <Leader>vv :vs<CR>
 nnoremap <Leader>hh :sp<CR>
 
-nnoremap <C-l> <C-w>l:echo 'nav pane right:' expand('%:p')<CR>
-nnoremap <C-h> <C-w>h:echo 'nav pane left:' expand('%:p')<CR>
+nnoremap <c-j> <c-w><C-w>:echo"ctrl-j = toggle panes"<cr>
+"nnoremap <c-k> <c-w>h:echo 'nav pane left:' expand('%:p')<CR>
 
-nnoremap <S-L> <c-w><:echo 'Resize pane SHIFT-L=>'<CR>
-nnoremap <S-H> <c-w>>:echo 'Resize pane SHIFT-H=<'<CR>
+nnoremap <c-l> <c-w><:echo 'Resize pane SHIFT-L=>'<CR>
+nnoremap <c-H> <c-w>>:echo 'Resize pane SHIFT-H=<'<CR>
 "----------------------------------------------------------------}}}
 
 
@@ -245,14 +245,14 @@ nnoremap u u:echo"u=undo"<cr>
 
 
 
-"--- edit resources ---------------------------------------------------------------------{{{
+"--- edit resources -----------------------------------------------{{{
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>eb :vs $BASHRC <CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ea :vs $BASH_ALIASES<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ev :vs $VIMRC  <CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ef :vs $VIFMRC <CR>:echo expand('%:p')<CR>
 nnoremap <Leader>et :vs $TMUX   <CR>:echo expand('%:p')<CR>
-"-----------------------------------------------------------------------------------------}}}
+"------------------------------------------------------------------}}}
 
 
 

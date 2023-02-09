@@ -1,7 +1,7 @@
 echo "~/.bash_aliases"
-#
+
 unalias -a
-#
+
 #--- header ------------------------------------------------{{{
 #
 #----------------------------------------------------------
@@ -115,7 +115,7 @@ alias lf='lf'
 alias vf='vifm'
 alias ff='firefox &'
 #--------------------------------------------------------------------}}}#
-#
+
 #
 #--- git ---------------------------------------------------{{{
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
@@ -152,9 +152,6 @@ alias tl='tmux ls'
 alias ta='cd ~/ && tmux a -t '
 # et = edit .tmux.conf
 alias et='vim ~/.tmux.conf'
-
-alias ts='./tmux.session.sh save'
-alias tr="./tmux.session.sh restore"
 #-----------------------------------------------------------}}}
 
 
