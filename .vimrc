@@ -27,13 +27,13 @@
 
 
 "--- colorscheme and font ---------------------------------{{{
-syntax on
+ on
 colorscheme 12my.desert
 set guifont=Consolas:h9:cANSI
 
 "################ DRACULA dracula ###########
 "packadd! dracula
-"syntax enable
+" enable
 "colorscheme dracula
 "################ dracula DRACULA ###########
 "----------------------------------------------------------}}}
@@ -43,7 +43,7 @@ set guifont=Consolas:h9:cANSI
 "--- folds -------------------{{{
 set foldmethod=marker
 nnoremap <Leader>fo i -------------------{{{<cr>"----------------------------}}}<cr><esc>
-nnoremap ff za   " toogle fold
+nnoremap ff za:echo"ff=toggle fold"<cr>   " toogle fold
 nnoremap fc zm   " close all
 nnoremap fo zr   " open all
 "-----------------------------}}}
@@ -152,8 +152,11 @@ nnoremap o o<esc>:echo"o = open line below"<cr>
 nnoremap O O<esc>:echo"O = Open line above"<cr>
 
 " speed up scrolling
-nnoremap <C-j> 3<C-e>:echo 'scroll dwn'<CR>
-nnoremap <C-k> 3<C-y>:echo 'scroll up'<CR>
+nnoremap <C-j> 3<C-e>:echo 'ctrl-j = scroll dwn'<CR>
+nnoremap <C-k> 3<C-y>:echo 'ctrl-j = croll up'<CR>
+
+nnoremap gg gg:echo"gg=top of page"<cr>
+nnoremap G G:echo"G=bottom of page"<cr>
 "-------------------------------------------------------------------------------}}}
 
 
