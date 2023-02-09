@@ -51,11 +51,9 @@ nnoremap fo zr   " open all
 
 
 "--- cursor --------------------{{{
-" Block cursor in Normal mode, vertical cursor in Insert mode,
-" horizontal cursor in Replace mode
-let &t_EI = "\<Esc>[1 q"
-let &t_SR = "\<Esc>[3 q"
-let &t_SI = "\<Esc>[5 q"
+let &t_EI = "\<Esc>[1 q"    " Block cursor in normal mode
+let &t_SR = "\<Esc>[3 q"    " Vertikal cursor in insert mode
+let &t_SI = "\<Esc>[5 q"    " Horizontal cursr in Replace mode
 "-------------------------------}}}
 
 
