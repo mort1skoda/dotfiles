@@ -1,13 +1,19 @@
-nnoremap q :q<cr>
-nnoremap <C-q> :q<cr>
-
 " show hidden files by default
 windo normal! zo
 
+
+nnoremap q :q<cr>
+nnoremap <C-q> :q<cr>
+
 nnoremap <C-s> <ESC>:source ~/.vifm/vifmrc<CR>
+
 
 nnoremap <C-l> <C-w><C-w>
 nnoremap <C-h> <C-w><C-w>
+nnoremap <c-j> <c-w>l
+nnoremap <c-k> <c-w>h
+
+
 
 " i = insert / rename from start of filename
 nnoremap i cw<C-a>
