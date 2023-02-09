@@ -43,9 +43,9 @@ set guifont=Consolas:h9:cANSI
 "--- folds -------------------{{{
 set foldmethod=marker
 nnoremap <Leader>fo i -------------------{{{<cr>"----------------------------}}}<cr><esc>
-nnoremap ff za:echo"ff=toggle fold"<cr>   " toogle fold
-nnoremap fc zm   " close all
-nnoremap fo zr   " open all
+nnoremap ff za:echo"ff=fold toggle"<cr>
+nnoremap fc zm:echo"fc=folds close all"<cr>
+nnoremap fo zr:echo"fo=folds open all"<cr>
 "-----------------------------}}}
 
 
@@ -59,21 +59,20 @@ let &t_SI = "\<Esc>[5 q"    " Horizontal cursr in Replace mode
 
 
 "--- settings --------------------------------------------------------------------{{{
-set noswapfile
-
 let mapleader = ","     " mapleader = ,
+set noswapfile
+set nocompatible
+set list                " $ at line ending
 set nowrap              " allow lines to extende as far as the line goes.
 set textwidth=200       " set a line limit before wrap.
-set list                " $ at line ending
 set nospell             " turn of spell checking.
 
 
 " Expand aliases.
-let $BASH_ENV = "~/.bash_aliases"
+let $BASH_ENV = "~/.vim.bash.env"
 
 
 " Disable compatibility with vi which can cause unexpected issues.
-set nocompatible
 " Do not create .swp files
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
