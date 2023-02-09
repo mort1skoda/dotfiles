@@ -26,8 +26,14 @@
 
 
 
+"--- environment --------------------{{{
+"let $BASH_ENV = "~/.vim.bash.env"
+"------------------------------------}}}
+
+
+
 "--- colorscheme and font ---------------------------------{{{
- on
+syntax on
 colorscheme 12my.desert
 set guifont=Consolas:h9:cANSI
 
@@ -68,8 +74,6 @@ set textwidth=200       " set a line limit before wrap.
 set nospell             " turn of spell checking.
 
 
-" Expand aliases.
-let $BASH_ENV = "~/.vim.bash.env"
 
 
 " Disable compatibility with vi which can cause unexpected issues.
@@ -236,9 +240,9 @@ nnoremap <tab> i<tab><esc>:echo"-- NORMAL -- tab=insert tab=4spaces"<cr>
 
 nnoremap u u
 "---------------------------------------------------------------------------}}}
-"
-"
-"
+
+
+
 "--- search and replace ----------------------------------{{{"
 "
 " ctrl-x to search and replace.
@@ -326,8 +330,8 @@ let @p = "Iprintf(\""
 "--- esc save source quit ------------------------------------------------------{{{
 set noesckeys
 set ttimeout
-set ttimeoutlen=600
-set timeoutlen=500
+set ttimeoutlen=300    " esc timeout
+set timeoutlen=700     " mapleader timeout
 nnoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
 inoremap <esc> <esc>l:echo"-- NORMAL -- esc"<cr>
 vnoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
