@@ -27,7 +27,14 @@
 
 
 "--- environment --------------------{{{
-"let $BASH_ENV = "~/.vim.bash.env"
+let $BASH_PROFILE  = '~/.bash_profile'
+let $BASHRC        = '~/.bashrc'
+let $BASH_ALIASES  = '~/.bash_aliases'
+let $VIMRC         = '~/.vimrc'
+let $VIFMRC        = '~/.vifm/vifmrc.vim' 
+let $TMUX          = '~/.tmux.conf'
+
+let $BASH_ENV      = "~/.bash_aliases"
 "------------------------------------}}}
 
 
@@ -256,12 +263,6 @@ nnoremap <C-x> :%s/
 
 "--- mapleader , -------------------------------------------------------------------------{{{
 
-let $BASH_PROFILE = '~/.bash_profile'
-let $BASHRC  = '~/.bashrc'
-let $BASH_ALIASES = '~/.bash_aliases'
-let $VIMRC   = '~/.vimrc'
-let $VIFMRC  = '~/.vifm/vifmrc.vim' 
-let $TMUX    = '~/.tmux.conf'
 
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>eb :vs $BASHRC <CR>:echo expand('%:p')<CR>

@@ -191,7 +191,7 @@ alias qdtq='sudo pacman -R "$(pacman -Qdtq)" '
 
 
 #--- footer ------------------------------------------------{{{
-#shopt -s expand_aliases
+shopt -s expand_aliases
 #source .bash_aliases
 #echo    "                Sourced:" $ALIASES 
 #echo -e "---|---|....end.." $ALIASES "....|---|---"
