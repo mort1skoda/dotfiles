@@ -1,0 +1,11 @@
+: echo $EDITOR
+: echo $EDITOR
+: open
+! gc
+$ l
+$ ls
+: echo $EDITOR
+$ q
+$ q
+$ qq
+$ feh
