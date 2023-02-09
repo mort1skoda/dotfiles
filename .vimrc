@@ -1,25 +1,35 @@
-"
-"
-"
+
+
+
 " echom"~/.vimrc"
-"
-"
-"
+
+
+
 "--- ~/.vimrc -------------------------------------------------{{{
 " Author: Morty Hawk <mort1skoda@gmail.com>
 " Email:  <mort1skoda@gmail.com>
 "         <mort1prog@gmail.com>
-"
+
 " News:
-" <S-H> scroll down
-" <S-L> scroll up
+" <S-j> scroll down
+" <S-k> scroll up
+" <S-h> FREE
+" <S-l> FREE
+
+" <c-j> toggle panes
+" <c-k> FREE
+" <c-h> resize panes L
+" <c-l> resize panes H
 " ,ss = :source ~/:vimrc
+
 " ,ebp = edit .bash_profile
 " @f create fold
 " ,fo create fold
-"
-"
-"
+
+" TODO:
+" Add support for ,lf   
+
+" Debug:
 " see dbgvim  in .bash_aliases
 " alias dbgvim="vim -V20 2>&1 | tee vim.log.vim
 "-------------------------------------------------------------}}}
