@@ -41,7 +41,8 @@ let $BASH_ENV      = "~/.bash_aliases"
 
 "--- colorscheme and font ---------------------------------{{{
 syntax on
-colorscheme 12my.desert
+"colorscheme 12my.desert
+colorscheme molokai
 set guifont=Consolas:h9:cANSI
 
 "################ DRACULA dracula ###########
@@ -267,6 +268,7 @@ nnoremap <Leader>md :!make dbg<CR>
 
 
 "--- open programs -----------------------------{{{
+" TODO: ,lf to open lf
 nnoremap <Leader>ex :Lexplore<CR>7<C-w>
 "-----------------------------------------------}}}
 
