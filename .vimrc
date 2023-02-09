@@ -194,7 +194,7 @@ set splitright
 nnoremap <Leader>vv :vs<CR>
 nnoremap <Leader>hh :sp<CR>
 
-nnoremap <c-j> <c-w>l:echo"ctrl-j = left pane"<cr>
+nnoremap <c-j> <c-w><c-w>:echo"ctrl-j = left pane"<cr>
 inoremap <c-j> <esc><c-w>l:echo"ctrl-j = left pane"<cr>
 nnoremap <c-k> <c-w>h:echo"ctrl-k = right pane"<cr>
 inoremap <c-k> <esc><c-w>h:echo"ctrl-k = left pane"<cr>
