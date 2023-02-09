@@ -11,8 +11,8 @@
 "         <mort1prog@gmail.com>
 "
 " News:
-" <c-j> scroll down
-" <c-k> scroll up
+" <S-H> scroll down
+" <S-L> scroll up
 " ,ss = :source ~/:vimrc
 " ,ebp = edit .bash_profile
 " @f create fold
@@ -172,8 +172,8 @@ nnoremap o o<esc>:echo"o = open line below"<cr>
 nnoremap O O<esc>:echo"O = Open line above"<cr>
 
 " speed up scrolling
-"nnoremap <c-j> 3<C-e>:echo 'ctrl-j = scroll dwn'<CR>
-"nnoremap <c-k> 3<C-y>:echo 'ctrl-j = croll up'<CR>
+nnoremap <S-j> 3<C-e>:echo 'shift-j = scroll dwn'<CR>
+nnoremap <S-k> 3<C-y>:echo 'shift-k = croll up'<CR>
 
 nnoremap gg gg:echo"gg=top of page"<cr>
 nnoremap G G:echo"G=bottom of page"<cr>
