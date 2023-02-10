@@ -15,5 +15,5 @@
     ln -svf /rep/dotfiles/.vimrc         ~
     ln -svf /rep/dotfiles/.xinitrc       ~
 
-
+    ln -svf /rep/dotfiles/dotf.status.sh ~
 
