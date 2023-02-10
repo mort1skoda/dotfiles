@@ -4,7 +4,7 @@ cd /rep/dotfiles
 
 git status --short
 
-git pull -u origin main
+git pull 
 
 git remote -v | grep --color -i -m1 dotfiles
 git add --all
