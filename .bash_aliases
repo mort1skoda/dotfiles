@@ -1,26 +1,20 @@
 echo "~/.bash_aliases"
 
-unalias -a
 
 #--- header ------------------------------------------------{{{
-#
-#----------------------------------------------------------
-#---      ~/.bash_aliases      ----
-#----------------------------------
+# Author: Morty Hawk
+# Email.: <mort1skoda@gmail.com>
 
+# This file is source by .bashrc
 
-# Author: Morten Håkestad
-#
-# This script file is source by .bashrc
-#
-# Use ff or za to toggle folds.
-# Use ag to grep for aliases.
-# Use cag to grep for everything in this file. 
+# ff or za to toggle folds.
+# ag to grep for aliases.
+# cag to grep for everything in this file. 
 # Example:
 # ag vim    will list all aliases that contains 'vim'
 # cag vim   will list all accourences of 'vim' in this file.
 
-#echo -e "---|---|....start" $ALIASES "....|---|---"
+unalias -a
 #-----------------------------------------------------------}}}
 
 
