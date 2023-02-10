@@ -1,7 +1,11 @@
 #!/bin/bash
 
 cd /rep/dotfiles
+
 git status --short
+
+git pull -u origin main
+
 git remote -v | grep --color -i -m1 dotfiles
 git add --all
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
