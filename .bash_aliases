@@ -63,7 +63,7 @@ alias sa='source ~/.bash_aliases'
 # package managers:
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
-alias pu='sudo pacman -Syyu'
+alias pu='sudo pacman --noconfirm -Syyu'
 alias pi='sudo pacman --noconfirm -S '
 
 alias rb='sudo reboot'

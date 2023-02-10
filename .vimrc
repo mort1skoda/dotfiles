@@ -206,7 +206,7 @@ nnoremap <c-H> <c-w>>:echo'Resize pane >'<CR>
 
 
 "--- yank delete change paste undo -------------------------------------{{{
-nnoremap yy yy
+nnoremap yy yy:echo"yy=yank one line"<cr>
 nnoremap Y  y$:echo'Y=Yank from cursor to end of line'<CR>
 nnoremap y0 y0
 nnoremap yw yw:echo'yw=yank word'<cr>
