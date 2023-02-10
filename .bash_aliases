@@ -102,7 +102,7 @@ alias s='sudo'
 alias gv='gvim '
 # clear screen:
 alias cs='clear'
-alias nf="clear && neofetch"
+alias nf="clear && fastfetch"
 
 
 alias lf='lf'
