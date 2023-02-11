@@ -3,7 +3,7 @@ echo "~/.bash_logout"
 
 
 cd ~
-gs
+./dotf.update.sh
 
 
 
