@@ -9,6 +9,9 @@ source ~/.bashrc
 
 
 #clear
-#fastfetch
+fastfetch
 
 echo "Shell Level: $SHLVL"
+
+
+
