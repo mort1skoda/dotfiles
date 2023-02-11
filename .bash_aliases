@@ -105,6 +105,7 @@ alias cs='clear'
 alias nf="clear && fastfetch"
 
 
+alias st='st bash --login'
 alias lf='lf'
 alias vf='vifm'
 alias ff='firefox &'
