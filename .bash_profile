@@ -8,4 +8,7 @@ set -o vi
 source ~/.bashrc
 
 
+clear
+fastfetch
+
 
