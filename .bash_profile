@@ -11,4 +11,4 @@ source ~/.bashrc
 #clear
 #fastfetch
 
-
+echo $SHLVL
