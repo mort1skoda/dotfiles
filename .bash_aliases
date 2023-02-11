@@ -71,7 +71,7 @@ alias sd="sudo shutdown -h now"
 
 # filesystem:
 alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,MOUNTPOINTS,SERIAL"
-alias lsblk='lsblk -o NAME,MODEL,PARTTYPENAME,FSTYPE,SIZE,MOUNTPOINTS,SERIAL'
+alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
 alias rm='rm -vrf '
