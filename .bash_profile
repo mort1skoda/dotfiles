@@ -2,7 +2,7 @@ echo "~/.bash_profile"
 
 
 
-unalias -a
+#unalias -a
 
 
 

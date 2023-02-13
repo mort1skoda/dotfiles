@@ -159,6 +159,7 @@ alias or='openbox --reconfigure'
 
 #--- network -----------------------------------------------{{{
 alias ip="ip -color=auto"
+alias wip='watch --color -n5 ip -color a'
 #-----------------------------------------------------------}}}
 
 

@@ -27,6 +27,7 @@ source ~/.bash_aliases
 #--- export --------------------{{{
 export TERM='xterm-256color'
 export EDITOR='vim'
+# OPENER is for lf
 export OPENER='xdg-open'
 #-------------------------------}}}
 
