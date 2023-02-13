@@ -333,12 +333,12 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=300    " esc timeout
 set timeoutlen=700     " mapleader timeout
-nnoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
-inoremap <esc> <esc>l:echo"-- NORMAL -- esc"<cr>
+nnoremap <esc> <esc>:nohlsearch<cr>:echo"-- NORMAL -- esc"<cr>
+inoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
 vnoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
 cnoremap <esc> <esc>:echo"-- NORML -- esc"<cr>
 
-nnoremap <C-s> <esc>:w<cr>
+nnoremap <C-s> <esc>:nohlsearch<cr>:w<cr>
 inoremap <C-s> <esc>:w<cr>l
 vnoremap <C-s> <esc>:w<cr>
 cnoremap <C-s> <esc>:w<cr>
