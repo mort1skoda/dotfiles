@@ -29,7 +29,7 @@ sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.con
 clear
 fastfetch
 echo "Shell Level: $SHLVL"
-ip a | g wlan0
+ip a | g wlan0 | g inet
 
 
 
