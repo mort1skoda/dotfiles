@@ -161,6 +161,8 @@ set hlsearch
 
 " search and replace
 nnoremap <C-x> :%s/
+
+nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
 "--------------------------------------------------------}}}
 
 "--------------------------------------------end-of-settings-----------------------------}}}
@@ -220,7 +222,7 @@ nnoremap dd dd:echo'Normal dd=delete line'<cr>
 nnoremap D  d$:echo'Normal  D=Delete from cursor to end of line'<cr>
 nnoremap d0 d0:echo'delete for cursor til beginning of line'
 nnoremap dw dw:echo'delete til beginning of next word'<cr>
-nnoremap de de:ehoc'delete til end of word'<cr>
+nnoremap de de:echo'de=delete til end of word'<cr>
 nnoremap df df
 nnoremap dt dt
 nnoremap di di
@@ -231,8 +233,7 @@ nnoremap da da
 " da = delete other
 
 " make cw behave like dw and yw
-"nnoremap cw dwi
-
+nnoremap cw dwi
 nnoremap C c$
 ":echo'C = change from cursor to end of line'<cr>
 
