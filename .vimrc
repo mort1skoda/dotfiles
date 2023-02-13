@@ -220,7 +220,7 @@ nnoremap ya ya
 
 nnoremap dd dd:echo'Normal dd=delete line'<cr>
 nnoremap D  d$:echo'Normal  D=Delete from cursor to end of line'<cr>
-nnoremap d0 d0:echo'delete for cursor til beginning of line'
+nnoremap d0 d0:echo'delete from cursor til beginning of line'<cr>
 nnoremap dw dw:echo'delete til beginning of next word'<cr>
 nnoremap de de:echo'de=delete til end of word'<cr>
 nnoremap df df
