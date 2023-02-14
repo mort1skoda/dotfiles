@@ -1,9 +1,8 @@
 #!/bin/bash
 
-cd /rep/dotfiles
+cd /dat.mnt/dotfiles
 
-git status --short
-
+git status
 git pull 
 
 git remote -v | grep --color -i -m1 dotfiles
