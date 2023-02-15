@@ -26,7 +26,7 @@ alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
 alias .r='cd / && ls -la --color --group-directories-first'
 alias .h='cd ~ && ls -la --color --group-directories-first && gb && gs'
-alias .d='cd /home/sda4data && ls -la --color --group-directories-first'
+alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
 
 # windows C:\ and D:\
 alias .wc='cd /mnt/c && ls -la --color --group-directories-first'
