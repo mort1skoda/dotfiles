@@ -1,7 +1,7 @@
 echo "~/.bash_profile"
 
 
-setfont drdos8x14
+#setfont drdos8x14
 
 
 #--- wifi -----------------------------{{

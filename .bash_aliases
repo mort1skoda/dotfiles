@@ -79,7 +79,7 @@ alias q='exit'
 
 #--- filesystem --------------------{{{
 alias blkid='sudo blkid'
-alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,MOUNTPOINTS,SERIAL"
+alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
