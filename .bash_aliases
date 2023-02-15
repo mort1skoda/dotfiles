@@ -71,16 +71,20 @@ alias pi='sudo pacman --noconfirm -S '
 alias rb='sudo reboot'
 alias sd="sudo shutdown -h now"
 
-# filesystem:
+
+# quit or exit shell.  same as quiting vim (whitout save)
+alias q='exit'
+#---------------------------------------------------------}}}
+
+
+#--- filesystem --------------------{{{
+alias blkid='sudo blkid'
 alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
 alias rm='rm -vrf '
-
-# quit or exit shell.  same as quiting vim (whitout save)
-alias q='exit'
-#---------------------------------------------------------}}}
+#... .......... ....................}}}
 
 
 #--- edit files ------------------------------------------------{{{
