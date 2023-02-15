@@ -108,13 +108,14 @@ alias s='sudo'
 alias gv='gvim '
 # clear screen:
 alias cs='clear'
-alias nf="clear && fastfetch"
+alias nf="clear && neofetch"
 
 
 alias st='st'
 alias lf='lf'
 alias vf='vifm'
 alias ff='firefox &'
+alias lw='librewolf &'
 #--------------------------------------------------------------------}}}#
 
 
