@@ -1,6 +1,9 @@
 echo "~/.bash_profile"
 
 
+setfont drdos8x14
+
+
 #--- wifi -----------------------------{{
 #sudo rfkill unblock wifi
 #sudo dhcpcd
