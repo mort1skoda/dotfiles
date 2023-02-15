@@ -25,8 +25,10 @@ alias bl='bash --login'
 alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
 alias .r='cd / && ls -la --color --group-directories-first'
+alias .rr='cd /root && ls -la --color --group-directories-first'
 alias .h='cd ~ && ls -la --color --group-directories-first && gb && gs'
 alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
+alias .dd='cd /dat.mnt/dotfiles && l'
 
 # windows C:\ and D:\
 alias .wc='cd /mnt/c && ls -la --color --group-directories-first'
