@@ -179,12 +179,14 @@ alias wip='watch --color -n1 ip -color a'
 
 
 #--- make --------------------------------------------------{{{
-alias ,mh='make help'
-alias ,mv='make vars'
-alias ,mc='make clean'
-alias ,mm='make all'
-alias ,mr='make run'
-alias ,md='make dbg'
+alias mh='make help'
+alias mv='make vars'
+alias mc='make clean && l'
+alias mci='sudo make clean install && make clean && l'
+alias ma='make all && l'
+alias mm='make all'
+alias mr='make run'
+alias md='make dbg'
 #-----------------------------------------------------------}}}
 
 
