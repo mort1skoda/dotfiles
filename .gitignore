@@ -1,2 +1,7 @@
 .config/gh/
+suckless/dwm-6.4/dwm
+suckless/dwm-6.4/dwm.o
+suckless/dwm-6.4/drw.o
+suckless/dwm-6.4/util.o
+
 
