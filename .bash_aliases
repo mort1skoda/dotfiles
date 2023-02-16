@@ -18,6 +18,11 @@ unalias -a
 #-----------------------------------------------------------}}}
 
 
+#--- audio ------------------------------------------------{{{
+alias vol='pavucontrol &'
+#----------------------------------------------------------}}}
+
+
 #--- bash --------------------------------------------------{{{
 alias bl='bash --login'
 
@@ -26,7 +31,7 @@ alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
 alias .r='cd / && ls -la --color --group-directories-first'
 alias .rr='cd /root && ls -la --color --group-directories-first'
-alias .h='cd ~ && ls -la --color --group-directories-first && gb && gs'
+alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
 alias .dd='cd /dat.mnt/dotfiles && l'
 
@@ -103,7 +108,7 @@ alias ex='vim ~/.xinitrc'
 
 #--- start programs -------------------------------------------------{{{
 alias bt="bashtop"
-alias vf='vifm /home/m /rep/'
+alias vf='vifm /home/m /dat.mnt/'
 alias x='startx'
 alias a='alias' #list all aliases
 alias s='sudo'
