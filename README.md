@@ -2,7 +2,7 @@
 
 <pre>
 put dotfiles in:
-/rep/dotfiles
+/dat.mnt/dotfiles
 
 sudo mkdir /rep
 sudo chown -R m:m /rep
