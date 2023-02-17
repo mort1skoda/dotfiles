@@ -173,16 +173,16 @@ nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
 nnoremap 0 0:echo"0 = beginning of line"<cr>
 nnoremap $ $:echo"$ = end of line"<cr>
 nnoremap h h:echo "-- NORMAL -- h"<cr>
-nnoremap j j:echo "-- NORMAL -- j"<cr>
-nnoremap k k:echo "-- NORMAL -- k"<cr>
+nnoremap j j:echo "-- NORMAL -- j down"<cr>
+nnoremap k k:echo "-- NORMAL -- k up"<cr>
 nnoremap l l:echo "-- NORMAL -- l"<cr>
 
 nnoremap o o<esc>:echo"o = open line below"<cr>
 nnoremap O O<esc>:echo"O = Open line above"<cr>
 
 " speed up scrolling
-nnoremap <S-j> 3<C-e>:echo 'shift-j = scroll dwn'<CR>
-nnoremap <S-k> 3<C-y>:echo 'shift-k = croll up'<CR>
+nnoremap <S-j> 4j:echo 'shift-j = 4j down'<CR>
+nnoremap <S-k> 4k:echo 'shift-k = 4k up'<CR>
 
 nnoremap gg gg:echo"gg=top of page"<cr>
 nnoremap G G:echo"G=bottom of page"<cr>
