@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 cd /dat.mnt/dotfiles
 
