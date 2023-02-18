@@ -14,6 +14,14 @@ compinit
 # End of lines added by compinstall
 
 
+autoload -U colors && colors
+PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+#PS1="\[\033[01;32m\]\w\[\033[00m\]\n"
+
+#red prompt for root
+if [ "$EUID" -eq 0 ]
+    then PS1="\[\033[01;31m\]\w\[\033[00m\]\n"
+fi
 
 source .bash_aliases
 
