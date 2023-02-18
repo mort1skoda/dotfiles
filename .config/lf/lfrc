@@ -1,9 +1,10 @@
 # interpreter for shell commands
-set shell bash
+set shell zsh 
 set hidden
 #EDITOR=vi
 
 map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
+map ga ${{clear; git add --all; echo "press ENTER"; read ENTER}}
 
 #map <c-q> q
 
@@ -36,8 +37,9 @@ map x $$f
 map X !$f
 
 # dedicated keys for file opener actions
-map o &mimeopen $f
+#map o &mimeopen $f
 map O $mimeopen --ask $f
+map o :open $f
 
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to

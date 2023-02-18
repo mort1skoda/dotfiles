@@ -1,4 +1,4 @@
-set shell bash
+set shell zsh
 set hidden
 EDITOR=vim
 
