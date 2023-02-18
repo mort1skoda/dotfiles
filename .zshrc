@@ -15,7 +15,8 @@ compinit
 
 
 autoload -U colors && colors
-PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+#PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
+PS1="$fg[yellow]%}%~ %{$reset_color%}% "
 #PS1="\[\033[01;32m\]\w\[\033[00m\]\n"
 
 #red prompt for root

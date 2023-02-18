@@ -64,11 +64,7 @@ alias hg='cat .bash_history | grep -i '
 alias os='cat /etc/os-release'
 alias wa='whoami'
 
-# source profile, bashrc, aliases 
-alias sbp='source ~/.bash_profile'
-alias sb='source ~/.bashrc'
-alias sa='source ~/.bash_aliases'
-
+#
 # package managers:
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
@@ -98,12 +94,22 @@ alias rm='rm -vrf '
 alias v='vim'
 alias vi='vim'
 alias ea='vim ~/.bash_aliases && . ~/.bash_aliases'
-alias eb='vim ~/.bashrc && . ~/.bashrc'
+alias eb='vim ~/.bashrc && source ~/.bashrc'
+alias ez='vim ~/.zshrc && source ~/.zshrc'
 alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
+alias ech='.dd && cd suckless/dwm-6*/ && vim config.h'
 #---------------------------------------------------------------}}}
+
+
+#--- source files ------------------------{{{ 
+alias sbp='source ~/.bash_profile'
+alias sb='source ~/.bashrc'
+alias sa='source ~/.bash_aliases'
+alias sz='source ~/.zshrc'
+# ---------------------------------------}}}
 
 
 #--- start programs -------------------------------------------------{{{
@@ -203,7 +209,7 @@ alias qdtq='sudo pacman -R "$(pacman -Qdtq)" '
 
 
 #--- footer ------------------------------------------------{{{
-shopt -s expand_aliases
+#shopt -s expand_aliases
 #source .bash_aliases
 #echo    "                Sourced:" $ALIASES 
 #echo -e "---|---|....end.." $ALIASES "....|---|---"
