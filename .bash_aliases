@@ -135,7 +135,7 @@ alias gs="git branch && git status && git remote -v"
 alias gsv="git status --verbose"
 alias gpl="git pull"
 alias gr='git remote -v'
-alias gc='git commit -m "$DATE"'
+alias gc='source ~/.bash_aliases && git commit -m "$DATE"'
 alias gco='git checkout '
 #TODO: make gc a function so it updates the date correctly
 alias ga='git add'
