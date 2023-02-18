@@ -1,3 +1,9 @@
+echo "~/.zshrc"
+
+sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
+
+
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -14,21 +20,21 @@ compinit
 # End of lines added by compinstall
 
 
+
 autoload -U colors && colors
-#PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "
 PS1="$fg[yellow]%}%~ %{$reset_color%}% "
-#PS1="\[\033[01;32m\]\w\[\033[00m\]\n"
 
 #red prompt for root
 if [ "$EUID" -eq 0 ]
-    then PS1="\[\033[01;31m\]\w\[\033[00m\]\n"
+    then PS1="$fg[red]%}%~ %{$reset_color%}% "
 fi
 
-source .bash_aliases
+source ~/.bash_aliases
 
 
 export TERM='xterm-256color'
 export EDITOR='vim'
 export OPENER='xdg-open'
+
 
 
