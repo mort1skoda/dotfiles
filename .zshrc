@@ -36,5 +36,6 @@ export TERM='xterm-256color'
 export EDITOR='vim'
 export OPENER='xdg-open'
 
+#export PATH="/home/m/go/bin:$PATH"
 
 

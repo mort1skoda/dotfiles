@@ -1,12 +1,22 @@
+
+
+
+#--- options -----------------------------------------{{{
+autoquit    on
+
+#-----------------------------------------------------}}}
+
+
+
 # interpreter for shell commands
-set shell zsh 
+set shell sh 
 set hidden
-#EDITOR=vi
+set previewer ~/go/bin/pistol
+
 
 map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
 map ga ${{clear; git add --all; echo "press ENTER"; read ENTER}}
 
-#map <c-q> q
 
 
 
@@ -30,11 +40,22 @@ set ifs "\n"
 set scrolloff 10
 
 # use enter for shell commands
-map <enter> shell
+map <enter> shell-wait
+map <enter> !echo '!echo enter'
+#map <enter> !echo '!!!! echo enter !!!!'
 
+#map <c-s> :source '/home/m/config/lf/lfrc'
+#map <c-s> !echo 'so'
+# :echo 'sourced: lfrc'
+
+
+# ${{clear; git status; echo "press ENTER"; read ENTER}}
+#
+#
 # execute current file (must be executable)
 map x $$f
-map X !$f
+#map X !$f
+
 
 # dedicated keys for file opener actions
 #map o &mimeopen $f
@@ -56,25 +77,7 @@ cmd open &{{
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 # map r push :rename<space>
 
-# make sure trash folder exists
-# %mkdir -p ~/.trash
 
-# move current file or selected files to trash folder
-# (also see 'man mv' for backup/overwrite options)
-cmd trash %set -f; mv $fx ~/.trash
-
-# define a custom 'delete' command
-# cmd delete ${{
-#     set -f
-#     printf "$fx\n"
-#     printf "delete?[y/n]"
-#     read ans
-#     [ "$ans" = "y" ] && rm -rf $fx
-# }}
-
-# use '<delete>' key for either 'trash' or 'delete' command
-# map <delete> trash
-# map <delete> delete
 
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
@@ -107,3 +110,48 @@ cmd zip ${{
     zip -r $1.zip $1
     rm -rf $1
 }}
+
+
+
+#--- yank delete change paste undo ------------------------{{{
+map d trash
+cmd delete ${{
+     set -f
+     printf "$fx\n"
+     printf "delete?[y/n]"
+     read ans
+     [ "$ans" = "y" ] && rm -rf $fx
+ }}
+#
+# make sure trash folder exists
+%mkdir -p ~/.trash
+
+# move current file or selected files to trash folder
+# (also see 'man mv' for backup/overwrite options)
+cmd trash %set -f; mv $fx ~/.trash
+#----------------------------------------------------------}}}
+
+# use '<delete>' key for either 'trash' or 'delete' command
+# map <delete> trash
+# map <delete> delete
+
+
+
+#--- source quit ---------------------------------{{{
+map <c-s> so
+cmd so :{{
+    source /home/m/.config/lf/lfrc
+    echo 'sourced: /home/m/.config/lf/lfrc'
+}}
+
+#map <c-q> q
+map q :quit
+#.................................................}}}
+
+
+
+#--- statusline -----------------------------------------{{{
+#--------------------------------------------------------}}}
+
+
+

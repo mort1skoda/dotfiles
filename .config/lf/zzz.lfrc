@@ -1,8 +1,0 @@
-set shell zsh
-set hidden
-EDITOR=vim
-
-map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
-
-
-

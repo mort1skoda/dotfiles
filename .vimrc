@@ -207,7 +207,7 @@ nnoremap <c-H> <c-w>>:echo'Resize pane >'<CR>
 
 
 
-"--- yank delete change paste undo -------------------------------------{{{
+"--- yank delete change paste undo ------------------------{{{
 nnoremap yy yy:echo"yy=yank one line"<cr>
 nnoremap Y  y$:echo'Y=Yank from cursor to end of line'<CR>
 nnoremap y0 y0
@@ -251,7 +251,7 @@ nnoremap <space> i<space><esc>:echom"-- NORMAL -- space=insert space"<cr>
 nnoremap <tab> i<tab><esc>:echo"-- NORMAL -- tab=insert tab=4spaces"<cr>
 
 nnoremap u u:echo"u=undo"<cr>
-"---------------------------------------------------------------------------}}}
+"----------------------------------------------------------}}}
 
 
 
