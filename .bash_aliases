@@ -23,8 +23,9 @@ alias vol='pavucontrol &'
 #----------------------------------------------------------}}}
 
 
-#--- bash --------------------------------------------------{{{
+#--- shell --------------------------------------------------{{{
 alias bl='bash --login'
+alias zl='zsh --login'
 
 # change directory:
 alias ..='cd .. && ls -la --color --group-directories-first'
