@@ -70,6 +70,7 @@ alias wa='whoami'
 # package managers:
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
+#--- update and install
 alias pu='sudo pacman --noconfirm -Syyu'
 alias pi='sudo pacman --noconfirm -S '
 
@@ -159,7 +160,7 @@ alias gacp='git add --all && gc && gp'
 # mapleader = , here , is vim 
 alias egi='vim .gitignore'
 alias egc='vim ~/.gitconfig'
-alias du='~/./dotf.update.sh'
+alias du='/dat.mnt/dotfiles/dotf.update.sh'
 
 #---------------------------------------------------------}}}
 
