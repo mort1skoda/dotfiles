@@ -38,4 +38,5 @@ export OPENER='xdg-open'
 
 #export PATH="/home/m/go/bin:$PATH"
 
+cal -3mw
 

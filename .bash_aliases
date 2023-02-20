@@ -134,6 +134,7 @@ alias vf='vifm'
 alias ff='firefox &'
 alias lw='librewolf &'
 alias sf='surf https://suckless.org &'
+alias siv='nsxiv'
 #--------------------------------------------------------------------}}}#
 
 
