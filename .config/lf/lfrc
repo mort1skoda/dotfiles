@@ -2,59 +2,48 @@
 
 
 #--- options -----------------------------------------{{{
-autoquit    on
-
-#-----------------------------------------------------}}}
-
-
-
-# interpreter for shell commands
+set autoquit on 
 set shell sh 
-set hidden
-set previewer ~/go/bin/pistol
-
-
-map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
-map ga ${{clear; git add --all; echo "press ENTER"; read ENTER}}
-
-
-
-
-# set '-eu' options for shell commands
+# set '-eu' options for shell commands {{{
 # These options are used to have safer shell commands. Option '-e' is used to
 # exit on error and option '-u' is used to give error for unset variables.
 # Option '-f' disables pathname expansion which can be useful when $f, $fs, and
 # $fx variables contain names with '*' or '?' characters. However, this option
 # is used selectively within individual commands as it can be limiting at
-# times.
+# times.}}}
 set shellopts '-eu'
-
-# set internal field separator (IFS) to "\n" for shell commands
+# set internal field separator (IFS) to "\n" for shell commands {{{
 # This is useful to automatically split file names in $fs and $fx properly
 # since default file separator used in these variables (i.e. 'filesep' option)
 # is newline. You need to consider the values of these options and create your
-# commands accordingly.
+# commands accordingly. }}}
 set ifs "\n"
-
+set hidden
 # leave some space at the top and the bottom of the screen
 set scrolloff 10
+#set previewer ~/go/bin/pistol
+set previewer /home/m/.config/lf/batc.sh
+#.....................................................}}}
+
+
+
+#--- git -------------------------------------------------------{{{
+map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
+map ga ${{clear; git add --all; echo "press ENTER"; read ENTER}}
+#...............................................................}}}
+
+
 
 # use enter for shell commands
 map <enter> shell-wait
-map <enter> !echo '!echo enter'
+map <c-enter> !echo '!echo enter'
 #map <enter> !echo '!!!! echo enter !!!!'
 
-#map <c-s> :source '/home/m/config/lf/lfrc'
-#map <c-s> !echo 'so'
-# :echo 'sourced: lfrc'
 
 
-# ${{clear; git status; echo "press ENTER"; read ENTER}}
-#
-#
 # execute current file (must be executable)
 map x $$f
-#map X !$f
+map X !$f
 
 
 # dedicated keys for file opener actions
@@ -131,17 +120,14 @@ cmd delete ${{
 cmd trash %set -f; mv $fx ~/.trash
 #----------------------------------------------------------}}}
 
-# use '<delete>' key for either 'trash' or 'delete' command
-# map <delete> trash
-# map <delete> delete
-
 
 
 #--- source quit ---------------------------------{{{
 map <c-s> so
 cmd so :{{
     source /home/m/.config/lf/lfrc
-    echo 'sourced: /home/m/.config/lf/lfrc'
+    reload
+    echo 'sourced: /home/m/.config/lf/lfrc  reloaded: lf'
 }}
 
 #map <c-q> q
@@ -151,6 +137,7 @@ map q :quit
 
 
 #--- statusline -----------------------------------------{{{
+:echo 'Welcome to lf'
 #--------------------------------------------------------}}}
 
 

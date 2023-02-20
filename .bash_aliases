@@ -26,6 +26,7 @@ alias vol='pavucontrol &'
 #--- shell --------------------------------------------------{{{
 alias bl='bash --login'
 alias zl='zsh --login'
+alias sl='echo "Shell level = $SHLVL"'
 
 # change directory:
 alias ..='cd .. && ls -la --color --group-directories-first'
@@ -58,7 +59,7 @@ alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 # su  =  su root  by default in bash. 
 
 # shortcuts:
-alias c='cat'
+alias c='/home/m/.config/lf/batc.sh'
 alias e="echo "
 alias g='grep -i --color=auto'
 alias hg='cat .bash_history | grep -i '
@@ -123,7 +124,7 @@ alias s='sudo'
 alias gv='gvim '
 # clear screen:
 alias cs='clear'
-alias nf="clear && neofetch"
+alias nf="clear && neofetch && sl"
 
 
 alias st='st'
