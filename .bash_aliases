@@ -150,7 +150,7 @@ alias gc='source ~/.bash_aliases && git commit -m "$DATE"'
 alias gco='git checkout '
 #TODO: make gc a function so it updates the date correctly
 alias ga='git add'
-alias gaa='git add --all && gs'
+alias gaa='git add --all && git status --short'
 alias gp='git push'
 #
 alias gb='git branch'
