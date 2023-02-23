@@ -312,8 +312,11 @@ call plug#end()
 syntax on
 "colorscheme 12my.desert
 set background=dark
+let g:gruvbox_italic = '(1)'
+let g:gruvbox_contrast_dark = '(hard)'
+let g:gruvbox_italicize_comments = '(1)'
 colorscheme gruvbox
-set guifont=Consolas:h9:cANSI
+" set guifont=Consolas:h9:cANSI
 
 "################ DRACULA dracula ###########
 "packadd! dracula

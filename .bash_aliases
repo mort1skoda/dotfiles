@@ -118,7 +118,7 @@ alias sz='source ~/.zshrc'
 
 
 #--- start programs -------------------------------------------------{{{
-alias bt="bashtop"
+alias ht="htop"
 alias vf='vifm /home/m /dat.mnt/'
 alias x='startx'
 alias a='alias' #list all aliases
