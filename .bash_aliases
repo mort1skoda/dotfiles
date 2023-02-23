@@ -29,6 +29,7 @@ alias zl='zsh --login'
 alias sl='echo "Shell level = $SHLVL"'
 
 # change directory:
+alias .='ls'
 alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
 alias .r='cd / && ls -la --color --group-directories-first'
@@ -43,9 +44,8 @@ alias .wd='cd /mnt/d && ls -la --color --group-directories-first'
 
 # list directories:
 alias l='ls -lah --color --group-directories-first'
-#alias l='ls -la --color --group-directories-first && git branch && git status && git remote -v | grep -m1 github'
-#TODO: make l a function so we can add a parameter at the end, e.g. l Downloads/
 alias ll='ls -l --color --group-directories-first'
+alias la='ls -a --color --group-directories-first'
 alias ls='ls --color --group-directories-first'
 alias lg='ls -la --color --group-directories-first | grep -i --color '
 alias md='mkdir -p'
@@ -96,7 +96,7 @@ alias rm='rm -vrf '
 #--- edit files ------------------------------------------------{{{
 alias v='vim'
 alias vi='vim'
-alias ea='vim ~/.bash_aliases && . ~/.bash_aliases'
+alias ea='vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ez='vim ~/.zshrc && source ~/.zshrc'
 alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
@@ -105,6 +105,7 @@ alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
 alias edw='.dd && cd suckless/dwm-6*/ && vim config.h'
 alias elf='vim ~/.config/lf/lfrc'
+alias et='vim ~/.tmux.conf'
 #---------------------------------------------------------------}}}
 
 
@@ -126,7 +127,7 @@ alias gv='gvim '
 # clear screen:
 alias cs='clear'
 alias nf="clear && neofetch && sl"
-
+alias wnf="watch --color neofetch"
 
 alias st='st'
 alias lf='lf'
@@ -211,6 +212,11 @@ alias nodep="pacman -Qdtq"
 alias qdtq='sudo pacman -R "$(pacman -Qdtq)" '
 
 #----------------------------------------------------------}}}
+
+
+#-- systemd -----------------------------------------------{{{
+alias ss='sudo systemctl status '
+#.........................................................}}}
 
 
 #--- footer ------------------------------------------------{{{
