@@ -1,7 +1,6 @@
 " echom"~/.vimrc"
 
 
-
 "--- ~/.vimrc -------------------------------------------------{{{
 " Author: Morty Hawk <mort1skoda@gmail.com>
 " Email:  <mort1skoda@gmail.com>
@@ -32,7 +31,6 @@
 "-------------------------------------------------------------}}}
 
 
-
 "--- environment --------------------{{{
 let $BASH_PROFILE  = '~/.bash_profile'
 let $BASHRC        = '~/.bashrc'
@@ -45,22 +43,6 @@ let $BASH_ENV      = "~/.bash_aliases"
 "------------------------------------}}}
 
 
-
-"--- colorscheme and font ---------------------------------{{{
-syntax on
-colorscheme 12my.desert
-"colorscheme dracula
-set guifont=Consolas:h9:cANSI
-
-"################ DRACULA dracula ###########
-"packadd! dracula
-"enable
-"colorscheme dracula
-"################ dracula DRACULA ###########
-"----------------------------------------------------------}}}
-
-
-
 "--- folds -------------------{{{
 set foldmethod=marker
 nnoremap <Leader>fo i -------------------{{{<cr>"----------------------------}}}<cr><esc>
@@ -70,7 +52,6 @@ nnoremap fo zr:echo"fo=folds open all"<cr>
 "-----------------------------}}}
 
 
-
 "--- cursor --------------------{{{
 let &t_EI = "\<Esc>[1 q"    " Block cursor in normal mode
 let &t_SR = "\<Esc>[3 q"    " Vertikal cursor in insert mode
@@ -78,13 +59,12 @@ let &t_SI = "\<Esc>[5 q"    " Horizontal cursr in Replace mode
 "-------------------------------}}}
 
 
-
 "--- settings --------------------------------------------------------------------{{{
 let mapleader = ","     " mapleader = ,
 set noswapfile          " no not create ~ files
 set nobackup            " do not save backup files
 set nocompatible        " do not be compatible with old vi
-set list                " mark line endings with a $ (dollar sign)
+set nolist              " mark line endings with a $ (dollar sign)
 set nowrap              " allow lines to extende as far as the line goes.
 set textwidth=200       " set a line limit before wrap.
 set nospell             " turn of spell checking.
@@ -168,7 +148,6 @@ nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
 "--------------------------------------------end-of-settings-----------------------------}}}
 
 
-
 "--- movements -----------------------------------------------------------------{{{
 nnoremap 0 0:echo"0 = beginning of line"<cr>
 nnoremap $ $:echo"$ = end of line"<cr>
@@ -189,7 +168,6 @@ nnoremap G G:echo"G=bottom of page"<cr>
 "-------------------------------------------------------------------------------}}}
 
 
-
 "--- panes ------------------------------------------------------{{{
 set splitright
 
@@ -204,7 +182,6 @@ inoremap <c-k> <esc><c-w>h:echo"ctrl-k = left pane"<cr>
 nnoremap <c-l> <c-w><:echo'Resize pane <'<CR>
 nnoremap <c-H> <c-w>>:echo'Resize pane >'<CR>
 "----------------------------------------------------------------}}}
-
 
 
 "--- yank delete change paste undo ------------------------{{{
@@ -254,7 +231,6 @@ nnoremap u u:echo"u=undo"<cr>
 "----------------------------------------------------------}}}
 
 
-
 "--- edit resources -----------------------------------------------{{{
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>eb :vs $BASHRC <CR>:echo expand('%:p')<CR>
@@ -263,7 +239,6 @@ nnoremap <Leader>ev :vs $VIMRC  <CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ef :vs $VIFMRC <CR>:echo expand('%:p')<CR>
 nnoremap <Leader>et :vs $TMUX   <CR>:echo expand('%:p')<CR>
 "------------------------------------------------------------------}}}
-
 
 
 "--- compiling -------------------------------------{{{
@@ -276,12 +251,10 @@ nnoremap <Leader>md :!make dbg<CR>
 "---------------------------------------------------}}}
 
 
-
 "--- open programs -----------------------------{{{
 " TODO: ,lf to open lf
 nnoremap <Leader>ex :Lexplore<CR>7<C-w>
 "-----------------------------------------------}}}
-
 
 
 "--- comments ----------------------------------{{{
@@ -299,7 +272,6 @@ let @u = "I\<Del>\<Del>\<Del>\<Esc>j"
 "-----------------------------------------------}}}
 
 
-
 "--- @ macros --------------------------------------------------------{{{
 " @p printf("
 let @p = "Iprintf(\""
@@ -309,23 +281,43 @@ let @o = "I\<TAB>for(int i = 0; i < 10; i++){\<esc>I\<tab>\<tab>"
 "---------------------------------------------------------------------}}}
 
 
-
 "--- scripts autogroup autocmd ------------------------------{{{
 " This will enable code folding.
 " Use the marker method of folding.
-"augroup filetype_vim
-    "autocmd!
-    "autocmd FileType vim setlocal foldmethod=marker
-"augroup END
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
 
 " Display cursorline and cursorcolumn ONLY in active window.
-"augroup cursor_off
-    "autocmd!
-    "autocmd WinLeave * set nocursorline nocursorcolumn
-    "autocmd WinEnter * set cursorline cursorcolumn
-"augroup END
+augroup cursor_off
+    autocmd!
+    autocmd WinLeave * set nocursorline nocursorcolumn
+    autocmd WinEnter * set cursorline cursorcolumn
+augroup END
 "------------------------------------------------------------}}}
 
+"--- plugins ----------------------------------------------{{{
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+"----------------------------------------------------------}}}
+
+"--- colorscheme and font ---------------------------------{{{
+syntax on
+"colorscheme 12my.desert
+set background=dark
+colorscheme gruvbox
+set guifont=Consolas:h9:cANSI
+
+"################ DRACULA dracula ###########
+"packadd! dracula
+"syntax enable
+"colorscheme dracula
+"################ dracula DRACULA ###########
+"----------------------------------------------------------}}}
 
 
 "--- esc save source quit ------------------------------------------------------{{{
@@ -354,7 +346,6 @@ nnoremap q :q<cr><esc>
 "----------------------------------------------------------------------------------}}}
 
 
-
 "--- statusline -----------------------------------{{{
 set statusline=
 set laststatus=2
@@ -362,6 +353,5 @@ set laststatus=2
 "set statusline+=%=
 "set statusline+=row:%l\ col:%c\ percent:%p%%
 "--------------------------------------------------}}}
-
 
 
