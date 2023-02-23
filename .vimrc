@@ -162,6 +162,9 @@ nnoremap O O<esc>:echo"O = Open line above"<cr>
 " speed up scrolling
 nnoremap <S-j> }:echo 'shift-j = 4j down'<CR>
 nnoremap <S-k> {:echo 'shift-k = 4k up'<CR>
+nnoremap <S-l> $:echo 'shift-l = end of line'<CR>
+nnoremap <S-h> 0:echo 'shift-h = beginning of line'<CR>
+
 
 nnoremap gg gg:echo"gg=top of page"<cr>
 nnoremap G G:echo"G=bottom of page"<cr>

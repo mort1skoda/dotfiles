@@ -2,7 +2,7 @@ echo "~/.zshrc"
 
 #--- wifi -----------------------------{{
 #sudo rfkill unblock wifi
-#sudo dhcpcd
+#sudo systemctl start dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 #sudo ip link set wlan0 up
@@ -31,7 +31,7 @@ compinit
 
 
 autoload -U colors && colors
-PS1="$fg[yellow]%}%~ %{$reset_color%}% "
+PS1="$fg[yellow]%}%~ %{$reset_color%}%"$'\n\n'"- "
 
 #red prompt for root
 if [ "$EUID" -eq 0 ]
@@ -51,4 +51,6 @@ export OPENER='xdg-open'
 
 
 export BAT_THEME="gruvbox-dark"
+
+source /dat.mnt/dotfiles/gruvbox.zsh
 
