@@ -41,4 +41,5 @@ export OPENER='xdg-open'
 #date
 
 
+export BAT_THEME="gruvbox-dark"
 

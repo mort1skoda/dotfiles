@@ -142,7 +142,7 @@ alias siv='nsxiv'
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
 #echo $DATE  
 alias gss="git status --short"
-alias gs="git branch && git status && git remote -v"
+alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
 alias gsv="git status --verbose"
 alias gpl="git pull"
 alias gr='git remote -v'

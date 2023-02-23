@@ -49,12 +49,12 @@ let $BASH_ENV      = "~/.bash_aliases"
 "--- colorscheme and font ---------------------------------{{{
 syntax on
 colorscheme 12my.desert
-"colorscheme molokai
+"colorscheme dracula
 set guifont=Consolas:h9:cANSI
 
 "################ DRACULA dracula ###########
 "packadd! dracula
-" enable
+"enable
 "colorscheme dracula
 "################ dracula DRACULA ###########
 "----------------------------------------------------------}}}
@@ -181,8 +181,8 @@ nnoremap o o<esc>:echo"o = open line below"<cr>
 nnoremap O O<esc>:echo"O = Open line above"<cr>
 
 " speed up scrolling
-nnoremap <S-j> 4j:echo 'shift-j = 4j down'<CR>
-nnoremap <S-k> 4k:echo 'shift-k = 4k up'<CR>
+nnoremap <S-j> }:echo 'shift-j = 4j down'<CR>
+nnoremap <S-k> {:echo 'shift-k = 4k up'<CR>
 
 nnoremap gg gg:echo"gg=top of page"<cr>
 nnoremap G G:echo"G=bottom of page"<cr>
