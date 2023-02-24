@@ -16,6 +16,8 @@ ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
 ln -svf /dat.mnt/dotfiles/.vimrc         ~
 ln -svf /dat.mnt/dotfiles/.xinitrc       ~
 ln -svf /dat.mnt/dotfiles/dotf.update.sh ~
+sudo ln -svf /dat.mnt/dotfiles/etc.vconsole.conf /etc/vconsole.conf
+
 
 # comment next line if you want to copy to home of user root.
 exit
