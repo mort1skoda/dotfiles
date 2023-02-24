@@ -59,7 +59,8 @@ alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 # su  =  su root  by default in bash. 
 
 # shortcuts:
-alias c='/home/m/.config/lf/batc.sh'
+alias b='/home/m/.config/lf/batc.sh'
+alias c='cat'
 alias e="echo "
 alias g='grep -i --color=auto'
 alias hg='cat .bash_history | grep -i '
@@ -71,8 +72,8 @@ alias wa='whoami'
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
 #--- update and install
-alias pu='sudo pacman --noconfirm -Syyu'
-alias pi='sudo pacman --noconfirm -S '
+alias u='sudo pacman --noconfirm -Syyu'
+alias i='sudo pacman --noconfirm -S '
 
 alias rb='sudo reboot'
 alias sd="sudo shutdown -h now"
@@ -98,7 +99,7 @@ alias v='vim'
 alias vi='vim'
 alias ea='vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
-alias ez='vim ~/.zshrc && source ~/.zshrc'
+alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
 alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'

@@ -1,6 +1,6 @@
 echo "~/.zshrc"
 
-#--- wifi -----------------------------{{
+#--- wifi -----------------------------{{{
 #sudo rfkill unblock wifi
 #sudo systemctl start dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
@@ -21,6 +21,7 @@ setopt autocd extendedglob nomatch notify
 unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/m/.zshrc'
 
@@ -29,9 +30,8 @@ compinit
 # End of lines added by compinstall
 
 
-
 autoload -U colors && colors
-PS1="$fg[yellow]%}%~ %{$reset_color%}%"$'\n\n'"- "
+PS1="$fg[yellow]%}%~ %{$reset_color%}%"$'\n\n'""
 
 #red prompt for root
 if [ "$EUID" -eq 0 ]
@@ -53,4 +53,5 @@ export OPENER='xdg-open'
 export BAT_THEME="gruvbox-dark"
 
 source /dat.mnt/dotfiles/gruvbox.zsh
+
 

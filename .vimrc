@@ -45,7 +45,6 @@ let $BASH_ENV      = "~/.bash_aliases"
 
 "--- folds -------------------{{{
 set foldmethod=marker
-nnoremap <Leader>fo i -------------------{{{<cr>"----------------------------}}}<cr><esc>
 nnoremap ff za:echo"ff=fold toggle"<cr>
 nnoremap fc zm:echo"fc=folds close all"<cr>
 nnoremap fo zr:echo"fo=folds open all"<cr>

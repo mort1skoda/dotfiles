@@ -1,0 +1,15 @@
+{
+    "entries" : {
+        "fav" : {
+            "name" : "fav",
+            "icon" : null,
+            "comment" : null,
+            "index" : 0,
+            "requires-update" : false,
+            "active" : true,
+            "children" : {            },
+            "families" : [],
+            "size" : 0
+        }
+    }
+}
