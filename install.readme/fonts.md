@@ -1,10 +1,13 @@
 ## fonts
 ### X11 
 
-#### find info
-<pre>
-[blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
 
+
+#### find info
+
+   [blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
+
+<pre>
     BLFS
     Arch
     www.link
