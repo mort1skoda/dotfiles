@@ -15,6 +15,8 @@
 fc-cache        is used to create font information caches
 fc-cat          is used to read font information caches
 fc-conflist     shows the ruleset files information on the system
+fc-list         is used to create font lists
+fc-match        is used to match available fonts, or find fonts that match a given pattern
 
 </pre> 
 
