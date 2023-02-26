@@ -3,11 +3,11 @@
 
 #### find info
 
-   [arch fonts](https://wiki.archlinux.org/title/fonts) 
+   [arch-fonts](https://wiki.archlinux.org/title/fonts) 
  
-   [blfs consolefonts](https://www.linuxfromscratch.org/blfs/view/stable/postlfs/console-fonts.html)
+   [blfs-consolefonts](https://www.linuxfromscratch.org/blfs/view/stable/postlfs/console-fonts.html)
 
-   [blfs fontconfig](https://www.linuxfromscratch.org/blfs/view/stable/general/fontconfig.html)
+   [blfs-fontconfig](https://www.linuxfromscratch.org/blfs/view/stable/general/fontconfig.html)
 <pre>
 fc-cache        is used to create font information caches
 fc-cat          is used to read font information caches
@@ -24,13 +24,11 @@ contains functions used by fontconfig programs and also by other programs
 to configure or customize font access
 </pre> 
 
+   [blfs-xorg-fonts](https://www.linuxfromscrtach.org/blfs/view/stable/x/x7font.html)
 
-   [blfs xorg fonts](https://www.linuxfromscrtach.org/blfs/view/stable/x/x7font.html)
+   [asdf-qwer](google.com)
 
-
-   [asdf](google.com)
-
-   [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
+   [wikipedia-fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
 
 
 
