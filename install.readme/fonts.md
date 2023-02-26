@@ -57,10 +57,27 @@ to configure or customize font access
 
 
 
-#### install fonts
+#### example install font
 
-    font-config
+    yay ttf-astacid-mono
+    cd /usr/share/fonts/TTF
+    ls -la | grep -i --color astacid    ( l |g asta )
 
+   find install locations:
+    pacman -Ql 'ttf-astacid-mono'
+
+    xset q
+    xset +fp /usr/share/fonts/TTF
+    xset q |g 'fonts/TTF'
+
+    sudo mkfontscale
+    sudo mkfontdir
+ 
+    fc-cache -vf
+
+    xlsfonts |g asta
+
+ 
 
 
 
