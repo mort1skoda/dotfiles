@@ -5,6 +5,8 @@
 
 #### find info
 
+   [arch fonts](https://wiki.archlinux.org/title/fonts) 
+ 
    [blfs consolefonts](https://www.linuxfromscratch.org/blfs/view/stable/postlfs/console-fonts.html)
 
 
