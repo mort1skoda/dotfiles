@@ -3,20 +3,31 @@
 
 #### find info
 
-    Many ways to find info about fonts:
+   [blfs    Many ways to find info about fonts:
     BLFS
     Arch
     www.link
     www.link
     ....
+   [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
 
 
 #### info commands
 
+    ls /usr/bin |g 'fc-' |b
+
+   fc-cache -v
+   fc-cat
+   fc-conflist
+   fc-list
+   fc-match
+   fc-pattern
+   fc-query
+   fc-scan
+
+
     xset q | bat    (i xorg-xset)
     xset q|b
-    fc-list
-    fc-cache -v
     xdf             (i xorg-xdf)
     font-manager  -> ali: fm
   
@@ -31,5 +42,11 @@
 
     font-config
 
+
+
+
+#### refs
+
+   [blfs](linuxfromscratch.org)
 
 
