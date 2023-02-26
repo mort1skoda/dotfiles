@@ -9,7 +9,8 @@
  
    [blfs consolefonts](https://www.linuxfromscratch.org/blfs/view/stable/postlfs/console-fonts.html)
 
-
+   [blfs fontconfig](https://www.linuxfromscratch.org/blfs/view/stable/general/fontconfig.html)
+ 
 
 <pre>
     BLFS
