@@ -2,16 +2,16 @@
 ### X11 
 
 #### find info
-
-    [blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
+<pre>
+[blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
 
     BLFS
     Arch
     www.link
     www.link
     ....
-    [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
-
+[wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
+</pre>
 
 #### info commands
 
