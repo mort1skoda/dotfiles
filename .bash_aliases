@@ -163,7 +163,7 @@ alias gacp='git add --all && gc && gp'
 # mapleader = , here , is vim 
 alias egi='vim .gitignore'
 alias egc='vim ~/.gitconfig'
-alias du='/dat.mnt/dotfiles/dotf.update.sh'
+alias ud='/dat.mnt/dotfiles/dotf.update.sh'
 
 #---------------------------------------------------------}}}
 
