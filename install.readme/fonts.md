@@ -10,7 +10,13 @@
    [blfs consolefonts](https://www.linuxfromscratch.org/blfs/view/stable/postlfs/console-fonts.html)
 
    [blfs fontconfig](https://www.linuxfromscratch.org/blfs/view/stable/general/fontconfig.html)
- 
+
+<pre>
+fc-cache        is used to create font information caches
+fc-cat          is used to read font information caches
+fc-conflist     shows the ruleset files information on the system
+
+</pre> 
 
 <pre>
     BLFS
