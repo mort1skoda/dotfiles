@@ -5,7 +5,9 @@
 
 #### find info
 
-   [blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
+   [blfs consolefonts](https://www.linuxfromscratch.org/blfs/view/stable/postlfs/console-fonts.html)
+
+
 
 <pre>
     BLFS
