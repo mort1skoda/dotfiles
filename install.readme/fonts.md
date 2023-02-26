@@ -3,27 +3,28 @@
 
 #### find info
 
-   [blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
-   BLFS
-   Arch
-  www.link
-  www.link
-  ....
-  [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
+    [blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
+
+    BLFS
+    Arch
+    www.link
+    www.link
+    ....
+    [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
 
 
 #### info commands
 
     ls /usr/bin |g 'fc-' |b
 
-   fc-cache -v
-   fc-cat
-   fc-conflist
-   fc-list
-   fc-match
-   fc-pattern
-   fc-query
-   fc-scan
+    fc-cache -v
+    fc-cat
+    fc-conflist
+    fc-list
+    fc-match
+    fc-pattern
+    fc-query
+    fc-scan
 
 
     xset q | bat    (i xorg-xset)
