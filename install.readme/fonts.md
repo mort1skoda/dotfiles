@@ -24,7 +24,8 @@ contains functions used by fontconfig programs and also by other programs
 to configure or customize font access
 </pre> 
 
-   [blfs xorg fonts](https://www.linuxfromscrtach.org/blfs/view/stable/x/x7font.html
+
+   [blfs xorg fonts](https://www.linuxfromscrtach.org/blfs/view/stable/x/x7font.html)
 
 
    [asdf](google.com)
