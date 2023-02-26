@@ -24,6 +24,9 @@ contains functions used by fontconfig programs and also by other programs
 to configure or customize font access
 </pre> 
 
+   [blfs xorg fonts](https://www.linuxfromscrtach.org/blfs/view/stable/x/x7font.html
+
+
    [asdf](google.com)
 
    [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
@@ -34,7 +37,7 @@ to configure or customize font access
 
     ls /usr/bin |g 'fc-' |b
 
-    fc-cache -v
+    fc-cache -v     (sudo pacman -S fontconfig)
     fc-cat
     fc-conflist
     fc-list
@@ -42,7 +45,6 @@ to configure or customize font access
     fc-pattern
     fc-query
     fc-scan
-
 
     xset q | bat    (i xorg-xset)
     xset q|b
@@ -61,10 +63,5 @@ to configure or customize font access
     font-config
 
 
-
-
-#### refs
-
-   [blfs](linuxfromscratch.org)
 
 
