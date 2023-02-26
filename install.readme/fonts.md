@@ -26,7 +26,7 @@ to configure or customize font access
 
    [blfs-xorg-fonts](https://www.linuxfromscratch.org/blfs/view/stable/x/x7font.html)
 
-   [asdf-qwer](google.com)
+   [freetype2](https://linuxfromscratch.org/blfs/view/stable/general/freetype2.html)
 
    [wikipedia-fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
 
