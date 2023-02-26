@@ -3,13 +3,13 @@
 
 #### find info
 
-   [blfs    Many ways to find info about fonts:
-    BLFS
-    Arch
-    www.link
-    www.link
-    ....
-   [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
+  [blfs consolefonts](https://www.linuxfromscratch/blfs/view/stable/postlfs/console-fonts.html)
+  BLFS
+  Arch
+  www.link
+  www.link
+  ....
+  [wikipedia fontconfig](https://en.wikipedia.org/wiki/Fontconfig)
 
 
 #### info commands
