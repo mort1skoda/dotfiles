@@ -1,6 +1,5 @@
 echo "~/.bash_aliases"
 
-
 #--- header ------------------------------------------------{{{
 # Author: Morty Hawk
 # Email.: <mort1skoda@gmail.com>
@@ -17,72 +16,68 @@ echo "~/.bash_aliases"
 unalias -a
 #-----------------------------------------------------------}}}
 
-
 #--- audio ------------------------------------------------{{{
 alias vol='pavucontrol &'
 #----------------------------------------------------------}}}
-
 
 #--- shell --------------------------------------------------{{{
 alias bl='bash --login'
 alias zl='zsh --login'
 alias sl='echo "Shell level = $SHLVL"'
+# su  =  su root  by default in bash. 
+#---------------------------------------------------------}}}
 
+#---directories ---{{{
 # change directory:
-alias .='ls'
 alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
 alias .r='cd / && ls -la --color --group-directories-first'
 alias .rr='cd /root && ls -la --color --group-directories-first'
 alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
-alias .dd='cd /dat.mnt/dotfiles && l'
+alias .dd='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
 
 # windows C:\ and D:\
 alias .wc='cd /mnt/c && ls -la --color --group-directories-first'
 alias .wd='cd /mnt/d && ls -la --color --group-directories-first'
 
 # list directories:
+alias .='ls'
 alias l='ls -lah --color --group-directories-first'
 alias ll='ls -l --color --group-directories-first'
 alias la='ls -a --color --group-directories-first'
 alias ls='ls --color --group-directories-first'
 alias lg='ls -la --color --group-directories-first | grep -i --color '
+alias wl='watch --color ls -la --color --group-directories-first'
+
+# mkdir rmdir:
 alias md='mkdir -p'
 alias rd='rmdir -p'
-alias wl='watch --color ls -la --color --group-directories-first'
+# }}}
 
 # cat aliases then grep for <token>
 alias ag='alias | grep -i --color '
 alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
-
-# su  =  su root  by default in bash. 
+alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
+alias hg='cat .bash_history | grep -i '
 
 # shortcuts:
-alias b='/home/m/.config/lf/batc.sh'
-alias c='cat'
+alias b='/home/m/.config/lf/batc.sh '
+alias c='cat '
 alias e="echo "
-alias g='grep -i --color=auto'
-alias hg='cat .bash_history | grep -i '
+alias g='grep -i --color=auto '
 alias os='cat /etc/os-release'
 alias wa='whoami'
 
-#
-# package managers:
+# package managers:{{{
+# debian:
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
-#--- update and install
+# arch:
 alias u='sudo pacman --noconfirm -Syyu'
 alias i='sudo pacman --noconfirm -S '
-
-alias rb='sudo reboot'
-alias sd="sudo shutdown -h now"
-
-
-# quit or exit shell.  same as quiting vim (whitout save)
-alias q='exit'
-#---------------------------------------------------------}}}
-
+alias pm='sudo pacman '
+# }}}
 
 #--- filesystem --------------------{{{
 alias blkid='sudo blkid'
@@ -92,7 +87,6 @@ alias cp="cp -iv"
 alias mv='mv -iv '
 alias rm='rm -vrf '
 #... .......... ....................}}}
-
 
 #--- edit files ------------------------------------------------{{{
 alias v='vim'
@@ -109,14 +103,12 @@ alias elf='vim ~/.config/lf/lfrc'
 alias et='vim ~/.tmux.conf'
 #---------------------------------------------------------------}}}
 
-
 #--- source files ------------------------{{{ 
 alias sbp='source ~/.bash_profile'
 alias sb='source ~/.bashrc'
 alias sa='source ~/.bash_aliases'
 alias sz='source ~/.zshrc'
 # ---------------------------------------}}}
-
 
 #--- start programs -------------------------------------------------{{{
 alias ht="htop"
@@ -138,7 +130,6 @@ alias lw='librewolf &'
 alias sf='surf https://suckless.org &'
 alias siv='nsxiv'
 #--------------------------------------------------------------------}}}#
-
 
 #--- git ---------------------------------------------------{{{
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
@@ -167,7 +158,6 @@ alias ud='/dat.mnt/dotfiles/dotf.update.sh'
 
 #---------------------------------------------------------}}}
 
-
 #--- tmux --------------------------------------------------{{{
 # tm = tmux, start a new tmux session
 alias tm="cd ~/ && tmux"
@@ -179,17 +169,14 @@ alias ta='cd ~/ && tmux a -t '
 alias et='vim ~/.tmux.conf'
 #-----------------------------------------------------------}}}
 
-
 #--- openbox -----------------------------------------{{{
 alias or='openbox --reconfigure'
 #-----------------------------------------------------}}}
-
 
 #--- network -----------------------------------------------{{{
 alias ip="ip -color=auto"
 alias wip='watch --color -n1 ip -color a'
 #-----------------------------------------------------------}}}
-
 
 #--- make --------------------------------------------------{{{
 alias ,mh='make help'
@@ -202,7 +189,6 @@ alias ,mr='make run'
 alias ,md='make dbg'
 #-----------------------------------------------------------}}}
 
-
 #--- debug ------------------------------------------------{{{
 alias keycodes="sed -n l"
 alias dbgvim='vim -V20 2>&1 | tee vim.log.vim'
@@ -214,11 +200,17 @@ alias qdtq='sudo pacman -R "$(pacman -Qdtq)" '
 
 #----------------------------------------------------------}}}
 
-
-#-- systemd -----------------------------------------------{{{
+#--- systemd -----------------------------------------------{{{
 alias ss='sudo systemctl status '
+alias se='sudo systemctl enable '
+alias st='sudo systemctl start '
 #.........................................................}}}
 
+#--- quit reboot shutdown ---{{{
+alias q='exit'
+alias rb='sudo reboot'
+alias sd="sudo shutdown -h now"
+# }}}
 
 #--- footer ------------------------------------------------{{{
 #shopt -s expand_aliases
@@ -226,6 +218,5 @@ alias ss='sudo systemctl status '
 #echo    "                Sourced:" $ALIASES 
 #echo -e "---|---|....end.." $ALIASES "....|---|---"
 #-----------------------------------------------------------}}}
-
 
 
