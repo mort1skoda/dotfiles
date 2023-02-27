@@ -212,7 +212,7 @@ nnoremap da da
 " da = delete other
 
 " make cw behave like dw and yw
-nnoremap cw dwi
+"nnoremap cw dwi
 nnoremap C c$
 ":echo'C = change from cursor to end of line'<cr>
 
