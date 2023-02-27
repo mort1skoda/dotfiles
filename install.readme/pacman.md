@@ -1,8 +1,11 @@
 # pacman
-## info from man pacman
-### <operation> [options] [targets] 
+## info from man 8 pacman
 
-### <operations>
+<pre>
+<operation> [options] [targets] 
+</pre>
+
+### operations
 #### S  --sync
 
     update system:
