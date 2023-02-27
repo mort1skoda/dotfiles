@@ -32,8 +32,8 @@ compinit
 
 autoload -U colors && colors
 
-# promtp{{{
-PS1="$fg[yellow]%}%~ %{$reset_color%}%"$'\n\n'""
+# promtp {{{
+PS1="$fg[green]%}%~ %{$reset_color%}%"$'\n\n'""
 
 #red prompt for root
 if [ "$EUID" -eq 0 ]
@@ -41,12 +41,13 @@ if [ "$EUID" -eq 0 ]
 fi
 # }}}
 #
-export TERM='xterm-256color'# {{{
+# exports {{{
+export TERM='xterm-256color'
 export EDITOR='vim'
 export OPENER='xdg-open'
 export BAT_THEME="gruvbox-dark"
 # }}}
-
+#
 source ~/.bash_aliases# {{{
 source /dat.mnt/dotfiles/gruvbox.zsh
 # }}}

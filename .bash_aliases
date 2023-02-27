@@ -24,10 +24,10 @@ alias vol='pavucontrol &'
 alias bl='bash --login'
 alias zl='zsh --login'
 alias sl='echo "Shell level = $SHLVL"'
-# su  =  su root  by default in bash. 
+alias su='su root zsh'
 #---------------------------------------------------------}}}
 
-#---directories ---{{{
+#--- directories ---{{{
 # change directory:
 alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
@@ -55,21 +55,23 @@ alias md='mkdir -p'
 alias rd='rmdir -p'
 # }}}
 
-# cat aliases then grep for <token>
+#--- cat/bat then grep <token> ---{{{
 alias ag='alias | grep -i --color '
 alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
 alias hg='cat .bash_history | grep -i '
+# }}}
 
-# shortcuts:
+#--- shortcuts ---{{{
 alias b='/home/m/.config/lf/batc.sh '
 alias c='cat '
 alias e="echo "
 alias g='grep -i --color=auto '
 alias os='cat /etc/os-release'
 alias wa='whoami'
+# }}}
 
-# package managers:{{{
+#--- package managers ---{{{
 # debian:
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
