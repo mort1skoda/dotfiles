@@ -9,7 +9,7 @@ sudo pacman (operation) [options] [targets]
 #### S  --sync
 
     update system:
-    sudo pacman -Syu
+    sudo pacman -Syyu
 
 
 #### R  --remove
@@ -33,7 +33,7 @@ sudo pacman (operation) [options] [targets]
 
 #### F  --files
 
-
+---
 
 ### [options]
 
