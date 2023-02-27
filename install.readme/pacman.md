@@ -2,7 +2,7 @@
 ## info from man 8 pacman
 
 <pre>
-<operation> [options] [targets] 
+sudo pacman (operation) [options] [targets] 
 </pre>
 
 ### operations
