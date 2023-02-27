@@ -1,19 +1,19 @@
 echo "~/.bash_aliases"
 
+unalias -a
+
 #--- header ------------------------------------------------{{{
 # Author: Morty Hawk
 # Email.: <mort1skoda@gmail.com>
 
-# This file is source by .bashrc
+# This file is source by .zshrc
 
 # ff or za to toggle folds.
 # ag to grep for aliases.
-# cag to grep for everything in this file. 
+# cag/bag to grep for everything in this file. 
 # Example:
 # ag vim    will list all aliases that contains 'vim'
-# cag vim   will list all accourences of 'vim' in this file.
-
-unalias -a
+# cag vim or bag vim   will list all accourences of 'vim' in this file.
 #-----------------------------------------------------------}}}
 
 #--- audio ------------------------------------------------{{{
@@ -24,7 +24,7 @@ alias vol='pavucontrol &'
 alias bl='bash --login'
 alias zl='zsh --login'
 alias sl='echo "Shell level = $SHLVL"'
-alias su='su root zsh'
+#alias su='su root zsh'
 #---------------------------------------------------------}}}
 
 #--- directories ---{{{
@@ -77,7 +77,7 @@ alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
 # arch:
 alias u='sudo pacman --noconfirm -Syyu'
-alias i='sudo pacman --noconfirm -S '
+alias i='sudo pacman -Syyu '
 alias pm='sudo pacman '
 # }}}
 

@@ -17,9 +17,11 @@
 
 #### Q  --query
 
-    list all installed programs: 
+    list all files owned by a given pkg.
     pm -Ql                  (pm = my alias for: sudo pacman)
 
+    display pkgs that are members of a named group: 
+    pm -Qg
 
 #### T  --deptest
 
@@ -33,5 +35,43 @@
 ### [options]
 
     -v  --verbose
+
+
+
+
+---
+
+
+#### paccache
+
+    remove all pacman cache, except the 3 most recent
+    s paccache -r
+
+---
+
+
+#### pactree
+
+    view dependency tree of a package:
+    pactree <pkg_name>
+    e.g.
+    pactree librewolf
+
+
+---
+
+
+#### logs
+
+    bat /var/log/pacman.log
+    vim /var/log/pacman.log
+   
+
+---
+
+
+#### conf
+
+    sudo vim /etc/pacman.conf 
 
 
