@@ -96,6 +96,7 @@ alias vi='vim'
 alias ea='vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
+alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
 alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
@@ -122,7 +123,7 @@ alias gv='gvim '
 # clear screen:
 alias cs='clear'
 alias nf="clear && neofetch && sl"
-alias wnf="watch --color neofetch"
+alias wnf="watch --color -n15 neofetch"
 
 alias st='st'
 alias lf='lf'
@@ -177,7 +178,7 @@ alias or='openbox --reconfigure'
 
 #--- network -----------------------------------------------{{{
 alias ip="ip -color=auto"
-alias wip='watch --color -n1 ip -color a'
+alias wip='watch --color -n15 ip -color a'
 #-----------------------------------------------------------}}}
 
 #--- make --------------------------------------------------{{{

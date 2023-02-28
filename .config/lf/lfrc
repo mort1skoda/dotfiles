@@ -1,6 +1,5 @@
 
 
-
 #--- options -----------------------------------------{{{
 set autoquit on 
 set shell sh 
@@ -26,32 +25,33 @@ set previewer /home/m/.config/lf/batc.sh
 #.....................................................}}}
 
 
-
 #--- git -------------------------------------------------------{{{
 map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
 map ga ${{clear; git add --all; echo "press ENTER"; read ENTER}}
 #...............................................................}}}
 
 
-
-# use enter for shell commands
+# use enter for shell commands{{{
 map <enter> shell-wait
 #map <c-enter> !echo '!echo enter'
 #map <enter> !echo '!!!! echo enter !!!!'
+# }}}
 
 
-
-# execute current file (must be executable)
+# execute current file (must be executable){{{
 map x $$f
 map X !$f
+# }}}
 
 
-# dedicated keys for file opener actions
+# dedicated keys for file opener actions{{{
 #map o &mimeopen $f
 map O $mimeopen --ask $f
 map o :open $f
+# }}}
 
-# define a custom 'open' command
+
+# define a custom 'open' command{{{
 # This command is called when current file is not a directory. You may want to
 # use either file extensions and/or mime types here. Below uses an editor for
 # text files and a file opener for the rest.
@@ -61,13 +61,16 @@ cmd open &{{
         *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
+# }}}
 
-# define a custom 'rename' command without prompt for overwrite
+
+# define a custom 'rename' command without prompt for overwrite{{{
 # cmd rename %[ -e $1 ] && printf "file exists" || mv $f $1
 # map r push :rename<space>
+# }}}
 
 
-
+#--- extract and compress ---{{{
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
 cmd extract ${{
@@ -99,7 +102,7 @@ cmd zip ${{
     zip -r $1.zip $1
     rm -rf $1
 }}
-
+# }}}
 
 
 #--- yank delete change paste undo ------------------------{{{
@@ -121,7 +124,6 @@ cmd trash %set -f; mv $fx ~/.trash
 #----------------------------------------------------------}}}
 
 
-
 #--- source quit ---------------------------------{{{
 map <c-s> so
 cmd so :{{
@@ -135,10 +137,8 @@ map q :quit
 #.................................................}}}
 
 
-
 #--- statusline -----------------------------------------{{{
-:echo 'Welcome to lf - list files'
+:echo 'Welcome to lf'
 #--------------------------------------------------------}}}
-
 
 

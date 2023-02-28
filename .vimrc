@@ -1,16 +1,15 @@
 " echom"~/.vimrc"
 
-
 "--- ~/.vimrc -------------------------------------------------{{{
 " Author: Morty Hawk <mort1skoda@gmail.com>
 " Email:  <mort1skoda@gmail.com>
 "         <mort1prog@gmail.com>
 
 " News:
-" <S-j> scroll down
-" <S-k> scroll up
-" <S-h> FREE
-" <S-l> FREE
+" <S-j> down {
+" <S-k> up }
+" <S-h> = 0 = beginning of line
+" <S-l> = $ = end of line
 
 " <c-j> toggle panes
 " <c-k> FREE
@@ -18,30 +17,16 @@
 " <c-l> resize panes H
 " ,ss = :source ~/:vimrc
 
-" ,ebp = edit .bash_profile
-" @f create fold
-" ,fo create fold
+" ,ezp = edit .zprofile
+" zf create fold
 
 " TODO:
 " Add support for ,lf   
 
 " Debug:
-" see dbgvim  in .bash_aliases
+" see dbgvim in .bash_aliases
 " alias dbgvim="vim -V20 2>&1 | tee vim.log.vim
 "-------------------------------------------------------------}}}
-
-
-"--- environment --------------------{{{
-let $BASH_PROFILE  = '~/.bash_profile'
-let $BASHRC        = '~/.bashrc'
-let $BASH_ALIASES  = '~/.bash_aliases'
-let $VIMRC         = '~/.vimrc'
-let $VIFMRC        = '~/.vifm/vifmrc.vim' 
-let $TMUX          = '~/.tmux.conf'
-
-let $BASH_ENV      = "~/.bash_aliases"
-"------------------------------------}}}
-
 
 "--- folds -------------------{{{
 set foldmethod=marker
@@ -50,13 +35,11 @@ nnoremap fc zm:echo"fc=folds close all"<cr>
 nnoremap fo zr:echo"fo=folds open all"<cr>
 "-----------------------------}}}
 
-
 "--- cursor --------------------{{{
 let &t_EI = "\<Esc>[1 q"    " Block cursor in normal mode
 let &t_SR = "\<Esc>[3 q"    " Vertikal cursor in insert mode
 let &t_SI = "\<Esc>[5 q"    " Horizontal cursr in Replace mode
 "-------------------------------}}}
-
 
 "--- settings --------------------------------------------------------------------{{{
 let mapleader = ","     " mapleader = ,
@@ -146,7 +129,6 @@ nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
 
 "--------------------------------------------end-of-settings-----------------------------}}}
 
-
 "--- movements -----------------------------------------------------------------{{{
 nnoremap 0 0:echo"0 = beginning of line"<cr>
 nnoremap $ $:echo"$ = end of line"<cr>
@@ -159,8 +141,8 @@ nnoremap o o<esc>:echo"o = open line below"<cr>
 nnoremap O O<esc>:echo"O = Open line above"<cr>
 
 " speed up scrolling
-nnoremap <S-j> }:echo 'shift-j = 4j down'<CR>
-nnoremap <S-k> {:echo 'shift-k = 4k up'<CR>
+nnoremap <S-j> }:echo 'shift-j = } down'<CR>
+nnoremap <S-k> {:echo 'shift-k = { up'<CR>
 nnoremap <S-l> $:echo 'shift-l = end of line'<CR>
 nnoremap <S-h> 0:echo 'shift-h = beginning of line'<CR>
 
@@ -168,7 +150,6 @@ nnoremap <S-h> 0:echo 'shift-h = beginning of line'<CR>
 nnoremap gg gg:echo"gg=top of page"<cr>
 nnoremap G G:echo"G=bottom of page"<cr>
 "-------------------------------------------------------------------------------}}}
-
 
 "--- panes ------------------------------------------------------{{{
 set splitright
@@ -184,7 +165,6 @@ inoremap <c-k> <esc><c-w>h:echo"ctrl-k = left pane"<cr>
 nnoremap <c-l> <c-w><:echo'Resize pane <'<CR>
 nnoremap <c-H> <c-w>>:echo'Resize pane >'<CR>
 "----------------------------------------------------------------}}}
-
 
 "--- yank delete change paste undo ------------------------{{{
 nnoremap yy yy:echo"yy=yank one line"<cr>
@@ -232,16 +212,29 @@ nnoremap <tab> i<tab><esc>:echo"-- NORMAL -- tab=insert tab=4spaces"<cr>
 nnoremap u u:echo"u=undo"<cr>
 "----------------------------------------------------------}}}
 
+"--- environment --------------------{{{
+let $BASH_PROFILE  = '~/.bash_profile'
+let $BASHRC        = '~/.bashrc'
+let $BASH_ALIASES  = '~/.bash_aliases'
+let $VIMRC         = '~/.vimrc'
+let $VIFMRC        = '~/.vifm/vifmrc.vim' 
+let $TMUX          = '~/.tmux.conf'
+let $BASH_ENV      = "~/.bash_aliases"
+let $ZSH_ENV       = "~/.bash_aliases"
+"------------------------------------}}}
 
 "--- edit resources -----------------------------------------------{{{
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
-nnoremap <Leader>eb :vs $BASHRC <CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ezp :vs ~/.zprofile<cr>:echo expand('%:p')<cr>
+nnoremap <Leader>eb :vs $BASHRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ez :vs .zshrc<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ea :vs $BASH_ALIASES<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ev :vs $VIMRC  <CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ef :vs $VIFMRC <CR>:echo expand('%:p')<CR>
-nnoremap <Leader>et :vs $TMUX   <CR>:echo expand('%:p')<CR>
+nnoremap <Leader>evf :vs $VIMRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ef :vs $VIFMRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>elf :vs ~/.config/lf/lfrc<CR>:echo expand('%:p')<CR>
 "------------------------------------------------------------------}}}
-
 
 "--- compiling -------------------------------------{{{
 nnoremap <Leader>mh :!make help<CR>
@@ -252,12 +245,10 @@ nnoremap <Leader>mr :!make run<CR>
 nnoremap <Leader>md :!make dbg<CR>
 "---------------------------------------------------}}}
 
-
 "--- open programs -----------------------------{{{
 " TODO: ,lf to open lf
-nnoremap <Leader>ex :Lexplore<CR>7<C-w>
+nnoremap <Leader>fm :Lexplore<CR>7<C-w>
 "-----------------------------------------------}}}
-
 
 "--- comments ----------------------------------{{{
 " ,ch = leader comment hash
@@ -273,7 +264,6 @@ let @c = "I// \<Esc>j"
 let @u = "I\<Del>\<Del>\<Del>\<Esc>j"
 "-----------------------------------------------}}}
 
-
 "--- @ macros --------------------------------------------------------{{{
 " @p printf("
 let @p = "Iprintf(\""
@@ -281,7 +271,6 @@ let @p = "Iprintf(\""
 " @f for(int i = 0; i < 10; i++){
 let @o = "I\<TAB>for(int i = 0; i < 10; i++){\<esc>I\<tab>\<tab>"
 "---------------------------------------------------------------------}}}
-
 
 "--- scripts autogroup autocmd ------------------------------{{{
 " This will enable code folding.
@@ -324,7 +313,6 @@ colorscheme gruvbox
 "################ dracula DRACULA ###########
 "----------------------------------------------------------}}}
 
-
 "--- esc save source quit ------------------------------------------------------{{{
 set noesckeys
 set ttimeout
@@ -350,7 +338,6 @@ cnoremap <c-q> <ESC>:wq<cr>
 nnoremap q :q<cr><esc>
 "----------------------------------------------------------------------------------}}}
 
-
 "--- statusline -----------------------------------{{{
 set statusline=
 set laststatus=2
@@ -358,5 +345,4 @@ set laststatus=2
 "set statusline+=%=
 "set statusline+=row:%l\ col:%c\ percent:%p%%
 "--------------------------------------------------}}}
-
 

@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/m'
 let g:netrw_dirhist_2='/home/m/.vifm'
 let g:netrw_dirhist_1='/home/m'
