@@ -17,13 +17,13 @@
 
 #### -- install xorg
 
-    lspci | g vga
-    pacman -Ss xf86-video
+    i xorg-server
+    i xorg-xinit
+    i xterm
 
-    pi xf86-video-intel
-    pi xorg
-    pi xorg-xinit
-    (((pi xterm)))
+    lspci | g vga
+    pm -Ss xf86-video
+    i xf86-video-intel
 
 
 
