@@ -6,14 +6,17 @@ unalias -a
 # Author: Morty Hawk
 # Email.: <mort1skoda@gmail.com>
 
-# This file is source by .zshrc
+# This file is to be sourced by .zshrc or .bashrc
 
 # ff or za to toggle folds.
+# fc close all folds
+# fo open all folds
 # ag to grep for aliases.
 # cag/bag to grep for everything in this file. 
 # Example:
 # ag vim    will list all aliases that contains 'vim'
 # cag vim or bag vim   will list all accourences of 'vim' in this file.
+# TODO: change name to .ali
 #-----------------------------------------------------------}}}
 
 #--- audio ------------------------------------------------{{{
@@ -93,7 +96,7 @@ alias rm='rm -vrf '
 #--- edit files ------------------------------------------------{{{
 alias v='vim'
 alias vi='vim'
-alias ea='vim ~/.bash_aliases && source ~/.bash_aliases'
+alias ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
 alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
@@ -111,6 +114,7 @@ alias sbp='source ~/.bash_profile'
 alias sb='source ~/.bashrc'
 alias sa='source ~/.bash_aliases'
 alias sz='source ~/.zshrc'
+alias szp='source ~/.zprofile'
 # ---------------------------------------}}}
 
 #--- start programs -------------------------------------------------{{{
