@@ -16,6 +16,8 @@ ln -svf /dat.mnt/dotfiles/.lynxrc        ~
 ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
 ln -svf /dat.mnt/dotfiles/.vimrc         ~
 ln -svf /dat.mnt/dotfiles/.xinitrc       ~
+ln -svf /dat.mnt/dotfiles/.zlogout       ~
+ln -svf /dat.mnt/dotfiles/.zprofile      ~
 ln -svf /dat.mnt/dotfiles/.zshrc         ~
 ln -svf /dat.mnt/dotfiles/dotf.update.sh ~
 sudo ln -svf /dat.mnt/dotfiles/etc.vconsole.conf /etc/vconsole.conf
