@@ -10,6 +10,7 @@ UUID=cca3e2d9-56c1-4e4e-bb14-27c06546f891      none        swap    defaults     
 
 
 
+# blkid /dev/sda7:
 # /dev/sda7: LABEL="arch2" UUID="5277a717-4b39-d901-0056-a1174b39d901" BLOCK_SIZE="2048" TYPE="ext4" PARTUUID="0a0bf3d8-07"
 UUID="5277a717-4b39-d901-0056-a1174b39d901"    /dat.mnt    ext4    rw             0      0
 

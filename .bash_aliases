@@ -62,11 +62,11 @@ alias rd='rmdir -p'
 alias ag='alias | grep -i --color '
 alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
-alias hg='cat .bash_history | grep -i '
+alias hg='cat ~/.bash_history | grep -i '
 # }}}
 
 #--- shortcuts ---{{{
-alias b='/home/m/.config/lf/batc.sh '
+alias b='~/.config/lf/batc.sh '
 alias c='cat '
 alias e="echo "
 alias g='grep -i --color=auto '

@@ -3,7 +3,7 @@
 #### asus k50
 
 
-#### prep -----------------------------------------------------{{{
+#### -- prep -----------------------------------------------------{{{
 
 #### download iso
 
@@ -50,7 +50,7 @@ but the entry with the iso file you downloaded.
 #### ..........................................................}}}
 
 
-#### boot the live environment ------------------{{{
+#### -- boot the live environment ------------------{{{
     asus k50 spam ESC, select boot device
 
 ---> provide image of archlinux live boot screen <---
@@ -61,21 +61,21 @@ but the entry with the iso file you downloaded.
 #### -- initial settings -----------------------{{{
 
     loadkeys no
+    setfont drdos8x14
     set -o vi
     alias l='ls -la --color --group-directories-first'
     passwd
 
-    cd ~
-    mkdir sda7
-    mount /dev/sda7 sda7
-    cd sda7/dat.mnt/dotfiles
-    cp -r .* ~
-    cd ~
+    cd /
+    mkdir /dat.mnt
+    mount /dev/sda7 /dat.mnt
+    cd /dat.mnt/dotfiles
+    ./create.symlinks.sh
     tm          #start tmux 
 #### -- ------- -------- -----------------------}}}
 
 
-#### -- connect to internet --------------------{{{
+#### -- connect to wifi --------------------{{{
 
     in tmux:
     one pane for: 
@@ -92,14 +92,16 @@ but the entry with the iso file you downloaded.
     ping -c4 archlinux.org
 
     Option2 ---> using wpa_supplicant:
-    wpa_passphrase "103B 2.4" "sdbyorgufjuad" >> /etc/wpa_supplicant/wlan0.conf
+    cd /etc/wpa_supplicant
+    wpa_passphrase "103B 2.4" "sdbyorguf...." >> wlan0.conf
     wpa_supplicant -B -iwlan0 -c/etc/wpa_supplicant/wlan0.conf
     ip a
     ping -c4 archlinux.org
 
     Option3 ???? can we use networkmanager here? 
 
-
+    pm -S htop
+    htop
 #### -- ------- -- -------- --------------------}}}
 
 
@@ -116,7 +118,7 @@ but the entry with the iso file you downloaded.
 #### -- work via ssh client --------------------{{{
 
     rm .ssh
-    ssh root@10.0.0.56
+    ssh root@10.0.0.90
     set -o vi
     alias l='ls -la --color --group-directories-first'
 #### -- ---- --- --- ------ --------------------}}}
@@ -131,6 +133,7 @@ but the entry with the iso file you downloaded.
     fdisk /dev/<the_disk_to_be_partitioned>
 
 <pre>
+Note:
 At this point I went into Windows 10 and run MiniTool Partition Wizard
 To make a swap partition and 3 linux installation partitons.
 </pre>
@@ -141,7 +144,8 @@ To make a swap partition and 3 linux installation partitons.
 
     lsblk
     mkswap /dev/sda5
-    mkfs.ext4 /dev/sda8
+    mkfs.ext4 /dev/sda6
+    lsblk    
 
 ---
 
@@ -156,21 +160,24 @@ Provide an image here to see the layout of the ssd on asus.k50
 
     lsblk
     swapon /dev/sda5
-    mount /dev/sda8 /mnt
+    mount /dev/sda6 /mnt
     lslbk
+    l /mnt
 #### -- ----- --- ---- ------ ----------------}}}
 
 
 #### -- pacstrap -------------------------------{{{
 
-    lscpu | gdat.mnt -i Vendor
-    pacstrap -K /mnt intel-ucode
-    pacstrap -K /mnt base base-devel
-    pacstrap -K /mnt linux linux-firware
-    pacstrap -K /mnt vim sudo openssh 
-    pacstrap -K wpa_supplicant dhcpcd
+    watch -n10 ls -la /mnt
+    lscpu |g Vendor
+    pacstrap -iK /mnt intel-ucode
+    pacstrap -iK /mnt base base-devel
+    pacstrap -iK /mnt linux linux-firware
+    pacstrap -iK /mnt vim sudo zsh bat
+    pacstrap -iK wpa_supplicant dhcpcd
 
-
+    pacstrap -iK /mnt openssh 
+    
     #pacstrap -K /mnt networkmanager
         
 #### -- -------- ------------------------------}}} 
@@ -181,6 +188,11 @@ Provide an image here to see the layout of the ssd on asus.k50
     cat /mnt/etc/fstab
     genfstab -U /mnt >> /mnt/etc/fstab
     cat /mnt/etc/fstab
+
+    add dat.mnt:
+    blkid /dev/sda7
+    blkid /dev/sda7 >> /mnt/etc/fstab
+    manually edit fstab...    
 #### -- ----- --------------------------------}}}
 
 
@@ -189,17 +201,16 @@ Provide an image here to see the layout of the ssd on asus.k50
     arch-chroot /mnt
     set -o vi
     alias l='ls -la --color --group-directories-first'
-#### -- ------ ---------------------------------}}}
-
-
-#### -- data directory -----------{{{
-" create a directory where I can mount common data,
-" ntfs to be shared with linux and windows.
 
     cd /
-    mkdir dat.mnt
-    pacman -S ntfs-3g
-#### .. .... ........ ............}}}
+    mkdir /dat.mnt
+    pacman -S zsh
+    mount /dev/sda7 /dat.mnt
+    lsblk
+    cd /dat*/dot*
+    ./create.symlinks.sh    
+    zsh
+#### -- ------ ---------------------------------}}}
 
 
 #### -- time zone ------------------------------{{{
@@ -216,8 +227,8 @@ Provide an image here to see the layout of the ssd on asus.k50
     locale-gen
 
     vim /etc/locale.conf    [LANG=en_US.UTF-8]   (esc then shift zz to quit)
-    vim /etc/vconsole.conf  [KEYMAP=no]
-    
+
+    this is in dotfiles - vim /etc/vconsole.conf  [KEYMAP=no]
     setfont drdos8x14
 
 #### -- ----------- ----------------------------}}}
@@ -284,7 +295,7 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- connect to wifi -----------------------{{{
 
    Using wpa_supplicant:
-    wpa_passphrase "103B 2.4" "sdbyorgufjuad"\
+    wpa_passphrase "103B 2.4" "sdbyorguf...."\
         >> /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
     wpa_supplicant -B -iwlp2s0\
         -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
@@ -293,7 +304,7 @@ Provide an image here to see the layout of the ssd on asus.k50
 
    Or using networkmanager:
     nmcli device wifi list
-    nmcli device wifi connect '103B 2.4' password sdbyorgufjuad
+    nmcli device wifi connect '103B 2.4' password sdbyorguf....
 
 
     ip -color a
@@ -325,7 +336,7 @@ Provide an image here to see the layout of the ssd on asus.k50
 
 #### -- git ---------------------------------{{{
 
-    sudo mount /dev/sda3 /dat.mnt
+    sudo mount /dev/sda7 /dat.mnt
     sudo pacman -S git github-cli
     sudo mkdir dat.mnt/
     sudo chown -R m:m /dat.mnt

@@ -1,7 +1,7 @@
 echo "~/.zprofile"
 
 #--- wifi -----------------------------{{
-sudo rfkill unblock wifi
+#sudo rfkill unblock wifi
 #sudo systemctl start dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 #sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
