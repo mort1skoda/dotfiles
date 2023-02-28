@@ -1,6 +1,10 @@
 ## fonts
 ### X11 
 
+There are two kinds of fonts in X11: server-side (drawn by the X server,
+shown in xlsfonts) and client-side (drawn by the application, shown in
+fc-list).  
+
 #### find info
 
    [arch-fonts](https://wiki.archlinux.org/title/fonts) 
