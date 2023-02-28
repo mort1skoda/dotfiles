@@ -338,6 +338,8 @@ Provide an image here to see the layout of the ssd on asus.k50
 
     sudo mount /dev/sda7 /dat.mnt
     sudo pacman -S git github-cli
+    gh auth login
+
     sudo mkdir dat.mnt/
     sudo chown -R m:m /dat.mnt
     cd /dat*/dot*
