@@ -138,6 +138,7 @@ alias sf='surf https://suckless.org &'
 alias siv='nsxiv'
 alias cal='cal -3m'
 alias wtr='curl wttr.in/Porsgrunn'
+alias lx='lxterminal &'
 #--------------------------------------------------------------------}}}#
 
 #--- git ---------------------------------------------------{{{

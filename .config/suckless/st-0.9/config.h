@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 //static char *font = "monospace:pixelsize=11:antialias=true:autohint=true";
-static char *font = "Ubuntu Mono Nerd Font:pixelsize=11:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=11:antialias=true:autohint=true";
 //static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 // adobe-courier-medium-o-normal--10-100-75-75-m-60-iso10646-1
 static int borderpx = 2;
