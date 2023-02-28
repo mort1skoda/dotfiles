@@ -3,8 +3,7 @@
 #### asus k50
 
 
-
-#### prep ####################################################{{{
+#### prep -----------------------------------------------------{{{
 
 #### download iso
 
@@ -29,7 +28,7 @@
 <pre>
 Open b2sums.txt and sha256sums.txt,
 open the files and remove remove all lines,
-exept for the entry with the iso file you downloaded.
+but the entry with the iso file you downloaded.
 </pre>
 
 #### verify signature
@@ -51,14 +50,12 @@ exept for the entry with the iso file you downloaded.
 #### ..........................................................}}}
 
 
-
 #### boot the live environment ------------------{{{
     asus k50 spam ESC, select boot device
 
 ---> provide image of archlinux live boot screen <---
 
 #### --------------------------------------------}}}
-
 
 
 #### -- initial settings -----------------------{{{
@@ -76,7 +73,6 @@ exept for the entry with the iso file you downloaded.
     cd ~
     tm          #start tmux 
 #### -- ------- -------- -----------------------}}}
-
 
 
 #### -- connect to internet --------------------{{{
@@ -107,7 +103,6 @@ exept for the entry with the iso file you downloaded.
 #### -- ------- -- -------- --------------------}}}
 
 
-
 #### -- work on the host -----------------------{{{
 
     Switch between tty1-6: Alt+arrow
@@ -118,7 +113,6 @@ exept for the entry with the iso file you downloaded.
 #### -- ---- -- --- ---- -----------------------}}}
 
 
-
 #### -- work via ssh client --------------------{{{
 
     rm .ssh
@@ -126,7 +120,6 @@ exept for the entry with the iso file you downloaded.
     set -o vi
     alias l='ls -la --color --group-directories-first'
 #### -- ---- --- --- ------ --------------------}}}
-
 
 
 #### -- partiton ----------------------------{{{
@@ -144,7 +137,6 @@ To make a swap partition and 3 linux installation partitons.
 #### -- -------- ----------------------------}}}
 
 
-
 #### -- format ------------------------------{{{
 
     lsblk
@@ -160,7 +152,6 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ------- -----------------------------}}}
 
 
-
 #### -- mount the file system ----------------{{{
 
     lsblk
@@ -168,7 +159,6 @@ Provide an image here to see the layout of the ssd on asus.k50
     mount /dev/sda8 /mnt
     lslbk
 #### -- ----- --- ---- ------ ----------------}}}
-
 
 
 #### -- pacstrap -------------------------------{{{
@@ -186,7 +176,6 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- -------- ------------------------------}}} 
 
 
-
 #### -- fstab --------------------------------{{{
 
     cat /mnt/etc/fstab
@@ -195,14 +184,12 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ----- --------------------------------}}}
 
 
-
 #### -- chroot ---------------------------------{{{
 
     arch-chroot /mnt
     set -o vi
     alias l='ls -la --color --group-directories-first'
 #### -- ------ ---------------------------------}}}
-
 
 
 #### -- data directory -----------{{{
@@ -215,13 +202,11 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### .. .... ........ ............}}}
 
 
-
 #### -- time zone ------------------------------{{{
 
     ln -svf /usr/share/zoneinfo/Europa/Oslo /etc/localtime
     hwclock --systohc
 #### -- ---- ---- ------------------------------}}}
-
 
 
 #### -- localiztion ----------------------------{{{
@@ -236,7 +221,6 @@ Provide an image here to see the layout of the ssd on asus.k50
     setfont drdos8x14
 
 #### -- ----------- ----------------------------}}}
-
 
 
 #### -- network confiuration -------------------{{{
@@ -257,12 +241,10 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ------- ------------ -------------------}}}
 
 
-
 #### -- root password --------------------------{{{
 
     passwd
 #### -- ---- -------- --------------------------}}}
-
 
 
 #### -- bootloader ----------------------------{{{
@@ -271,7 +253,7 @@ Provide an image here to see the layout of the ssd on asus.k50
 
     grub-install --target=i386-pc /dev/sda
 
-    vim /etc/default/grub   [uncomment: GRUB_DISABLE_OS_PROBER=false] 
+    # vim /etc/default/grub   [uncomment: GRUB_DISABLE_OS_PROBER=false] 
 
     grub-mkconfig -o /boot/grub/grub.cfg
 
@@ -283,14 +265,12 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ---------- ----------------------------}}}
 
 
-
 #### -- reboot --------------------------------{{{
 
     ctrl-d
     umount -R /mnt
     reboot
 #### -- ------ --------------------------------}}}
-
 
 
 #### -- first time reboot settings ------------{{{
@@ -301,7 +281,6 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ----- ---- ------ -------- ------------}}}    
 
 
-
 #### -- connect to wifi -----------------------{{{
 
    Using wpa_supplicant:
@@ -310,7 +289,7 @@ Provide an image here to see the layout of the ssd on asus.k50
     wpa_supplicant -B -iwlp2s0\
         -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 
-    see my .bash_profile file
+    see my .zprofile or .bash_profile file
 
    Or using networkmanager:
     nmcli device wifi list
@@ -322,7 +301,6 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ------- -- ---- -----------------------}}}
 
 
-
 #### -- useradd ------------------------------{{{
 
     useradd -mG wheel m
@@ -330,14 +308,12 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- --- ---- -----------------------------}}}
 
 
-
 #### -- visudo -------------------------------{{{
 
     EDITOR=/usr/bin/vim visudo
         [add at top: Defaults editor=/usr/bin/vim]
-        [uncomment %wheel
+        [uncomment %wheel]
 #### -- ------ -------------------------------}}}
-
 
 
 #### -- logout login ------------------------{{{
@@ -347,32 +323,29 @@ Provide an image here to see the layout of the ssd on asus.k50
 #### -- ------ ----- ------------------------}}}
 
 
-
 #### -- git ---------------------------------{{{
 
+    sudo mount /dev/sda3 /dat.mnt
     sudo pacman -S git github-cli
     sudo mkdir dat.mnt/
     sudo chown -R m:m /dat.mnt
-
     cd /dat*/dot*
 
     (((git clone https://github.com/mort1skoda/dotfiles.git)))
 #### -- --- ---------------------------------}}} 
 
 
+#### -- create symlinks ---------------------------{{{
 
-#### create symlinks ---------------------------{{{
-
-   "Integrate your archlinux installation with your dotfiles dat.mnto"
+   "Integrate your archlinux installation with your dotfiles dat.mnt"
    
-   Create symlink in ~ that point to
-   /dat.mnt/dotfiles.
+   Create symlink in ~ that points to
+   /dat.mnt/dotfiles/
 
-There is a bash (sh) file in /dat.mnt/dotfiles/ named:
-dotf.symlinks.sh that creates theese symlinks.
+There is a shell-script file (.sh) in /dat.mnt/dotfiles/ named:
+create.symlinks.sh that creates theese symlinks.
 
-    ./dat.mnt/dotfiles/dotf.symlinks.sh
-#### ------ -------- ---------------------------}}}
-
+    ./dat.mnt/dotfiles/create.symlinks.sh
+#### -- ------ -------- ---------------------------}}}
 
 
