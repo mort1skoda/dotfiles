@@ -12,7 +12,7 @@ sudo ip link set enp3s0 down
 
 
 VAR=$(ps s -A |grep 'wpa_supplicant -s -B' | grep -v 'grep wpa_supplicant')
-echo $VAR
+#echo $VAR
 
 if [[ -z $VAR ]];then
     echo "no wpa_supplicant running, I will start it"
