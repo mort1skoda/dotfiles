@@ -136,6 +136,8 @@ alias ff='firefox &'
 alias lw='librewolf &'
 alias sf='surf https://suckless.org &'
 alias siv='nsxiv'
+alias cal='cal -3m'
+alias wtr='curl wttr.in/Porsgrunn'
 #--------------------------------------------------------------------}}}#
 
 #--- git ---------------------------------------------------{{{
