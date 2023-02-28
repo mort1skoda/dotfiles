@@ -5,6 +5,7 @@
 # do NOT run as root, run as a regular user!
 
 ln -svf /dat.mnt/dotfiles/.config        ~
+ln -svf /dat.mnt/dotfiles/install.readme ~
 ln -svf /dat.mnt/dotfiles/.vifm          ~
 ln -svf /dat.mnt/dotfiles/.vim           ~
 ln -svf /dat.mnt/dotfiles/.bash_aliases  ~
@@ -15,6 +16,7 @@ ln -svf /dat.mnt/dotfiles/.lynxrc        ~
 ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
 ln -svf /dat.mnt/dotfiles/.vimrc         ~
 ln -svf /dat.mnt/dotfiles/.xinitrc       ~
+ln -svf /dat.mnt/dotfiles/.zshrc         ~
 ln -svf /dat.mnt/dotfiles/dotf.update.sh ~
 sudo ln -svf /dat.mnt/dotfiles/etc.vconsole.conf /etc/vconsole.conf
 
@@ -32,5 +34,6 @@ sudo ln -svf /dat.mnt/dotfiles/.bashrc        /root
 sudo ln -svf /dat.mnt/dotfiles/.lynxrc        /root
 sudo ln -svf /dat.mnt/dotfiles/.tmux.conf     /root
 sudo ln -svf /dat.mnt/dotfiles/.vimrc         /root
+sudo ln -svf /dat.mnt/dotfiles/.zshrc         /root
 
 

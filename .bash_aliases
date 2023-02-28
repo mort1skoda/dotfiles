@@ -162,7 +162,7 @@ alias ud='/dat.mnt/dotfiles/dotf.update.sh'
 
 #--- tmux --------------------------------------------------{{{
 # tm = tmux, start a new tmux session
-alias tm="cd ~/ && tmux"
+alias tm="cd ~ && tmux"
 # tl = tmux list
 alias tl='tmux ls'
 # ta=tmux attach -t [enter session-name from tl]

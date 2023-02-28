@@ -1,8 +1,8 @@
 ## dotfiles
 
 <pre>
-put dotfiles in:
-/dat.mnt/dotfiles
+save all your dotfiles to:
+/dat.mnt/dotfiles/
 
 sudo mkdir /dat.mnt
 sudo chown -R m:m /dat.mnt
@@ -26,6 +26,11 @@ git add
 git commit
 git push
 
-So that updates are copied to github.
+or run:
+./dotf.update.sh
+or use the alias:
+ud  [update dotfiles]
+
+So that any changes are synced with github.
 </pre>
 

@@ -7,7 +7,6 @@
 # \param 2 is a hexadecimal RGB color code.
 function set_color {
 	if [ "$TERM" = "linux" ]; then
-	#if [ "$TERM" = "xterm-256color" ]; then
 		[ $1 -lt 16 ] && printf $'\e]P%X%s' "$1" "$2"
 	else
 		printf $'\e]4;%s;#%s\e\\' "$1" "$2"

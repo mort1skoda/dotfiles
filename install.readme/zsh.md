@@ -12,3 +12,8 @@
     chsh zsh
 
 
+#### ---- change shell for root
+
+    chsh -s /usr/bin/zsh
+
+

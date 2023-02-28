@@ -33,7 +33,7 @@ compinit
 # }}}
 
 #--- promtp {{{
-PS1="$fg[green]%}%~ %{$reset_color%}%"$'\n\n'""
+PS1="$fg[yellow]%}%~ %{$reset_color%}%"$'\n\n'""
 
 #red prompt for root
 if [ "$EUID" -eq 0 ]
