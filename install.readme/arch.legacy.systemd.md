@@ -9,6 +9,29 @@
 
    [download iso](https://archlinux.org/download)
 
+
+#### transmission
+
+    i transmission-cli
+
+    transmission-daemon --download-dir "/dat.mnt/Downloads"
+    (transmission-daemon --dump-settings)
+
+   start:
+
+    transmission-daemon
+    transmission-remote -a <torrent> or alias: trm -a <file>
+    trm -a archlinux.2023.03.01-x86_64.iso.torrent
+    watch -n10 transmission-remote -l
+
+   remove:
+
+    trm -t <ID> -r
+    trm -t all -r       (remove all)     
+
+    
+
+
 #### wget iso file
 
     wget https://mirrors.dotsrc.org/archlinux/iso/2023.02.01/archlinux-x86_64.iso

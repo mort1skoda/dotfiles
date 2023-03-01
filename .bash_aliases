@@ -139,6 +139,7 @@ alias siv='nsxiv'
 alias cal='cal -3m'
 alias wtr='curl wttr.in/Porsgrunn'
 alias lx='lxterminal &'
+alias ur='urxvt &'
 #--------------------------------------------------------------------}}}#
 
 #--- git ---------------------------------------------------{{{
@@ -186,6 +187,7 @@ alias or='openbox --reconfigure'
 #--- network -----------------------------------------------{{{
 alias ip="ip -color=auto"
 alias wip='watch --color -n15 ip -color a'
+alias trm='transmission-remote'
 #-----------------------------------------------------------}}}
 
 #--- make --------------------------------------------------{{{
@@ -205,15 +207,17 @@ alias dbgvim='vim -V20 2>&1 | tee vim.log.vim'
 
 # remove all packages that don't depend on other packages
 # you may have to do this over several times.
-alias nodep="pacman -Qdtq"
-alias qdtq='sudo pacman -R "$(pacman -Qdtq)" '
-
+alias Qdt="pacman -Qdt"
+alias Qdtq='sudo pacman -R "$(pacman -Qdtq)" '
+alias kill='sudo kill '
 #----------------------------------------------------------}}}
 
 #--- systemd -----------------------------------------------{{{
 alias ss='sudo systemctl status '
 alias se='sudo systemctl enable '
 alias st='sudo systemctl start '
+alias so='sudo systemctl stop '
+alias sd='sudo systemctl disable '
 #.........................................................}}}
 
 #--- quit reboot shutdown ---{{{

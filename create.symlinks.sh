@@ -20,7 +20,11 @@ ln -svf /dat.mnt/dotfiles/.zlogout       ~
 ln -svf /dat.mnt/dotfiles/.zprofile      ~
 ln -svf /dat.mnt/dotfiles/.zshrc         ~
 ln -svf /dat.mnt/dotfiles/dotf.update.sh ~
-sudo ln -svf /dat.mnt/dotfiles/etc.vconsole.conf /etc/vconsole.conf
+
+ln -svf /dat.mnt/Pictures             ~
+ln -svf /dat.mnt/Downloads            ~
+
+sudo ln -svf /dat.mnt/dotfiles/etc.vconsole.conf   /etc/vconsole.conf
 
 
 # comment next line if you want to copy to home of user root.
