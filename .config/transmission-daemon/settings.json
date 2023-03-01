@@ -16,7 +16,7 @@
     "cache-size-mb": 4,
     "default-trackers": "",
     "dht-enabled": true,
-    "download-dir": "dat.mnt/Downloads",
+    "download-dir": "/dat.mnt/Downloads",
     "download-queue-enabled": true,
     "download-queue-size": 5,
     "encryption": 1,

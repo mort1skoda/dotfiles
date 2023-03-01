@@ -39,6 +39,7 @@ alias .rr='cd /root && ls -la --color --group-directories-first'
 alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
 alias .dd='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
+alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
 
 # windows C:\ and D:\
 alias .wc='cd /mnt/c && ls -la --color --group-directories-first'
@@ -121,7 +122,7 @@ alias szp='source ~/.zprofile'
 alias ht="htop"
 alias vf='vifm /home/m /dat.mnt/'
 alias x='startx'
-alias a='alias' #list all aliases
+alias a='alias && alias | wc -l && echo "Total aliases" ' #list all aliases
 alias s='sudo'
 alias gv='gvim '
 # clear screen:

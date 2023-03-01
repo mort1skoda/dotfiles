@@ -3,14 +3,13 @@
 #### asus k50
 
 
-#### -- prep -----------------------------------------------------{{{
+#### -- pre-installation --------------------------------------------------{{{
 
 #### download iso
 
    [download iso](https://archlinux.org/download)
 
-
-#### transmission
+#### use transmission
 
     i transmission-cli
 
@@ -29,24 +28,23 @@
     trm -t <ID> -r
     trm -t all -r       (remove all)     
 
-    
-
+    also see: ~/.scripts/transmission.sh
 
 #### wget iso file
 
-    wget https://mirrors.dotsrc.org/archlinux/iso/2023.02.01/archlinux-x86_64.iso
+    wget https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-x86_64.iso
 
 #### wget sig file
 
-    wget https://mirros.dotsrc.org/archlinux/iso/2023.02.01/archlinux-x86_64.iso.sig
+    wget https://mirros.dotsrc.org/archlinux/iso/2023.03.01/archlinux-x86_64.iso.sig
 
 #### wget b2sums.txt
 
-    wget https://mirror.rackspace.com/archlinux/iso/2023.02.01/b2sums.txt
+    wget https://mirror.rackspace.com/archlinux/iso/2023.03.01/b2sums.txt
 
 #### wget sha256sums.txt
 
-    wget https://mirror.rackspace.com/archlinux/iso/2023.02.01/sha256sums.txt
+    wget https://mirror.rackspace.com/archlinux/iso/2023.03.01/sha256sums.txt
 
 <pre>
 Open b2sums.txt and sha256sums.txt,
@@ -67,9 +65,15 @@ but the entry with the iso file you downloaded.
     The below instruction will only work on an existing arch linux installation: 
     pacman-key -v archlinux-x86_64.iso.sig
 
+
 #### make bootable usb
 
     sudo dd bs=1M if=archlinux-x86_64.iso of=/dev/sdx conv=fsync oflag=direct status=progress
+   
+    or:
+ 
+    sudo usr/bin/cp arch*iso /dev/sdb
+ 
 #### ..........................................................}}}
 
 
