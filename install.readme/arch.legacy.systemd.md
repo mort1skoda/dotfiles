@@ -3,13 +3,12 @@
 #### asus k50
 
 
-#### -- pre-installation --------------------------------------------------{{{
-
-#### download iso
+#### use browser<!--{{{-->
 
    [download iso](https://archlinux.org/download)
+<!--}}}-->
 
-#### use transmission
+#### use transmission<!--{{{-->
 
     i transmission-cli
 
@@ -29,78 +28,69 @@
     trm -t all -r       (remove all)     
 
     also see: ~/.scripts/transmission.sh
+<!--}}}-->
 
-#### wget iso file
+#### use wget<!--{{{-->
 
     wget https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-x86_64.iso
+<!--}}}-->
 
-#### wget sig file
+#### signatures<!--{{{-->
 
     wget https://mirros.dotsrc.org/archlinux/iso/2023.03.01/archlinux-x86_64.iso.sig
-
-#### wget b2sums.txt
-
     wget https://mirror.rackspace.com/archlinux/iso/2023.03.01/b2sums.txt
-
-#### wget sha256sums.txt
-
     wget https://mirror.rackspace.com/archlinux/iso/2023.03.01/sha256sums.txt
 
 <pre>
-Open b2sums.txt and sha256sums.txt,
-open the files and remove remove all lines,
-but the entry with the iso file you downloaded.
+   Open b2sums.txt and sha256sums.txt,
+   open the files and remove remove all lines,
+   but the entry with the iso file you downloaded.
 </pre>
 
-#### verify signature
+<pre>
+   b2sum -c b2sums.txt | grep --color OK
+   sha256sum -c sha256sums.txt | grep --color OK
+   sudo pacman -S squoia-sq
+   sq wkd get pierre@archlinux.org > release-key.pgp
+   sq verify --signer-cert release-key.pgp --detached archlinux-x86_64.iso.sig archlinux-x86_64.iso
+   gpg --auto-key-locate clear,wkd -v --locate-external-key pierre@archlinux.org
+   gpg --keyserver-options auto-key-retrieve --verify archlinux-x86_64.iso.sig
 
-    b2sum -c b2sums.txt | grep --color OK
-    sha256sum -c sha256sums.txt | grep --color OK
-    sudo pacman -S squoia-sq
-    sq wkd get pierre@archlinux.org > release-key.pgp
-    sq verify --signer-cert release-key.pgp --detached archlinux-x86_64.iso.sig archlinux-x86_64.iso
-    gpg --auto-key-locate clear,wkd -v --locate-external-key pierre@archlinux.org
-    gpg --keyserver-options auto-key-retrieve --verify archlinux-x86_64.iso.sig
+   The below instruction will only work on an existing arch linux installation: 
+   pacman-key -v archlinux-x86_64.iso.sig
+</pre>
+<!--}}}-->
 
-    The below instruction will only work on an existing arch linux installation: 
-    pacman-key -v archlinux-x86_64.iso.sig
+#### make bootable usb<!--{{{-->
 
-
-#### make bootable usb
+    sudo usr/bin/cp arch*iso /dev/sdb
 
     sudo dd bs=1M if=archlinux-x86_64.iso of=/dev/sdx conv=fsync oflag=direct status=progress
-   
-    or:
- 
-    sudo usr/bin/cp arch*iso /dev/sdb
- 
-#### ..........................................................}}}
+   <!--}}}-->
 
 
 #### -- boot the live environment ------------------{{{
+
     asus k50 spam ESC, select boot device
 
----> provide image of archlinux live boot screen <---
-
 #### --------------------------------------------}}}
-
 
 #### -- initial settings -----------------------{{{
 
     loadkeys no
     setfont drdos8x14
     set -o vi
-    alias l='ls -la --color --group-directories-first'
-    passwd
-
-    cd /
+    chsh -s /bin/zsh
+    cd /    or just / + enter in zsh
     mkdir /dat.mnt
     mount /dev/sda7 /dat.mnt
     cd /dat.mnt/dotfiles
     ./create.symlinks.sh
     tm          #start tmux 
+    alt+v
+    ins*
+    v arc*leg*sys
 #### -- ------- -------- -----------------------}}}
-
 
 #### -- connect to wifi --------------------{{{
 
@@ -119,7 +109,7 @@ but the entry with the iso file you downloaded.
     ping -c4 archlinux.org
 
     Option2 ---> using wpa_supplicant:
-    cd /etc/wpa_supplicant
+    /etc/wpa*
     wpa_passphrase "103B 2.4" "sdbyorguf...." >> wlan0.conf
     wpa_supplicant -B -iwlan0 -c/etc/wpa_supplicant/wlan0.conf
     ip a
@@ -127,10 +117,10 @@ but the entry with the iso file you downloaded.
 
     Option3 ???? can we use networkmanager here? 
 
-    pm -S htop
+    i htop
     htop
+    i git  
 #### -- ------- -- -------- --------------------}}}
-
 
 #### -- work on the host -----------------------{{{
 
@@ -141,7 +131,6 @@ but the entry with the iso file you downloaded.
     Or use tmux and read this document. 
 #### -- ---- -- --- ---- -----------------------}}}
 
-
 #### -- work via ssh client --------------------{{{
 
     rm .ssh
@@ -149,7 +138,6 @@ but the entry with the iso file you downloaded.
     set -o vi
     alias l='ls -la --color --group-directories-first'
 #### -- ---- --- --- ------ --------------------}}}
-
 
 #### -- partiton ----------------------------{{{
 
@@ -166,7 +154,6 @@ To make a swap partition and 3 linux installation partitons.
 </pre>
 #### -- -------- ----------------------------}}}
 
-
 #### -- format ------------------------------{{{
 
     lsblk
@@ -182,7 +169,6 @@ Provide an image here to see the layout of the ssd on asus.k50
 
 #### -- ------- -----------------------------}}}
 
-
 #### -- mount the file system ----------------{{{
 
     lsblk
@@ -192,7 +178,6 @@ Provide an image here to see the layout of the ssd on asus.k50
     l /mnt
 #### -- ----- --- ---- ------ ----------------}}}
 
-
 #### -- pacstrap -------------------------------{{{
 
     watch -n10 ls -la /mnt
@@ -200,15 +185,13 @@ Provide an image here to see the layout of the ssd on asus.k50
     pacstrap -iK /mnt intel-ucode
     pacstrap -iK /mnt base base-devel
     pacstrap -iK /mnt linux linux-firware
-    pacstrap -iK /mnt vim sudo zsh bat
-    pacstrap -iK wpa_supplicant dhcpcd
+    pacstrap -iK /mnt wpa_supplicant dhcpcd
+    pacstrap -iK /mnt vim sudo zsh bat htop git github-cli
 
     pacstrap -iK /mnt openssh 
     
     #pacstrap -K /mnt networkmanager
-        
 #### -- -------- ------------------------------}}} 
-
 
 #### -- fstab --------------------------------{{{
 
@@ -221,7 +204,6 @@ Provide an image here to see the layout of the ssd on asus.k50
     blkid /dev/sda7 >> /mnt/etc/fstab
     manually edit fstab...    
 #### -- ----- --------------------------------}}}
-
 
 #### -- chroot ---------------------------------{{{
 
@@ -239,13 +221,11 @@ Provide an image here to see the layout of the ssd on asus.k50
     zsh
 #### -- ------ ---------------------------------}}}
 
-
 #### -- time zone ------------------------------{{{
 
     ln -svf /usr/share/zoneinfo/Europa/Oslo /etc/localtime
     hwclock --systohc
 #### -- ---- ---- ------------------------------}}}
-
 
 #### -- localiztion ----------------------------{{{
 
@@ -259,7 +239,6 @@ Provide an image here to see the layout of the ssd on asus.k50
     setfont drdos8x14
 
 #### -- ----------- ----------------------------}}}
-
 
 #### -- network confiuration -------------------{{{
 
@@ -278,12 +257,10 @@ Provide an image here to see the layout of the ssd on asus.k50
     systemctl enable sshd
 #### -- ------- ------------ -------------------}}}
 
-
 #### -- root password --------------------------{{{
 
     passwd
 #### -- ---- -------- --------------------------}}}
-
 
 #### -- bootloader ----------------------------{{{
 
@@ -302,7 +279,6 @@ Provide an image here to see the layout of the ssd on asus.k50
     grub-mkconfig -o /boot/grub/grub.cfg
 #### -- ---------- ----------------------------}}}
 
-
 #### -- reboot --------------------------------{{{
 
     ctrl-d
@@ -310,14 +286,12 @@ Provide an image here to see the layout of the ssd on asus.k50
     reboot
 #### -- ------ --------------------------------}}}
 
-
 #### -- first time reboot settings ------------{{{
 
     login as root
     set -o vi
     alias l='ls -la --color --group-directories-first'
 #### -- ----- ---- ------ -------- ------------}}}    
-
 
 #### -- connect to wifi -----------------------{{{
 
@@ -338,13 +312,11 @@ Provide an image here to see the layout of the ssd on asus.k50
     ping -c4 archlinux.org
 #### -- ------- -- ---- -----------------------}}}
 
-
 #### -- useradd ------------------------------{{{
 
     useradd -mG wheel m
     passwd m
 #### -- --- ---- -----------------------------}}}
-
 
 #### -- visudo -------------------------------{{{
 
@@ -353,13 +325,11 @@ Provide an image here to see the layout of the ssd on asus.k50
         [uncomment %wheel]
 #### -- ------ -------------------------------}}}
 
-
 #### -- logout login ------------------------{{{
 
     exit to logout
     login as m
 #### -- ------ ----- ------------------------}}}
-
 
 #### -- git ---------------------------------{{{
 
@@ -373,7 +343,6 @@ Provide an image here to see the layout of the ssd on asus.k50
 
     (((git clone https://github.com/mort1skoda/dotfiles.git)))
 #### -- --- ---------------------------------}}} 
-
 
 #### -- create symlinks ---------------------------{{{
 

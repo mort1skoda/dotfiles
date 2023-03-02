@@ -3,7 +3,7 @@
 DWNL_DIR="/dat.mnt/Downloads"
 cd $DWNL_DIR
 
-#sudo pacman -S wget transmission-cli
+sudo pacman -S wget transmission-cli
 
 YEARMONTH=$(date +"%Y.%m")
 echo 'YEARMONTH='$YEARMONTH
@@ -19,11 +19,9 @@ transmission-daemon --download-dir "$DWNL_DIR"
 transmission-daemon
 transmission-remote -a "arch-$YEARMONTH-iso.torrent"
 
-#watch -n10 transmission-remote -l
+wget https://mirros.dotsrc.org/archlinux/iso/$YEARMONTH.01/archlinux-x86_64.iso.sig
+wget https://mirror.rackspace.com/archlinux/iso/$YEARMONTH.01/b2sums.txt
+wget https://mirror.rackspace.com/archlinux/iso/$YEARMONTH.01/sha256sums.txt
 
-#transmission-remote -t all -r
-#transmission-remote -l
-#
-#ls -la | grep -i $1
 
 
