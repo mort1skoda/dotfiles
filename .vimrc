@@ -12,7 +12,7 @@
 " <S-l> = $ = end of line
 
 " <c-j> toggle panes
-" <c-k> FREE
+" <c-k> toggle panes
 " <c-h> resize panes L
 " <c-l> resize panes H
 " ,ss = :source ~/:vimrc
@@ -21,7 +21,7 @@
 " zf create fold
 
 " TODO:
-" Add support for ,lf   
+" Add support for ,lf   <leader>lf
 
 " Debug:
 " see dbgvim in .bash_aliases
@@ -33,6 +33,7 @@ set foldmethod=marker
 nnoremap ff za:echo"ff=fold toggle"<cr>
 nnoremap fc zm:echo"fc=folds close all"<cr>
 nnoremap fo zr:echo"fo=folds open all"<cr>
+vnoremap zf zf:echo"zf=create fold"<cr>
 "-----------------------------}}}
 
 "--- cursor --------------------{{{
