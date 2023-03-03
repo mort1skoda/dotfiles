@@ -13,6 +13,7 @@ ln -svf /dat.mnt/dotfiles/.bash_aliases  ~
 #ln -svf /dat.mnt/dotfiles/.bash_logout   ~
 #ln -svf /dat.mnt/dotfiles/.bash_profile  ~
 #ln -svf /dat.mnt/dotfiles/.bashrc        ~
+ln -svf /dat.mnt/dotfiles/.gitconfig     ~
 ln -svf /dat.mnt/dotfiles/.lynxrc        ~
 ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
 ln -svf /dat.mnt/dotfiles/.vimrc         ~
