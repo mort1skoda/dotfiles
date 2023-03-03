@@ -1,4 +1,6 @@
-#!/bin/zsh
+#!/bin/sh
+# This shell script can also be run with the
+# alias ud [update dotfiles]
 
 cd /dat.mnt/dotfiles
 
