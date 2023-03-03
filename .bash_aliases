@@ -105,7 +105,7 @@ alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
-alias edw='.dd && cd suckless/dwm-6*/ && vim config.h'
+#alias edw='.dd && cd suckless/dwm-6*/ && vim config.h'
 alias elf='vim ~/.config/lf/lfrc'
 alias et='vim ~/.tmux.conf'
 #---------------------------------------------------------------}}}
