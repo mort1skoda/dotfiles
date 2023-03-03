@@ -55,8 +55,8 @@ alias lg='ls -la --color --group-directories-first | grep -i --color '
 alias wl='watch --color ls -la --color --group-directories-first'
 
 # mkdir rmdir:
-alias md='mkdir -p'
-alias rd='rmdir -p'
+alias md='mkdir -pv '
+alias rd='rmdir -pv '
 # }}}
 
 #--- cat/bat then grep <token> ---{{{
@@ -172,7 +172,7 @@ alias ud='/dat.mnt/dotfiles/dotf.update.sh'
 
 #--- tmux --------------------------------------------------{{{
 # tm = tmux, start a new tmux session
-alias tm="cd ~ && tmux"
+alias tm="tmux"
 # tl = tmux list
 alias tl='tmux ls'
 # ta=tmux attach -t [enter session-name from tl]

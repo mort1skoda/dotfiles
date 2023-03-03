@@ -79,14 +79,14 @@
 
     loadkeys no
     setfont drdos8x14
-    set -o vi
     chsh -s /bin/zsh
-    cd /    or just / + enter in zsh
+    set -o vi
+    /
     mkdir /dat.mnt
     mount /dev/sda7 /dat.mnt
     cd /dat.mnt/dotfiles
     ./create.symlinks.sh
-    tm          #start tmux 
+    tm
     alt+v
     ins*
     v arc*leg*sys

@@ -2,6 +2,9 @@
 
 cd /dat.mnt/dotfiles
 
+git config --global user.email "mort1skoda@gmail.com"
+git config --global user.name "mort1skoda"
+
 git status
 git pull 
 
