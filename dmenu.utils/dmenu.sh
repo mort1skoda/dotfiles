@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+# Usage:
+# ./dmenu.sh <filname>
+# e.g.: ./dmenu.sh dm.disk
+#
 # Here we pipe the 1.st argument, a plain text file with options, into dmenu
 RES=$(cat $1 | dmenu)
 
