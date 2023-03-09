@@ -1,0 +1,11 @@
+blkid
+cfdisk
+df -h
+fdisk -l
+hwinfo --block --short
+inxi -D -xx
+lbl
+lsblk
+parted -l
+pydf
+sfdisk -l
