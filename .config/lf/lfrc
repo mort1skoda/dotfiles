@@ -18,6 +18,7 @@ set shellopts '-eu'
 # commands accordingly. }}}
 set ifs "\n"
 set hidden
+set info size:time
 # leave some space at the top and the bottom of the screen
 set scrolloff 10
 #set previewer ~/go/bin/pistol
@@ -38,7 +39,7 @@ map gaa ${{git add --all; git status --short; echo "press ENTER"; read ENTER}}
 
 
 #--- use enter for shell commands{{{
-#map <enter> shell-wait
+map <enter> shell-wait
 #map <c-enter> !echo '!echo enter'
 #map <enter> !echo '!!!! echo enter !!!!'
 # }}}
