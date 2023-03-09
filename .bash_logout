@@ -1,7 +1,8 @@
 echo "~/.bash_logout"
 
+SHL=$(($SHLVL-1))
 
-echo "Shell level: $SHLVL"
+echo "Shell level: $SHL"
 cd ~
 ./dotf.update.sh
 
