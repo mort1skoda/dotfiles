@@ -33,8 +33,11 @@ map gaa ${{git add --all; git status --short; echo "press ENTER"; read ENTER}}
 
 
 #--- movement ---{{{
-#map J 5j
-#map K 5k
+map J :half-down
+
+
+
+map K :half-up
 #}}}
 
 
