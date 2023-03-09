@@ -27,12 +27,18 @@ set previewer /home/m/.config/lf/batc.sh
 
 #--- git -------------------------------------------------------{{{
 map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
-map ga ${{clear; git add --all; echo "press ENTER"; read ENTER}}
+map gaa ${{git add --all; git status --short; echo "press ENTER"; read ENTER}}
 #...............................................................}}}
 
 
-# use enter for shell commands{{{
-map <enter> shell-wait
+#--- movement ---{{{
+#map J 5j
+#map K 5k
+#}}}
+
+
+#--- use enter for shell commands{{{
+#map <enter> shell-wait
 #map <c-enter> !echo '!echo enter'
 #map <enter> !echo '!!!! echo enter !!!!'
 # }}}
@@ -124,7 +130,12 @@ cmd trash %set -f; mv $fx ~/.trash
 #----------------------------------------------------------}}}
 
 
-#--- source quit ---------------------------------{{{
+#--- esc save source quit ---------------------------------{{{
+map <esc> escape
+cmd escape :{{
+    echo "esc"
+}}
+
 map <c-s> so
 cmd so :{{
     source /home/m/.config/lf/lfrc

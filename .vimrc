@@ -216,12 +216,13 @@ nnoremap u u:echo"u=undo"<cr>
 "--- environment --------------------{{{
 let $BASH_PROFILE  = '~/.bash_profile'
 let $BASHRC        = '~/.bashrc'
-let $BASH_ALIASES  = '~/.bash_aliases'
+let $ALIASES       = '~/.aliases'
 let $VIMRC         = '~/.vimrc'
 let $VIFMRC        = '~/.vifm/vifmrc.vim' 
 let $TMUX          = '~/.tmux.conf'
-let $BASH_ENV      = "~/.bash_aliases"
-let $ZSH_ENV       = "~/.bash_aliases"
+let $BASH_ENV      = "~/.aliases"
+let $ZSH_ENV       = "~/.aliases"
+let $LFRC          = "~/.config/lf/lfrc.vim"
 "------------------------------------}}}
 
 "--- edit resources -----------------------------------------------{{{

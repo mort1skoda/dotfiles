@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # wrapper script for bat so it can show colors
 # set previewer batc.sh
 # in lfrc

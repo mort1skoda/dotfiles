@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 #
 file --mime-type -Lb $1
 #
