@@ -11,7 +11,7 @@ echo "~/.bash_profile"
 sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 #sudo ip link set wlan0 up
 #sudo ip link set wlp2s0 up
-sudo ip link set enp3s0 down
+#sudo ip link set enp3s0 down
 #--------------------------------------}}}
 
 
@@ -24,6 +24,6 @@ echo "Shell Level: $SHLVL"
 ip a | g wlan0 | g inet
 ip a | g wlp2s0 | g inet
 
-wip
+#wip
 
 
