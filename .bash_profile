@@ -8,8 +8,9 @@ echo "~/.bash_profile"
 IP_LINK=$(ip link | grep -i wlp)
 echo $IP_LINK
 
-if [ $IP_LINK ]; then
-   sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
+if [ "$IP_LINK" ]; then
+    echo "wpa"
+   #sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 fi
 
 #sudo ip link set wlan0 up
