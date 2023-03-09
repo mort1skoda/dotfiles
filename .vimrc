@@ -232,7 +232,7 @@ nnoremap <Leader>eb :vs $BASHRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ez :vs .zshrc<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ea :vs $BASH_ALIASES<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ev :vs $VIMRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ef :vs $VIFMRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>elf :vs ~/.config/lf/lfrc<CR>:echo expand('%:p')<CR>
@@ -348,4 +348,6 @@ set laststatus=2
 "set statusline+=%=
 "set statusline+=row:%l\ col:%c\ percent:%p%%
 "--------------------------------------------------}}}
+       
+nnoremap <enter> :!
 
