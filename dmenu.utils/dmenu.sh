@@ -6,7 +6,7 @@ set -e
 # e.g.: ./dmenu.sh dm.disk
 #
 # Here we pipe the 1.st argument, a plain text file with options, into dmenu
-RES=$(cat $1 | dmenu)
+RES=$(cat $1 | dmenu -l 20)
 
 source ~/.aliases
 
