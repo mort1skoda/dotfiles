@@ -9,18 +9,18 @@ ln -svf /dat.mnt/dotfiles/install.readme ~
 ln -svf /dat.mnt/dotfiles/.scripts       ~
 ln -svf /dat.mnt/dotfiles/.vifm          ~
 ln -svf /dat.mnt/dotfiles/.vim           ~
-ln -svf /dat.mnt/dotfiles/.bash_aliases  ~
-#ln -svf /dat.mnt/dotfiles/.bash_logout   ~
-#ln -svf /dat.mnt/dotfiles/.bash_profile  ~
-#ln -svf /dat.mnt/dotfiles/.bashrc        ~
+ln -svf /dat.mnt/dotfiles/.aliases       ~
+ln -svf /dat.mnt/dotfiles/.bash_logout   ~
+ln -svf /dat.mnt/dotfiles/.bash_profile  ~
+ln -svf /dat.mnt/dotfiles/.bashrc        ~
 ln -svf /dat.mnt/dotfiles/.gitconfig     ~
 ln -svf /dat.mnt/dotfiles/.lynxrc        ~
 ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
 ln -svf /dat.mnt/dotfiles/.vimrc         ~
 ln -svf /dat.mnt/dotfiles/.xinitrc       ~
-ln -svf /dat.mnt/dotfiles/.zlogout       ~
-ln -svf /dat.mnt/dotfiles/.zprofile      ~
-ln -svf /dat.mnt/dotfiles/.zshrc         ~
+#ln -svf /dat.mnt/dotfiles/.zlogout       ~
+#ln -svf /dat.mnt/dotfiles/.zprofile      ~
+#ln -svf /dat.mnt/dotfiles/.zshrc         ~
 ln -svf /dat.mnt/dotfiles/dotf.update.sh ~
 
 ln -svf /dat.mnt/Pictures             ~

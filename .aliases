@@ -1,10 +1,10 @@
-echo "~/.bash_aliases"
+echo "~/.aliases"
 
 unalias -a
 
 #--- header ------------------------------------------------{{{
 # Author: Morty Hawk
-# Email.: <mort1skoda@gmail.com>
+# Email.: <mort0skoda@gmail.com>
 
 # This file is to be sourced by .zshrc or .bashrc
 
@@ -61,8 +61,8 @@ alias rd='rmdir -pv '
 
 #--- cat/bat then grep <token> ---{{{
 alias ag='alias | grep -i --color '
-alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
-alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
+alias cag='source ~/.aliases && cat ~/.aliases | grep -i --color '
+alias bag='source ~/.aliases && b ~/.aliases | grep -i --color '
 alias hg='cat ~/.bash_history | grep -i '
 # }}}
 
@@ -97,7 +97,7 @@ alias rm='rm -vrf '
 #--- edit files ------------------------------------------------{{{
 alias v='vim'
 alias vi='vim'
-alias ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
+alias ea='echo && vim ~/.aliases && source ~/.aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
 alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
@@ -113,7 +113,7 @@ alias et='vim ~/.tmux.conf'
 #--- source files ------------------------{{{ 
 alias sbp='source ~/.bash_profile'
 alias sb='source ~/.bashrc'
-alias sa='source ~/.bash_aliases'
+alias sa='source ~/.aliases'
 alias sz='source ~/.zshrc'
 alias szp='source ~/.zprofile'
 # ---------------------------------------}}}
@@ -151,7 +151,7 @@ alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
 alias gsv="git status --verbose"
 alias gpl="git pull"
 alias gr='git remote -v'
-alias gc='source ~/.bash_aliases && git commit -m "$DATE"'
+alias gc='source ~/.aliases && git commit -m "$DATE"'
 alias gco='git checkout '
 #TODO: make gc a function so it updates the date correctly
 alias ga='git add'
@@ -228,8 +228,8 @@ alias sd="sudo shutdown -h now"
 # }}}
 
 #--- footer ------------------------------------------------{{{
-#shopt -s expand_aliases
-#source .bash_aliases
+shopt -s expand_aliases
+#source .aliases
 #echo    "                Sourced:" $ALIASES 
 #echo -e "---|---|....end.." $ALIASES "....|---|---"
 #-----------------------------------------------------------}}}

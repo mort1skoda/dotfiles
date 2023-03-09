@@ -24,6 +24,6 @@ echo "Shell Level: $SHLVL"
 ip a | g wlan0 | g inet
 ip a | g wlp2s0 | g inet
 
-wip
+#wip
 
 
