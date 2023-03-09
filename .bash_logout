@@ -5,5 +5,4 @@ echo "Shell level: $SHLVL"
 cd ~
 ./dotf.update.sh
 
-sleep 2
 
