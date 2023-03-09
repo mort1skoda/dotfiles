@@ -28,6 +28,10 @@ ln -svf /dat.mnt/Downloads            ~
 ln -svf /dat.mnt/Documents            ~
 
 sudo ln -svf /dat.mnt/dotfiles/etc.vconsole.conf   /etc/vconsole.conf
+sudo ln -svf /dat.mnt/dotfiles/etc.pacman.conf   /etc/pacman.conf
+
+ls -la --color ~ | grep --color dotfiles
+ls -la --color /etc | grep --color dotfiles
 
 
 # comment next line if you want to copy to home of user root.

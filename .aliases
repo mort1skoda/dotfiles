@@ -84,6 +84,9 @@ alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
 alias u='sudo pacman --noconfirm -Syyu'
 alias i='sudo pacman -Syyu '
 alias pm='sudo pacman '
+#
+alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && bat /etc/pacman.d/mirrorlist'
+#
 # }}}
 
 #--- filesystem --------------------{{{
@@ -102,6 +105,7 @@ alias ea='echo && vim ~/.aliases && source ~/.aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
 alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
+alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
 alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
