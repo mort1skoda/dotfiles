@@ -19,5 +19,6 @@ export TERM='xterm-256color'
 export EDITOR='vim'
 #OPENER is for lf
 export OPENER='xdg-open'
+export BAT_THEME='gruvbox-dark'
 
 
