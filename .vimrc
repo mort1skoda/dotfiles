@@ -133,23 +133,25 @@ nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
 "--- movements -----------------------------------------------------------------{{{
 nnoremap 0 0:echo"0 = beginning of line"<cr>
 nnoremap $ $:echo"$ = end of line"<cr>
-nnoremap h h:echo "-- NORMAL -- h"<cr>
-nnoremap j j:echo "-- NORMAL -- j down"<cr>
-nnoremap k k:echo "-- NORMAL -- k up"<cr>
-nnoremap l l:echo "-- NORMAL -- l"<cr>
+nnoremap h h:echo "-N-  h left"<cr>
+nnoremap j j:echo "-N-  j down"<cr>
+nnoremap k k:echo "-N-  k up"<cr>
+nnoremap l l:echo "-N-  l right"<cr>
 
-nnoremap o o<esc>:echo"o = open line below"<cr>
-nnoremap O O<esc>:echo"O = Open line above"<cr>
+nnoremap o o<esc>:echo"-N-  o = open line below"<cr>
+nnoremap O O<esc>:echo"-N-  O = Open line above"<cr>
 
 " speed up scrolling
-nnoremap <S-j> }:echo 'shift-j = } down'<CR>
-nnoremap <S-k> {:echo 'shift-k = { up'<CR>
-nnoremap <S-l> $:echo 'shift-l = end of line'<CR>
-nnoremap <S-h> 0:echo 'shift-h = beginning of line'<CR>
+nnoremap <S-j> }:echo '-N-  shift-j = } down'<CR>
+nnoremap <S-k> {:echo '-N-  shift-k = { up'<CR>
+nnoremap <S-l> $:echo '-N-  shift-l = end of line'<CR>
+nnoremap <S-h> 0:echo '-N-  shift-h = beginning of line'<CR>
 
+nnoremap <c-u> <c-u>:echo "-N-  ctrl-u = page up"<cr>
+nnoremap <c-d> <c-d>:echo "-N-  ctrl-d = page down"<cr>
 
-nnoremap gg gg:echo"gg=top of page"<cr>
-nnoremap G G:echo"G=bottom of page"<cr>
+nnoremap gg gg:echo"-N-  gg = top of page"<cr>
+nnoremap G G:echo"-N-  G = bottom of page"<cr>
 "-------------------------------------------------------------------------------}}}
 
 "--- panes ------------------------------------------------------{{{
@@ -158,13 +160,13 @@ set splitright
 nnoremap <Leader>vv :vs<CR>
 nnoremap <Leader>hh :sp<CR>
 
-nnoremap <c-j> <c-w><c-w>:echo"ctrl-j = left pane"<cr>
-inoremap <c-j> <esc><c-w>l:echo"ctrl-j = left pane"<cr>
-nnoremap <c-k> <c-w>h:echo"ctrl-k = right pane"<cr>
+nnoremap <c-j> <c-w><c-w>:echo"ctrl-j = right pane rotate"<cr>
+inoremap <c-j> <esc><c-w><c-w>:echo"ctrl-j = right pane rotate"<cr>
+nnoremap <c-k> <c-w>h:echo"ctrl-k = left pane"<cr>
 inoremap <c-k> <esc><c-w>h:echo"ctrl-k = left pane"<cr>
 
-nnoremap <c-l> <c-w><:echo'Resize pane <'<CR>
-nnoremap <c-H> <c-w>>:echo'Resize pane >'<CR>
+nnoremap <c-l> 2<c-w><:echo'Resize pane <'<CR>
+nnoremap <c-H> 2<c-w>>:echo'Resize pane >'<CR>
 "----------------------------------------------------------------}}}
 
 "--- yank delete change paste undo ------------------------{{{
@@ -223,6 +225,7 @@ let $TMUX          = '~/.tmux.conf'
 let $BASH_ENV      = "~/.aliases"
 let $ZSH_ENV       = "~/.aliases"
 let $LFRC          = "~/.config/lf/lfrc.vim"
+nnoremap <enter> :!
 "------------------------------------}}}
 
 "--- edit resources -----------------------------------------------{{{
@@ -321,24 +324,23 @@ set noesckeys
 set ttimeout
 set ttimeoutlen=300    " esc timeout
 set timeoutlen=700     " mapleader timeout
-nnoremap <esc> <esc>:nohlsearch<cr>:echo"-- NORMAL -- esc"<cr>
-inoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
-vnoremap <esc> <esc>:echo"-- NORMAL -- esc"<cr>
-cnoremap <esc> <esc>:echo"-- NORML -- esc"<cr>
+nnoremap <esc> <esc>:nohlsearch<cr>:echo"-N-  esc"<cr>
+inoremap <esc> <esc>:echo"-N-  esc"<cr>
+vnoremap <esc> <esc>:echo"-N-  esc"<cr>
+cnoremap <esc> <esc>:echo"-N-  esc"<cr>
 
-nnoremap <C-s> <esc>:nohlsearch<cr>:w<cr>
-inoremap <C-s> <esc>:w<cr>l
+nnoremap <C-s> <esc>:nohlsearch<cr>:w<cr>:source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
+inoremap <C-s> <esc>:w<cr>
 vnoremap <C-s> <esc>:w<cr>
 cnoremap <C-s> <esc>:w<cr>
 
 nnoremap <Leader>ss :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 
 nnoremap <c-q> :wq<cr>
+nnoremap q :q<cr>
 inoremap <c-q> <ESC>:wq<cr>
 vnoremap <c-q> <ESC>:wq<cr>
 cnoremap <c-q> <ESC>:wq<cr>
-" from Normal mode you can type q followed by enter to quit without saving
-nnoremap q :q<cr><esc>
 "----------------------------------------------------------------------------------}}}
 
 "--- statusline -----------------------------------{{{
@@ -349,5 +351,4 @@ set laststatus=2
 "set statusline+=row:%l\ col:%c\ percent:%p%%
 "--------------------------------------------------}}}
        
-nnoremap <enter> :!
 

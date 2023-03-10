@@ -1,5 +1,4 @@
 
-
 #--- options -----------------------------------------{{{
 set autoquit on 
 set shell sh 
@@ -17,7 +16,7 @@ set shellopts '-eu'
 # is newline. You need to consider the values of these options and create your
 # commands accordingly. }}}
 set ifs "\n"
-set hidden
+set hidden true
 set info size:time
 # leave some space at the top and the bottom of the screen
 set scrolloff 10
@@ -33,11 +32,28 @@ map gaa ${{git add --all; git status --short; echo "press ENTER"; read ENTER}}
 
 
 #--- movement ---{{{
-map J :half-down
-
-
-
+map J :half-down :echo "hd"
 map K :half-up
+map e :echo "e"
+
+#map gh cd ~
+map .h cd ~
+map .. cd ..
+map .r cd /
+map ./ cd /
+map .dd cd /dat.mnt/dotfiles
+map .sl cd /.config/suckless
+
+
+#cmd delete ${{
+     #set -f
+     #printf "$fx\n"
+     #printf "delete?[y/n]"
+     #read ans
+     #[ "$ans" = "y" ] && rm -rf $fx
+#}}
+
+
 #}}}
 
 
@@ -116,7 +132,7 @@ cmd zip ${{
 
 
 #--- yank delete change paste undo ------------------------{{{
-map d trash
+map D trash
 cmd delete ${{
      set -f
      printf "$fx\n"
@@ -135,13 +151,16 @@ cmd trash %set -f; mv $fx ~/.trash
 
 
 #--- esc save source quit ---------------------------------{{{
-map <esc> escape
-cmd escape :{{
-    echo "esc"
+map <esc> _escape
+cmd _escape :{{
+    unselect
+    clear
+    echo "esc = unselect & clear"
 }}
 
-map <c-s> so
-cmd so :{{
+"save source
+map <c-s> _source_reload
+cmd _source_reload :{{
     source /home/m/.config/lf/lfrc
     reload
     echo 'sourced: /home/m/.config/lf/lfrc  reloaded: lf'
