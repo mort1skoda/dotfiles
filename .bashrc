@@ -20,5 +20,5 @@ export EDITOR='vim'
 #OPENER is for lf
 export OPENER='xdg-open'
 export BAT_THEME='gruvbox-dark'
-
+export PAGER='bat'
 

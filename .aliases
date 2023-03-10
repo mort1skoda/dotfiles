@@ -41,6 +41,7 @@ alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
 alias .dd='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
+alias .lf='cd ~/.config/lf && l'
 
 # windows C:\ and D:\
 alias .wc='cd /mnt/c && ls -la --color --group-directories-first'
@@ -95,7 +96,7 @@ alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS
 alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
-alias rm='rm -vrf '
+alias rm='rm -vrf && l '
 #... .......... ....................}}}
 
 #--- edit files ------------------------------------------------{{{
