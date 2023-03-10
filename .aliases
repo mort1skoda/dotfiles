@@ -215,16 +215,16 @@ alias dbgvim='vim -V20 2>&1 | tee vim.log.vim'
 # remove all packages that don't depend on other packages
 # you may have to do this over several times.
 alias Qdt="pacman -Qdt"
-alias Qdtq='sudo pacman -R "$(pacman -Qdtq)" '
+alias Qdtq='sudo pacman -R "$(pacman -Qdtq)"'
 alias kill='sudo kill '
 #----------------------------------------------------------}}}
 
 #--- systemd -----------------------------------------------{{{
-alias ss='sudo systemctl status '
-alias se='sudo systemctl enable '
-alias st='sudo systemctl start '
-alias so='sudo systemctl stop '
-alias sd='sudo systemctl disable '
+alias stat='sudo systemctl status '
+alias enab='sudo systemctl enable '
+alias star='sudo systemctl start '
+alias stop='sudo systemctl stop '
+alias disa='sudo systemctl disable '
 #.........................................................}}}
 
 #--- quit reboot shutdown ---{{{
