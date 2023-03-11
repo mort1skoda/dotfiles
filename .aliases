@@ -40,6 +40,7 @@ alias .rr='cd /root && ls -la --color --group-directories-first'
 alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -la --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
+alias .dl='cd /dat.mnt/Downloads && ls -la --color --group-directories-first'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
 alias .lf='cd ~/.config/lf && l'
 
@@ -97,6 +98,7 @@ alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
 alias rm='rm -vrf && l '
+alias co='sudo chown -vR m:m'
 #... .......... ....................}}}
 
 #--- edit files ------------------------------------------------{{{

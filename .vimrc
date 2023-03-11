@@ -157,7 +157,7 @@ nnoremap G G:echo"-N-  G = bottom of page / nnnG = Go to line"<cr>
 nnoremap <c-b> i<backspace><esc>l:echo "-N-  c-b = backspace"<cr>
 inoremap <c-b> <backspace>
 nnoremap <backspace> :echo "*** USR: Ctrl-b ***"<cr>
-inoremap <backspace> <esc>:echo "*** USR: Ctrl-b ***"<cr>
+inoremap <backspace> <esc>:echo "*** USR: Ctrl-b ***"<cr>l
 "Hello this is a test
 
 "-------------------------------------------------------------------------------}}}

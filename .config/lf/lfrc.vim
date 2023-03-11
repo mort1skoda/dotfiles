@@ -1,8 +1,5 @@
-
-
-
-
-
+#" lfrc.vim
+#
 
 #--- options -----------------------------------------{{{
 set autoquit on 
@@ -66,9 +63,10 @@ map ./ cd /
 map .da cd /dat.mnt
 map .df cd /dat.mnt/dotfiles
 map .h cd ~
-map .clf cd ~/.config/lf
+map .lf cd ~/.config/lf
 map .rr cd /root
-map .csl cd ~/.config/suckless
+map .sl cd ~/.config/suckless
+map .dl cd /dat.mnt/Downloads
 
 
 #cmd delete ${{
@@ -125,7 +123,8 @@ cmd open &{{
 #--- extract and compress ---{{{
 # extract the current file with the right command
 # (xkcd link: https://xkcd.com/1168/)
-cmd extract ${{
+map e _extract 
+cmd _extract ${{
     set -f
     case $f in
         *.tar.bz|*.tar.bz2|*.tbz|*.tbz2) tar xjvf $f;;
