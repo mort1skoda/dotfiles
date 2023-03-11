@@ -1,5 +1,3 @@
-" echom"~/.vimrc"
-
 "--- ~/.vimrc -------------------------------------------------{{{
 " Author: Morty Hawk <mort1skoda@gmail.com>
 " Email:  <mort1skoda@gmail.com>
@@ -26,13 +24,14 @@
 " Debug:
 " see dbgvim in .bash_aliases
 " alias dbgvim="vim -V20 2>&1 | tee vim.log.vim
+" echom"~/.vimrc"
 "-------------------------------------------------------------}}}
 
 "--- folds -------------------{{{
 set foldmethod=marker
-nnoremap ff za:echo"ff=fold toggle"<cr>
-nnoremap fc zm:echo"fc=folds close all"<cr>
-nnoremap fo zr:echo"fo=folds open all"<cr>
+"nnoremap ff za:echo"ff=fold toggle"<cr>
+"nnoremap fc zm:echo"fc=folds close all"<cr>
+"nnoremap fo zr:echo"fo=folds open all"<cr>
 vnoremap zf zf:echo"zf=create fold"<cr>
 "-----------------------------}}}
 
@@ -144,14 +143,23 @@ nnoremap O O<esc>:echo"-N-  O = Open line above"<cr>
 " speed up scrolling
 nnoremap <S-j> }:echo '-N-  shift-j = } down'<CR>
 nnoremap <S-k> {:echo '-N-  shift-k = { up'<CR>
+
 nnoremap <S-l> $:echo '-N-  shift-l = end of line'<CR>
 nnoremap <S-h> 0:echo '-N-  shift-h = beginning of line'<CR>
+vnoremap <S-l> $
 
 nnoremap <c-u> <c-u>:echo "-N-  ctrl-u = page up"<cr>
 nnoremap <c-d> <c-d>:echo "-N-  ctrl-d = page down"<cr>
 
 nnoremap gg gg:echo"-N-  gg = top of page"<cr>
-nnoremap G G:echo"-N-  G = bottom of page"<cr>
+nnoremap G G:echo"-N-  G = bottom of page / nnnG = Go to line"<cr>
+
+nnoremap <c-b> i<backspace><esc>l:echo "-N-  c-b = backspace"<cr>
+inoremap <c-b> <backspace>
+nnoremap <backspace> :echo "*** USR: Ctrl-b ***"<cr>
+inoremap <backspace> <esc>:echo "*** USR: Ctrl-b ***"<cr>
+"Hello this is a test
+
 "-------------------------------------------------------------------------------}}}
 
 "--- panes ------------------------------------------------------{{{
@@ -170,7 +178,7 @@ nnoremap <c-H> 2<c-w>>:echo'Resize pane >'<CR>
 "----------------------------------------------------------------}}}
 
 "--- yank delete change paste undo ------------------------{{{
-nnoremap yy yy:echo"yy=yank one line"<cr>
+nnoremap yy yy:echo"-N-  yy = yank one line"<cr>
 nnoremap Y  y$:echo'Y=Yank from cursor to end of line'<CR>
 nnoremap y0 y0
 nnoremap yw yw:echo'yw=yank word'<cr>
@@ -185,12 +193,12 @@ nnoremap D  d$:echo'Normal  D=Delete from cursor to end of line'<cr>
 nnoremap d0 d0:echo'delete from cursor til beginning of line'<cr>
 nnoremap dw dw:echo'delete til beginning of next word'<cr>
 nnoremap de de:echo'de=delete til end of word'<cr>
-nnoremap df df
 nnoremap dt dt
+nnoremap df df
 nnoremap di di
 nnoremap da da
-" df = delete including given char.
 " dt = delete til but not including given char.
+" df = delete including given char.
 " di = delete inner
 " da = delete other
 
@@ -216,19 +224,17 @@ nnoremap u u:echo"u=undo"<cr>
 "----------------------------------------------------------}}}
 
 "--- environment --------------------{{{
-let $BASH_PROFILE  = '~/.bash_profile'
-let $BASHRC        = '~/.bashrc'
-let $ALIASES       = '~/.aliases'
-let $VIMRC         = '~/.vimrc'
-let $VIFMRC        = '~/.vifm/vifmrc.vim' 
-let $TMUX          = '~/.tmux.conf'
-let $BASH_ENV      = "~/.aliases"
-let $ZSH_ENV       = "~/.aliases"
-let $LFRC          = "~/.config/lf/lfrc.vim"
-nnoremap <enter> :!
-"------------------------------------}}}
+let $BASH_PROFILE   = '~/.bash_profile'
+let $BASHRC         = '~/.bashrc'
+let $ALIASES        = '~/.aliases'
+let $VIMRC          = '~/.vimrc'
+let $VIFMRC         = '~/.vifm/vifmrc.vim' 
+let $TMUX           = '~/.tmux.conf'
+let $BASH_ENV       = "~/.aliases"
+let $ZSH_ENV        = "~/.aliases"
+let $LFRC           = "~/.config/lf/lfrc.vim"
+nnoremap <enter> :! 
 
-"--- edit resources -----------------------------------------------{{{
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>ezp :vs ~/.zprofile<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>eb :vs $BASHRC<CR>:echo expand('%:p')<CR>
@@ -325,12 +331,12 @@ set ttimeout
 set ttimeoutlen=300    " esc timeout
 set timeoutlen=700     " mapleader timeout
 nnoremap <esc> <esc>:nohlsearch<cr>:echo"-N-  esc"<cr>
-inoremap <esc> <esc>:echo"-N-  esc"<cr>
+inoremap <esc> <esc>:echo"-N-  esc"<cr>l
 vnoremap <esc> <esc>:echo"-N-  esc"<cr>
 cnoremap <esc> <esc>:echo"-N-  esc"<cr>
 
 nnoremap <C-s> <esc>:nohlsearch<cr>:w<cr>:source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
-inoremap <C-s> <esc>:w<cr>
+inoremap <C-s> <esc>:w<cr>l
 vnoremap <C-s> <esc>:w<cr>
 cnoremap <C-s> <esc>:w<cr>
 

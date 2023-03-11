@@ -61,13 +61,14 @@ map e :echo "e"
 #}}
 
 #map gh cd ~
-map .h cd ~
 map .. cd ..
-map .r cd /
 map ./ cd /
-map .dd cd /dat.mnt/dotfiles
-map .sl cd ~/.config/suckless
-map .lf cd ~/.config/lf
+map .da cd /dat.mnt
+map .df cd /dat.mnt/dotfiles
+map .h cd ~
+map .clf cd ~/.config/lf
+map .rr cd /root
+map .csl cd ~/.config/suckless
 
 
 #cmd delete ${{
@@ -156,7 +157,7 @@ cmd zip ${{
 # }}}
 
 
-#--- select yank move delete trash change paste undo ------------------------{{{
+#--- select yank move delete  change paste undo ------------------------{{{
 map <space> _select_file
 cmd _select_file :{{
     toggle
@@ -190,15 +191,17 @@ cmd _move :{{
 #     [ "$ans" = "y" ] && rm -rf $fx
 # }}
 
-# make sure trash folder exists
-%mkdir -p ~/.trash
-# move current file or selected files to trash folder
+# make sure lf_ folder exists
+# % = shell-pipe 
+%mkdir -p ~/.lf_trash
+# move current file or selected files to  folder
 # (also see 'man mv' for backup/overwrite options)
 map D _trash
-cmd _trash !{{
-    %set -f
-    mv $fx ~/.trash
-    echo "D = Delete / move to ~/.trash"
+cmd _trash %{{
+    # set -f  disable the globbing. (/
+    set -f
+    mv $fx ~/.lf_trash
+    echo "D = Delete / move to ~/.lf_trash"
 }}
 #----------------------------------------------------------}}}
 

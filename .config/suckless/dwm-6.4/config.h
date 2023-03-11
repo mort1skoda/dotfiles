@@ -66,11 +66,13 @@ static const char lines[] = "20";
 static const char *dmenucmd[] = { "dmenu_run", "-l", lines, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *www_cmd[] = { "firefox" , NULL };
+static const char *filemanager[] = { "st" , "lf", NULL };
 
 static const Key keys[] = {
   /* modifier                     key        function        argument */
 
   { MODKEY,                       XK_b,      togglebar,      {0} },
+  { MODKEY,                       XK_e,      spawn,          {.v = filemanager  } },
   { MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
   { MODKEY,                       XK_t,      spawn,          {.v = termcmd  } },
   { MODKEY,                       XK_w,      spawn,          {.v = www_cmd  } },

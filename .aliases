@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "~/.aliases"
 
-#unalias -a
+unalias -a
 
 #--- header ------------------------------------------------{{{
 # Author: Morty Hawk
@@ -38,8 +38,8 @@ alias ...='cd ../.. && ls -la --color --group-directories-first'
 alias .r='cd / && ls -la --color --group-directories-first'
 alias .rr='cd /root && ls -la --color --group-directories-first'
 alias .h='cd ~ && ls -la --color --group-directories-first'
-alias .d='cd /dat.mnt/ && ls -la --color --group-directories-first'
-alias .dd='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
+alias .dm='cd /dat.mnt/ && ls -la --color --group-directories-first'
+alias .df='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
 alias .lf='cd ~/.config/lf && l'
 
@@ -119,6 +119,7 @@ alias et='vim ~/.tmux.conf'
 #--- source files ------------------------{{{ 
 alias sbp='source ~/.bash_profile'
 alias sb='source ~/.bashrc'
+alias sbl='source ~/.bash_logout'
 alias sa='source ~/.aliases'
 alias sz='source ~/.zshrc'
 alias szp='source ~/.zprofile'
