@@ -41,6 +41,8 @@ alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -la --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -la --color --group-directories-first'
+alias .do='cd /dat.mnt/Documents && ls -la --color --group-directories-first'
+alias .pi='cd /dat.mnt/Pictures && ls -la --color --group-directories-first'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
 alias .lf='cd ~/.config/lf && l'
 

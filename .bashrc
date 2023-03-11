@@ -22,5 +22,5 @@ export OPENER='xdg-open'
 export BAT_THEME='gruvbox-dark'
 export PAGER='less'
 
-source ~/gruvbox.bash
+#source ~/gruvbox.bash
 
