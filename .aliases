@@ -99,6 +99,7 @@ alias cp="cp -iv"
 alias mv='mv -iv '
 alias rm='rm -vrf && l '
 alias co='sudo chown -vR m:m'
+alias cm='sudo chmod +x'
 #... .......... ....................}}}
 
 #--- edit files ------------------------------------------------{{{
