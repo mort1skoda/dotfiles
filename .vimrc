@@ -154,7 +154,7 @@ nnoremap <c-d> <c-d>:echo "-N-  ctrl-d = page down"<cr>
 nnoremap gg gg:echo"-N-  gg = top of page"<cr>
 nnoremap G G:echo"-N-  G = bottom of page / nnnG = Go to line"<cr>
 
-nnoremap <c-b> i<backspace><esc>l:echo "-N-  c-b = backspace"<cr>
+"nnoremap <c-b> i<backspace><esc>l:echo "-N-  c-b = backspace"<cr>
 "inoremap <c-b> <backspace>
 "nnoremap <backspace> :echo "*** USR: Ctrl-b ***"<cr>
 "inoremap <backspace> <esc>:echo "*** USR: Ctrl-b ***"<cr>l
@@ -172,7 +172,6 @@ nnoremap <c-j> <c-w><c-w>:echo"ctrl-j = right pane rotate"<cr>
 inoremap <c-j> <esc><c-w><c-w>:echo"ctrl-j = right pane rotate"<cr>
 nnoremap <c-k> <c-w>h:echo"ctrl-k = left pane"<cr>
 inoremap <c-k> <esc><c-w>h:echo"ctrl-k = left pane"<cr>
-f  j  f
 nnoremap <c-l> 2<c-w><:echo'Resize pane <'<CR>
 nnoremap <c-H> 2<c-w>>:echo'Resize pane >'<CR>
 "----------------------------------------------------------------}}}
