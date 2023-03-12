@@ -39,18 +39,16 @@ sudo cp -vr /dat.mnt/dotfiles/adobe-source-code-pro /usr/share/fonts/adobe-sourc
 ls -lah --color /usr/share/fonts
 
 # comment next line if you want to copy to home of user root.
-exit
+#exit
 
 sudo ln -svf /dat.mnt/dotfiles/.config        /root
 sudo ln -svf /dat.mnt/dotfiles/.vifm          /root
 sudo ln -svf /dat.mnt/dotfiles/.vim           /root
-sudo ln -svf /dat.mnt/dotfiles/.bash_aliases  /root
-#sudo ln -svf /dat.mnt/dotfiles/.bash_logout   /root
-#sudo ln -svf /dat.mnt/dotfiles/.bash_profile  /root
-#sudo ln -svf /dat.mnt/dotfiles/.bashrc        /root
+sudo ln -svf /dat.mnt/dotfiles/.aliases  /root
+sudo ln -svf /dat.mnt/dotfiles/.bash_logout   /root
+sudo ln -svf /dat.mnt/dotfiles/.bash_profile  /root
+sudo ln -svf /dat.mnt/dotfiles/.bashrc        /root
 sudo ln -svf /dat.mnt/dotfiles/.lynxrc        /root
 sudo ln -svf /dat.mnt/dotfiles/.tmux.conf     /root
 sudo ln -svf /dat.mnt/dotfiles/.vimrc         /root
-sudo ln -svf /dat.mnt/dotfiles/.zshrc         /root
-
 
