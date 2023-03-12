@@ -35,8 +35,8 @@ ls -la --color /etc | grep --color dotfiles
 
 # fonts
 sudo mkdir -p /usr/share/fonts
-sudo cp -r /dat.mnt/dotfiles/adobe-source-code-pro /usr/share/fonts/adobe-source-code-pro
-
+sudo cp -vr /dat.mnt/dotfiles/adobe-source-code-pro /usr/share/fonts/adobe-source-code-pro
+ls -lah --color /usr/share/fonts
 
 # comment next line if you want to copy to home of user root.
 exit
