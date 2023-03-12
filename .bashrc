@@ -2,7 +2,7 @@
 echo "~/.bashrc"
 
 set -o vi
-stty -ixon
+#stty -ixon
 shopt -s autocd
 
 #green prompt for regular user

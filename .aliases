@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 echo "~/.aliases"
 unalias -a
 
@@ -138,8 +137,8 @@ alias a='alias && alias | wc -l && echo "Total aliases" ' #list all aliases
 alias s='sudo'
 alias gv='gvim '
 # clear screen:
-alias cs='clear'
-alias nf='clear && neofetch && echo "Shell level = $SHLVL"'
+alias cs='clear && clear -V'
+alias nf='clear && neofetch && echo "Shell level = $SHLVL" && clear -V'
 alias wnf="watch --color -n5 neofetch --backend off"
 
 alias st='st'
