@@ -1,6 +1,6 @@
 #!/bin/bash
+set -e
 echo "~/.aliases"
-
 unalias -a
 
 #--- header ------------------------------------------------{{{
@@ -116,7 +116,7 @@ alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
-#alias edw='.dd && cd suckless/dwm-6*/ && vim config.h'
+alias enf='vim ~/.config/neofetch/config.conf'
 alias elf='vim ~/.config/lf/lfrc'
 alias et='vim ~/.tmux.conf'
 #---------------------------------------------------------------}}}
@@ -233,6 +233,10 @@ alias stop='sudo systemctl stop '
 alias disa='sudo systemctl disable '
 #.........................................................}}}
 
+#--- X11 ---{{{
+alias sw='st swarp 1920 1200'
+#---}}}
+
 #--- quit reboot shutdown ---{{{
 alias q='exit'
 alias rb='sudo reboot'
@@ -241,9 +245,6 @@ alias sd="sudo shutdown -h now"
 
 #--- footer ------------------------------------------------{{{
 shopt -s expand_aliases
-#source .aliases
-#echo    "                Sourced:" $ALIASES 
-#echo -e "---|---|....end.." $ALIASES "....|---|---"
 #-----------------------------------------------------------}}}
 
 

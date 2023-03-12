@@ -10,8 +10,16 @@
 
 set -e
 
-file --mime-type -Lb $1
-#
-lf -remote 
+FILETYPE=$(file --mime-type -Lb $1)
+echo $FILETYPE
+
+case $FILETYPE in
+    "image/png" )  sxiv $1
+    ;;
+    "image/jpeg" ) sxiv $1
+    ;;
+    *)             vim  $1 
+    ;;
+esac
 
 

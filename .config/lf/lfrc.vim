@@ -67,7 +67,8 @@ map .lf cd ~/.config/lf
 map .rr cd /root
 map .sl cd ~/.config/suckless
 map .dl cd /dat.mnt/Downloads
-
+map .pi cd /dat.mnt/Pictures
+map .do cd /dat.mnt/Documents
 
 #cmd delete ${{
      #set -f
@@ -94,24 +95,48 @@ map X !$f
 # }}}
 
 
-# dedicated keys for file opener actions{{{
+#--- open files ---{{
 #map o &mimeopen $f
 map O $mimeopen --ask $f
 map o :open $f
-# }}}
 
-
-# define a custom 'open' command{{{
+# define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
 # use either file extensions and/or mime types here. Below uses an editor for
 # text files and a file opener for the rest.
+#cmd open &{{
+    #echo "in open" 
+    #case $(file --mime-type -Lb $f) in
+        #text/*) lf -remote "send $id \$$EDITOR \$fx";;
+        #*) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+    #esac
+#}}
+#The following command prefixes are used by lf:
+#
+    #:  read (default)  builtin/custom command
+    #$  shell           shell command
+    #%  shell-pipe      shell command running with the ui
+    #!  shell-wait      shell command waiting for key press
+    #&  shell-async     shell command running asynchronously
+#
+#The same evaluator is used for the command line and the configuration file for
+#read and shell commands. The difference is that prefixes are not necessary in
+#the command line. Instead, different modes are provided to read corresponding
+#commands. These modes are mapped to the prefix keys above by default.
+
 cmd open &{{
     case $(file --mime-type -Lb $f) in
-        text/*) lf -remote "send $id \$$EDITOR \$fx";;
-        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+        text/*)   lf -remote "send $id \$$EDITOR \$fx";;
+        image/*)  for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+        #image/*) lf -remote "send $id /usr/local/bin/sxiv \$fx";;
+
     esac
-}}
-# }}}
+
+    #~/.config/lf/filetype.sh $f
+
+#}}
+
+#------------------}}}
 
 
 # define a custom 'rename' command without prompt for overwrite{{{
