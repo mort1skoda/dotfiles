@@ -238,7 +238,7 @@ nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>ezp :vs ~/.zprofile<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>eb :vs $BASHRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ez :vs .zshrc<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ea :vs $BASH_ALIASES<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ea :vs $ALIASES<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ev :vs $VIMRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>

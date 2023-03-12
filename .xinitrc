@@ -6,5 +6,7 @@ xset s 0 0 &
 xset r rate 250 45 &
 swarp 1920 1600 & 
 feh --bg-scale ~/Pictures/berries.jpg &
+/dat.mnt/dotfiles/dwm.time.sh &
+
 exec dwm
 

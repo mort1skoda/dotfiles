@@ -7,9 +7,23 @@
 #### Network.....: Ethernet eth0
 ---
 
-#### create bootable usb
+#### create live usb
 
-    wget base
-    cp void.iso /dev/sdb
+    .dl
+    curl https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20221001-base.iso --output void-musl-live.iso
+    cp void-musl-live.iso /dev/sdb
 
+#### boot
+
+    spam 
+    
+#### login
+
+    user...: root
+    passwd.: voidlinux
+
+
+#### install
+
+    void-installer
 
