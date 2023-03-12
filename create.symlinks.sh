@@ -33,6 +33,10 @@ sudo ln -svf /dat.mnt/dotfiles/etc.pacman.conf   /etc/pacman.conf
 ls -la --color ~ | grep --color dotfiles
 ls -la --color /etc | grep --color dotfiles
 
+# fonts
+sudo mkdir -p /usr/share/fonts
+sudo cp -r /dat.mnt/dotfiles/adobe-source-code-pro /usr/share/fonts/adobe-source-code-pro
+
 
 # comment next line if you want to copy to home of user root.
 exit
