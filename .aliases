@@ -238,7 +238,7 @@ alias sw='st swarp 1920 1200'
 
 #--- quit reboot shutdown ---{{{
 alias q='exit'
-alias rb='sudo reboot'
+alias rb='ud && sudo reboot'
 alias sd="sudo shutdown -h now"
 # }}}
 
