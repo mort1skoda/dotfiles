@@ -1,9 +1,9 @@
 ## Arch linux install tutorial
 
 #### OS..........: Arch linux x86_64
-#### Init system.: Systemd
 #### Machine.....: Asus K50
 #### Bios........: Legacy
+#### Init system.: Systemd
 #### Network.....: Wifi wlan0 / wlp2s0
 ---
 
