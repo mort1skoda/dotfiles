@@ -56,13 +56,13 @@ set history=100         " number of commands to save in history
 
 "--- filetype ---{{{
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
+filetype plugin indent on
 
 " Enable plugins and load plugin for the detected file type.
-filetype plugin on
+"filetype plugin on
 
 " Load and indent file for the detected file type.
-filetype indent on
+"filetype indent on
 "----------------}}}
 
 "--- line numbers ---{{{

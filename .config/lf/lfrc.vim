@@ -138,8 +138,9 @@ map o :open $f
 
 cmd open &{{
     case $(file --mime-type -Lb $f) in
-        text/*)   lf -remote "send $id \$$EDITOR \$fx";;
-        image/*)  for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+        #text/*)   lf -remote "send $id \$$EDITOR \$fx";;
+        text/*)   lf -remote "send $id \$vim \$fx";;
+        image/*)  for f in $fx; do sxiv $f > /dev/null 2> /dev/null & done;;
         #image/*) lf -remote "send $id /usr/local/bin/sxiv \$fx";;
 
     esac
