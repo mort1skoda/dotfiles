@@ -237,6 +237,8 @@ nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>elf :vs ~/.config/lf/lfrc<CR>:echo expand('%:p')<CR>
+"
+nnoremap <c-z> :shell<cr>
 "------------------------------------------------------------------}}}
 
 "--- compiling -------------------------------------{{{
@@ -327,7 +329,7 @@ inoremap <esc> <esc>:echo"-N-  esc"<cr>l
 vnoremap <esc> <esc>:echo"-N-  esc"<cr>
 cnoremap <esc> <esc>:echo"-N-  esc"<cr>
 
-nnoremap <C-s> <esc>:nohlsearch<cr>:w<cr>:source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
+nnoremap <C-s> <esc>:nohlsearch<cr>:w<cr>
 inoremap <C-s> <esc>:w<cr>l
 vnoremap <C-s> <esc>:w<cr>
 cnoremap <C-s> <esc>:w<cr>

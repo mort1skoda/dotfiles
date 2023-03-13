@@ -72,10 +72,11 @@ static const Key keys[] = {
   /* modifier                     key        function        argument */
 
   { MODKEY,                       XK_b,      togglebar,      {0} },
-  { MODKEY,                       XK_e,      spawn,          {.v = filemanager  } },
-  { MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
-  { MODKEY,                       XK_t,      spawn,          {.v = termcmd  } },
-  { MODKEY,                       XK_w,      spawn,          {.v = www_cmd  } },
+  { MODKEY,                       XK_e,      spawn,          {.v = filemanager } },
+  { MODKEY,                       XK_r,      spawn,          {.v = dmenucmd    } },
+  { MODKEY,                       XK_t,      spawn,          {.v = termcmd     } },
+  { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = termcmd     } },
+  { MODKEY,                       XK_w,      spawn,          {.v = www_cmd    } },
 
   { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
   { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -86,11 +87,11 @@ static const Key keys[] = {
   { MODKEY,                       XK_Return, zoom,           {0} },
   { MODKEY,                       XK_Tab,    view,           {0} },
   { MODKEY,                       XK_n,      setlayout,      {.v = &layouts[0]} },      // normal tabbed / stacked
-//  { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },    // floating :-(
+  { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },      // floating
   { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },      // monocle
   { MODKEY,                       XK_g,      setlayout,      {.v = &layouts[3]} },      // grid
   { MODKEY,                       XK_space,  setlayout,      {0} },
-//  { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+  { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
   { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
   { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
   { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },

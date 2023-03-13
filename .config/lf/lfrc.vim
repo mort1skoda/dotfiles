@@ -82,10 +82,21 @@ map .do cd /dat.mnt/Documents
 #}}}
 
 
-#--- use enter for shell commands{{{
+#--- shell ---{{{
+#The following command prefixes are used by lf:
+#
+    #:  read (default)  builtin/custom command
+    #$  shell           shell command
+    #%  shell-pipe      shell command running with the ui
+    #!  shell-wait      shell command waiting for key press
+    #&  shell-async     shell command running asynchronously
 map <enter> shell-wait
 #map <c-enter> !echo '!echo enter'
 #map <enter> !echo '!!!! echo enter !!!!'
+
+# w opens shell, make ctrl-z do the same thing.
+map <c-z> $$SHELL
+
 # }}}
 
 
@@ -111,6 +122,7 @@ map o :open $f
         #*) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
     #esac
 #}}
+
 #The following command prefixes are used by lf:
 #
     #:  read (default)  builtin/custom command

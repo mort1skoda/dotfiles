@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # to run:
 # /dat.mnt/dotfiles/create.symlinks.sh
@@ -9,7 +9,7 @@ ln -svf /dat.mnt/dotfiles/.config        ~
 ln -svf /dat.mnt/dotfiles/scripts        ~
 ln -svf /dat.mnt/dotfiles/.vifm          ~
 ln -svf /dat.mnt/dotfiles/.vim           ~
-ln -svf /dat.mnt/dotfiles/dmenu.utils    ~
+ln -svf /dat.mnt/dotfiles/scripts/dmenu  ~
 ln -svf /dat.mnt/dotfiles/.aliases       ~
 ln -svf /dat.mnt/dotfiles/.bash_logout   ~
 ln -svf /dat.mnt/dotfiles/.bash_profile  ~
@@ -53,3 +53,4 @@ sudo ln -svf /dat.mnt/dotfiles/.lynxrc        /root
 sudo ln -svf /dat.mnt/dotfiles/.tmux.conf     /root
 sudo ln -svf /dat.mnt/dotfiles/.vimrc         /root
 
+echo $0
