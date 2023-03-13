@@ -5,8 +5,8 @@
 # do NOT run as root, run as a regular user!
 
 ln -svf /dat.mnt/dotfiles/.config        ~
-ln -svf /dat.mnt/dotfiles/install.readme ~
-ln -svf /dat.mnt/dotfiles/.scripts       ~
+#ln -svf /dat.mnt/dotfiles/install.readme ~
+ln -svf /dat.mnt/dotfiles/scripts        ~
 ln -svf /dat.mnt/dotfiles/.vifm          ~
 ln -svf /dat.mnt/dotfiles/.vim           ~
 ln -svf /dat.mnt/dotfiles/dmenu.utils    ~
