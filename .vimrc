@@ -54,7 +54,7 @@ set scrolloff=10        " don't let cursor scroll below or above 10 lines when s
 set history=100         " number of commands to save in history
 
 
-"--- filetype ------------------------------------------------------{{{
+"--- filetype ---{{{
 " Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
@@ -63,35 +63,28 @@ filetype plugin on
 
 " Load and indent file for the detected file type.
 filetype indent on
-"-------------------------------------------------------------------}}}
+"----------------}}}
 
-"--- line numbers ----------------------------------------------{{{
+"--- line numbers ---{{{
 " Add numbers to each line on the left-hand side.
 set number
 
 " turn relative line numbers on
 set relativenumber
-"---------------------------------------------------------------}}}
+"--------------------}}}
 
-"--- cursor line / cokumn --------------------------------------{{{
-" Highlight cursor line underneath the cursor horizontally.
-set cursorline
-" Highlight cursor line underneath the cursor vertically.
-set cursorcolumn
-"---------------------------------------------------------------}}}
+"--- cursor line / column ---{{{
+set cursorline    " Highlight cursor line horizontally.
+set cursorcolumn  " Highlight cursor line vertically.
+"----------------------------}}}
 
-"--- tab ------------------------------------{{{
-" Set shift width to 4 spaces.
-set shiftwidth=4
-" Set tab width to 4 columns.
+"--- tab --------{{{
+set shiftwidth=4  "Set shift width to 4 spaces.
+set tabstop=4     "Set tab width to 4 columns.
+set expandtab     "Use space characters instead of tabs.
+"----------------}}}
 
-set tabstop=4
-
-" Use space characters instead of tabs.
-set expandtab
-"--------------------------------------------}}}
-
-"--- wildmenu ---------------------------------------------------------------{{{
+"--- wildmenu ----{{{
 " Enable auto completion menu after pressing TAB.
 set wildmenu
 
@@ -101,9 +94,9 @@ set wildmode=list:longest
 " There are certain files that we would never want to edit with Vim.
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
-"----------------------------------------------------------------------------}}}
+"-----------------}}}
 
-"--- search ------------------------------------{{{
+"--- search ---------{{{
 " Incrementally highlight matching characters as you type.
 set incsearch
 " Ignore capital letters during search.
@@ -124,8 +117,8 @@ set hlsearch
 " search and replace
 nnoremap <C-x> :%s/
 
-nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
-"--------------------------------------------------------}}}
+"nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
+"--------------------}}}
 
 "--------------------------------------------end-of-settings-----------------------------}}}
 

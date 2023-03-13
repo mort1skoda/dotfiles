@@ -9,6 +9,7 @@ ln -svf /dat.mnt/dotfiles/install.readme ~
 ln -svf /dat.mnt/dotfiles/.scripts       ~
 ln -svf /dat.mnt/dotfiles/.vifm          ~
 ln -svf /dat.mnt/dotfiles/.vim           ~
+ln -svf /dat.mnt/dotfiles/dmenu.utils    ~
 ln -svf /dat.mnt/dotfiles/.aliases       ~
 ln -svf /dat.mnt/dotfiles/.bash_logout   ~
 ln -svf /dat.mnt/dotfiles/.bash_profile  ~
