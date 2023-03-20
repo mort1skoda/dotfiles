@@ -1,85 +1,14 @@
-#### archlinux tutorial
-#### legacy bios systemd
-#### asus k50
+# archlinux install
+## Gigabyte AM1M-S2H ver1
+### Desktop
 
-
-#### use browser<!--{{{-->
-
-   [download iso](https://archlinux.org/download)
-<!--}}}-->
-
-#### use transmission<!--{{{-->
-
-    i transmission-cli
-
-    transmission-daemon --download-dir "/dat.mnt/Downloads"
-    (transmission-daemon --dump-settings)
-
-   start:
-
-    transmission-daemon
-    transmission-remote -a <torrent> or alias: trm -a <file>
-    trm -a archlinux.2023.03.01-x86_64.iso.torrent
-    watch -n10 transmission-remote -l
-
-   remove:
-
-    trm -t <ID> -r
-    trm -t all -r       (remove all)     
-
-    also see: ~/.scripts/transmission.sh
-<!--}}}-->
-
-#### use wget<!--{{{-->
-
-    wget https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-x86_64.iso
-<!--}}}-->
-
-#### use curl
+#### bootable usb
 
     curl --output arch.iso https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso
 
-#### signatures<!--{{{-->
-
-    wget https://mirros.dotsrc.org/archlinux/iso/2023.03.01/archlinux-x86_64.iso.sig
-    wget https://mirror.rackspace.com/archlinux/iso/2023.03.01/b2sums.txt
-    wget https://mirror.rackspace.com/archlinux/iso/2023.03.01/sha256sums.txt
-
-<pre>
-   Open b2sums.txt and sha256sums.txt,
-   open the files and remove remove all lines,
-   but the entry with the iso file you downloaded.
-</pre>
-
-<pre>
-   b2sum -c b2sums.txt | grep --color OK
-   sha256sum -c sha256sums.txt | grep --color OK
-   sudo pacman -S squoia-sq
-   sq wkd get pierre@archlinux.org > release-key.pgp
-   sq verify --signer-cert release-key.pgp --detached archlinux-x86_64.iso.sig archlinux-x86_64.iso
-   gpg --auto-key-locate clear,wkd -v --locate-external-key pierre@archlinux.org
-   gpg --keyserver-options auto-key-retrieve --verify archlinux-x86_64.iso.sig
-
-   The below instruction will only work on an existing arch linux installation: 
-   pacman-key -v archlinux-x86_64.iso.sig
-</pre>
-<!--}}}-->
-
-#### make bootable usb<!--{{{-->
-
     sudo cp arch.iso /dev/sdb
 
-    sudo usr/bin/cp arch*iso /dev/sdb
 
-    sudo dd bs=1M if=archlinux-x86_64.iso of=/dev/sdx conv=fsync oflag=direct status=progress
-   <!--}}}-->
-
-
-#### -- boot the live environment ------------------{{{
-
-    asus k50 spam ESC, select boot device
-
-#### --------------------------------------------}}}
 
 #### -- initial settings -----------------------{{{
 
