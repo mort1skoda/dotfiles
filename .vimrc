@@ -159,6 +159,8 @@ nnoremap G G:echo"-N-  G = bottom of page / nnnG = Go to line"<cr>
 set splitright
 
 nnoremap <Leader>vv :vs<CR>
+nnoremap <c-v> :vs<cr>
+
 nnoremap <Leader>hh :sp<CR>
 
 nnoremap <c-j> <c-w><c-w>:echo"ctrl-j = right pane rotate"<cr>

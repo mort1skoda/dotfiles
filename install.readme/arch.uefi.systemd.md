@@ -8,14 +8,14 @@
 
 #### download an iso image
 
-    https://mirror.archlinux.no/iso/2023.02.01/
+    https://mirror.archlinux.no/iso/2023.03.01/
 
 
 
 #### wget
 
-    wget https://mirror.archlinux.no/iso/2023.02.01/archlinux-x86_64.iso
-    wget https://mirror.archlinux.no/iso/2023.02.02/archlinux-x86_64.iso.sig
+    wget https://mirror.archlinux.no/iso/2023.03.01/archlinux-x86_64.iso
+    wget https://mirror.archlinux.no/iso/2023.02.01/archlinux-x86_64.iso.sig
 
 
 
