@@ -196,6 +196,10 @@ alias et='vim ~/.tmux.conf'
 alias or='openbox --reconfigure'
 #-----------------------------------------------------}}}
 
+#--- kernel ---{{{
+alias un='uname -a'
+#--------------}}}
+
 #--- network -----------------------------------------------{{{
 alias ip="ip -color=auto"
 alias wip='watch --color -n15 ip -color a'
