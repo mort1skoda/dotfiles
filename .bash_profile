@@ -23,7 +23,7 @@ fi
 source ~/.bashrc
 
 echo "Shell Level: $SHLVL"
-sleep 1
+sleep 2
 ip a | g inet
 
 
