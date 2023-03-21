@@ -7,14 +7,73 @@
     curl --output arch.iso https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso
     sudo cp arch.iso /dev/sdb
 
+    bash
     loadkeys no             (/usr/share/kbd/keymaps/**.*.map.gz)
-    setfont drdos8x14       (/usr/share/kbd/consolefonts)
     set -o vi
+    shopt
+    shopt -s autocd
+    setfont dr*8x14       (/usr/share/kbd/consolefonts) setfont gr*8x11*
     tmux
-    ctrl+b %
+    ctrl+b %      (vert split)
+    ctrl+b arrow  (navigate to pane)
+    Tip: set alt-v   ctrl+b : bind -n M-v split-window -h
+
     lynx wiki.archlinux.org/title/installation_guide
 
+
+    ls /sys/firmware/efi/efivars
+    ip --color a
+    ping -c4 -D archlinux.org
+    timedatectl
+    cfdisk
+        example 870 EVO 250GB
+        sda1          1G  efi
+        sda2          8G  swap
+        sda3,4,5,6   30G  OS (/ for different OS installations)
+        sda7        100G  data
+    lsblk
+
+    mkfs.fat -F 32  /dev/sda1
+    mkswap          /dev/sda2
+    mkfs.ext4       /dev/sda3   upto  sda7
+    lsblk /dev/sda -o NAME,SIZE,MOUNTPOINT,FSTYPE
     
+    mount --mkdir  /dev/sda1 /mnt/boot
+    swapon         /dev/sda2
+    mount          /dev/sda3 /mnt
+
+    cd /mnt
+    mkdir /mnt/dat.mnt
+    mount /dev/sda7 /mnt/dat.mnt
+    
+    pacstrap -iK /mnt base linux linux-firmware amd-ucode
+    pacstrap -iK /mnt vim sudo bat htop git github-cli
+     
+    genfstab -U /mnt >> /mnt/etc/fstab
+    
+    arch-chroot /mnt
+    set -o vi
+    alias l='ls -lah --color --group-directories-first'
+    shopt -s autocd
+   
+    ln -svf /usr/share/zoneinfo/Europe/Oslo /etc/localtime
+    hwclock --systohc
+    vim /etc/locale.gen
+    locale-gen
+    vim /etc/locale.conf        LANG=en_US.UTF-8
+    vim /etc/vconsole.conf      KEYMAP=no       FONT=gr737b-8x11
+
+    pacman -S dhcpcd
+    systemctl enable dhcpcd
+
+
+    pacman -S grub efibootmgr     dosfstools mtools
+    mkdir /boot/EFI
+    mount /dev/sda1 /boot/EFI
+    grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB
+    grub-mkconfig -o /boot/grub/grub.cfg
+
+
 
 #### -- initial settings -----------------------{{{
 
@@ -151,10 +210,11 @@ Provide an image here to see the layout of the ssd on asus.k50
     arch-chroot /mnt
     set -o vi
     alias l='ls -la --color --group-directories-first'
+    shopt -s autocd
 
     cd /
     mkdir /dat.mnt
-    pacman -S zsh
+    
     mount /dev/sda7 /dat.mnt
     lsblk
     cd /dat*/dot*

@@ -102,6 +102,7 @@ alias mv='mv -iv '
 #alias rm='sudo rm -vrf && l '
 alias co='sudo chown -vR m:m'
 alias cm='sudo chmod +x'
+alias mount='sudo mount --mkdir '
 #... .......... ....................}}}
 
 #--- edit files ------------------------------------------------{{{

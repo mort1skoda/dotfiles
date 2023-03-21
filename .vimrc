@@ -340,6 +340,7 @@ vnoremap <C-s> <esc>:w<cr>
 cnoremap <C-s> <esc>:w<cr>
 
 nnoremap <Leader>ss :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
+nnoremap <c-a> :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 
 nnoremap <c-q> :wq<cr>
 nnoremap q :q<cr>
