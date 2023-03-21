@@ -90,7 +90,7 @@ map .do cd /dat.mnt/Documents
     #%  shell-pipe      shell command running with the ui
     #!  shell-wait      shell command waiting for key press
     #&  shell-async     shell command running asynchronously
-map <enter> shell-wait
+#map <enter> shell-wait
 #map <c-enter> !echo '!echo enter'
 #map <enter> !echo '!!!! echo enter !!!!'
 

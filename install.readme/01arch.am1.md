@@ -9,6 +9,9 @@
     sudo cp arch.iso /dev/sdb
 
 
+loadkeys no             (/usr/share/kbd/keymaps/**.*.map.gz)
+setfont drdos8x14       (/usr/share/kbd/consolefonts)
+
 
 #### -- initial settings -----------------------{{{
 
