@@ -22,19 +22,16 @@ fi
 
 source ~/.bashrc
 
-echo "Shell Level: $SHLVL"
-#sleep 2
-ip a | g inet
-IPA=$(ip a | grep -i '255' )
-echo "IPA=$IPA"
-
-
 
 # -z return true if bash variable is unset
 while [ -z "$IPA" ]
 do
-    echo "Waiting for wifi..."
+    echo "Waiting for ip address..."
     sleep 1
+    IPA=$(ip a | grep -i '255' )
 done
-echo "WIFI IS UP AND RUNNING!!!"
+echo "YES! we got an ip address"
+
+ip a | g inet
+echo "Shell Level: $SHLVL"
 
