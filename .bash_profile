@@ -23,7 +23,9 @@ fi
 source ~/.bashrc
 
 echo "Shell Level: $SHLVL"
-sleep 2
+#sleep 2
 ip a | g inet
+IPA=$(ip a | grep -i '255' )
+echo "IPA=$IPA"
 
 
