@@ -29,3 +29,12 @@ IPA=$(ip a | grep -i '255' )
 echo "IPA=$IPA"
 
 
+
+# -z return true if bash variable is unset
+while [ -z "$IPA" ]
+do
+    echo "Waiting for wifi..."
+    sleep 1
+done
+echo "WIFI IS UP AND RUNNING!!!"
+
