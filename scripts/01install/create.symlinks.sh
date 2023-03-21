@@ -5,6 +5,7 @@
 # do NOT run as root, run as a regular user!
 
 ln -svf /dat.mnt/dotfiles/.aliases       ~
+ln -svf /dat.mnt/dotfiles/.xinitrc       ~
 
 ##ln -svf /dat.mnt/dotfiles/.config        ~
 ##ln -svf /dat.mnt/dotfiles/install.readme ~
@@ -19,7 +20,6 @@ ln -svf /dat.mnt/dotfiles/.aliases       ~
 #ln -svf /dat.mnt/dotfiles/.lynxrc        ~
 #ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
 #ln -svf /dat.mnt/dotfiles/.vimrc         ~
-#ln -svf /dat.mnt/dotfiles/.xinitrc       ~
 ##ln -svf /dat.mnt/dotfiles/.zlogout       ~
 ##ln -svf /dat.mnt/dotfiles/.zprofile      ~
 ##ln -svf /dat.mnt/dotfiles/.zshrc         ~

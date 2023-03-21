@@ -1,5 +1,5 @@
-pi pulseaudio
-pi pavucontrol
+pm -S pulseaudio
+pm -S pavucontrol
 
 # reboot computer
 

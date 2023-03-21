@@ -33,11 +33,13 @@
 
     wget dl.suckless.org/dwm/dwm-6.4.tar.gz
     tar -xvf dwm-6.4.tar.gz
+    pm -S make
     cd dwm-6.4
     sudo make clean install
 
     wget dl.suckless.org/st/st-0.9.tar.gz
     tar -xvf st-0.9.tar.gz
+    pm -S pkg-config
     cd st-0.9
     s make clean install
 
