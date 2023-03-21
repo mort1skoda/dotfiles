@@ -9,7 +9,7 @@ IP_LINK=$(ip link | grep -i wlp)
 #echo $IP_LINK
 
 if [ "$IP_LINK" ]; then
-    echo "wpa"
+    echo "Starting wpa_supplicant from ~/.bash_profile"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 fi
 
@@ -21,6 +21,7 @@ fi
 source ~/.bashrc
 
 echo "Shell Level: $SHLVL"
+sleep 2
 ip a | g inet
 
 
