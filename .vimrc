@@ -96,6 +96,9 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 "-----------------}}}
 
+
+"--------------------------------------------end-of-settings-----------------------------}}}
+
 "--- search ---------{{{
 " Incrementally highlight matching characters as you type.
 set incsearch
@@ -117,10 +120,10 @@ set hlsearch
 " search and replace
 nnoremap <C-x> :%s/
 
+nnoremap / <esc>zr zr :set incsearch<cr>:/
+
 "nnoremap % %:echo"%=find matching parenthesis or brackets"<cr>
 "--------------------}}}
-
-"--------------------------------------------end-of-settings-----------------------------}}}
 
 "--- movements -----------------------------------------------------------------{{{
 nnoremap 0 0:echo"0 = beginning of line"<cr>
