@@ -6,7 +6,7 @@ echo "~/.bash_profile"
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
 IP_LINK=$(ip link | grep -i wlp)
-#echo $IP_LINK
+echo $IP_LINK
 
 if [ "$IP_LINK" ]; then
     echo "Starting wpa_supplicant from ~/.bash_profile"
