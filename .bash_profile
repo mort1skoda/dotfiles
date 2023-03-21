@@ -24,7 +24,8 @@ source ~/.bashrc
 
 
 # -z return true if bash variable is unset
-while [ -z "$IPA" ]
+#while [ -z "$IPA" ]
+while [ -z "$(ip a | grep -i '255' )" ]
 do
     echo "Waiting for ip address..."
     sleep 1
@@ -34,4 +35,6 @@ echo "YES! we got an ip address"
 
 ip a | g inet
 echo "Shell Level: $SHLVL"
+
+echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 

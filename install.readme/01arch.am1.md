@@ -2,16 +2,19 @@
 ## Gigabyte AM1M-S2H ver1
 ### Desktop
 
-#### bootable usb
+#### quick guide
 
     curl --output arch.iso https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso
-
     sudo cp arch.iso /dev/sdb
 
+    loadkeys no             (/usr/share/kbd/keymaps/**.*.map.gz)
+    setfont drdos8x14       (/usr/share/kbd/consolefonts)
+    set -o vi
+    tmux
+    ctrl+b %
+    lynx wiki.archlinux.org/title/installation_guide
 
-loadkeys no             (/usr/share/kbd/keymaps/**.*.map.gz)
-setfont drdos8x14       (/usr/share/kbd/consolefonts)
-
+    
 
 #### -- initial settings -----------------------{{{
 

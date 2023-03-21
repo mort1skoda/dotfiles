@@ -112,7 +112,7 @@ alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
 alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
 alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
-alias ebp='vim ~/.bash_profile && source ~/.bash_profile'
+alias ebp='vim ~/.bash_profile && sbp'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
@@ -122,7 +122,7 @@ alias et='vim ~/.tmux.conf'
 #---------------------------------------------------------------}}}
 
 #--- source files ------------------------{{{ 
-alias sbp='source ~/.bash_profile'
+alias sbp='time source ~/.bash_profile'
 alias sb='source ~/.bashrc'
 alias sbl='source ~/.bash_logout'
 alias sa='source ~/.aliases'
@@ -158,6 +158,7 @@ alias ur='urxvt &'
 #--- git ---------------------------------------------------{{{
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
 #echo $DATE  
+alias date='source .aliases && echo $DATE'
 alias gss="git status --short"
 alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
 alias gsv="git status --verbose"
