@@ -6,7 +6,7 @@ set -o vi
 shopt -s autocd
 
 #green prompt for regular user
-PS1="\[\033[01;32m\]\w\[\033[00m\]\n"
+PS1="\[\033[01;30m\]\w\[\033[00m\]\n"
 
 #red prompt for root
 if [ "$EUID" -eq 0 ]

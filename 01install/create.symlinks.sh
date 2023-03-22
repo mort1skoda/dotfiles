@@ -6,6 +6,8 @@ sudo ln -sf /dat.mnt/dotfiles/.bash_profile   /home/m
 sudo ln -sf /dat.mnt/dotfiles/.bash_profile   /root
 sudo ln -sf /dat.mnt/dotfiles/.bashrc         /home/m
 sudo ln -sf /dat.mnt/dotfiles/.bashrc         /root
+sudo ln -sf /dat.mnt/dotfiles/.config         /home/m
+sudo ln -sf /dat.mnt/dotfiles/.config         /root
 sudo ln -sf /dat.mnt/dotfiles/.vim            /home/m
 sudo ln -sf /dat.mnt/dotfiles/.vimrc          /home/m
 sudo ln -sf /dat.mnt/dotfiles/.xinitrc        /home/m
