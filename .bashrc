@@ -7,6 +7,8 @@ shopt -s autocd
 
 TTY=$(tty)
 echo "TTY = $TTY"
+IS_TTY=$(echo $TTY | grep tty)
+echo "IS_TTY = $IS_TTY"
 
 
 
