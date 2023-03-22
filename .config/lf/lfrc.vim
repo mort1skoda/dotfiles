@@ -70,6 +70,10 @@ map .pi cd /dat.mnt/Pictures
 map .rr cd /root
 map .sl cd ~/.config/suckless
 map .wp cd /dat.mnt/Wallpapers
+map .ss cd /dat.mnt/Screenshots
+
+
+
 #cmd delete ${{
      #set -f
      #printf "$fx\n"
@@ -262,7 +266,8 @@ map <esc> _escape
 cmd _escape :{{
     unselect
     clear
-    echo "esc = unselect & clear"
+    reload
+    echo "esc = unselect, clear & reload"
 }}
 
 #save source

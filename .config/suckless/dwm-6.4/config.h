@@ -2,8 +2,8 @@
 //####---- dwm ----####
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const unsigned int snap      = 32;       /* snap pixel */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
+static const unsigned int snap      = 28;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Source Code Pro Bold:size=11" };
@@ -13,7 +13,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 //static const char col_cyan[]        = "#383a59"; // dracula
-static const char col_cyan[]        = "#384510"; // gruvbox green
+static const char col_cyan[]        = "#784510"; // gruvbox green
 static const char *colors[][3]      = {
   /*               fg         bg         border   */
   [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -30,16 +30,18 @@ static const Rule rules[] = {
   */
   /* class      instance    title       tags mask     isfloating   monitor */
   { "Gimp",      NULL,       NULL,       0,            1,           -1 },
-  { "nsxiv",     NULL,       NULL,       0,            1,           -1 },
+  { "sxiv",      NULL,       NULL,       0,            1,           -1 },
   { "Firefox",   NULL,       NULL,       1 << 7,       0,           -1 },
   { "LibreWolf", NULL,       NULL,       0,            0,           -1 },
+  { "st_float",  NULL,       NULL,       0,            1,           -1 },
+  { "lf",        NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
-static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
-static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
+static const float mfact        = 0.60; /* factor of master area size [0.05..0.95] */
+static const int nmaster        = 1;    /* number of clients in master area */
+static const int resizehints    = 1;    /* 1 means respect size hints in tiled resizals */
+static const int lockfullscreen = 1;    /* 1 will force focus on the fullscreen window */
 
 #include "layouts.c"
 static const Layout layouts[] = {
@@ -63,10 +65,13 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char lines[] = "20";
-static const char *dmenucmd[] = { "dmenu_run", "-l", lines, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *www_cmd[] = { "firefox" , NULL };
+static const char *dmenucmd[]    = { "dmenu_run", "-l", lines, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *termcmd[]     = { "st", NULL };
+static const char *term_float[]  = { "st_float", NULL };
+static const char *www_cmd[]     = { "firefox" , NULL };
 static const char *filemanager[] = { "st" , "lf", NULL };
+//static const char *screenshot[] = { "/dat.mnt/dotfiles/scripts/scrot/screenshoot.sh" , NULL };
+static const char *screenshot[]  = { "st" , "scrot", NULL };
 
 static const Key keys[] = {
   /* modifier                     key        function        argument */
@@ -75,8 +80,11 @@ static const Key keys[] = {
   { MODKEY,                       XK_e,      spawn,          {.v = filemanager } },
   { MODKEY,                       XK_r,      spawn,          {.v = dmenucmd    } },
   { MODKEY,                       XK_t,      spawn,          {.v = termcmd     } },
-  { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = termcmd     } },
-  { MODKEY,                       XK_w,      spawn,          {.v = www_cmd    } },
+  { MODKEY,                       XK_w,      spawn,          {.v = www_cmd     } },
+  { MODKEY,                       XK_x,      spawn,          {.v = screenshot  } },
+  
+//try to start st in floating mode
+  { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = term_float  } },
 
   { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
   { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },

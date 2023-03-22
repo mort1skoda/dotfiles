@@ -33,6 +33,7 @@ export EDITOR='vim'
 export OPENER='xdg-open'
 export BAT_THEME='gruvbox-dark'
 export PAGER='less'
+export XDG_CONFIG_HOME='/home/m/.config'
 
 #source ~/gruvbox.bash
 

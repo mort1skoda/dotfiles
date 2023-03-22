@@ -1,4 +1,4 @@
-#!/bin/sh
+#!bin/sh
 echo "~/.aliases"
 echo "shell is: $0"
 unalias -a
@@ -33,29 +33,30 @@ alias sl='echo "Shell level = $SHLVL"'
 
 #--- directories ---{{{
 # change directory:
-alias ...='cd ../.. && ls -la --color --group-directories-first'
-alias ..='cd .. && ls -la --color --group-directories-first'
-alias .df='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
-alias .dl='cd /dat.mnt/Downloads && ls -la --color --group-directories-first'
-alias .dm='cd /dat.mnt/ && ls -la --color --group-directories-first'
-alias .do='cd /dat.mnt/Documents && ls -la --color --group-directories-first'
-alias .h='cd ~ && ls -la --color --group-directories-first'
+alias ...='cd ../.. && ls -lah --color --group-directories-first'
+alias ..='cd .. && ls -lah --color --group-directories-first'
+alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
+alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
+alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
+alias .do='cd /dat.mnt/Documents && ls -lah --color --group-directories-first'
+alias .h='cd ~ && ls -lah --color --group-directories-first'
 alias .lf='cd ~/.config/lf && l'
-alias .pi='cd /dat.mnt/Pictures && ls -la --color --group-directories-first'
-alias .r='cd / && ls -la --color --group-directories-first'
-alias .rr='cd /root && ls -la --color --group-directories-first'
+alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
+alias .r='cd / && ls -lah --color --group-directories-first'
+alias .rr='cd /root && ls -lah --color --group-directories-first'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
 alias .wp='cd /dat.mnt/Wallpapers && l'
+alias .ss='cd /dat.mnt/Screenshots && l'
 
 
 # list directories:
 alias .='ls'
-alias l='ls -lah --color --group-directories-first'
+alias l='ls -lahh --color --group-directories-first'
 alias ll='ls -l --color --group-directories-first'
 alias la='ls -a --color --group-directories-first'
 alias ls='ls --color --group-directories-first'
-alias lg='ls -la --color --group-directories-first | grep -i --color '
-alias wl='watch --color ls -la --color --group-directories-first'
+alias lg='ls -lahh --color --group-directories-first | grep -i --color '
+alias wl='watch --color ls -lah --color --group-directories-first'
 
 # mkdir rmdir:
 alias md='mkdir -pv '
