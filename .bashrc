@@ -5,8 +5,10 @@ set -o vi
 #stty -ixon
 shopt -s autocd
 
-IS_TTY=$(tty)
-echo "IS_TTY = $IS_TTY"
+TTY=$(tty)
+echo "TTY = $TTY"
+
+
 
 # prompt for regular user
 PS1="\[\033[34m\]\w\[\033[00m\]\n"
