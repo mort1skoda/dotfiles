@@ -1,6 +1,10 @@
 #!/bin/sh
 # This shell script can also be run with the
 # alias ud [update dotfiles]
+if [ "$EUID" -eq 0 ]
+then
+   exit
+fi 
 
 ORIGIN='main'
 #echo $ORIGIN
