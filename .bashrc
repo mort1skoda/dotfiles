@@ -12,11 +12,13 @@ echo "IS_TTY = $IS_TTY"
 
 if [ $IS_TTY ]
 then
-    echo "ipoiupoupoup"
+    PS1="\[\033[31m\]\w\[\033[00m\]\n"
+else
+    PS1="\[\033[34m\]\w\[\033[00m\]\n"
 fi
 
 # prompt for regular user
-PS1="\[\033[34m\]\w\[\033[00m\]\n"
+#PS1="\[\033[34m\]\w\[\033[00m\]\n"
 
 # prompt for # ROOT #
 if [ "$EUID" -eq 0 ]
