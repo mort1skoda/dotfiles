@@ -140,6 +140,9 @@ nnoremap O O<esc>:echo"-N-  O = Open line above"<cr>
 nnoremap <S-j> }:echo '-N-  shift-j = } down'<CR>
 nnoremap <S-k> {:echo '-N-  shift-k = { up'<CR>
 
+nnoremap { }:echo '-N-  shift-j = } down'<CR>
+nnoremap } {:echo '-N-  shift-k = { up'<CR>
+
 nnoremap <S-l> $:echo '-N-  shift-l = end of line'<CR>
 nnoremap <S-h> 0:echo '-N-  shift-h = beginning of line'<CR>
 vnoremap <S-l> $
@@ -339,7 +342,7 @@ inoremap <C-s> <esc>:w<cr>l
 vnoremap <C-s> <esc>:w<cr>
 cnoremap <C-s> <esc>:w<cr>
 
-nnoremap <Leader>ss :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
+nnoremap <Leader>ss :nohlsearch<cr>:source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 nnoremap <c-a> :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 
 nnoremap <c-q> :wq<cr>
