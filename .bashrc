@@ -10,7 +10,10 @@ echo "TTY = $TTY"
 IS_TTY=$(echo $TTY | grep tty)
 echo "IS_TTY = $IS_TTY"
 
-
+if [ $IS_TTY ]
+then
+    echo "ipoiupoupoup"
+fi
 
 # prompt for regular user
 PS1="\[\033[34m\]\w\[\033[00m\]\n"
