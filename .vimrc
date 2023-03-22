@@ -134,7 +134,7 @@ nnoremap k k:echo "-N-  k up"<cr>
 nnoremap l l:echo "-N-  l right"<cr>
 
 nnoremap o o<esc>:echo"-N-  o = open line below"<cr>
-nnoremap <enter> o<esc>:echo"-N-  enter = o = open line below"<cr>
+nnoremap <enter> O<esc>:echo"-N-  enter = o = open line below"<cr>
 
 
 
