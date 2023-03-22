@@ -1,13 +1,18 @@
 #!/bin/sh
-
+clear
+echo $0
+#"shell=$0  script=$0"
 # to run:
 # /dat.mnt/dotfiles/scripts/01install/create.symlinks.sh
 # do NOT run as root, run as a regular user!
 
-ln -svf /dat.mnt/dotfiles/.aliases       ~
-ln -svf /dat.mnt/dotfiles/.vimrc         ~
-ln -svf /dat.mnt/dotfiles/.vim           ~
-ln -svf /dat.mnt/dotfiles/.xinitrc       ~
+ln -sf /dat.mnt/dotfiles/.aliases       /home/m
+sudo ln -sf /dat.mnt/dotfiles/.aliases       /root
+ln -sf /dat.mnt/dotfiles/.vimrc         /home/m
+ln -sf /dat.mnt/dotfiles/.vim           /home/m
+ln -sf /dat.mnt/dotfiles/.xinitrc       /home/m
+ln -sf /dat.mnt/dotfiles/.bash_profile  /home/m
+sudo ln -sf /usr/bin/firefox            /usr/local/bin/www-browser
 
 ##ln -svf /dat.mnt/dotfiles/.config        ~
 ##ln -svf /dat.mnt/dotfiles/install.readme ~
@@ -15,8 +20,6 @@ ln -svf /dat.mnt/dotfiles/.xinitrc       ~
 #ln -svf /dat.mnt/dotfiles/.vifm          ~
 #ln -svf /dat.mnt/dotfiles/scripts/dmenu  ~
 #ln -svf /dat.mnt/dotfiles/.bash_logout   ~
-#ln -svf /dat.mnt/dotfiles/.bash_profile  ~
-#ln -svf /dat.mnt/dotfiles/.bashrc        ~
 #ln -svf /dat.mnt/dotfiles/.gitconfig     ~
 #ln -svf /dat.mnt/dotfiles/.lynxrc        ~
 #ln -svf /dat.mnt/dotfiles/.tmux.conf     ~
@@ -32,8 +35,9 @@ ln -svf /dat.mnt/dotfiles/.xinitrc       ~
 #sudo #ln -svf /dat.mnt/dotfiles/etc.vconsole.conf   /etc/vconsole.conf
 #sudo #ln -svf /dat.mnt/dotfiles/etc.pacman.conf   /etc/pacman.conf
 
-ls -la --color ~ | grep --color dotfiles
-ls -la --color /etc | grep --color dotfiles
+ls -la --color  /home/m         | grep --color dotfiles
+ls -la --color  /etc            | grep --color dotfiles
+ls -la --color  /usr/local/bin  | grep --color www-browser
 
 # fonts
 #sudo mkdir -p /usr/share/fonts
@@ -41,6 +45,12 @@ ls -la --color /etc | grep --color dotfiles
 #ls -lah --color /usr/share/fonts
 
 # comment next line if you want to copy to home of user root.
+
+
+
+
+
+
 exit
 
 #sudo #ln -svf /dat.mnt/dotfiles/.config        /root

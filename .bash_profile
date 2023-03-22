@@ -1,4 +1,5 @@
-echo "~/.bash_profile"
+#!/bin/sh
+echo "shell=$0  ~/.bash_profile"
 
 #--- wifi -----------------------------{{
 #sudo rfkill unblock wifi

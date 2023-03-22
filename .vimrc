@@ -134,6 +134,18 @@ nnoremap k k:echo "-N-  k up"<cr>
 nnoremap l l:echo "-N-  l right"<cr>
 
 nnoremap o o<esc>:echo"-N-  o = open line below"<cr>
+nnoremap <enter> o<esc>:echo"-N-  enter = o = open line below"<cr>
+
+
+
+
+
+
+
+
+
+
+
 nnoremap O O<esc>:echo"-N-  O = Open line above"<cr>
 
 " speed up scrolling
@@ -231,9 +243,13 @@ let $VIMRC          = '~/.vimrc'
 let $VIFMRC         = '~/.vifm/vifmrc.vim' 
 let $TMUX           = '~/.tmux.conf'
 let $BASH_ENV       = "~/.aliases"
-let $ZSH_ENV        = "~/.aliases"
+"let $ZSH_ENV        = "~/.aliases"
 let $LFRC           = "~/.config/lf/lfrc.vim"
-nnoremap <enter> :! 
+
+
+
+
+
 
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>ezp :vs ~/.zprofile<cr>:echo expand('%:p')<cr>
