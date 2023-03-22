@@ -114,7 +114,7 @@ map X !$f
 #--- open files ---{{
 
 # open sxiv in thumbnail mode on folder:
-map st _sxiv_thumb
+map sx _sxiv_thumb
 cmd _sxiv_thumb &{{
 # set -f  Disable filename expansion (globbing). 
 #    set -f
