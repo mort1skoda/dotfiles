@@ -10,3 +10,8 @@ feh --bg-scale ~/Pictures/gruvbox/autumn.leaf.jpg &
 #
 dwm
 #
+#nf
+#
+# run bash cmd / script on X exit
+#
+
