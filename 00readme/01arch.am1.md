@@ -65,7 +65,7 @@
 
     pacman -S dhcpcd
     systemctl enable dhcpcd
-
+    vim /etc/dhcpcd.conf        [add noarp]
 
     pacman -S grub efibootmgr     dosfstools mtools
     mkdir /boot/EFI
