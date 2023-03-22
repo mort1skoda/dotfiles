@@ -10,10 +10,7 @@ echo "TTY = $TTY"
 IS_TTY=$(echo $TTY | grep tty)
 echo "IS_TTY = $IS_TTY"
 
-if [ $IS_TTY ]
-then
-    PS1="\[\033[32m\]\w\[\033[00m\]\n"
-else if [ $TMUX ]
+if [ $IS_TTY || $TMUX ]
 then
     PS1="\[\033[32m\]\w\[\033[00m\]\n"
 else
