@@ -5,12 +5,12 @@ set -o vi
 #stty -ixon
 shopt -s autocd
 
-#green prompt for regular user
-PS1="\[\033[01;30m\]\w\[\033[00m\]\n"
+# prompt for regular user
+PS1="\[\033[34m\]\w\[\033[00m\]\n"
 
-#red prompt for root
+# prompt for # ROOT #
 if [ "$EUID" -eq 0 ]
-    then PS1="\[\033[01;31m\]\w\[\033[00m\]\n"
+    then PS1="#- \[\033[05;41m\]\w\[\033[00m\] -#\n"
 fi
 
 source ~/.aliases
