@@ -33,22 +33,20 @@ alias sl='echo "Shell level = $SHLVL"'
 
 #--- directories ---{{{
 # change directory:
-alias ..='cd .. && ls -la --color --group-directories-first'
 alias ...='cd ../.. && ls -la --color --group-directories-first'
-alias .r='cd / && ls -la --color --group-directories-first'
-alias .rr='cd /root && ls -la --color --group-directories-first'
-alias .h='cd ~ && ls -la --color --group-directories-first'
-alias .dm='cd /dat.mnt/ && ls -la --color --group-directories-first'
+alias ..='cd .. && ls -la --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -la --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -la --color --group-directories-first'
+alias .dm='cd /dat.mnt/ && ls -la --color --group-directories-first'
 alias .do='cd /dat.mnt/Documents && ls -la --color --group-directories-first'
-alias .pi='cd /dat.mnt/Pictures && ls -la --color --group-directories-first'
-alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
+alias .h='cd ~ && ls -la --color --group-directories-first'
 alias .lf='cd ~/.config/lf && l'
+alias .pi='cd /dat.mnt/Pictures && ls -la --color --group-directories-first'
+alias .r='cd / && ls -la --color --group-directories-first'
+alias .rr='cd /root && ls -la --color --group-directories-first'
+alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
+alias .wp='cd /dat.mnt/Wallpapers && l'
 
-# windows C:\ and D:\
-alias .wc='cd /mnt/c && ls -la --color --group-directories-first'
-alias .wd='cd /mnt/d && ls -la --color --group-directories-first'
 
 # list directories:
 alias .='ls'
@@ -101,7 +99,7 @@ alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS
 alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
-#alias rm='sudo rm -vrf && l '
+alias rm='sudo rm -ivrf '
 alias co='sudo chown -vR m:m'
 alias cm='sudo chmod +x'
 alias mount='sudo mount --mkdir '

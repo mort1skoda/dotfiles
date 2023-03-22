@@ -1,0 +1,16 @@
+feh
+sxiv
+neofetch
+gnome-backgrounds
+
+fzf
+alias
+bat
+cat
+echo
+grep
+ls
+mkdir
+rmdir
+watch
+whoami

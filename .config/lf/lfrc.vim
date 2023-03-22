@@ -60,16 +60,16 @@ map e :echo "e"
 #map gh cd ~
 map .. cd ..
 map ./ cd /
-map .da cd /dat.mnt
 map .df cd /dat.mnt/dotfiles
+map .dl cd /dat.mnt/Downloads
+map .dm cd /dat.mnt
+map .do cd /dat.mnt/Documents
 map .h cd ~
 map .lf cd ~/.config/lf
+map .pi cd /dat.mnt/Pictures
 map .rr cd /root
 map .sl cd ~/.config/suckless
-map .dl cd /dat.mnt/Downloads
-map .pi cd /dat.mnt/Pictures
-map .do cd /dat.mnt/Documents
-
+map .wp cd /dat.mnt/Wallpapers
 #cmd delete ${{
      #set -f
      #printf "$fx\n"
@@ -95,6 +95,7 @@ map .do cd /dat.mnt/Documents
 #map <enter> !echo '!!!! echo enter !!!!'
 
 # w opens shell, make ctrl-z do the same thing.
+map w $$SHELL
 map <c-z> $$SHELL
 
 # }}}
@@ -107,6 +108,19 @@ map X !$f
 
 
 #--- open files ---{{
+
+# open sxiv in thumbnail mode on folder:
+map st _sxiv_thumb
+cmd _sxiv_thumb &{{
+# set -f  Disable filename expansion (globbing). 
+#    set -f
+    lf -remote "send $id \$/usr/bin/sxiv -t \$fx"
+    #echo "$fx"
+}}
+
+
+
+
 #map o &mimeopen $f
 map O $mimeopen --ask $f
 map o :open $f
