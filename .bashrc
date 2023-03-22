@@ -6,9 +6,9 @@ set -o vi
 shopt -s autocd
 
 TTY=$(tty)
-echo "TTY = $TTY"
+#echo "TTY = $TTY"
 IS_TTY=$(echo $TTY | grep tty)
-echo "IS_TTY = $IS_TTY"
+#echo "IS_TTY = $IS_TTY"
 
 if [ $IS_TTY ] || [ $TMUX ]
 then
@@ -36,4 +36,4 @@ export PAGER='less'
 
 #source ~/gruvbox.bash
 
-
+ 

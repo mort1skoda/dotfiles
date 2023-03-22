@@ -6,10 +6,10 @@ echo "shell=$0  ~/.bash_profile"
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-IP_LINK=$(ip link | grep -i wlp)
-echo $IP_LINK
+HAS_WIFI=$(ip link | grep -i wlp)
+#echo $HAS_WIFI
 
-if [ "$IP_LINK" ]; then
+if [ "$HAS_WIFI" ]; then
     echo "Starting wpa_supplicant from ~/.bash_profile"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else

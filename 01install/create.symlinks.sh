@@ -16,5 +16,7 @@ sudo ln -sf /dat.mnt/dotfiles/.aliases        /root
 sudo ln -sf /dat.mnt/dotfiles/.bash_profile   /root
 sudo ln -sf /dat.mnt/dotfiles/.bashrc         /root
 sudo ln -sf /dat.mnt/dotfiles/.config         /root
+sudo ln -sf /dat.mnt/dotfiles/.vim            /root
+sudo ln -sf /dat.mnt/dotfiles/.vimrc          /root
 sudo ln -sf /usr/bin/firefox                  /usr/local/bin/www-browser
 sudo ls -la --color  /root           | grep --color dotfiles
