@@ -1,5 +1,5 @@
 clear
-printf "linux shell=$0    file=$HOME/.bash_profile "
+printf "linux shell=$0    sourcing=$HOME/.bash_profile -> "
 
 #--- wifi check -----------------------------{{{
 #sudo rfkill unblock wifi
@@ -12,7 +12,7 @@ if [ "$HAS_WIFI" ]; then
     printf "Starting wpa_supplicant from ~/.bash_profile"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
-    printf "No wifi"
+    printf "No wifi, using ethernet"
 fi
 
 #sudo ip link set wlan0 up
@@ -20,7 +20,6 @@ fi
 #sudo ip link set enp3s0 down
 #--------------------------------------}}}
 
-source ~/.bashrc
 
 
 # -z return true if bash variable is unset
@@ -31,7 +30,7 @@ do
     sleep 1
     IPA=$(ip a | grep -i '255' )
 done
-echo "YES! we got an ip address"
+printf "YES! we got an ip address"
 
 
 ip a | grep -i --color inet 
@@ -40,3 +39,7 @@ echo "Shell Level: $SHLVL"
 
 echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 
+
+
+
+source ~/.bashrc
