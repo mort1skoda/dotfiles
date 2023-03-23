@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 setxkbmap no &
 xset -dpms &

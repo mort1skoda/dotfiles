@@ -1,7 +1,68 @@
-#!bin/sh
-echo "~/.aliases"
-echo "shell is: $0"
+#echo "~/.aliases       $@"
 unalias -a
+echo "$0 $1        $@"
+#echo $@
+
+#--- .aliases navigate directories ---{{{
+alias ..='cd .. && ls -lah --color --group-directories-first'
+alias ...='cd ../.. && ls -lah --color --group-directories-first'
+alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
+alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
+alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
+alias .ddoc='cd /dat.mnt/Documents && ls -lah --color --group-directories-first'
+alias .h='cd ~ && ls -lah --color --group-directories-first'
+alias .lf='cd ~/.config/lf && l'
+alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
+alias .r='cd / && ls -lah --color --group-directories-first'
+alias .rr='cd /root && ls -lah --color --group-directories-first'
+alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
+alias .ss='cd /dat.mnt/Screenshots && l'
+alias .wp='cd /dat.mnt/Wallpapers && l'
+# }}}
+
+# list directories:{{{
+alias  .='ls'
+alias  l='ls -lah --color --group-directories-first'
+alias ll='ls -lh  --color --group-directories-first'
+alias la='ls -ah  --color --group-directories-first'
+alias ls='ls      --color --group-directories-first'
+# }}}
+
+#--- watch directories {{{
+alias wl='watch --color ls -lah --color --group-directories-first'
+# }}}
+
+
+# mkdir rmdir:
+alias md='mkdir -pv '
+alias rd='rmdir -pv '
+
+
+
+
+#--- /home/m/.aliases ---{{{
+#!bin/sh
+#echo "~/.aliases       $@"
+#echo "shell is: $0"
+
+# }}}
+
+#--- edit files ------------------------------------------------{{{
+alias v='vim'
+alias vi='vim'
+alias ea='echo && vim ~/.aliases && source ~/.aliases'
+alias eb='vim ~/.bashrc && source ~/.bashrc'
+alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
+alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
+alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
+alias ebp='vim ~/.bash_profile && sbp'
+alias ev='vim ~/.vimrc'
+alias evf='vim ~/.vifm/vifmrc.vim'
+alias ex='vim ~/.xinitrc'
+alias enf='vim ~/.config/neofetch/config.conf'
+alias elf='vim ~/.config/lf/lfrc'
+alias et='vim ~/.tmux.conf'
+#---------------------------------------------------------------}}}
 
 #--- header ------------------------------------------------{{{
 # Author: Morty Hawk
@@ -31,41 +92,10 @@ alias sl='echo "Shell level = $SHLVL"'
 #alias su='su root zsh'
 #---------------------------------------------------------}}}
 
-#--- directories ---{{{
-# change directory:
-alias ...='cd ../.. && ls -lah --color --group-directories-first'
-alias ..='cd .. && ls -lah --color --group-directories-first'
-alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
-alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
-alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
-alias .do='cd /dat.mnt/Documents && ls -lah --color --group-directories-first'
-alias .h='cd ~ && ls -lah --color --group-directories-first'
-alias .lf='cd ~/.config/lf && l'
-alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
-alias .r='cd / && ls -lah --color --group-directories-first'
-alias .rr='cd /root && ls -lah --color --group-directories-first'
-alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
-alias .wp='cd /dat.mnt/Wallpapers && l'
-alias .ss='cd /dat.mnt/Screenshots && l'
-
-
-# list directories:
-alias .='ls'
-alias l='ls -lahh --color --group-directories-first'
-alias ll='ls -l --color --group-directories-first'
-alias la='ls -a --color --group-directories-first'
-alias ls='ls --color --group-directories-first'
-alias lg='ls -lahh --color --group-directories-first | grep -i --color '
-alias wl='watch --color ls -lah --color --group-directories-first'
-
-# mkdir rmdir:
-alias md='mkdir -pv '
-alias rd='rmdir -pv '
-# }}}
-
 #--- cat/bat then grep <token> ---{{{
 alias ag='alias | grep -i --color '
 alias cag='source ~/.aliases && cat ~/.aliases | grep -i --color '
+alias lg='ls -lah --color --group-directories-first | grep -i --color '
 alias bag='source ~/.aliases && b ~/.aliases | grep -i --color '
 alias hg='cat ~/.bash_history | grep -i '
 # }}}
@@ -106,23 +136,6 @@ alias cm='sudo chmod +x'
 alias mount='sudo mount --mkdir '
 #... .......... ....................}}}
 
-#--- edit files ------------------------------------------------{{{
-alias v='vim'
-alias vi='vim'
-alias ea='echo && vim ~/.aliases && source ~/.aliases'
-alias eb='vim ~/.bashrc && source ~/.bashrc'
-alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
-alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
-alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
-alias ebp='vim ~/.bash_profile && sbp'
-alias ev='vim ~/.vimrc'
-alias evf='vim ~/.vifm/vifmrc.vim'
-alias ex='vim ~/.xinitrc'
-alias enf='vim ~/.config/neofetch/config.conf'
-alias elf='vim ~/.config/lf/lfrc'
-alias et='vim ~/.tmux.conf'
-#---------------------------------------------------------------}}}
-
 #--- source files ------------------------{{{ 
 alias sbp='time source ~/.bash_profile'
 alias sb='source ~/.bashrc'
@@ -135,7 +148,7 @@ alias szp='source ~/.zprofile'
 #--- start programs -------------------------------------------------{{{
 alias ht="htop"
 alias vf='vifm /home/m /dat.mnt/'
-alias x='/dat.mnt/dotfiles/wm.sh'
+alias x='/dat.mnt/dotfiles/scripts/wm.sh'
 alias a='alias && alias | wc -l && echo "Total aliases" ' #list all aliases
 alias s='sudo'
 alias gv='gvim '
@@ -181,7 +194,7 @@ alias gacp='git add --all && gc && gp'
 # mapleader = , here , is vim 
 alias egi='vim .gitignore'
 alias egc='vim ~/.gitconfig'
-alias ud='/dat.mnt/dotfiles/dotfiles.update.git.sh'
+alias ud='/dat.mnt/dotfiles/scripts/dotfiles.update.git.sh'
 
 #---------------------------------------------------------}}}
 
@@ -250,5 +263,4 @@ alias sd="ud && sudo shutdown -h now"
 #--- footer ------------------------------------------------{{{
 shopt -s expand_aliases
 #-----------------------------------------------------------}}}
-
 

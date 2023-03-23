@@ -27,6 +27,30 @@
 " echom"~/.vimrc"
 "-------------------------------------------------------------}}}
 
+"--- environment --------------------{{{
+let $ALIASES        = '~/.aliases'
+let $BASHRC         = '~/.bashrc'
+let $BASH_ENV       = "~/.aliases"
+let $BASH_PROFILE   = '~/.bash_profile'
+let $LFRC           = "/home/m/.config/lf/lfrc.vim"
+let $TMUX           = '~/.tmux.conf'
+let $VIFMRC         = '~/.vifm/vifmrc.vim' 
+let $VIMRC          = '~/.vimrc'
+nnoremap <c-z> :shell<cr>
+"------------------------------------------------------------------}}}
+
+"--- edit dotfiles ---{{{
+let mapleader = ","     " mapleader = ,
+nnoremap <Leader>ea :vs $ALIASES<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>eb  :vs $BASHRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
+nnoremap <Leader>elf :vs $LFRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ev :vs $VIMRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
+"---------------------}}}
+
 "--- folds -------------------{{{
 set foldmethod=marker
 "nnoremap ff za:echo"ff=fold toggle"<cr>
@@ -42,7 +66,6 @@ let &t_SI = "\<Esc>[5 q"    " Horizontal cursr in Replace mode
 "-------------------------------}}}
 
 "--- settings --------------------------------------------------------------------{{{
-let mapleader = ","     " mapleader = ,
 set noswapfile          " no not create ~ files
 set nobackup            " do not save backup files
 set nocompatible        " do not be compatible with old vi
@@ -235,35 +258,6 @@ nnoremap <tab> i<tab><esc>:echo"-- NORMAL -- tab=insert tab=4spaces"<cr>
 nnoremap u u:echo"u=undo"<cr>
 "----------------------------------------------------------}}}
 
-"--- environment --------------------{{{
-let $BASH_PROFILE   = '~/.bash_profile'
-let $BASHRC         = '~/.bashrc'
-let $ALIASES        = '~/.aliases'
-let $VIMRC          = '~/.vimrc'
-let $VIFMRC         = '~/.vifm/vifmrc.vim' 
-let $TMUX           = '~/.tmux.conf'
-let $BASH_ENV       = "~/.aliases"
-"let $ZSH_ENV        = "~/.aliases"
-let $LFRC           = "~/.config/lf/lfrc.vim"
-
-
-
-
-
-
-nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
-nnoremap <Leader>ezp :vs ~/.zprofile<cr>:echo expand('%:p')<cr>
-nnoremap <Leader>eb :vs $BASHRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ez :vs .zshrc<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ea :vs $ALIASES<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ev :vs $VIMRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>elf :vs ~/.config/lf/lfrc<CR>:echo expand('%:p')<CR>
-"
-nnoremap <c-z> :shell<cr>
-"------------------------------------------------------------------}}}
 
 "--- compiling -------------------------------------{{{
 nnoremap <Leader>mh :!make help<CR>
@@ -376,4 +370,3 @@ set laststatus=2
 "set statusline+=row:%l\ col:%c\ percent:%p%%
 "--------------------------------------------------}}}
        
-

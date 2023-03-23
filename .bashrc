@@ -2,9 +2,10 @@
 echo "~/.bashrc"
 
 set -o vi
-#stty -ixon
 shopt -s autocd
+shopt -s expand_aliases
 
+# set prompt for regular user
 TTY=$(tty)
 #echo "TTY = $TTY"
 IS_TTY=$(echo $TTY | grep tty)
@@ -17,15 +18,10 @@ else
     PS1="\[\033[34m\]\w\[\033[00m\]\n"
 fi
 
-# prompt for regular user
-#PS1="\[\033[34m\]\w\[\033[00m\]\n"
-
-# prompt for # ROOT #
+# set prompt for # ROOT #
 if [ "$EUID" -eq 0 ]
     then PS1="#- \[\033[05;41m\]\w\[\033[00m\] -#\n"
 fi
-
-source ~/.aliases
 
 export TERM='xterm-256color'
 export EDITOR='vim'
@@ -36,5 +32,7 @@ export PAGER='less'
 export XDG_CONFIG_HOME='/home/m/.config'
 
 #source ~/gruvbox.bash
+#stty -ixon
 
- 
+source ~/.aliases
+

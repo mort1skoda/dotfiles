@@ -1,5 +1,56 @@
-#" lfrc.vim
-#
+#--- lfrc navigate directories ---{{{
+map .. cd ..
+map ... cd ...
+map .r cd /
+map .df cd /dat.mnt/dotfiles
+map .dl cd /dat.mnt/Downloads
+map .dm cd /dat.mnt
+map .do cd /dat.mnt/Documents
+map .h cd ~
+map .lf cd ~/.config/lf
+map .pi cd /dat.mnt/Pictures
+map .rr cd /root
+map .sl cd ~/.config/suckless
+map .ss cd /dat.mnt/Screenshots
+map .wp cd /dat.mnt/Wallpapers
+#---------------------------------}}}
+
+
+
+
+#--- movement ---{{{
+map j _down
+cmd _down :{{
+    down
+    echo "j = down"
+}}
+
+
+map J :half-down :echo "hd"
+map K :half-up
+map e :echo "e"
+
+#map <c-s> _source
+#cmd _source :{{
+#    source /home/m/.config/lf/lfrc
+#    reload
+#    echo 'sourced: /home/m/.config/lf/lfrc  reloaded: lf'
+#}}
+
+
+
+
+#cmd delete ${{
+     #set -f
+     #printf "$fx\n"
+     #printf "delete?[y/n]"
+     #read ans
+     #[ "$ans" = "y" ] && rm -rf $fx
+#}}
+
+
+#}}}
+
 
 #--- options -----------------------------------------{{{
 set autoquit on 
@@ -38,54 +89,6 @@ map gaa ${{git add --all; git status --short; echo "press ENTER"; read ENTER}}
 #...............................................................}}}
 
 
-#--- movement ---{{{
-map j _down
-cmd _down :{{
-    down
-    echo "j = down"
-}}
-
-
-map J :half-down :echo "hd"
-map K :half-up
-map e :echo "e"
-
-#map <c-s> _source
-#cmd _source :{{
-#    source /home/m/.config/lf/lfrc
-#    reload
-#    echo 'sourced: /home/m/.config/lf/lfrc  reloaded: lf'
-#}}
-
-#map gh cd ~
-map .. cd ..
-map ./ cd /
-map .df cd /dat.mnt/dotfiles
-map .dl cd /dat.mnt/Downloads
-map .dm cd /dat.mnt
-map .do cd /dat.mnt/Documents
-map .h cd ~
-map .lf cd ~/.config/lf
-map .pi cd /dat.mnt/Pictures
-map .rr cd /root
-map .sl cd ~/.config/suckless
-map .wp cd /dat.mnt/Wallpapers
-map .ss cd /dat.mnt/Screenshots
-
-
-
-#cmd delete ${{
-     #set -f
-     #printf "$fx\n"
-     #printf "delete?[y/n]"
-     #read ans
-     #[ "$ans" = "y" ] && rm -rf $fx
-#}}
-
-
-#}}}
-
-
 #--- shell ---{{{
 #The following command prefixes are used by lf:
 #
@@ -111,7 +114,7 @@ map X !$f
 # }}}
 
 
-#--- open files ---{{
+#--- open files ---{{{
 
 # open sxiv in thumbnail mode on folder:
 map sx _sxiv_thumb
