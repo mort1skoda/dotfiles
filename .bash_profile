@@ -1,6 +1,7 @@
 #!/bin/sh
 #set -e
 
+_restore="\033[00m"
 _black="\033[30m"
 _red="\033[31m"
 #_purple="\033[32m"
@@ -48,7 +49,7 @@ do
     _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
 _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
-    printf "    Local ip: $_purple $_IP_ADDRESS $_red \n"
+    printf "    Local ip: $_purple $_IP_ADDRESS $_restore \n"
 # }}}
 
 #ip a | grep -i --color inet 
