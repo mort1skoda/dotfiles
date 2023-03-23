@@ -3,11 +3,9 @@ unalias -a
 #--- /home/m/.aliases directories navigate ---{{{
 alias ...='cd ../.. && ls -lah --color --group-directories-first'
 alias ..='cd .. && ls -lah --color --group-directories-first'
-alias .ddoc='cd /dat.mnt/Documents && ls -lah --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
-alias .dwm='cd /dat.mnt/dotfiles/.config/suckless/dwm* && l'
 alias .h='cd ~ && ls -lah --color --group-directories-first'
 alias .lf='cd ~/.config/lf && l'
 alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
@@ -120,7 +118,7 @@ alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort ra
 
 #--- filesystem --------------------{{{
 #alias blkid='sudo blkid'
-alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL,"
+alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
 alias cp="cp -iv"
 alias mv='mv -iv '
