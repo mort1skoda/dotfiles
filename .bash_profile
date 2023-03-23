@@ -1,14 +1,13 @@
 clear
 printf "linux shell=$0    file=$HOME/.bash_profile "
 
-#---  network enp  or  wlp  -----------------------------{{{
+#--- wifi check -----------------------------{{{
 #sudo rfkill unblock wifi
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-#HAS_WIFI=$(ip link | grep -i wlp)
-HAS_WIFI=1 
-
+#HAS_WIFI=1 
+HAS_WIFI=$(ip link | grep -i wlp)
 if [ "$HAS_WIFI" ]; then
     printf "Starting wpa_supplicant from ~/.bash_profile"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
