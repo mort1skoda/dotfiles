@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+#set -e
 clear
     printf "linux shell=$0\n"
     printf "    sourcing=$HOME/.bash_profile\n"
@@ -9,8 +9,13 @@ clear
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-HAS_WIFI=1 
-#HAS_WIFI=$(ip link | grep -i wlp)
+#HAS_WIFI=1 
+HAS_WIFI=$(ip link | grep -i wlp)
+printf "$HAS_WIFI\n"
+exit
+
+
+
 if [ "$HAS_WIFI" ]; then
     printf "    Starting wpa_supplicant from ~/.bash_profile\n"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
