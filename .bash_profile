@@ -31,8 +31,8 @@ do
     sleep 1
     GOT_IP_ADDRESS=$(ip a |grep -E "noprefixroute enp" )
 done
-
-    printf "      Local ip: $GOT_IP_ADDRESS \n"
+IP_ADDRESS=$(echo $GOT_IP_ADDRESS | awk '{print $2}')
+    printf "      Local ip: $IP_ADDRESS \n"
 # }}}
 
 #ip a | grep -i --color inet 
