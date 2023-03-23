@@ -1,3 +1,5 @@
+#!/bin/sh
+set -e
 clear
     printf "linux shell=$0\n"
     printf "    sourcing=$HOME/.bash_profile\n"
