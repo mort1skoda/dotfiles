@@ -1,10 +1,12 @@
+
 #--- /home/m/.config/lf/lfrc directories navigate ---{{{
 map .. cd ..
 map ... cd ...
+map .ddoc cd /dat.mnt/Documents
 map .df cd /dat.mnt/dotfiles
 map .dl cd /dat.mnt/Downloads
 map .dm cd /dat.mnt
-map .ddoc cd /dat.mnt/Documents
+map .dwm cd cd /dat.mnt/dotfiles/.config/suckless/dwm*
 map .h cd $HOME
 map .lf cd ~/.config/lf
 map .pi cd /dat.mnt/Pictures

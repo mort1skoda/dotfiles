@@ -23,20 +23,6 @@ static const char *colors[][3]      = {
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5" };
 
-static const Rule rules[] = {
-  /* xprop(1):
-   * WM_CLASS(STRING) = instance, class
-   * WM_NAME(STRING) = title
-  */
-  /* class      instance    title       tags mask     isfloating   monitor */
-  { "Gimp",      NULL,       NULL,       0,            1,           -1 },
-  { "sxiv",      NULL,       NULL,       0,            1,           -1 },
-  { "Firefox",   NULL,       NULL,       1 << 7,       0,           -1 },
-  { "LibreWolf", NULL,       NULL,       0,            0,           -1 },
-  { "st_float",  NULL,       NULL,       0,            1,           -1 },
-  { "lf",        NULL,       NULL,       0,            1,           -1 },
-};
-
 /* layout(s) */
 static const float mfact        = 0.60; /* factor of master area size [0.05..0.95] */
 static const int nmaster        = 1;    /* number of clients in master area */
@@ -53,21 +39,38 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask     // Mod1Mask = Alt   Mod4Mask = Winkey (Super)
+#define SUPER Mod4Mask     // Mod1Mask = Alt   Mod4Mask = Winkey (Super)
 #define TAGKEYS(KEY,TAG) \
-  { MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
-  { MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
-  { MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
-  { MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+  { SUPER,                       KEY,      view,           {.ui = 1 << TAG} }, \
+  { SUPER|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+  { SUPER|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+  { SUPER|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
+static const Rule rules[] = {
+  /* xprop(1):
+   * WM_CLASS(STRING) = instance, class
+   * WM_NAME(STRING) = title
+  */
+  /* class      instance    title       tags mask     isfloating   monitor */
+  { "bash",         NULL,       NULL,       0,            1,           -1 },
+  { "firefox",      NULL,       NULL,       1 << 3,       0,           -1 },
+  { "gimp",         NULL,       NULL,       0,            1,           -1 },
+  { "lf",           NULL,       NULL,       0,            1,           -1 },
+  { "librewolf",    NULL,       NULL,       0,            0,           -1 },
+  { "lxterminal",   NULL,       NULL,       0,            1,           -1 },
+  { "st_float",     NULL,       NULL,       0,            1,           -1 },
+  { "st",            NULL,       NULL,       0,            1,           -1 },
+  { "sxiv",         NULL,       NULL,       0,            1,           -1 },
+};
 /* commands */
 static const char lines[] = "20";
 static const char *dmenucmd[]    = { "dmenu_run", "-l", lines, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]     = { "st", NULL };
-static const char *term_float[]  = { "st_float", "b ash -login", NULL };
+static const char *term_float[]  = { "st", "bash -login", NULL };
+//static const char *term_float[]  = { "st_float bash -login &", NULL };
 static const char *www_cmd[]     = { "firefox" , NULL };
 static const char *filemanager[] = { "st" , "lf", NULL };
 //static const char *screenshot[] = { "/dat.mnt/dotfiles/scripts/scrot/screenshoot.sh" , NULL };
@@ -76,36 +79,36 @@ static const char *screenshot[]  = { "st" , "scrot", NULL };
 static const Key keys[] = {
   /* modifier                     key        function        argument */
 
-  { MODKEY,                       XK_b,      togglebar,      {0} },
-  { MODKEY,                       XK_e,      spawn,          {.v = filemanager } },
-  { MODKEY,                       XK_r,      spawn,          {.v = dmenucmd    } },
-  { MODKEY,                       XK_t,      spawn,          {.v = termcmd     } },
-  { MODKEY,                       XK_w,      spawn,          {.v = www_cmd     } },
-  { MODKEY,                       XK_x,      spawn,          {.v = screenshot  } },
+  { SUPER,                       XK_b,      togglebar,      {0} },
+  { SUPER,                       XK_e,      spawn,          {.v = filemanager } },
+  { SUPER,                       XK_r,      spawn,          {.v = dmenucmd    } },
+  { SUPER,                       XK_t,      spawn,          {.v = termcmd     } },
+  { SUPER,                       XK_w,      spawn,          {.v = www_cmd     } },
+  { SUPER,                       XK_x,      spawn,          {.v = screenshot  } },
   
 //try to start st in floating mode
-  { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = term_float  } },
+  { SUPER|ShiftMask,             XK_t,      spawn,          {.v = term_float  } },
 
-  { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-  { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-  { MODKEY,                       XK_h,      setmfact,       {.f = -0.02} },
-  { MODKEY,                       XK_l,      setmfact,       {.f = +0.02} },
-  { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-  { MODKEY,                       XK_u,      incnmaster,     {.i = -1 } },
-  { MODKEY,                       XK_Return, zoom,           {0} },
-  { MODKEY,                       XK_Tab,    view,           {0} },
-  { MODKEY,                       XK_n,      setlayout,      {.v = &layouts[0]} },      // normal tabbed / stacked
-  { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },      // floating
-  { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },      // monocle
-  { MODKEY,                       XK_g,      setlayout,      {.v = &layouts[3]} },      // grid
-  { MODKEY,                       XK_space,  setlayout,      {0} },
-  { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-  { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-  { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-  { MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-  { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-  { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-  { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+  { SUPER,                       XK_j,      focusstack,     {.i = +1 } },
+  { SUPER,                       XK_k,      focusstack,     {.i = -1 } },
+  { SUPER,                       XK_h,      setmfact,       {.f = -0.02} },
+  { SUPER,                       XK_l,      setmfact,       {.f = +0.02} },
+  { SUPER,                       XK_i,      incnmaster,     {.i = +1 } },
+  { SUPER,                       XK_u,      incnmaster,     {.i = -1 } },
+  { SUPER,                       XK_Return, zoom,           {0} },
+  { SUPER,                       XK_Tab,    view,           {0} },
+  { SUPER,                       XK_n,      setlayout,      {.v = &layouts[0]} },      // normal tabbed / stacked
+  { SUPER,                       XK_f,      setlayout,      {.v = &layouts[1]} },      // floating
+  { SUPER,                       XK_m,      setlayout,      {.v = &layouts[2]} },      // monocle
+  { SUPER,                       XK_g,      setlayout,      {.v = &layouts[3]} },      // grid
+  { SUPER,                       XK_space,  setlayout,      {0} },
+  { SUPER|ShiftMask,             XK_space,  togglefloating, {0} },
+  { SUPER,                       XK_0,      view,           {.ui = ~0 } },
+  { SUPER|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+  { SUPER,                       XK_comma,  focusmon,       {.i = -1 } },
+  { SUPER,                       XK_period, focusmon,       {.i = +1 } },
+  { SUPER|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+  { SUPER|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
   TAGKEYS(                        XK_1,                      0)
   TAGKEYS(                        XK_2,                      1)
@@ -117,8 +120,8 @@ static const Key keys[] = {
   TAGKEYS(                        XK_8,                      7)
   TAGKEYS(                        XK_9,                      8)
 
-  { MODKEY,                       XK_q,      killclient,     {0} },
-  { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+  { SUPER,                       XK_q,      killclient,     {0} },
+  { SUPER|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 
@@ -131,13 +134,13 @@ static const Button buttons[] = {
   { ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
   { ClkWinTitle,          0,              Button2,        zoom,           {0} },
   { ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
-  { ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
-  { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
-  { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
+  { ClkClientWin,         SUPER,         Button1,        movemouse,      {0} },
+  { ClkClientWin,         SUPER,         Button2,        togglefloating, {0} },
+  { ClkClientWin,         SUPER,         Button3,        resizemouse,    {0} },
   { ClkTagBar,            0,              Button1,        view,           {0} },
   { ClkTagBar,            0,              Button3,        toggleview,     {0} },
-  { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
-  { ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
+  { ClkTagBar,            SUPER,         Button1,        tag,            {0} },
+  { ClkTagBar,            SUPER,         Button3,        toggletag,      {0} },
 };
 
 
