@@ -12,7 +12,7 @@ if [ "$HAS_WIFI" ]; then
     echo "Starting wpa_supplicant from ~/.bash_profile"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
-    #echo "No wifi"
+    printf "No wifi"
 fi
 
 #sudo ip link set wlan0 up
