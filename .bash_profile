@@ -9,10 +9,10 @@ printf "linux shell=$0    sourcing=$HOME/.bash_profile -> "
 #HAS_WIFI=1 
 HAS_WIFI=$(ip link | grep -i wlp)
 if [ "$HAS_WIFI" ]; then
-    printf "Starting wpa_supplicant from ~/.bash_profile"
+    printf "Starting wpa_supplicant from ~/.bash_profile "
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
-    printf "No wifi, using ethernet"
+    printf "No wifi, using ethernet "
 fi
 
 #sudo ip link set wlan0 up
@@ -24,17 +24,18 @@ fi
 
 # -z return true if bash variable is unset
 #while [ -z "$IPA" ]
-while [ -z "$(ip a | grep -i '255' )" ]
+IPA=$(ip a | grep -i 'enp1' )
+while [ -z "$IPA" ]
 do
     printf "Waiting for ip address... "
     sleep 1
-    IPA=$(ip a | grep -i '255' )
+    IPA=$(ip a | grep -i 'enp1' )
 done
-printf "YES! we got an ip address"
+printf "YES! we got an ip address $IPA"
 
 
-ip a | grep -i --color inet 
-echo "Shell Level: $SHLVL"
+#ip a | grep -i --color inet 
+#echo "Shell Level: $SHLVL"
 
 
 #echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
