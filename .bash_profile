@@ -1,5 +1,5 @@
 clear
-printf "linux shell=$0    sourcing=$HOME/.bash_profile -> "
+printf "linux shell=$0    sourcing=$HOME/.bash_profile -> \n"
 
 #--- wifi check -----------------------------{{{
 #sudo rfkill unblock wifi
@@ -9,10 +9,10 @@ printf "linux shell=$0    sourcing=$HOME/.bash_profile -> "
 #HAS_WIFI=1 
 HAS_WIFI=$(ip link | grep -i wlp)
 if [ "$HAS_WIFI" ]; then
-    printf "Starting wpa_supplicant from ~/.bash_profile "
+    printf "              Starting wpa_supplicant from ~/.bash_profile "
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
-    printf "No wifi, using ethernet "
+    printf "              No wifi, using ethernet "
 fi
 
 #sudo ip link set wlan0 up
@@ -31,7 +31,7 @@ do
     IPA=$(ip a |grep -E "noprefixroute enp" )
 done
 
-printf "Local ip: $IPA"
+printf "                  Local ip: $IPA"
 # }}}
 
 #ip a | grep -i --color inet 
