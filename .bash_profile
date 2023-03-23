@@ -7,7 +7,7 @@ clear
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-#HAS_WIFI=1 
+HAS_WIFI=1 
 #HAS_WIFI=$(ip link | grep -i wlp)
 if [ "$HAS_WIFI" ]; then
     printf "    Starting wpa_supplicant from ~/.bash_profile\n"
@@ -39,9 +39,11 @@ IP_ADDRESS=$(echo $GOT_IP_ADDRESS | awk '{print $2}')
 #echo "Shell Level: $SHLVL"
 
 
-#echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 
 
 
-
+printf "\n"
 source ~/.bashrc
+
+
+#echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
