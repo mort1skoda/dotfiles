@@ -16,7 +16,7 @@ function set_color {
 
 #local black=1d2021
 #local white=f9f5d7
-black=1d2021
+black=0a0a0a
 white=f9f5d7
 
 # Set default foreground / background colors for terminals that support it.

@@ -1,19 +1,19 @@
-#--- lfrc navigate directories ---{{{
+#--- /home/m/.config/lf/lfrc directories navigate ---{{{
 map .. cd ..
 map ... cd ...
-map .r cd /
 map .df cd /dat.mnt/dotfiles
 map .dl cd /dat.mnt/Downloads
 map .dm cd /dat.mnt
-map .do cd /dat.mnt/Documents
-map .h cd ~
+map .ddoc cd /dat.mnt/Documents
+map .h cd $HOME
 map .lf cd ~/.config/lf
 map .pi cd /dat.mnt/Pictures
+map .r cd /
 map .rr cd /root
 map .sl cd ~/.config/suckless
 map .ss cd /dat.mnt/Screenshots
 map .wp cd /dat.mnt/Wallpapers
-#---------------------------------}}}
+# }}}
 
 
 

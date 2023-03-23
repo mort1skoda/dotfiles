@@ -1,15 +1,12 @@
-#echo "~/.aliases       $@"
 unalias -a
-echo "$0 $1        $@"
-#echo $@
 
-#--- .aliases navigate directories ---{{{
-alias ..='cd .. && ls -lah --color --group-directories-first'
+#--- /home/m/.aliases directories navigate ---{{{
 alias ...='cd ../.. && ls -lah --color --group-directories-first'
+alias ..='cd .. && ls -lah --color --group-directories-first'
+alias .ddoc='cd /dat.mnt/Documents && ls -lah --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
-alias .ddoc='cd /dat.mnt/Documents && ls -lah --color --group-directories-first'
 alias .h='cd ~ && ls -lah --color --group-directories-first'
 alias .lf='cd ~/.config/lf && l'
 alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
@@ -20,7 +17,7 @@ alias .ss='cd /dat.mnt/Screenshots && l'
 alias .wp='cd /dat.mnt/Wallpapers && l'
 # }}}
 
-# list directories:{{{
+#--- .aliases directories list ---{{{
 alias  .='ls'
 alias  l='ls -lah --color --group-directories-first'
 alias ll='ls -lh  --color --group-directories-first'
@@ -28,24 +25,20 @@ alias la='ls -ah  --color --group-directories-first'
 alias ls='ls      --color --group-directories-first'
 # }}}
 
-#--- watch directories {{{
+#--- .aliases directories watch ---{{{
 alias wl='watch --color ls -lah --color --group-directories-first'
 # }}}
 
-
-# mkdir rmdir:
+#--- .aliases directories make remove ---{{{
 alias md='mkdir -pv '
 alias rd='rmdir -pv '
-
-
-
-
-#--- /home/m/.aliases ---{{{
-#!bin/sh
-#echo "~/.aliases       $@"
-#echo "shell is: $0"
-
 # }}}
+
+
+
+
+
+
 
 #--- edit files ------------------------------------------------{{{
 alias v='vim'

@@ -1,15 +1,12 @@
 #!/bin/bash
-echo "~/.bashrc"
+echo "$HOME/.bashrc"
 
 set -o vi
 shopt -s autocd
 shopt -s expand_aliases
 
 # set prompt for regular user
-TTY=$(tty)
-#echo "TTY = $TTY"
-IS_TTY=$(echo $TTY | grep tty)
-#echo "IS_TTY = $IS_TTY"
+IS_TTY=$(echo $(tty) | grep tty)
 
 if [ $IS_TTY ] || [ $TMUX ]
 then
@@ -23,16 +20,12 @@ if [ "$EUID" -eq 0 ]
     then PS1="#- \[\033[05;41m\]\w\[\033[00m\] -#\n"
 fi
 
-export TERM='xterm-256color'
-export EDITOR='vim'
-#OPENER is for lf
-export OPENER='xdg-open'
-export BAT_THEME='gruvbox-dark'
-export PAGER='less'
+export       BAT_THEME='gruvbox-dark'
+export          EDITOR='vim'
+export          OPENER='xdg-open'
+export           PAGER='less'
+export            TERM='xterm-256color'
 export XDG_CONFIG_HOME='/home/m/.config'
-
-#source ~/gruvbox.bash
-#stty -ixon
 
 source ~/.aliases
 
