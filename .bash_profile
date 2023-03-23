@@ -1,5 +1,4 @@
-#!/bin/sh
-echo "shell=$0  ~/.bash_profile  $@"
+echo "linux shell=$0    file=$HOME/.bash_profile"
 
 #--- wifi -----------------------------{{
 #sudo rfkill unblock wifi
@@ -34,8 +33,10 @@ do
 done
 echo "YES! we got an ip address"
 
+
 ip a |g inet 
 echo "Shell Level: $SHLVL"
+
 
 echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 
