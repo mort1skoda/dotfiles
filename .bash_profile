@@ -38,7 +38,7 @@ do
     _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
 _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
-    printf "    Local ip: $_IP_ADDRESS \n"
+    printf "    Local ip: \033[35m$_IP_ADDRESS \033[30m\n"
 # }}}
 
 #ip a | grep -i --color inet 
