@@ -10,7 +10,7 @@ _purple="\033[35m"
 
 
 
-#clear
+clear
     printf "linux shell=$0\n"
     printf "    sourcing=$HOME/.bash_profile\n"
 
@@ -63,3 +63,4 @@ source ~/.bashrc
 
 
 #echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
+#

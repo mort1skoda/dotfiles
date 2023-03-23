@@ -62,14 +62,14 @@ static const Rule rules[] = {
   { "librewolf",    NULL,       NULL,       0,            0,           -1 },
   { "lxterminal",   NULL,       NULL,       0,            1,           -1 },
   { "st_float",     NULL,       NULL,       0,            1,           -1 },
-  { "st",            NULL,       NULL,       0,            1,           -1 },
+  { "st---",            NULL,       NULL,       0,            1,           -1 },
   { "sxiv",         NULL,       NULL,       0,            1,           -1 },
 };
 /* commands */
 static const char lines[] = "20";
 static const char *dmenucmd[]    = { "dmenu_run", "-l", lines, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]     = { "st", NULL };
-static const char *term_float[]  = { "st", "bash -login", NULL };
+static const char *term_float[]  = { "st_float", "bash -login", NULL };
 //static const char *term_float[]  = { "st_float bash -login &", NULL };
 static const char *www_cmd[]     = { "firefox" , NULL };
 static const char *filemanager[] = { "st" , "lf", NULL };
