@@ -17,21 +17,20 @@
 
 #### -- install xorg
 
-    i xorg-server
-    i xorg-xinit
-    i xterm
-
     lspci | g vga
-    pm -Ss xf86-video
-    i xf86-video-intel
+    pm -S xorg-server xorg-xinit xf86-video-amdgpu
 
 
 
 #### -- install suckless
 
-    pi wget
-
-    wget dl.suckless.org/dwm/dwm-6.4.tar.gz
+    git clone https://git.suckless.org/dwm
+    mv dwm dwm.git
+    pm -S make pkg-config 
+    cd dwm.git
+    ,mci     (or: sudo make clean install)
+     
+    curl --output dwm.git dl.suckless.org/dwm/dwm-6.4.tar.gz
     tar -xvf dwm-6.4.tar.gz
     pm -S make
     cd dwm-6.4
