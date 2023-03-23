@@ -1,4 +1,4 @@
-printf "\nlinux shell=$0    sourcing=$HOME/.bashrc -> "
+printf "    sourcing=$HOME/.bashrc -> "
 
 # {{{
 set -o vi
@@ -35,3 +35,4 @@ export XDG_CONFIG_HOME='/home/m/.config'
 source ~/.aliases
 
 echo
+

@@ -1,5 +1,6 @@
 clear
-printf "linux shell=$0    sourcing=$HOME/.bash_profile -> \n"
+    printf "linux shell=$0\n"
+    printf "      sourcing=$HOME/.bash_profile\n"
 
 #--- wifi check -----------------------------{{{
 #sudo rfkill unblock wifi
@@ -9,10 +10,10 @@ printf "linux shell=$0    sourcing=$HOME/.bash_profile -> \n"
 #HAS_WIFI=1 
 HAS_WIFI=$(ip link | grep -i wlp)
 if [ "$HAS_WIFI" ]; then
-    printf "              Starting wpa_supplicant from ~/.bash_profile "
+    printf "      Starting wpa_supplicant from ~/.bash_profile\n"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
-    printf "              No wifi, using ethernet "
+    printf "      No wifi, using ethernet\n"
 fi
 
 #sudo ip link set wlan0 up
@@ -22,16 +23,16 @@ fi
 
 # ip check {{{
 # -z return true if bash variable is unset
-#while [ -z "$IPA" ]
-IPA=$(ip a |grep -E "noprefixroute enp" )
-while [ -z "$IPA" ]
+#while [ -z "$GOT_IP_ADDRESS" ]
+GOT_IP_ADDRESS=$(ip a |grep -E "noprefixroute enp" )
+while [ -z "$GOT_IP_ADDRESS" ]
 do
-    printf "Waiting for ip address... "
+    printf "      Waiting for ip address... \n"
     sleep 1
-    IPA=$(ip a |grep -E "noprefixroute enp" )
+    GOT_IP_ADDRESS=$(ip a |grep -E "noprefixroute enp" )
 done
 
-printf "                  Local ip: $IPA"
+    printf "      Local ip: $GOT_IP_ADDRESS \n"
 # }}}
 
 #ip a | grep -i --color inet 

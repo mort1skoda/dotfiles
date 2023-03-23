@@ -3,4 +3,4 @@ SHL=$(($SHLVL-1))
 echo "Shell level: $SHL"
 /dat.mnt/dotfiles/scripts/dotfiles.update.git.sh
 echo "wait 2 sec..."
-sleep 2
+sleep 1
