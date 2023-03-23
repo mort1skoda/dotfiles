@@ -37,7 +37,7 @@ ip a | grep -i --color inet
 echo "Shell Level: $SHLVL"
 
 
-echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
+#echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 
 
 
