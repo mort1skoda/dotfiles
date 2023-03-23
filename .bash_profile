@@ -9,12 +9,10 @@ clear
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-HAS_WIFI=1 
-#HAS_WIFI=$(ip link | grep -i wlp)
-printf 'HAS_WIFI= %s\n' "$HAS_WIFI"
-sleep 1
-
-
+#HAS_WIFI=1 
+HAS_WIFI=$(ip link | grep -i wlp)
+#printf 'HAS_WIFI= %s\n' "$HAS_WIFI"
+#sleep 1
 
 if [ "$HAS_WIFI" ]; then
     printf "    Starting wpa_supplicant from ~/.bash_profile\n"
