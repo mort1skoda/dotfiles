@@ -1,4 +1,4 @@
-echo "linux shell=$0    file=$HOME/.bashrc"
+printf "\nlinux shell=$0    file=$HOME/.bashrc"
 
 set -o vi
 shopt -s autocd
