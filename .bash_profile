@@ -30,6 +30,7 @@ do
     sleep 1
     IPA=$(ip a |grep -E "noprefixroute enp" )
 done
+
 printf "Local ip: $IPA"
 # }}}
 
