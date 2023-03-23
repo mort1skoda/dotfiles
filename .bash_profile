@@ -11,8 +11,8 @@ clear
 
 #HAS_WIFI=1 
 HAS_WIFI=$(ip link | grep -i wlp)
-printf "HAS_WIFI=%s\n", $HAS_WIFI
-sleep 2
+printf $HAS_WIFI
+sleep 1
 
 
 
