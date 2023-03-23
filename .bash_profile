@@ -29,12 +29,13 @@ fi
 # ip check {{{
 # -z return true if bash variable is unset
 #while [ -z "$GOT_IP_ADDRESS" ]
-GOT_IP_ADDRESS=$(ip a |grep -E "noprefixroute enp" )
+_IP_TOKEN="noprefixroute enp"
+GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 while [ -z "$GOT_IP_ADDRESS" ]
 do
     printf "    Waiting for ip address... \n"
     sleep 1
-    GOT_IP_ADDRESS=$(ip a |grep -E "noprefixroute enp" )
+    GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
 IP_ADDRESS=$(echo $GOT_IP_ADDRESS | awk '{print $2}')
     printf "    Local ip: $IP_ADDRESS \n"
