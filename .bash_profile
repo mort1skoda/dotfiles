@@ -1,15 +1,15 @@
-echo "linux shell=$0    file=$HOME/.bash_profile"
+printf "linux shell=$0    file=$HOME/.bash_profile "
 
 #--- wifi -----------------------------{{
 #sudo rfkill unblock wifi
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-HAS_WIFI=$(ip link | grep -i wlp)
-#echo $HAS_WIFI
+#HAS_WIFI=$(ip link | grep -i wlp)
+HAS_WIFI=1 
 
 if [ "$HAS_WIFI" ]; then
-    echo "Starting wpa_supplicant from ~/.bash_profile"
+    printf "Starting wpa_supplicant from ~/.bash_profile"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
     printf "No wifi"
