@@ -20,16 +20,15 @@ fi
 #sudo ip link set enp3s0 down
 #--------------------------------------}}}
 
-
 # ip check {{{
 # -z return true if bash variable is unset
 #while [ -z "$IPA" ]
-IPA=$(ip a |g -E "noprefixroute enp" )
+IPA=$(ip a |grep -E "noprefixroute enp" )
 while [ -z "$IPA" ]
 do
     printf "Waiting for ip address... "
     sleep 1
-    IPA=$(ip a |g -E "noprefixroute enp" )
+    IPA=$(ip a |grep -E "noprefixroute enp" )
 done
 printf "Local ip: $IPA"
 # }}}
