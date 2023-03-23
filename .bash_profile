@@ -1,6 +1,6 @@
 printf "linux shell=$0    file=$HOME/.bash_profile "
 
-#--- wifi -----------------------------{{
+#---  network enp  or  wlp  -----------------------------{{{
 #sudo rfkill unblock wifi
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
@@ -20,6 +20,7 @@ fi
 #sudo ip link set enp3s0 down
 #--------------------------------------}}}
 
+source ~/.bashrc
 
 
 # -z return true if bash variable is unset
@@ -33,10 +34,9 @@ done
 echo "YES! we got an ip address"
 
 
-ip a |g inet 
+ip a | grep -i --color inet 
 echo "Shell Level: $SHLVL"
 
 
 echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 
-source ~/.bashrc
