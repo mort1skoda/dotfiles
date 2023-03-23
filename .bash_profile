@@ -34,7 +34,7 @@ do
 done
 echo "YES! we got an ip address"
 
-ip a |g inet |g -v inet6
+ip a |g inet 
 echo "Shell Level: $SHLVL"
 
 echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
