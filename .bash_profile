@@ -10,11 +10,11 @@ clear
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
 #HAS_WIFI=1 
-HAS_WIFI=$(ip link | grep -i wlp)
+_HAS_WIFI=$(ip link | grep -i wlp)
 #printf 'HAS_WIFI= %s\n' "$HAS_WIFI"
 #sleep 1
 
-if [ "$HAS_WIFI" ]; then
+if [ "$_HAS_WIFI" ]; then
     printf "    Starting wpa_supplicant from ~/.bash_profile\n"
     sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
 else
@@ -30,15 +30,15 @@ fi
 # -z return true if bash variable is unset
 #while [ -z "$GOT_IP_ADDRESS" ]
 _IP_TOKEN="noprefixroute enp"
-GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
-while [ -z "$GOT_IP_ADDRESS" ]
+_GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
+while [ -z "$_GOT_IP_ADDRESS" ]
 do
     printf "    Waiting for ip address... \n"
     sleep 1
-    GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
+    _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
-IP_ADDRESS=$(echo $GOT_IP_ADDRESS | awk '{print $2}')
-    printf "    Local ip: $IP_ADDRESS \n"
+_IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
+    printf "    Local ip: $_IP_ADDRESS \n"
 # }}}
 
 #ip a | grep -i --color inet 
