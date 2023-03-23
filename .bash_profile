@@ -24,14 +24,14 @@ fi
 
 # -z return true if bash variable is unset
 #while [ -z "$IPA" ]
-IPA=$(ip a | grep -i 'enp1' )
+IPA=$(ip a | grep -i 'noprefixroute enp' )
 while [ -z "$IPA" ]
 do
     printf "Waiting for ip address... "
     sleep 1
-    IPA=$(ip a | grep -i 'enp1' )
+    IPA=$(ip a | grep -i 'noprefixroute enp' )
 done
-printf "YES! we got an ip address $IPA"
+printf "Local ip: $IPA"
 
 
 #ip a | grep -i --color inet 
