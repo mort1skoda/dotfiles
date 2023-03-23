@@ -1,3 +1,4 @@
+clear
 printf "linux shell=$0    file=$HOME/.bash_profile "
 
 #---  network enp  or  wlp  -----------------------------{{{
