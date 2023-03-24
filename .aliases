@@ -110,7 +110,7 @@ alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
 # arch:
 alias u='sudo pacman --noconfirm -Syyu'
-alias ur='sudo pacman --noconfirm -Syyu && sleep 1 && reboot'
+alias ur='echo "#### REBOOTING ####" && ud && sudo pacman --noconfirm -Syyu && sleep 1 && reboot'
 alias i='sudo pacman -Syyu '
 alias pm='sudo pacman '
 #
