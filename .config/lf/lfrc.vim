@@ -5,6 +5,7 @@ map ... cd ...
 map .df cd /dat.mnt/dotfiles
 map .dl cd /dat.mnt/Downloads
 map .dm cd /dat.mnt
+map .dwm cd /dat.mnt/dotfiles/.config/suckless/from.git/dwm.git
 map .h cd ~
 map .lf cd ~/.config/lf
 map .pi cd /dat.mnt/Pictures
