@@ -1,4 +1,4 @@
-pintf "    sourcing: /home/m/.bashrc\n"
+printf "    sourcing: /home/m/.bashrc\n"
 
 
 # ----- set & shopt {{{
