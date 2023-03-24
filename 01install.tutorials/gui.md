@@ -27,7 +27,7 @@
     ## DWM ###
     git clone https://git.suckless.org/dwm
     mv dwm dwm_git
-    pm -S libxft   make   pkg-config 
+    pm -S libxft  xorg-xset    make   pkg-config 
     cd dwm_git
     ,mci     (or: sudo make clean install)
      
