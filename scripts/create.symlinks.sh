@@ -9,7 +9,6 @@ ln -sf /dat.mnt/dotfiles/.tmux.conf      /home/m
 ln -sf /dat.mnt/dotfiles/.vim            /home/m
 ln -sf /dat.mnt/dotfiles/.vimrc          /home/m
 ln -sf /dat.mnt/dotfiles/.xinitrc        /home/m
-ls -la --color  /etc             | grep --color dotfiles
 ls -la --color  /home/m          | grep --color dotfiles
 ls -la --color  /usr/local/bin   | grep --color www-browser
 sudo ln -sf /dat.mnt/dotfiles/.aliases        /root
@@ -20,3 +19,8 @@ sudo ln -sf /dat.mnt/dotfiles/.vim            /root
 sudo ln -sf /dat.mnt/dotfiles/.vimrc          /root
 sudo ln -sf /usr/bin/firefox                  /usr/local/bin/www-browser
 sudo ls -la --color  /root           | grep --color dotfiles
+
+
+sudo ln -sf      /dat.mnt/dotfiles/etc.vconsole.conf    /etc/vconsole.conf
+ls -lah --color  /etc                                    | grep --color lrw
+
