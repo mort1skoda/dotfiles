@@ -27,7 +27,7 @@ fi
 
 # export {{{
 export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
-export            TERM='xterm-256color'
+#export            TERM='xterm-256color'
 export           PAGER='less'
 export          EDITOR='vim'
 export          OPENER='xdg-open'
