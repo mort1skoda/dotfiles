@@ -5,7 +5,7 @@ xset -dpms &
 xset s 0 0 &
 xset r rate 300 50 &
 swarp 1910 1190 & 
-feh --bg-fill /dat.mnt/Wallpapers/gnome/licorice-d.webp &
+feh --bg-fill /dat.mnt/Wallpapers/gnome/wood-d.webp &
 /dat.mnt/dotfiles/scripts/dwm.sbar.time.sh &
 #
 dwm
