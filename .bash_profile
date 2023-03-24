@@ -53,7 +53,9 @@ _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
 # }}}
 
 #ip a | grep -i --color inet 
-#echo "Shell Level: $SHLVL"
+
+
+echo "Sell Level: $SHLVL"
 
 
 

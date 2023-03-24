@@ -1,4 +1,4 @@
-printf "    sourcing=$HOME/.bashrc\n"
+printf "    sourcing: /home/m/.bashrc\n"
 
 # ----- set & shopt {{{
 set -o vi
@@ -33,6 +33,4 @@ export XDG_CONFIG_HOME='/home/m/.config'
 # }}}
 
 source ~/.aliases
-
-echo
 
