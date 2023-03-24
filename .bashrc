@@ -1,10 +1,12 @@
 printf "    sourcing: /home/m/.bashrc\n"
 
+
 # ----- set & shopt {{{
 set -o vi
 shopt -s autocd
 shopt -s expand_aliases
 # }}}
+
 
 # prompt {{{
 # regular user
@@ -22,6 +24,7 @@ if [ "$EUID" -eq 0 ]
 fi
 # }}}
 
+
 # export {{{
 export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 export            TERM='xterm-256color'
@@ -37,9 +40,6 @@ export XDG_CONFIG_HOME='/home/m/.config'
 source /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
 #................................................}}}
 
-#cd ~
-echo $(pwd)
-sleep 3
 
 source ~/.aliases
 
