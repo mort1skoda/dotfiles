@@ -32,7 +32,7 @@ alias wl='watch --color ls -lah --color --group-directories-first'
 # }}}
 
 #--- .aliases directories make remove ---{{{
-alias md='mkdir -pv '
+alias md='sudo mkdir -pv '
 alias rd='rmdir -pv '
 # }}}
 
