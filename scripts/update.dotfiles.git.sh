@@ -25,3 +25,4 @@ DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
 git commit -m "$DATE"
 git push -u origin $ORIGIN
 
+#cd /dat.mnt/dotfiles
