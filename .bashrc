@@ -32,5 +32,11 @@ export       BAT_THEME='gruvbox-dark'
 export XDG_CONFIG_HOME='/home/m/.config'
 # }}}
 
+
+#--- UPDATE DOTFILES ----------------------------{{{
+source /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
+#................................................}}}
+
+
 source ~/.aliases
 
