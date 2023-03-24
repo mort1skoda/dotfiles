@@ -259,3 +259,6 @@ alias grub='sudo vim /etc/default/grub'
 shopt -s expand_aliases
 #-----------------------------------------------------------}}}
 
+cd ~
+
+
