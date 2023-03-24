@@ -248,10 +248,11 @@ alias disa='sudo systemctl disable '
 alias sw='st swarp 1920 1200'
 #---}}}
 
-#--- quit reboot shutdown ---{{{
+#--- BOOT GRUB QUIT REBOOT SHUTDOWN ---{{{
 alias q='exit'
 alias rb='ur'
 alias sd="ud && sudo shutdown -h now"
+alias grub='sudo vim /etc/default/grub'
 # }}}
 
 #--- footer ------------------------------------------------{{{
