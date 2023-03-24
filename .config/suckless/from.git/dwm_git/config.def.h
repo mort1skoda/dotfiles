@@ -39,9 +39,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "Master/Stack",      tile },    /* first entry is default */
+	{ "><>",               NULL },    /* no layout function means floating behavior */
+	{ "[M]",               monocle },
 };
 
 /* key definitions */
@@ -63,7 +63,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ SUPER,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ SUPER|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ SUPER,                       XK_t,      spawn,          {.v = termcmd } },
 	{ SUPER,                       XK_b,      togglebar,      {0} },
 	{ SUPER,                       XK_j,      focusstack,     {.i = +1 } },
 	{ SUPER,                       XK_k,      focusstack,     {.i = -1 } },
