@@ -15,7 +15,7 @@ if [ $IS_TTY ] || [ $TMUX ]
 then
     PS1="\[$col_green\w\[\033[00m\]\n"
 else
-    PS1="\[\033[35m\]\w\[\033[00m\]\n"
+    PS1="\[$col_purple\w\[\033[00m\]\n"
 fi
 
 # root
