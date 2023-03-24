@@ -1,4 +1,4 @@
-poorintf "    sourcing: /home/m/.bashrc\n"
+pintf "    sourcing: /home/m/.bashrc\n"
 
 
 # ----- set & shopt {{{
@@ -13,7 +13,7 @@ shopt -s expand_aliases
 IS_TTY=$(echo $(tty) | grep tty)
 if [ $IS_TTY ] || [ $TMUX ]
 then
-    PS1="\[$col_green\w\[\033[01m\]\n"
+    PS1="\[$col_green\w\[\033[00m\]\n"
 else
     PS1="\[\033[35m\]\w\[\033[00m\]\n"
 fi
