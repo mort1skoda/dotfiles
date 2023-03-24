@@ -4,7 +4,7 @@ clear
 source /dat.mnt/dotfiles/.colors
 
     printf "linux shell $0 \n"
-    printf "    sourcing=$HOME/.bash_profile \n"
+    printf "    sourcing: $HOME/.bash_profile \n"
 
 
 
