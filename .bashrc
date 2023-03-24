@@ -38,5 +38,8 @@ source /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
 #................................................}}}
 
 #cd ~
+echo $(pwd)
+sleep 3
+
 source ~/.aliases
 
