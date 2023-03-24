@@ -1,8 +1,8 @@
 #!/bin/sh
 
+
 clear
 source /dat.mnt/dotfiles/.colors
-cd ~
     printf "linux shell $0 \n"
     printf "    sourcing: $HOME/.bash_profile \n"
 
@@ -32,7 +32,6 @@ fi
 
 
 
-
 #------------- _GOT_IP_ADDRESS ? ------------------------------------ {{{
 # -z return true if bash variable is unset
 #while [ -z "$GOT_IP_ADDRESS" ]
@@ -53,13 +52,10 @@ _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
 echo "    SHLVL=$SHLVL"
 
 
-echo $(pwd)
-sleep 3
-
-
 
 printf "\n"
 source ~/.bashrc
+
 
 
 #echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
