@@ -22,7 +22,7 @@ sudo ls -la --color  /root           | grep --color dotfiles
 
 
 sudo ln -sf    /dat.mnt/dotfiles/etc.vconsole.conf   /etc/vconsole.conf
-sudo ln -sf    /dat.mnt/dotfiles/etc.default.grub    /etc/deafult/grub
+sudo ln -sf    /dat.mnt/dotfiles/etc.default.grub    /etc/default/grub
 ls -lah --color  /etc                               | grep --color lrw
 ls -lah --color  /etc/default                       | grep --color lrw
 
