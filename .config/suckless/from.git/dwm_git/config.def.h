@@ -59,13 +59,15 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *term_ST[]  = { "st", NULL };
-static const char *term_LX[]  = { "lxterminal", NULL };
+static const char *dmenucmd[]    = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *term_ST[]     = { "st", NULL };
+static const char *term_LX[]     = { "lxterminal", NULL };
+static const char *www_browser[] = { "firefox", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ SUPER,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ SUPER,                       XK_w,      spawn,          {.v = www_browser } },
 	{ SUPER,                       XK_t,      spawn,          {.v = term_ST  } },
 	{ SUPER|ShiftMask,             XK_t,      spawn,          {.v = term_LX  } },
 	{ SUPER,                       XK_b,      togglebar,      {0} },
