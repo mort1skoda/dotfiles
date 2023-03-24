@@ -36,7 +36,7 @@ fi
 #------------- _GOT_IP_ADDRESS ? ------------------------------------ {{{
 # -z return true if bash variable is unset
 #while [ -z "$GOT_IP_ADDRESS" ]
-_IP_TOKEN="noprefixroute enp"
+_IP_TOKEN="noprefixroute"
 _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 while [ -z "$_GOT_IP_ADDRESS" ]
 do
