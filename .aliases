@@ -253,7 +253,7 @@ alias sw='st swarp 1920 1200'
 alias q='exit'
 alias rb='ur'
 alias sd="ud && sudo shutdown -h now"
-alias grub='sudo vim /etc/default/grub'
+alias grub='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 # }}}
 
 #--- footer ------------------------------------------------{{{
