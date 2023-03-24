@@ -53,10 +53,10 @@ nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
 
 "--- folds -------------------{{{
 set foldmethod=marker
-"nnoremap ff za:echo"ff=fold toggle"<cr>
-"nnoremap fc zm:echo"fc=folds close all"<cr>
-"nnoremap fo zr:echo"fo=folds open all"<cr>
-vnoremap zf zf:echo"zf=create fold"<cr>
+nnoremap ff za:echo"ff=fold toggle"<cr>
+nnoremap fc zm:echo"fc=folds close all"<cr>
+nnoremap fo zr:echo"fo=folds open all"<cr>
+vnoremap cf zf:echo"zf=create fold"<cr>
 "-----------------------------}}}
 
 "--- cursor --------------------{{{

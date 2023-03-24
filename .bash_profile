@@ -1,26 +1,19 @@
 #!/bin/sh
-#set -e
-
-_restore="\033[00m"
-_black="\033[30m"
-_red="\033[31m"
-#_purple="\033[32m"
-#_purple="\033[33m"
-#_purple="\033[34m"
-_purple="\033[35m"
-
-
 
 clear
-    printf "linux shell=$0\n"
-    printf "    sourcing=$HOME/.bash_profile\n"
+source /dat.mnt/dotfiles/.colors
 
-#--- wifi check -----------------------------{{{
+    printf "linux shell $0 \n"
+    printf "    sourcing=$HOME/.bash_profile \n"
+
+
+
+#------------- _HAS_WIFI ? ----------------------------------------------------------------{{{
 #sudo rfkill unblock wifi
 #sudo dhcpcd
 #sudo wpa_supplicant -s -B -iwlan0 -c/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-#HAS_WIFI=1 
+#_HAS_WIFI=1 
 _HAS_WIFI=$(ip link | grep -i wlp)
 #printf 'HAS_WIFI= %s\n' "$HAS_WIFI"
 #sleep 1
@@ -35,9 +28,12 @@ fi
 #sudo ip link set wlan0 up
 #sudo ip link set wlp2s0 up
 #sudo ip link set enp3s0 down
-#--------------------------------------}}}
+#.......................................................................................}}}
 
-# ip check {{{
+
+
+
+#------------- _GOT_IP_ADDRESS ? ------------------------------------ {{{
 # -z return true if bash variable is unset
 #while [ -z "$GOT_IP_ADDRESS" ]
 _IP_TOKEN="noprefixroute enp"
@@ -49,13 +45,12 @@ do
     _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
 _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
-    printf "    Local ip: $_purple $_IP_ADDRESS $_restore \n"
-# }}}
-
-#ip a | grep -i --color inet 
+    printf "    Local ip: $col_purple $_IP_ADDRESS $col_restore \n"
+#----------------------------------------------------------------}}}
 
 
-echo "Sell Level: $SHLVL"
+
+echo "    SHLVL=$SHLVL"
 
 
 
@@ -66,4 +61,4 @@ source ~/.bashrc
 
 
 #echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
-#
+

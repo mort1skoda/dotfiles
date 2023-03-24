@@ -1,0 +1,11 @@
+#!/bin/sh
+
+export     col_restore="\033[00m"
+export      col__black="\033[30m"
+export        col__red="\033[31m"
+export         col_pur="\033[32m"
+export        col_purp="\033[33m"
+export col_deep_purple="\033[34m"
+export      col_purple="\033[35m"
+
+
