@@ -11,7 +11,7 @@ echo "test"
 startx
 
 clear
-source ~/.bash_profile
+source ~/.bashrc
 echo "back on tty"
 neofetch
 
