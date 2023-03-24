@@ -26,3 +26,5 @@ sudo ln -sf    /dat.mnt/dotfiles/etc.default.grub    /etc/default/grub
 ls -lah --color  /etc                               | grep --color lrw
 ls -lah --color  /etc/default                       | grep --color lrw
 
+sudo ln -sf    /dat.mnt/dotfiles/adobe-source-code_pro  /usr/share/fonts
+ls -lah --color /usr/share/fonts     
