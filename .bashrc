@@ -37,6 +37,6 @@ export XDG_CONFIG_HOME='/home/m/.config'
 source /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
 #................................................}}}
 
-cd ~
+#cd ~
 source ~/.aliases
 
