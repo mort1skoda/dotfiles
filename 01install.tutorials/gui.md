@@ -18,7 +18,7 @@
 #### -- install xorg
 
     lspci | g vga
-    pm -S xorg-server xorg-xinit xf86-video-amdgpu
+    pm -S xorg-server xorg-xinit xf86-video-amdgpu/xf86-video-intel
 
 
 
