@@ -7,16 +7,17 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Source Code Pro Medium:size=11:antialias=true:autohint=true" };
 static const char dmenufont[]       =   "Source Code Pro Medium:size=11:antialias=true:autohint=true"  ;
-static const char col_gray0[]       = "#080808";
+static const char col_gray0[]       = "#111111";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const char col_red[]         = "#7f0102";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray0, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_red  },
 };
 
 /* tagging */
@@ -77,7 +78,7 @@ static const Key keys[] = {
 	{ SUPER,                       XK_Return, zoom,           {0} },
 	{ SUPER,                       XK_Tab,    view,           {0} },
 	{ SUPER|ShiftMask,             XK_c,      killclient,     {0} },
-	{ SUPER,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ SUPER,                       XK_s,      setlayout,      {.v = &layouts[0]} },
 	{ SUPER,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ SUPER,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ SUPER,                       XK_space,  setlayout,      {0} },
