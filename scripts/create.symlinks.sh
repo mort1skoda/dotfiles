@@ -21,6 +21,8 @@ sudo ln -sf /usr/bin/firefox                  /usr/local/bin/www-browser
 sudo ls -la --color  /root           | grep --color dotfiles
 
 
-sudo ln -sf      /dat.mnt/dotfiles/etc.vconsole.conf    /etc/vconsole.conf
-ls -lah --color  /etc                                    | grep --color lrw
+sudo ln -sf    /dat.mnt/dotfiles/etc.vconsole.conf   /etc/vconsole.conf
+sudo ln -sf    /dat.mnt/dotfiles/etc.default.grub    /etc/deafult/grub
+ls -lah --color  /etc                               | grep --color lrw
+ls -lah --color  /etc/default                       | grep --color lrw
 
