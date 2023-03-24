@@ -53,6 +53,8 @@ _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
 echo "    SHLVL=$SHLVL"
 
 
+echo $(pwd)
+sleep 3
 
 
 
