@@ -24,10 +24,11 @@
 
 #### -- install suckless
 
+    ## DWM ###
     git clone https://git.suckless.org/dwm
-    mv dwm dwm.git
-    pm -S make pkg-config 
-    cd dwm.git
+    mv dwm dwm_git
+    pm -S libxft   make   pkg-config 
+    cd dwm_git
     ,mci     (or: sudo make clean install)
      
     curl --output dwm.git dl.suckless.org/dwm/dwm-6.4.tar.gz
