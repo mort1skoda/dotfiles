@@ -6,7 +6,7 @@ static const unsigned int snap      = 28;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Ubuntu Mono Nerd:size=11:antialias=true:autohint=true" };
-static const char dmenufont[]       =   "Source Code Pro Medium:size=11:antialias=true:autohint=true"  ;
+static const char dmenufont[]       =   "Ubuntu Mono Nerd:size=11:antialias=true:autohint=true"  ;
 static const char col_gray0[]       = "#111111";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
