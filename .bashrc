@@ -33,6 +33,9 @@ export          EDITOR='vim'
 export          OPENER='xdg-open'
 export       BAT_THEME='gruvbox-dark'
 export XDG_CONFIG_HOME='/home/m/.config'
+
+export LF_ICONS=""
+
 # }}}
 
 

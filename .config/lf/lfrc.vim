@@ -80,8 +80,7 @@ set previewer /home/m/.config/lf/batc.sh
 #set number on
 set incsearch on
 set incfilter on
-set icons on
-
+set icons true
 #.....................................................}}}
 
 
