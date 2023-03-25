@@ -31,6 +31,19 @@ sudo ln -sf     /usr/share/zoneinfo/Europe/Oslo          /etc/localtime
 ls -lah --color                                         /etc             |grep localtime
 echo
 
+
+echo "/etc/locale.conf ->"
+sudo ln -sf     /dat.mnt/dotfiles/etc.localeconf.conf   /etc/locale.conf
+ls -lah --color                                         /etc             |grep vconsole.conf
+echo
+
+
+echo "/etc/vconsole.conf ->"
+sudo ln -sf     /dat.mnt/dotfiles/etc.vconsole.conf     /etc/vconsole.conf
+ls -lah --color                                         /etc             |grep vconsole.conf
+echo
+
+
 echo "/etc/default/grub ->"
 sudo ln -sf     /dat.mnt/dotfiles/etc.default.grub      /etc/default/grub
 ls -lah --color                                         /etc/default     |grep grub
@@ -41,10 +54,6 @@ sudo ln -sf     /dat.mnt/dotfiles/etc.pacman.conf       /etc/pacman.conf
 ls -lah --color                                         /etc             |grep pacman.conf
 echo
 
-echo "/etc/vconsole.conf ->"
-sudo ln -sf     /dat.mnt/dotfiles/etc.vconsole.conf     /etc/vconsole.conf
-ls -lah --color                                         /etc             |grep vconsole.conf
-echo
 
 echo "/usr/share/fonts ->"
 sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts
