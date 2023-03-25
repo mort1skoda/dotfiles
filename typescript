@@ -1,515 +1,0 @@
-Script started on 2023-03-25 12:44:16+01:00 [TERM="st-256color" TTY="/dev/pts/0" COLUMNS="121" LINES="36"]
-    sourcing: /home/m/.bashrc
-Already up to date.
-origin	https://github.com/mort1skoda/[01;31m[Kdotfiles[m[K.git (fetch)
-[32mA[m  typescript
-[main 031936f] [2023-03-25 12:44:17]
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 typescript
-Enumerating objects: 4, done.
-Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
-Delta compression using up to 4 threads
-Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
-Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
-Total 3 (delta 1), reused 1 (delta 0), pack-reused 0
-remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
-To https://github.com/mort1skoda/dotfiles.git
-   fffd0ed..031936f  main -> main
-branch 'main' set up to track 'origin/main'.
-    sourcing: ~/.aliases 
-[?2004h[32m/dat.mnt/dotfiles[00m
-l
-[?2004ltotal 132K
-drwxr-xr-x 10 m m 4.0K Mar 25 12:44 [0m[01;34m.[0m
-drwxr-xr-x 10 m m 4.0K Mar 25 01:59 [01;34m..[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 23:09 [01;34m01install.tutorials[0m
-drwxr-xr-x 19 m m 4.0K Mar 25 00:51 [01;34m.config[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mfont-adobe-source-code-pro[0m
-drwxr-xr-x  2 m m 4.0K Mar 25 02:04 [01;34mfont-ubuntu-mono-nerd[0m
-drwxr-xr-x  8 m m 4.0K Mar 25 12:44 [01;34m.git[0m
-drwxr-xr-x  6 m m 4.0K Mar 25 12:03 [01;34mscripts[0m
-drwxr-xr-x  3 m m 4.0K Mar 24 00:17 [01;34m.vifm[0m
-drwxr-xr-x  6 m m 4.0K Mar 24 00:17 [01;34m.vim[0m
--rw-r--r--  1 m m 8.5K Mar 25 10:51 .aliases
--rw-r--r--  1 m m  123 Mar 24 23:12 .bash_logout
--rw-r--r--  1 m m 1.6K Mar 24 18:39 .bash_profile
--rw-r--r--  1 m m  959 Mar 25 11:12 .bashrc
--rw-r--r--  1 m m  939 Mar 24 16:49 .colors
--rw-r--r--  1 m m   92 Mar 24 21:35 command.list.txt
--rw-r--r--  1 m m 2.1K Mar 25 02:13 etc.default.grub
--rw-r--r--  1 m m  614 Mar 24 00:17 etc.fstab.example
--rw-r--r--  1 m m 2.9K Mar 24 00:17 etc.pacman.conf
--rw-r--r--  1 m m   29 Mar 24 16:59 etc.vconsole.conf
--rw-r--r--  1 m m  237 Mar 24 00:17 .gitconfig
--rw-r--r--  1 m m   13 Mar 24 21:35 .gitignore
--rw-r--r--  1 m m  15K Mar 24 00:17 .lynxrc
--rw-r--r--  1 m m  688 Mar 24 00:17 .tmux.conf
--rw-r--r--  1 m m    0 Mar 25 12:44 typescript
--rw-r--r--  1 m m  12K Mar 24 22:25 .vimrc
--rw-r--r--  1 m m  362 Mar 25 11:09 .xinitrc
-[?2004h[32m/dat.mnt/dotfiles[00m
-[?2004l[?2004h[32m/dat.mnt/dotfiles[00m
-scr*
-[?2004lcd -- scripts
-[?2004h[32m/dat.mnt/dotfiles/scripts[00m
-l
-[?2004ltotal 56K
-drwxr-xr-x  6 m m 4.0K Mar 25 12:03 [0m[01;34m.[0m
-drwxr-xr-x 10 m m 4.0K Mar 25 12:44 [01;34m..[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mdmenu[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mscrot[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mtorrent[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mvim[0m
--rwxr-xr-x  1 m m  451 Mar 24 00:17 [01;32mcolor_pallete.sh[0m
--rwxr-xr-x  1 m m 2.0K Mar 25 12:03 [01;32mcreate.symlinks.sh[0m
--rwxr-xr-x  1 m m   97 Mar 24 00:17 [01;32mdwm.sbar.time.sh[0m
--rwxr-xr-x  1 m m 1.3K Mar 24 00:17 [01;32mgruvbox.bash[0m
--rwxr-xr-x  1 m m  145 Mar 24 00:17 [01;32minstall.x.programs.sh[0m
--rwxr-xr-x  1 m m  118 Mar 24 21:35 [01;32mtmux.sh[0m
--rwxr-xr-x  1 m m  487 Mar 24 23:39 [01;32mupdate.dotfiles.git.sh[0m
--rwxr-xr-x  1 m m  167 Mar 24 21:35 [01;32mwrap_startx.sh[0m
-[?2004h[32m/dat.mnt/dotfiles/scripts[00m
-[?2004l[?2004h[32m/dat.mnt/dotfiles/scripts[00m
-[?2004l[?2004h[32m/dat.mnt/dotfiles/scripts[00m
-./cre*
-[?2004l[H[2J/home/m ->
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       26 Mar 25 12:44 [01;36m.aliases[0m -> /dat.mnt/dotfiles/.aliases
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       30 Mar 25 12:44 [01;36m.bash_logout[0m -> /dat.mnt/dotfiles/.bash_logout
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       31 Mar 25 12:44 [01;36m.bash_profile[0m -> /dat.mnt/dotfiles/.bash_profile
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       25 Mar 25 12:44 [01;36m.bashrc[0m -> /dat.mnt/dotfiles/.bashrc
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       25 Mar 25 12:44 [01;36m.config[0m -> /dat.mnt/dotfiles/.config
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       28 Mar 25 12:44 [01;36m.tmux.conf[0m -> /dat.mnt/dotfiles/.tmux.conf
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       22 Mar 25 12:44 [01;36m.vim[0m -> /dat.mnt/dotfiles/.vim
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       24 Mar 25 12:44 [01;36m.vimrc[0m -> /dat.mnt/dotfiles/.vimrc
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m       26 Mar 25 12:44 [01;36m.xinitrc[0m -> /dat.mnt/dotfiles/.xinitrc
-
-/root ->
-[01;31m[Klrw[m[Kxrwxrwx  1 root root    26 Mar 25 12:44 [01;36m.aliases[0m -> /dat.mnt/dotfiles/.aliases
-[01;31m[Klrw[m[Kxrwxrwx  1 root root    31 Mar 25 12:44 [01;36m.bash_profile[0m -> /dat.mnt/dotfiles/.bash_profile
-[01;31m[Klrw[m[Kxrwxrwx  1 root root    25 Mar 25 12:44 [01;36m.bashrc[0m -> /dat.mnt/dotfiles/.bashrc
-[01;31m[Klrw[m[Kxrwxrwx  1 root root    25 Mar 25 12:44 [01;36m.config[0m -> /dat.mnt/dotfiles/.config
-[01;31m[Klrw[m[Kxrwxrwx  1 root root    22 Mar 25 12:44 [01;36m.vim[0m -> /dat.mnt/dotfiles/.vim
-[01;31m[Klrw[m[Kxrwxrwx  1 root root    24 Mar 25 12:44 [01;36m.vimrc[0m -> /dat.mnt/dotfiles/.vimrc
-
-/etc/default/grub ->
-lrwxrwxrwx  1 root root   34 Mar 25 12:44 [01;36mgrub[0m -> /dat.mnt/dotfiles/etc.default.grub
-
-/etc/pacman.conf ->
-lrwxrwxrwx  1 root root   33 Mar 25 12:44 [01;36mpacman.conf[0m -> /dat.mnt/dotfiles/etc.pacman.conf
-
-/etc/vconsole.conf ->
-lrwxrwxrwx  1 root root   35 Mar 25 12:44 [01;36mvconsole.conf[0m -> /dat.mnt/dotfiles/etc.vconsole.conf
-
-/usr/share/fonts ->
-lrwxrwxrwx   1 root root   39 Mar 25 12:44 [01;36mfont-ubuntu-mono-nerd[0m -> /dat.mnt/dotfiles/font-ubuntu-mono-nerd
-
-/usr/local/bin ->
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  42K Mar 25 12:43 [0m[01;32mdmenu[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  240 Mar 25 12:43 [01;32mdmenu_path[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root   58 Mar 25 12:43 [01;32mdmenu_run[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  62K Mar 25 12:06 [01;32mdwm[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root 104K Mar 25 10:42 [01;32mst[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  17K Mar 25 12:43 [01;32mstest[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root 100K Mar 22 22:47 [01;32mst_float[0m
--rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  15K Mar 21 23:32 [01;32mswarp[0m
-lrw[01;31m[Kxr[m[Kw[01;31m[Kxr[m[Kwx 1 root root   16 Mar 25 12:44 [01;36mwww_browser[0m -> /usr/bin/firefox
-
-[?2004h[32m/dat.mnt/dotfiles/scripts[00m
-[K[Kl
-[?2004ltotal 56K
-drwxr-xr-x  6 m m 4.0K Mar 25 12:03 [0m[01;34m.[0m
-drwxr-xr-x 10 m m 4.0K Mar 25 12:44 [01;34m..[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mdmenu[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mscrot[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mtorrent[0m
-drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mvim[0m
--rwxr-xr-x  1 m m  451 Mar 24 00:17 [01;32mcolor_pallete.sh[0m
--rwxr-xr-x  1 m m 2.0K Mar 25 12:03 [01;32mcreate.symlinks.sh[0m
--rwxr-xr-x  1 m m   97 Mar 24 00:17 [01;32mdwm.sbar.time.sh[0m
--rwxr-xr-x  1 m m 1.3K Mar 24 00:17 [01;32mgruvbox.bash[0m
--rwxr-xr-x  1 m m  145 Mar 24 00:17 [01;32minstall.x.programs.sh[0m
--rwxr-xr-x  1 m m  118 Mar 24 21:35 [01;32mtmux.sh[0m
--rwxr-xr-x  1 m m  487 Mar 24 23:39 [01;32mupdate.dotfiles.git.sh[0m
--rwxr-xr-x  1 m m  167 Mar 24 21:35 [01;32mwrap_startx.sh[0m
-[?2004h[32m/dat.mnt/dotfiles/scripts[00m
-/sys
-[?2004lcd -- /sys
-[?2004h[32m/sys[00m
-l
-[?2004ltotal 4.0K
-dr-xr-xr-x  13 root root    0 Mar 25 10:56 [0m[01;34m.[0m
-drwxr-xr-x  18 root root 4.0K Mar 21 19:41 [01;34m..[0m
-drwxr-xr-x   2 root root    0 Mar 25 10:56 [01;34mblock[0m
-drwxr-xr-x  41 root root    0 Mar 25 10:56 [01;34mbus[0m
-drwxr-xr-x  69 root root    0 Mar 25 10:56 [01;34mclass[0m
-drwxr-xr-x   4 root root    0 Mar 25 10:56 [01;34mdev[0m
-drwxr-xr-x  19 root root    0 Mar 25 10:56 [01;34mdevices[0m
-drwxr-xr-x   6 root root    0 Mar 25 10:56 [01;34mfirmware[0m
-drwxr-xr-x   7 root root    0 Mar 25 10:56 [01;34mfs[0m
-drwxr-xr-x   2 root root    0 Mar 25 10:56 [01;34mhypervisor[0m
-drwxr-xr-x  16 root root    0 Mar 25 10:56 [01;34mkernel[0m
-drwxr-xr-x 168 root root    0 Mar 25 10:56 [01;34mmodule[0m
-drwxr-xr-x   3 root root    0 Mar 25 11:58 [01;34mpower[0m
-[?2004h[32m/sys[00m
-[?2004l[?2004h[32m/sys[00m
-class
-[?2004lcd -- class
-[?2004h[32m/sys/class[00m
-l
-[?2004ltotal 0
-drwxr-xr-x 69 root root 0 Mar 25 10:56 [0m[01;34m.[0m
-dr-xr-xr-x 13 root root 0 Mar 25 10:56 [01;34m..[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34maccel[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_device[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_link[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_port[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbacklight[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbdi[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mblock[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbsg[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mcpuid[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevcoredump[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq-event[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevlink[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma_heap[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdmi[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm_dp_aux_dev[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mextcon[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mfirmware[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mgraphics[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhidraw[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhwmon[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mi2c-adapter[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mieee80211[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34minput[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mintel_scu_ipc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34miommu[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mkfd[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mleds[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mlirc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmdio_bus[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmem[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmisc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmsr[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnd[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnet[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpci_bus[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mphy[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpowercap[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpower_supply[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mppdev[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpps[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mptp[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpwm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mregulator[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mremoteproc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrfkill[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrtc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_device[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_disk[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_host[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34msound[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_master[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_slave[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mthermal[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpmrm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtty[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34musbmisc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvtconsole[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwakeup[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwatchdog[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwmi_bus[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwwan[0m
-[?2004h[32m/sys/class[00m
-[?2004l[?2004h[32m/sys/class[00m
-[?2004l[?2004h[32m/sys/class[00m
-[?2004l[?2004h[32m/sys/class[00m
-[?2004l[?2004h[32m/sys/class[00m
-l
-[?2004ltotal 0
-drwxr-xr-x 69 root root 0 Mar 25 10:56 [0m[01;34m.[0m
-dr-xr-xr-x 13 root root 0 Mar 25 10:56 [01;34m..[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34maccel[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_device[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_link[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_port[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbacklight[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbdi[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mblock[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbsg[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mcpuid[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevcoredump[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq-event[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevlink[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma_heap[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdmi[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm_dp_aux_dev[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mextcon[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mfirmware[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mgraphics[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhidraw[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhwmon[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mi2c-adapter[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mieee80211[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34minput[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mintel_scu_ipc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34miommu[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mkfd[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mleds[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mlirc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmdio_bus[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmem[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmisc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmsr[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnd[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnet[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpci_bus[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mphy[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpowercap[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpower_supply[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mppdev[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpps[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mptp[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpwm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mregulator[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mremoteproc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrfkill[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrtc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_device[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_disk[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_host[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34msound[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_master[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_slave[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mthermal[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpmrm[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtty[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34musbmisc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvc[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvtconsole[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwakeup[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwatchdog[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwmi_bus[0m
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwwan[0m
-[?2004h[32m/sys/class[00m
-cpuid
-[?2004lcd -- cpuid
-[?2004h[32m/sys/class/cpuid[00m
-l
-[?2004ltotal 0
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [0m[01;34m.[0m
-drwxr-xr-x 69 root root 0 Mar 25 10:56 [01;34m..[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu0[0m -> [01;34m../../devices/virtual/cpuid/cpu0[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu1[0m -> [01;34m../../devices/virtual/cpuid/cpu1[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu2[0m -> [01;34m../../devices/virtual/cpuid/cpu2[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu3[0m -> [01;34m../../devices/virtual/cpuid/cpu3[0m
-[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-[?2004l[?2004h[32m/sys/class/cpuid[00m
-c [K[Kb cpu0
-[?2004l[31m[bat error][0m: 'cpu0' is a directory.[m
-[K[?2004h[32m/sys/class/cpuid[00m
-cpu0
-[?2004lcd -- cpu0
-[?2004h[32m/sys/class/cpuid/cpu0[00m
-l
-[?2004ltotal 0
-drwxr-xr-x 3 root root    0 Mar 25 10:56 [0m[01;34m.[0m
-drwxr-xr-x 6 root root    0 Mar 25 10:56 [01;34m..[0m
-drwxr-xr-x 2 root root    0 Mar 25 12:52 [01;34mpower[0m
-lrwxrwxrwx 1 root root    0 Mar 25 10:56 [01;36msubsystem[0m -> [01;34m../../../../class/cpuid[0m
--r--r--r-- 1 root root 4.0K Mar 25 12:52 dev
--rw-r--r-- 1 root root 4.0K Mar 25 10:56 uevent
-[?2004h[32m/sys/class/cpuid/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0[00m
-subsystem
-[?2004lcd -- subsystem
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem[00m
-l
-[?2004ltotal 0
-drwxr-xr-x  2 root root 0 Mar 25 10:56 [0m[01;34m.[0m
-drwxr-xr-x 69 root root 0 Mar 25 10:56 [01;34m..[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu0[0m -> [01;34m../../devices/virtual/cpuid/cpu0[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu1[0m -> [01;34m../../devices/virtual/cpuid/cpu1[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu2[0m -> [01;34m../../devices/virtual/cpuid/cpu2[0m
-lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu3[0m -> [01;34m../../devices/virtual/cpuid/cpu3[0m
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem[00m
-spo[K[K[Kcpu0
-[?2004lcd -- cpu0
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-l
-[?2004ltotal 0
-drwxr-xr-x 3 root root    0 Mar 25 10:56 [0m[01;34m.[0m
-drwxr-xr-x 6 root root    0 Mar 25 10:56 [01;34m..[0m
-drwxr-xr-x 2 root root    0 Mar 25 12:52 [01;34mpower[0m
-lrwxrwxrwx 1 root root    0 Mar 25 10:56 [01;36msubsystem[0m -> [01;34m../../../../class/cpuid[0m
--r--r--r-- 1 root root 4.0K Mar 25 12:52 dev
--rw-r--r-- 1 root root 4.0K Mar 25 10:56 uevent
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-c [K[Kpower
-[?2004lcd -- power
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-l
-[?2004ltotal 0
-drwxr-xr-x 2 root root    0 Mar 25 12:52 [0m[01;34m.[0m
-drwxr-xr-x 3 root root    0 Mar 25 10:56 [01;34m..[0m
--rw-r--r-- 1 root root 4.0K Mar 25 12:53 autosuspend_delay_ms
--rw-r--r-- 1 root root 4.0K Mar 25 12:53 control
--r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_active_time
--r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_status
--r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_suspended_time
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-l
-[?2004ltotal 0
-drwxr-xr-x 2 root root    0 Mar 25 12:52 [0m[01;34m.[0m
-drwxr-xr-x 3 root root    0 Mar 25 10:56 [01;34m..[0m
--rw-r--r-- 1 root root 4.0K Mar 25 12:53 autosuspend_delay_ms
--rw-r--r-- 1 root root 4.0K Mar 25 12:53 control
--r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_active_time
--r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_status
--r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_suspended_time
-[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-x
-[?2004lwm.sh  --  /dat.mnt/dotfiles/scripts/wrap_startx.sh  --  
-wm = window manager
-wrapper script
-test
-
-/usr/lib/Xorg.wrap: Only console users are allowed to run the X server
-xinit: giving up
-xinit: unable to connect to X server: Connection refused
-xinit: server error
-Couldn't get a file descriptor referring to the console.
-[H[2J    sourcing: /home/m/.bashrc
-
-
-
-Already up to date.
-origin	https://github.com/mort1skoda/[01;31m[Kdotfiles[m[K.git (fetch)
-[32mM[m  .config/suckless/from.git/slstatus.git/config.def.h
-[32mA[m  .config/suckless/from.git/slstatus.git/config.def.h.bkup
-[32mM[m  typescript
-[main 4362658] [2023-03-25 12:53:17]
- 3 files changed, 361 insertions(+), 2 deletions(-)
- create mode 100644 .config/suckless/from.git/slstatus.git/config.def.h.bkup
-
-
-
-Enumerating objects: 15, done.
-Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
-Delta compression using up to 4 threads
-Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
-Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 3.21 KiB | 1.61 MiB/s, done.
-Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
-
-remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
-To https://github.com/mort1skoda/dotfiles.git
-   d27a518..4362658  main -> main
-branch 'main' set up to track 'origin/main'.
-    sourcing: ~/.aliases 
-back on tty
-[?25l[?7l[0m[36m[1m                   -`
-                  .o+`
-                 `ooo/
-                `+oooo:
-               `+oooooo:
-               -+oooooo+:
-             `/:-:++oooo+:
-            `/++++/+++++++:
-           `/++++++++++++++:
-          `/+++o[0m[36m[1moooooooo[0m[36m[1moooo/`
-[0m[36m[1m         [0m[36m[1m./[0m[36m[1mooosssso++osssssso[0m[36m[1m+`
-[0m[36m[1m        .oossssso-````/ossssss+`
-       -osssssso.      :ssssssso.
-      :osssssss/        osssso+++.
-     /ossssssss/        +ssssooo/-
-   `/ossssso+/:-        -:/+osssso+-
-  `+sso+:-`                 `.-/+oso:
- `++:.                           `-/+/
- .`                                 `/[0m
-[19A[9999999D[41C[0m[1m[36m[1mm[0m@[36m[1m[0m 
-[41C[0m--[0m 
-[41C[0m[36m[1mOS.............[0m[0m:[0m Arch Linux x86_64[0m 
-[41C[0m[36m[1mHost...........[0m[0m:[0m AM1M-S2H[0m 
-[41C[0m[36m[1mKernel.........[0m[0m:[0m Linux 6.2.8-arch1-1[0m 
-[41C[0m[36m[1mUptime.........[0m[0m:[0m 1 hour, 56 mins[0m 
-[41C[0m[36m[1mPackages.......[0m[0m:[0m 375 (pacman)[0m 
-[41C[0m[36m[1mShell..........[0m[0m:[0m /bin/bash 5.1.16[0m 
-[41C[0m[36m[1mResolution.....[0m[0m:[0m 1920x1200[0m 
-[41C[0m[36m[1mWM.............[0m[0m:[0m dwm[0m 
-[41C[0m[36m[1mTheme..........[0m[0m:[0m Adwaita [GTK3][0m 
-[41C[0m[36m[1mIcons..........[0m[0m:[0m Adwaita [GTK3][0m 
-[41C[0m[36m[1mTerminal.......[0m[0m:[0m script[0m 
-[41C[0m[36m[1mCPU............[0m[0m:[0m AMD Athlon 5350 APU with Radeon R3 (4) @ 1.619GHz[0m 
-[41C[0m[36m[1mGPU............[0m[0m:[0m AMD ATI Radeon HD 8400 / R3 Series[0m 
-[41C[0m[36m[1mMemory.........[0m[0m:[0m 709MiB / 3353MiB (21%)[0m 
-[41C[0m[36m[1mGPU Driver.....[0m[0m:[0m radeon[0m 
-[41C[0m[36m[1mCPU Usage......[0m[0m:[0m 11%[0m 
-[41C[0m[36m[1mDisk...........[0m[0m:[0m (dev): 0 / 1.7G (0%)[0m 
-[41C[0m[36m[1mFont...........[0m[0m:[0m Cantarell 11 [GTK3][0m 
-[41C[0m[36m[1mLocal IP.......[0m[0m:[0m 192.168.0.185[0m 
-[41C[0m[36m[1mPublic IP......[0m[0m:[0m 62.92.82.179[0m 
-[41C[0m[36m[1mUsers..........[0m[0m:[0m m[0m 
-[41C[0m[36m[1mLocale.........[0m[0m:[0m en_US.UTF-8[0m 
-
-[41C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
-[41C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
-
-
-[?25h[?7h[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
-q
-[?2004lexit
-
-Script done on 2023-03-25 12:53:22+01:00 [COMMAND_EXIT_CODE="0"]
