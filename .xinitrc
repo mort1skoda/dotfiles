@@ -11,3 +11,6 @@ feh --bg-fill /dat.mnt/Wallpapers/gnome/wood-d.webp &
 dwm
 #
 
+#Wallpapers
+#/dat.mnt/Wallpapers/pexels-christian-heitz-1581581.jpg
+#pexels-christian-heitz-842711.jpg
