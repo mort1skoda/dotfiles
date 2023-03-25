@@ -66,3 +66,12 @@
 
 
 
+    genfstab -U /mnt >> /mnt/etc/fstab
+
+    arch-chroot /mnt
+    set -o vi
+    alias l='ls -lah --color --group-directories-first'
+    shopt -s autocd
+
+    hwclock --systohc
+     
