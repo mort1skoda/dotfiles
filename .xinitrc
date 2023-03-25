@@ -5,9 +5,9 @@ xset -dpms &
 xset s 0 0 &
 xset r rate 300 50 &
 swarp 1910 1190 & 
-_WPAPER=$(ls /dat.mnt/Wallpapers/gnome |shuf -n1)
+_W_PAPER=$(ls /dat.mnt/Wallpapers/pexels |shuf -n1)
 
-feh --bg-fill /dat.mnt/Wallpapers/gnome/$_WPAPER &
+feh --bg-fill /dat.mnt/Wallpapers/pexels/$_W_PAPER &
 
 #---------
 /dat.mnt/dotfiles/scripts/dwm.sbar.time.sh &
