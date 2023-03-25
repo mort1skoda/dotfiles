@@ -27,4 +27,6 @@ ls -lah --color  /etc                               | grep --color lrw
 ls -lah --color  /etc/default                       | grep --color lrw
 
 sudo ln -sf    /dat.mnt/dotfiles/font-adobe-source-code-pro  /usr/share/fonts
+sudo ln -sf    /dat.mnt/dotfiles/font-ubuntu-mono-nerd       /usr/share/fonts
 ls -lah --color /usr/share/fonts     
+
