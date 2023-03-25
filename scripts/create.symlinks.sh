@@ -52,3 +52,10 @@ sudo ln -sf     /usr/bin/firefox                        /usr/local/bin/www_brows
 ls -lh --color                                          /usr/local/bin |grep --color xr 
 echo
 
+
+
+echo "/dat.mnt/Downloads ->"
+ln -sf /dat.mnt/Downloads                     /home/m/Downloads
+ls -la --color                                /home/m/       | grep --color Downloads
+echo
+
