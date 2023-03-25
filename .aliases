@@ -143,7 +143,7 @@ alias szp='source ~/.zprofile'
 #--- start programs -------------------------------------------------{{{
 alias ht="htop"
 alias vf='vifm /home/m /dat.mnt/'
-alias x='/dat.mnt/dotfiles/scripts/wm.sh'
+alias x='/dat.mnt/dotfiles/scripts/wrap_startx.sh'
 alias a='alias && alias | wc -l && echo "Total aliases" ' #list all aliases
 alias s='sudo'
 alias gv='gvim '
