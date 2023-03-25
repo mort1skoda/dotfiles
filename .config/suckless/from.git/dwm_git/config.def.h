@@ -20,8 +20,8 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_cyan,  col_red  },
 };
 
-/* tagging     */
-static const char *tags[] = { "1", "2", "3", "4" };
+/* tagging      */
+static const char *tags[] = { "", "2", "3", "4" };
 
 static const Rule rules[] = {
 	/* xprop(1):
