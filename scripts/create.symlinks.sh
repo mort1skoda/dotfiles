@@ -47,8 +47,8 @@ ls -lah --color                                         /usr/share/fonts |grep f
 echo
 
 
-echo "/usr/bin/firefox ->"
+echo "/usr/local/bin ->"
 sudo ln -sf     /usr/bin/firefox                        /usr/local/bin/www_browser
-ls -lh --color                                          /usr/local/bin |grep --color rwx 
+ls -lh --color                                          /usr/local/bin |grep --color xr 
 echo
 
