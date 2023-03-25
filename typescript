@@ -363,4 +363,153 @@ lrwxrwxrwx 1 root root    0 Mar 25 10:56 [01;36msubsystem[0m -> [01;34m../../
 -r--r--r-- 1 root root 4.0K Mar 25 12:52 dev
 -rw-r--r-- 1 root root 4.0K Mar 25 10:56 uevent
 [?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
-[?2004l[?200
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+c [K[Kpower
+[?2004lcd -- power
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+l
+[?2004ltotal 0
+drwxr-xr-x 2 root root    0 Mar 25 12:52 [0m[01;34m.[0m
+drwxr-xr-x 3 root root    0 Mar 25 10:56 [01;34m..[0m
+-rw-r--r-- 1 root root 4.0K Mar 25 12:53 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4.0K Mar 25 12:53 control
+-r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_active_time
+-r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_status
+-r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_suspended_time
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+l
+[?2004ltotal 0
+drwxr-xr-x 2 root root    0 Mar 25 12:52 [0m[01;34m.[0m
+drwxr-xr-x 3 root root    0 Mar 25 10:56 [01;34m..[0m
+-rw-r--r-- 1 root root 4.0K Mar 25 12:53 autosuspend_delay_ms
+-rw-r--r-- 1 root root 4.0K Mar 25 12:53 control
+-r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_active_time
+-r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_status
+-r--r--r-- 1 root root 4.0K Mar 25 12:53 runtime_suspended_time
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+x
+[?2004lwm.sh  --  /dat.mnt/dotfiles/scripts/wrap_startx.sh  --  
+wm = window manager
+wrapper script
+test
+
+/usr/lib/Xorg.wrap: Only console users are allowed to run the X server
+xinit: giving up
+xinit: unable to connect to X server: Connection refused
+xinit: server error
+Couldn't get a file descriptor referring to the console.
+[H[2J    sourcing: /home/m/.bashrc
+
+
+
+Already up to date.
+origin	https://github.com/mort1skoda/[01;31m[Kdotfiles[m[K.git (fetch)
+[32mM[m  .config/suckless/from.git/slstatus.git/config.def.h
+[32mA[m  .config/suckless/from.git/slstatus.git/config.def.h.bkup
+[32mM[m  typescript
+[main 4362658] [2023-03-25 12:53:17]
+ 3 files changed, 361 insertions(+), 2 deletions(-)
+ create mode 100644 .config/suckless/from.git/slstatus.git/config.def.h.bkup
+
+
+
+Enumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 3.21 KiB | 1.61 MiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To https://github.com/mort1skoda/dotfiles.git
+   d27a518..4362658  main -> main
+branch 'main' set up to track 'origin/main'.
+    sourcing: ~/.aliases 
+back on tty
+[?25l[?7l[0m[36m[1m                   -`
+                  .o+`
+                 `ooo/
+                `+oooo:
+               `+oooooo:
+               -+oooooo+:
+             `/:-:++oooo+:
+            `/++++/+++++++:
+           `/++++++++++++++:
+          `/+++o[0m[36m[1moooooooo[0m[36m[1moooo/`
+[0m[36m[1m         [0m[36m[1m./[0m[36m[1mooosssso++osssssso[0m[36m[1m+`
+[0m[36m[1m        .oossssso-````/ossssss+`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   `/ossssso+/:-        -:/+osssso+-
+  `+sso+:-`                 `.-/+oso:
+ `++:.                           `-/+/
+ .`                                 `/[0m
+[19A[9999999D[41C[0m[1m[36m[1mm[0m@[36m[1m[0m 
+[41C[0m--[0m 
+[41C[0m[36m[1mOS.............[0m[0m:[0m Arch Linux x86_64[0m 
+[41C[0m[36m[1mHost...........[0m[0m:[0m AM1M-S2H[0m 
+[41C[0m[36m[1mKernel.........[0m[0m:[0m Linux 6.2.8-arch1-1[0m 
+[41C[0m[36m[1mUptime.........[0m[0m:[0m 1 hour, 56 mins[0m 
+[41C[0m[36m[1mPackages.......[0m[0m:[0m 375 (pacman)[0m 
+[41C[0m[36m[1mShell..........[0m[0m:[0m /bin/bash 5.1.16[0m 
+[41C[0m[36m[1mResolution.....[0m[0m:[0m 1920x1200[0m 
+[41C[0m[36m[1mWM.............[0m[0m:[0m dwm[0m 
+[41C[0m[36m[1mTheme..........[0m[0m:[0m Adwaita [GTK3][0m 
+[41C[0m[36m[1mIcons..........[0m[0m:[0m Adwaita [GTK3][0m 
+[41C[0m[36m[1mTerminal.......[0m[0m:[0m script[0m 
+[41C[0m[36m[1mCPU............[0m[0m:[0m AMD Athlon 5350 APU with Radeon R3 (4) @ 1.619GHz[0m 
+[41C[0m[36m[1mGPU............[0m[0m:[0m AMD ATI Radeon HD 8400 / R3 Series[0m 
+[41C[0m[36m[1mMemory.........[0m[0m:[0m 709MiB / 3353MiB (21%)[0m 
+[41C[0m[36m[1mGPU Driver.....[0m[0m:[0m radeon[0m 
+[41C[0m[36m[1mCPU Usage......[0m[0m:[0m 11%[0m 
+[41C[0m[36m[1mDisk...........[0m[0m:[0m (dev): 0 / 1.7G (0%)[0m 
+[41C[0m[36m[1mFont...........[0m[0m:[0m Cantarell 11 [GTK3][0m 
+[41C[0m[36m[1mLocal IP.......[0m[0m:[0m 192.168.0.185[0m 
+[41C[0m[36m[1mPublic IP......[0m[0m:[0m 62.92.82.179[0m 
+[41C[0m[36m[1mUsers..........[0m[0m:[0m m[0m 
+[41C[0m[36m[1mLocale.........[0m[0m:[0m en_US.UTF-8[0m 
+
+[41C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[41C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0/power[00m
+q
+[?2004lexit
+
+Script done on 2023-03-25 12:53:22+01:00 [COMMAND_EXIT_CODE="0"]
