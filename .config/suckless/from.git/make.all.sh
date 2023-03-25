@@ -6,24 +6,15 @@ echo
 source ~/.aliases
 shopt -s expand_aliases
 
-cd dw*
-,mci
-cd ..
-
-cd dm*
-,mci
-cd ..
-
 cd dwm*
 ,mci
 cd ..
 
-cd dwm*
+cd dmenu*
 ,mci
 cd ..
 
-cd dwm*
+cd st*
 ,mci
 cd ..
-
 
