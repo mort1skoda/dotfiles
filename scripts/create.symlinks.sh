@@ -33,7 +33,7 @@ echo
 
 
 echo "/etc/locale.conf ->"
-sudo ln -sf     /dat.mnt/dotfiles/etc.localeconf.conf   /etc/locale.conf
+sudo ln -sf     /dat.mnt/dotfiles/etc.locale.conf       /etc/locale.conf
 ls -lah --color                                         /etc             |grep locale.conf
 echo
 
