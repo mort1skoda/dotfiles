@@ -10,9 +10,9 @@
     bash
     loadkeys no             (/usr/share/kbd/keymaps/**.*.map.gz)
     set -o vi
-    shopt
     shopt -s autocd
-    setfont dr*8x14       (/usr/share/kbd/consolefonts) setfont gr*8x11*
+    alias l='ls -lah --color --group-directoires-first'
+    setfont dr*8x14       (/usr/share/kbd/consolefonts) setfont gr737b-8x11
     tmux
     ctrl+b %      (vert split)
     ctrl+b arrow  (navigate to pane)
@@ -22,7 +22,7 @@
 
 
     ls /sys/firmware/efi/efivars
-    ip --color a
+    ip -color a
     ping -c4 -D archlinux.org
     timedatectl
     cfdisk
