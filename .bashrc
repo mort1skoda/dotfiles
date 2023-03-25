@@ -1,7 +1,7 @@
 printf "    sourcing: /home/m/.bashrc\n"
 
 
-# ----- set & shopt {{{
+# ----- set & shopt ----- {{{
 set -o vi
 shopt -s autocd
 shopt -s expand_aliases
