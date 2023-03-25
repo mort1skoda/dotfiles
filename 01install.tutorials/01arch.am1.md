@@ -22,8 +22,9 @@
 
 
     ls /sys/firmware/efi/efivars
+
     ip -color a
-    ping -c4 -D archlinux.org
+    ping -c4 -D archlinux.org       (-D shows epoc time with high resolution 1.000.000/s)
     timedatectl
     cfdisk
         example 870 EVO 250GB
@@ -46,8 +47,7 @@
     mkdir /mnt/dat.mnt
     mount /dev/sda7 /mnt/dat.mnt
     
-    pacstrap -iK /mnt base linux linux-firmware amd-ucode
-    pacstrap -iK /mnt vim sudo bat htop git github-cli
+    pacstrap -iK /mnt base linux linux-firmware amd-ucode sudo vim bat htop git github-cli
      
     genfstab -U /mnt >> /mnt/etc/fstab
     

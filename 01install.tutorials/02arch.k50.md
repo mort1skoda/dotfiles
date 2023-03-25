@@ -5,11 +5,13 @@
 #### Bios........: Legacy
 #### Init system.: Systemd
 #### Network.....: Wifi wlan0 / wlp2s0
----
+
 
 #### create bootable usb
 
+    curl --output arch.iso https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso
     cp arch.iso /dev/sdb
+
 
 
 #### boot the iso
@@ -17,13 +19,15 @@
     spam esc
 
 
+
 #### init<!--{{{-->
 
+    bash 
     loadkeys no
-    setfont drdos8x14
-    chsh -s /bin/zsh
     set -o vi
-    /
+    setfont gr737b-8x11
+    shopt -s autocd
+
     mkdir /dat.mnt
     mount -o ro,noload /dev/sda7 /dat.mnt
     /dat*/dot*
@@ -35,9 +39,30 @@
 <!--}}}-->
 
 
+
 #### wifi
 
     /etc/wpa*
-    wpa_passphrase "103B 2.4" "sdbyorguf...." >> wlan0.conf
+    wpa_passphrase "103B 2.4"  "sdbyorguf...." >> wlan0.conf
     wpa_supplicant -B -iwlan0 -c/etc/wpa_supplicant/wlan0.conf
+
+    /etc/wpa*
+    wpa_passphrase "NETGEAR87" "roundsqua....." >> wlan0.conf
+    wpa_supplicant -B -iwlan0 -cwlan0.conf
+
+
+
+#### mount
+
+    mount --mkdir /dev/sda7   /mnt/dat.mnt
+    mount         /dev/sda4   /mnt
+    swapon        /dev/sda2
+
+
+
+#### pacstrap
+
+    pacstrap -iK /mnt base linux linux-firmware intel-ucode sudo vim bat htop git github-cli 
+
+
 
