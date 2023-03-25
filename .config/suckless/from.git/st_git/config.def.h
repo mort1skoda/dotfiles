@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 //static char *font = "Source Code Pro Medium:size=10:antialias=true:autohint=true";
-static char *font = "Ubuntu Mono Nerd Font Complete:size=10:antialias=true:autohint=true";
+static char *font = "Ubuntu Mono Nerd Font:size=10:antialias=true:autohint=true";
 static int borderpx = 5;
 
 /*
