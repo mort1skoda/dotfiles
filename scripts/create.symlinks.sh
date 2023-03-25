@@ -11,7 +11,7 @@ ln -sf /dat.mnt/dotfiles/.tmux.conf           /home/m
 ln -sf /dat.mnt/dotfiles/.vim                 /home/m
 ln -sf /dat.mnt/dotfiles/.vimrc               /home/m
 ln -sf /dat.mnt/dotfiles/.xinitrc             /home/m
-ls -la --color                                /home/m               | grep --color lrw
+ls -lah --color                      /home/m            |grep --color dotfiles
 echo
 
 echo "/root ->"
@@ -21,41 +21,49 @@ sudo ln -sf /dat.mnt/dotfiles/.bashrc         /root
 sudo ln -sf /dat.mnt/dotfiles/.config         /root
 sudo ln -sf /dat.mnt/dotfiles/.vim            /root
 sudo ln -sf /dat.mnt/dotfiles/.vimrc          /root
-sudo ls -la --color                           /root                 | grep --color lrw
+sudo ls -lah --color                 /root              |grep --color dotfiles
 echo
 
 
+
+echo "/etc/localtime ->"
+sudo ln -sf     /usr/share/zoneinfo/Europ/Oslo          /etc/localtime
+ls -lah --color                                         /etc/           |grep localtime
+echo
+
 echo "/etc/default/grub ->"
-sudo ln -sf     /dat.mnt/dotfiles/etc.default.grub   /etc/default/grub
-ls -lah --color                                      /etc/default   |grep grub
+sudo ln -sf     /dat.mnt/dotfiles/etc.default.grub      /etc/default/grub
+ls -lah --color                                         /etc/default     |grep grub
 echo
 
 echo "/etc/pacman.conf ->"
-sudo ln -sf     /dat.mnt/dotfiles/etc.pacman.conf    /etc/pacman.conf
-ls -lah --color                                      /etc           |grep pacman.conf
+sudo ln -sf     /dat.mnt/dotfiles/etc.pacman.conf       /etc/pacman.conf
+ls -lah --color                                         /etc             |grep pacman.conf
 echo
 
 echo "/etc/vconsole.conf ->"
-sudo ln -sf     /dat.mnt/dotfiles/etc.vconsole.conf  /etc/vconsole.conf
-ls -lah --color                                      /etc           |grep vconsole.conf
+sudo ln -sf     /dat.mnt/dotfiles/etc.vconsole.conf     /etc/vconsole.conf
+ls -lah --color                                         /etc             |grep vconsole.conf
 echo
-
 
 echo "/usr/share/fonts ->"
-sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd /usr/share/fonts
-ls -lah --color                                         /usr/share/fonts |grep font    
+sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts
+ls -lah --color                                           /usr/share/fonts |grep font    
 echo
-
 
 echo "/usr/local/bin ->"
 sudo ln -sf     /usr/bin/firefox                        /usr/local/bin/www_browser
-ls -lh --color                                          /usr/local/bin |grep --color xr 
+ls -lah --color                                          /usr/local/bin   |grep --color www_browser 
 echo
 
 
 
-echo "/dat.mnt/Downloads ->"
-ln -sf /dat.mnt/Downloads                     /home/m/Downloads
-ls -la --color                                /home/m/       | grep --color Downloads
+echo "more home links ->"
+ln -sf /dat.mnt/Documents                     /home/m
+ln -sf /dat.mnt/Downloads                     /home/m
+ln -sf /dat.mnt/Pictures                      /home/m
+ls -lah --color                      /home/m            |grep --color Documents
+ls -lah --color                      /home/m            |grep --color Downloads
+ls -lah --color                      /home/m            |grep --color Pictures
 echo
 
