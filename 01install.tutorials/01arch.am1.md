@@ -62,7 +62,6 @@
     locale-gen
 
     vim /etc/locale.conf        LANG=en_US.UTF-8
-
     vim /etc/vconsole.conf      KEYMAP=no       FONT=gr737b-8x11
 
     pacman -S dhcpcd
