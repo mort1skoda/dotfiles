@@ -74,4 +74,293 @@ drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mvim[0m
 ./cre*
 [?2004l[H[2J/home/m ->
 [01;31m[Klrw[m[Kxrwxrwx 1 m    m       26 Mar 25 12:44 [01;36m.aliases[0m -> /dat.mnt/dotfiles/.aliases
-[01;31m[Klrw[m[Kxrwxrwx 1 m    m 
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       30 Mar 25 12:44 [01;36m.bash_logout[0m -> /dat.mnt/dotfiles/.bash_logout
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       31 Mar 25 12:44 [01;36m.bash_profile[0m -> /dat.mnt/dotfiles/.bash_profile
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       25 Mar 25 12:44 [01;36m.bashrc[0m -> /dat.mnt/dotfiles/.bashrc
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       25 Mar 25 12:44 [01;36m.config[0m -> /dat.mnt/dotfiles/.config
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       28 Mar 25 12:44 [01;36m.tmux.conf[0m -> /dat.mnt/dotfiles/.tmux.conf
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       22 Mar 25 12:44 [01;36m.vim[0m -> /dat.mnt/dotfiles/.vim
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       24 Mar 25 12:44 [01;36m.vimrc[0m -> /dat.mnt/dotfiles/.vimrc
+[01;31m[Klrw[m[Kxrwxrwx 1 m    m       26 Mar 25 12:44 [01;36m.xinitrc[0m -> /dat.mnt/dotfiles/.xinitrc
+
+/root ->
+[01;31m[Klrw[m[Kxrwxrwx  1 root root    26 Mar 25 12:44 [01;36m.aliases[0m -> /dat.mnt/dotfiles/.aliases
+[01;31m[Klrw[m[Kxrwxrwx  1 root root    31 Mar 25 12:44 [01;36m.bash_profile[0m -> /dat.mnt/dotfiles/.bash_profile
+[01;31m[Klrw[m[Kxrwxrwx  1 root root    25 Mar 25 12:44 [01;36m.bashrc[0m -> /dat.mnt/dotfiles/.bashrc
+[01;31m[Klrw[m[Kxrwxrwx  1 root root    25 Mar 25 12:44 [01;36m.config[0m -> /dat.mnt/dotfiles/.config
+[01;31m[Klrw[m[Kxrwxrwx  1 root root    22 Mar 25 12:44 [01;36m.vim[0m -> /dat.mnt/dotfiles/.vim
+[01;31m[Klrw[m[Kxrwxrwx  1 root root    24 Mar 25 12:44 [01;36m.vimrc[0m -> /dat.mnt/dotfiles/.vimrc
+
+/etc/default/grub ->
+lrwxrwxrwx  1 root root   34 Mar 25 12:44 [01;36mgrub[0m -> /dat.mnt/dotfiles/etc.default.grub
+
+/etc/pacman.conf ->
+lrwxrwxrwx  1 root root   33 Mar 25 12:44 [01;36mpacman.conf[0m -> /dat.mnt/dotfiles/etc.pacman.conf
+
+/etc/vconsole.conf ->
+lrwxrwxrwx  1 root root   35 Mar 25 12:44 [01;36mvconsole.conf[0m -> /dat.mnt/dotfiles/etc.vconsole.conf
+
+/usr/share/fonts ->
+lrwxrwxrwx   1 root root   39 Mar 25 12:44 [01;36mfont-ubuntu-mono-nerd[0m -> /dat.mnt/dotfiles/font-ubuntu-mono-nerd
+
+/usr/local/bin ->
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  42K Mar 25 12:43 [0m[01;32mdmenu[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  240 Mar 25 12:43 [01;32mdmenu_path[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root   58 Mar 25 12:43 [01;32mdmenu_run[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  62K Mar 25 12:06 [01;32mdwm[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root 104K Mar 25 10:42 [01;32mst[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  17K Mar 25 12:43 [01;32mstest[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root 100K Mar 22 22:47 [01;32mst_float[0m
+-rw[01;31m[Kxr[m[K-[01;31m[Kxr[m[K-x 1 root root  15K Mar 21 23:32 [01;32mswarp[0m
+lrw[01;31m[Kxr[m[Kw[01;31m[Kxr[m[Kwx 1 root root   16 Mar 25 12:44 [01;36mwww_browser[0m -> /usr/bin/firefox
+
+[?2004h[32m/dat.mnt/dotfiles/scripts[00m
+[K[Kl
+[?2004ltotal 56K
+drwxr-xr-x  6 m m 4.0K Mar 25 12:03 [0m[01;34m.[0m
+drwxr-xr-x 10 m m 4.0K Mar 25 12:44 [01;34m..[0m
+drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mdmenu[0m
+drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mscrot[0m
+drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mtorrent[0m
+drwxr-xr-x  2 m m 4.0K Mar 24 00:17 [01;34mvim[0m
+-rwxr-xr-x  1 m m  451 Mar 24 00:17 [01;32mcolor_pallete.sh[0m
+-rwxr-xr-x  1 m m 2.0K Mar 25 12:03 [01;32mcreate.symlinks.sh[0m
+-rwxr-xr-x  1 m m   97 Mar 24 00:17 [01;32mdwm.sbar.time.sh[0m
+-rwxr-xr-x  1 m m 1.3K Mar 24 00:17 [01;32mgruvbox.bash[0m
+-rwxr-xr-x  1 m m  145 Mar 24 00:17 [01;32minstall.x.programs.sh[0m
+-rwxr-xr-x  1 m m  118 Mar 24 21:35 [01;32mtmux.sh[0m
+-rwxr-xr-x  1 m m  487 Mar 24 23:39 [01;32mupdate.dotfiles.git.sh[0m
+-rwxr-xr-x  1 m m  167 Mar 24 21:35 [01;32mwrap_startx.sh[0m
+[?2004h[32m/dat.mnt/dotfiles/scripts[00m
+/sys
+[?2004lcd -- /sys
+[?2004h[32m/sys[00m
+l
+[?2004ltotal 4.0K
+dr-xr-xr-x  13 root root    0 Mar 25 10:56 [0m[01;34m.[0m
+drwxr-xr-x  18 root root 4.0K Mar 21 19:41 [01;34m..[0m
+drwxr-xr-x   2 root root    0 Mar 25 10:56 [01;34mblock[0m
+drwxr-xr-x  41 root root    0 Mar 25 10:56 [01;34mbus[0m
+drwxr-xr-x  69 root root    0 Mar 25 10:56 [01;34mclass[0m
+drwxr-xr-x   4 root root    0 Mar 25 10:56 [01;34mdev[0m
+drwxr-xr-x  19 root root    0 Mar 25 10:56 [01;34mdevices[0m
+drwxr-xr-x   6 root root    0 Mar 25 10:56 [01;34mfirmware[0m
+drwxr-xr-x   7 root root    0 Mar 25 10:56 [01;34mfs[0m
+drwxr-xr-x   2 root root    0 Mar 25 10:56 [01;34mhypervisor[0m
+drwxr-xr-x  16 root root    0 Mar 25 10:56 [01;34mkernel[0m
+drwxr-xr-x 168 root root    0 Mar 25 10:56 [01;34mmodule[0m
+drwxr-xr-x   3 root root    0 Mar 25 11:58 [01;34mpower[0m
+[?2004h[32m/sys[00m
+[?2004l[?2004h[32m/sys[00m
+class
+[?2004lcd -- class
+[?2004h[32m/sys/class[00m
+l
+[?2004ltotal 0
+drwxr-xr-x 69 root root 0 Mar 25 10:56 [0m[01;34m.[0m
+dr-xr-xr-x 13 root root 0 Mar 25 10:56 [01;34m..[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34maccel[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_device[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_link[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_port[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbacklight[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbdi[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mblock[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbsg[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mcpuid[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevcoredump[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq-event[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevlink[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma_heap[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdmi[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm_dp_aux_dev[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mextcon[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mfirmware[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mgraphics[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhidraw[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhwmon[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mi2c-adapter[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mieee80211[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34minput[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mintel_scu_ipc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34miommu[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mkfd[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mleds[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mlirc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmdio_bus[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmem[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmisc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmsr[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnd[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnet[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpci_bus[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mphy[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpowercap[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpower_supply[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mppdev[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpps[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mptp[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpwm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mregulator[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mremoteproc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrfkill[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrtc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_device[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_disk[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_host[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34msound[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_master[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_slave[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mthermal[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpmrm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtty[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34musbmisc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvtconsole[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwakeup[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwatchdog[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwmi_bus[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwwan[0m
+[?2004h[32m/sys/class[00m
+[?2004l[?2004h[32m/sys/class[00m
+[?2004l[?2004h[32m/sys/class[00m
+[?2004l[?2004h[32m/sys/class[00m
+[?2004l[?2004h[32m/sys/class[00m
+l
+[?2004ltotal 0
+drwxr-xr-x 69 root root 0 Mar 25 10:56 [0m[01;34m.[0m
+dr-xr-xr-x 13 root root 0 Mar 25 10:56 [01;34m..[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34maccel[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_device[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_link[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mata_port[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbacklight[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbdi[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mblock[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mbsg[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mcpuid[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevcoredump[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevfreq-event[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdevlink[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdma_heap[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdmi[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mdrm_dp_aux_dev[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mextcon[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mfirmware[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mgraphics[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhidraw[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mhwmon[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mi2c-adapter[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mieee80211[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34minput[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mintel_scu_ipc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34miommu[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mkfd[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mleds[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mlirc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmdio_bus[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmem[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmisc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mmsr[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnd[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mnet[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpci_bus[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mphy[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpowercap[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpower_supply[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mppdev[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpps[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mptp[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mpwm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mregulator[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mremoteproc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrfkill[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mrtc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_device[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_disk[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mscsi_host[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34msound[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_master[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mspi_slave[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mthermal[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtpmrm[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mtty[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34musbmisc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvc[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mvtconsole[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwakeup[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwatchdog[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwmi_bus[0m
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [01;34mwwan[0m
+[?2004h[32m/sys/class[00m
+cpuid
+[?2004lcd -- cpuid
+[?2004h[32m/sys/class/cpuid[00m
+l
+[?2004ltotal 0
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [0m[01;34m.[0m
+drwxr-xr-x 69 root root 0 Mar 25 10:56 [01;34m..[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu0[0m -> [01;34m../../devices/virtual/cpuid/cpu0[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu1[0m -> [01;34m../../devices/virtual/cpuid/cpu1[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu2[0m -> [01;34m../../devices/virtual/cpuid/cpu2[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu3[0m -> [01;34m../../devices/virtual/cpuid/cpu3[0m
+[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+[?2004l[?2004h[32m/sys/class/cpuid[00m
+c [K[Kb cpu0
+[?2004l[31m[bat error][0m: 'cpu0' is a directory.[m
+[K[?2004h[32m/sys/class/cpuid[00m
+cpu0
+[?2004lcd -- cpu0
+[?2004h[32m/sys/class/cpuid/cpu0[00m
+l
+[?2004ltotal 0
+drwxr-xr-x 3 root root    0 Mar 25 10:56 [0m[01;34m.[0m
+drwxr-xr-x 6 root root    0 Mar 25 10:56 [01;34m..[0m
+drwxr-xr-x 2 root root    0 Mar 25 12:52 [01;34mpower[0m
+lrwxrwxrwx 1 root root    0 Mar 25 10:56 [01;36msubsystem[0m -> [01;34m../../../../class/cpuid[0m
+-r--r--r-- 1 root root 4.0K Mar 25 12:52 dev
+-rw-r--r-- 1 root root 4.0K Mar 25 10:56 uevent
+[?2004h[32m/sys/class/cpuid/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0[00m
+[?2004l[?2004h[32m/sys/class/cpuid/cpu0[00m
+subsystem
+[?2004lcd -- subsystem
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem[00m
+l
+[?2004ltotal 0
+drwxr-xr-x  2 root root 0 Mar 25 10:56 [0m[01;34m.[0m
+drwxr-xr-x 69 root root 0 Mar 25 10:56 [01;34m..[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu0[0m -> [01;34m../../devices/virtual/cpuid/cpu0[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu1[0m -> [01;34m../../devices/virtual/cpuid/cpu1[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu2[0m -> [01;34m../../devices/virtual/cpuid/cpu2[0m
+lrwxrwxrwx  1 root root 0 Mar 25 10:56 [01;36mcpu3[0m -> [01;34m../../devices/virtual/cpuid/cpu3[0m
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem[00m
+spo[K[K[Kcpu0
+[?2004lcd -- cpu0
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+l
+[?2004ltotal 0
+drwxr-xr-x 3 root root    0 Mar 25 10:56 [0m[01;34m.[0m
+drwxr-xr-x 6 root root    0 Mar 25 10:56 [01;34m..[0m
+drwxr-xr-x 2 root root    0 Mar 25 12:52 [01;34mpower[0m
+lrwxrwxrwx 1 root root    0 Mar 25 10:56 [01;36msubsystem[0m -> [01;34m../../../../class/cpuid[0m
+-r--r--r-- 1 root root 4.0K Mar 25 12:52 dev
+-rw-r--r-- 1 root root 4.0K Mar 25 10:56 uevent
+[?2004h[32m/sys/class/cpuid/cpu0/subsystem/cpu0[00m
+[?2004l[?200
