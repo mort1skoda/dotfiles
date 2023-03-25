@@ -14,7 +14,7 @@ alias .lf='cd ~/.config/lf && l'
 alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
 alias .r='cd / && ls -lah --color --group-directories-first'
 alias .rr='cd /root && ls -lah --color --group-directories-first'
-alias .sl='cd /dat.mnt/dotfiles/.config/suckless && l'
+alias .sl='cd /dat.mnt/dotfiles/.config/suckless/from.git && l'
 alias .ss='cd /dat.mnt/Screenshots && l'
 alias .wp='cd /dat.mnt/Wallpapers && l'
 # }}}
