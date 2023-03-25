@@ -27,8 +27,8 @@ echo
 
 
 echo "/etc/localtime ->"
-sudo ln -sf     /usr/share/zoneinfo/Europ/Oslo          /etc/localtime
-ls -lah --color                                         /etc/           |grep localtime
+sudo ln -sf     /usr/share/zoneinfo/Europe/Oslo          /etc/localtime
+ls -lah --color                                         /etc             |grep localtime
 echo
 
 echo "/etc/default/grub ->"
