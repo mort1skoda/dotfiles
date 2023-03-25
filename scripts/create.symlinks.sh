@@ -44,6 +44,16 @@ ls -lah --color                                         /etc             |grep v
 echo
 
 
+echo "/etc/dhcpcd.conf ->"
+sudo ln -sf      /dat.mnt/dotfiles/etc.dhcpcd.conf      /etc/dhcpcd.conf
+ls -lah --color                                         /etc             |grep dhcpcd.conf
+echo
+
+
+
+
+
+
 echo "/etc/default/grub ->"
 sudo ln -sf     /dat.mnt/dotfiles/etc.default.grub      /etc/default/grub
 ls -lah --color                                         /etc/default     |grep grub
