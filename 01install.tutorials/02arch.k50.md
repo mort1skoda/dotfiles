@@ -74,4 +74,10 @@
     shopt -s autocd
 
     hwclock --systohc
-     
+
+    echo "en_US.UTF-8 UTF-8"  >   /etc/locale.gen
+    echo "#en_US ISO-8859-1"  >>  /etc/locale.gen
+    cat /etc/locale.gen
+    locale-gen
+    
+  
