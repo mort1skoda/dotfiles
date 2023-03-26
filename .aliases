@@ -132,12 +132,12 @@ alias mount='sudo mount --mkdir '
 #... .......... ....................}}}
 
 #--- source files ------------------------{{{ 
+alias sa='time  source ~/.aliases'
+alias sb='time  source ~/.bashrc'
+alias sbl='time source ~/.bash_logout'
 alias sbp='time source ~/.bash_profile'
-alias sb='source ~/.bashrc'
-alias sbl='source ~/.bash_logout'
-alias sa='source ~/.aliases'
-alias sz='source ~/.zshrc'
-alias szp='source ~/.zprofile'
+alias s1='sbp'
+
 # ---------------------------------------}}}
 
 #--- start programs -------------------------------------------------{{{
