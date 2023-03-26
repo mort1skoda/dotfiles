@@ -69,10 +69,10 @@ ls -lah --color                                         /etc             |grep p
 echo
 
 
-echo "/usr/share/fonts ->"
-sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts
-ls -lah --color                                           /usr/share/fonts |grep font    
-echo
+#echo "/usr/share/fonts ->"
+#sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts
+#ls -lah --color                                           /usr/share/fonts |grep font    
+#echo
 
 echo "/usr/local/bin ->"
 sudo ln -sf     /usr/bin/firefox                        /usr/local/bin/www_browser
