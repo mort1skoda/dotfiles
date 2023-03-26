@@ -40,10 +40,8 @@ export LF_ICONS=""
 
 
 #--- UPDATE DOTFILES ----------------------------{{{
-source /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
 # /dat.mnt/dotfiles  'is my new home' 
 #................................................}}}
 
 
-source ~/.aliases
 
