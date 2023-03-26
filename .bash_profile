@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo "sourcing: ~/.bash_profile"
 
 clear
 source /dat.mnt/dotfiles/.colors
