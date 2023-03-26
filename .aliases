@@ -66,11 +66,11 @@ alias s1='sbp'
 alias s2='sb'
 alias s3='sa'
 alias s4='sbl'
-alias sa='time  source ~/.aliases'
-alias sb='time  source ~/.bashrc'
-alias sbc='time  source ~/.bash_colors'
-alias sbl='time source ~/.bash_logout'
-alias sbp='time source ~/.bash_profile'
+alias sa='source ~/.aliases'
+alias sb='source ~/.bashrc'
+alias sbc='source ~/.bash_colors'
+alias sbl='source ~/.bash_logout'
+alias sbp='source ~/.bash_profile'
 # ---------------------------------------}}}
 
 
