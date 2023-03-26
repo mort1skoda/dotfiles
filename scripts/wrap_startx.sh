@@ -1,18 +1,12 @@
 #!/bin/sh
-#
-echo "wm.sh  --  $0  --  $@"
-
-echo "wm = window manager"
-
-echo "wrapper script"
-
-echo "test"
+# wrapper for startx so that we can execute some commands
+# when we quit X
 
 startx
 
 clear
 source ~/.bashrc
-echo "back on tty"
 neofetch
+echo "back on tty"
 
 
