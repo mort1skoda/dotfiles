@@ -43,10 +43,13 @@ alias rd='rmdir -pv '
 
 
 #--- edit files ------------------------------------------------{{{
+alias ,='vim'
+alias e='vim'
 alias v='vim'
 alias vi='vim'
 alias ea='echo && vim ~/.aliases && source ~/.aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
+alias ecdh='cd /dat.mnt/dotfiles/.config/suckless/from.git/dmw_git && vim config.def.h '
 alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
 alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
 alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
