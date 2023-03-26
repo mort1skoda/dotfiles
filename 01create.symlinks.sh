@@ -21,6 +21,7 @@ echo "/root ->"
 sudo ln -sf /dat.mnt/dotfiles/.aliases        /root
 sudo ln -sf /dat.mnt/dotfiles/.bash_profile   /root
 sudo ln -sf /dat.mnt/dotfiles/.bashrc         /root
+sudo rm -vrf /root/.config
 sudo ln -sf /dat.mnt/dotfiles/.config         /root
 sudo ln -sf /dat.mnt/dotfiles/.vim            /root
 sudo ln -sf /dat.mnt/dotfiles/.vimrc          /root
