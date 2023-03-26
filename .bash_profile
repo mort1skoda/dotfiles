@@ -1,7 +1,7 @@
 #!/bin/sh
+clear
 echo "sourcing: ~/.bash_profile"
 
-clear
 source /dat.mnt/dotfiles/.colors
     printf "linux shell $0 \n"
     printf "    sourcing: $HOME/.bash_profile \n"
