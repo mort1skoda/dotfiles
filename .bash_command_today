@@ -2,4 +2,6 @@
 
 echo "Check out this Linux Shell Bash Command: "
 
+cat .bash_command_list
+
 
