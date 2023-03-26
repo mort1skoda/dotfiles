@@ -46,7 +46,6 @@ _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
 #----------------------------------------------------------------}}}
 
 
-echo "you are @ SHLVL=$SHLVL"
 
 
 
@@ -55,4 +54,5 @@ source ~/.bashrc
 source ~/.aliases
 source ~/.bash_command_today
 
+echo "you are @ SHLVL=$SHLVL"
 
