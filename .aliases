@@ -137,6 +137,9 @@ alias sb='time  source ~/.bashrc'
 alias sbl='time source ~/.bash_logout'
 alias sbp='time source ~/.bash_profile'
 alias s1='sbp'
+alias s2='sb'
+alias s3='sa'
+alias s4='sbl'
 
 # ---------------------------------------}}}
 
