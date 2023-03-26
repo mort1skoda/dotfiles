@@ -4,7 +4,7 @@ clear
     printf "   sourcing: $HOME/.bash_profile \n"
 
 source ~/.bash_colors
-source ~/.network
+source ~/.bash_network
 
 #------------- _HAS_WIFI ? ----------------------------------------------------------------{{{
 #sudo rfkill unblock wifi
