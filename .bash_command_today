@@ -9,6 +9,8 @@ _BCL_R=$(cat .bash_command_list |shuf -n1)
 echo $_BCL_R
 
 echo "for more info try: "
-echo "which $_BCL_R"  
+echo "which   $_BCL_R"  
 echo "whereis $_BCL_R"  
+echo "man     $_BCL_R"  
+echo "$_BCL_R --help"  
 
