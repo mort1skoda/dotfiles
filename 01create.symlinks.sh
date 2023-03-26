@@ -5,6 +5,7 @@ echo "/home/m ->"
 ln -sf /dat.mnt/dotfiles/.aliases             /home/m
 ln -sf /dat.mnt/dotfiles/.bash_colors         /home/m
 ln -sf /dat.mnt/dotfiles/.bash_logout         /home/m
+ln -sf /dat.mnt/dotfiles/.bash_network        /home/m
 ln -sf /dat.mnt/dotfiles/.bash_profile        /home/m
 ln -sf /dat.mnt/dotfiles/.bashrc              /home/m
 ln -sf /dat.mnt/dotfiles/.config              /home/m
