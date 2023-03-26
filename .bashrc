@@ -39,6 +39,10 @@ export LF_ICONS=""
 # }}}
 
 
+if [[ -z $TMUX ]]
+then
+    source ~/.bash_aliases
+fi
 
 
 
