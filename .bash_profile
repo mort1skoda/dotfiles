@@ -1,12 +1,10 @@
 #!/bin/sh
 clear
-echo "sourcing: ~/.bash_profile"
-
-source /dat.mnt/dotfiles/.colors
     printf "linux shell $0 \n"
     printf "    sourcing: $HOME/.bash_profile \n"
 
-
+source ~/.bash_colors
+source ~/.network
 
 #------------- _HAS_WIFI ? ----------------------------------------------------------------{{{
 #sudo rfkill unblock wifi
@@ -31,8 +29,6 @@ fi
 #sudo ip link set enp3s0 down
 #.......................................................................................}}}
 
-
-
 #------------- _GOT_IP_ADDRESS ? ------------------------------------ {{{
 # -z return true if bash variable is unset
 #while [ -z "$GOT_IP_ADDRESS" ]
@@ -49,15 +45,13 @@ _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
 #----------------------------------------------------------------}}}
 
 
-
-echo "    SHLVL=$SHLVL"
+echo "you are @ SHLVL=$SHLVL"
 
 
 
 printf "\n"
 source ~/.bashrc
+source ~/.aliases
+source ~/.bash_command_today
 
-
-
-#echo "--- Oh My! bash shell command of today: curl wttr.in/Helgeroa ---"
 
