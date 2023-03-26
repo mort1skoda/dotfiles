@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "sourcing: ~/.bash_colors"
+echo "        sourcing: ~/.bash_colors"
 export     col_restore="\033[00m"
 export       col_black="\033[30m"
 export         col_red="\033[31m"
