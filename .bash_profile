@@ -18,8 +18,9 @@ _HAS_WIFI=$(ip link | grep -i wlp)
 
 if [ "$_HAS_WIFI" ]; then
     printf "    Starting wpa_supplicant from ~/.bash_profile\n"
-    sudo wpa_supplicant -s -B -iwlp2s0 -c/etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
-    #sudo wpa_supplicant  -B -i wlp2s0 -c /etc/wpa_supplicant/wlp2s0.conf
+    #sudo wpa_supplicant -s -B -i wlp2s0 -c /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
+    sudo wpa_supplicant  -s -B -i wlp2s0 -c /etc/wpa_supplicant/wlp2s0.conf
+    #sudo wpa_supplicant    -B -i wlp2s0 -c /etc/wpa_supplicant/wlp2s0.conf
 else
     printf "    No wifi, using ethernet\n"
 fi
