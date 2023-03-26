@@ -1,7 +1,7 @@
 #!/bin/sh
 clear
     printf "linux shell $0 \n"
-    printf "    sourcing: $HOME/.bash_profile \n"
+    printf "   sourcing: $HOME/.bash_profile \n"
 
 source ~/.bash_colors
 source ~/.network
