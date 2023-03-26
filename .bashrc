@@ -1,7 +1,7 @@
 printf "    sourcing: /home/m/.bashrc\n"
 
 
-# ----- set & shopt ----- {{{
+# ----- set & shopt -----{{
 set -o vi
 shopt -s autocd
 shopt -s expand_aliases
@@ -25,7 +25,7 @@ fi
 # }}}
 
 
-# export {{{
+# export{{
 export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 #export            TERM='xterm-256color'
 export           PAGER='less'
@@ -39,9 +39,6 @@ export LF_ICONS=""
 # }}}
 
 
-#--- UPDATE DOTFILES ----------------------------{{{
-# /dat.mnt/dotfiles  'is my new home' 
-#................................................}}}
 
 
 
