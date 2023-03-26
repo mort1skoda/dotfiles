@@ -1,2 +1,5 @@
-ls
+#!/bin/sh
+
+echo "Check out this Linux Shell Bash Command: "
+
 
