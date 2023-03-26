@@ -137,6 +137,7 @@ alias mount='sudo mount --mkdir '
 
 #--- source files ------------------------{{{ 
 alias sa='time  source ~/.aliases'
+alias sbc='time  source ~/.bash_colors'
 alias sb='time  source ~/.bashrc'
 alias sbl='time source ~/.bash_logout'
 alias sbp='time source ~/.bash_profile'
