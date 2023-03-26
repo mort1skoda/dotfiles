@@ -1,7 +1,6 @@
 #!/bin/sh
-
+echo "sourcing: ~/.bash_colors"
 export     col_restore="\033[00m"
-export          col_00="\033[00m"
 export       col_black="\033[30m"
 export         col_red="\033[31m"
 export       col_green="\033[32m"
@@ -12,6 +11,7 @@ export        col_cyan="\033[36m"
 export       col_white="\033[37m"
 export        col_asdf="\033[38m"
 export        col_qwer="\033[39m"
+export          col_00=$col_restore
 
 
 printf "$col_red"
@@ -47,3 +47,4 @@ printf "$col_00"
 printf "\$col_00 "
 
 printf "\n"
+
