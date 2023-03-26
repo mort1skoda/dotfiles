@@ -4,7 +4,7 @@ cat
 echo
 feh
 fzf
-gnome-backgrounds
+pacman
 grep
 ls
 mkdir
@@ -16,5 +16,4 @@ whoami
 which
 whereis
 man
-command --help
 
