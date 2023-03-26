@@ -10,5 +10,6 @@ echo "which   $_BCL_R"
 echo "whereis $_BCL_R"  
 echo "man     $_BCL_R"  
 echo "$_BCL_R --help"  
+echo "ag '$_BCL_R'"
 printf "$col_00"
 
