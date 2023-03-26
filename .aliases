@@ -42,7 +42,7 @@ alias rd='rmdir -pv '
 
 
 
-#--- edit files ------------------------------------------------{{{
+#--- files edit ------------------------------------------------{{{
 alias ,='vim'
 alias e='vim'
 alias ea='echo && vim ~/.aliases && source ~/.aliases'
@@ -57,28 +57,26 @@ alias et='vim ~/.tmux.conf'
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
-alias ez='echo && vim ~/.zshrc && source ~/.zshrc'
-alias ezp='echo && vim ~/.zprofile && source ~/.zprofile'
 alias v='vim'
 alias vi='vim'
 #---------------------------------------------------------------}}}
 
-#--- header ------------------------------------------------{{{
-# Author: Morty Hawk
-# Email.: <mort1skoda@gmail.com>
+#--- files source ------------------------{{{ 
+alias s1='sbp'
+alias s2='sb'
+alias s3='sa'
+alias s4='sbl'
+alias sa='time  source ~/.aliases'
+alias sb='time  source ~/.bashrc'
+alias sbc='time  source ~/.bash_colors'
+alias sbl='time source ~/.bash_logout'
+alias sbp='time source ~/.bash_profile'
+# ---------------------------------------}}}
 
-# This file is to be sourced by .zshrc or .bashrc
 
-# ff or za to toggle folds.
-# fc close all folds
-# fo open all folds
-# ag to grep for aliases.
-# cag/bag to grep for everything in this file. 
-# Example:
-# ag vim    will list all aliases that contains 'vim'
-# cag vim or bag vim   will list all accourences of 'vim' in this file.
-# TODO: change name to .ali
-#-----------------------------------------------------------}}}
+
+
+
 
 #--- audio ------------------------------------------------{{{
 alias vol='pavucontrol &'
@@ -135,18 +133,6 @@ alias cm='sudo chmod +x'
 alias mount='sudo mount --mkdir '
 #... .......... ....................}}}
 
-#--- source files ------------------------{{{ 
-alias sa='time  source ~/.aliases'
-alias sbc='time  source ~/.bash_colors'
-alias sb='time  source ~/.bashrc'
-alias sbl='time source ~/.bash_logout'
-alias sbp='time source ~/.bash_profile'
-alias s1='sbp'
-alias s2='sb'
-alias s3='sa'
-alias s4='sbl'
-
-# ---------------------------------------}}}
 
 #--- start programs -------------------------------------------------{{{
 alias ht="htop"

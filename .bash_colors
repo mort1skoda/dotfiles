@@ -41,7 +41,8 @@ printf "\$col_red "
          printf "$col_qwer"
          printf "\$col_qwer "
 
-
+printf "$col_red"
+printf "\$col_red "
 
 printf "$col_00"
 printf "\$col_00 "
