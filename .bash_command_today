@@ -1,11 +1,13 @@
 #!/bin/sh
 
-printf "Linux Shell Bash Command for today: "
+printf "Learn shell command: "
 
-_BCL=$(cat .bash_command_list)
-echo $_BCL
-_BCL_R=$(cat .bash_command_list |shuf)
+#_BCL=$(cat .bash_command_list)
+#echo $_BCL
 
+_BCL_R=$(cat .bash_command_list |shuf -n1)
 echo $_BCL_R
 
+echo "for more info try: "
+echo "which $BCL_R"  
 

@@ -13,4 +13,8 @@ rmdir
 sxiv
 watch
 whoami
+which
+whereis
+man
+command --help
 
