@@ -2,7 +2,7 @@
 clear
 
 echo "/home/m ->"
-ln -sf /dat.mnt/dotfiles/.aliases             /home/m
+ln -sf /dat.mnt/dotfiles/.bash_aliases        /home/m
 ln -sf /dat.mnt/dotfiles/.bash_colors         /home/m
 ln -sf /dat.mnt/dotfiles/.bash_logout         /home/m
 ln -sf /dat.mnt/dotfiles/.bash_netowrk        /home/m
