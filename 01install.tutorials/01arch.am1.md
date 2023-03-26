@@ -118,9 +118,6 @@
 
     Option3 ???? can we use networkmanager here? 
 
-    i htop
-    htop
-    i git  
 #### -- ------- -- -------- --------------------}}}
 
 #### -- work on the host -----------------------{{{

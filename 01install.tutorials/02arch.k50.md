@@ -47,8 +47,8 @@
     wpa_supplicant -B -iwlan0 -c/etc/wpa_supplicant/wlan0.conf
 
     /etc/wpa*
-    wpa_passphrase "NETGEAR87" "roundsqua....." >> wlan0.conf
-    wpa_supplicant -B -iwlan0 -cwlan0.conf
+    wpa_passphrase "NETGEAR87" "roundsqua....." > wlan0.conf
+    wpa_supplicant -B -i wlan0 -c wlan0.conf
 
 
 
@@ -62,7 +62,7 @@
 
 #### pacstrap
 
-    pacstrap -iK /mnt base linux linux-firmware intel-ucode sudo vim bat htop git github-cli 
+    pacstrap -iK /mnt base linux linux-firmware intel-ucode sudo vim bat htop git github-cli
 
 
 
@@ -80,4 +80,38 @@
     cat /etc/locale.gen
     locale-gen
     
-  
+    pacman -S grub
+    grub-install --target=i386-pc /dev/sda
+    grub-mkconfig -o /boot/grub/grub.cfg
+
+    passwd root
+   
+    pacman -S wpa_supplicant dhcpcd
+     
+    ctrl + d
+    umount -l /mnt
+    reboot
+
+    login as root   
+
+    loadkeys no
+    shopt -s autocd
+    set -o vi
+    useradd -mG wheel m
+    passwd m
+
+    
+    
+    /etc/wpa*
+    wpa_passphrase "NETGEAR87" "roundsqua....." > wlp2s0.conf
+    wpa_supplicant -B -i wlp2s0 -c wlp2s0.conf
+    ip -color a
+    ping -c4 -D archlinux.org
+ 
+    EDITOR=/usr/bin/vim visudo
+        Defaults editor /usr/bin/vim
+            uncomment %wheel
+
+    cd /dat.mnt/dotfiles/scripts
+    ./create.symlinks.sh
+ 
