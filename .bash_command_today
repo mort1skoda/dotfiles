@@ -3,7 +3,7 @@
 printf "Linux Shell Bash Command for today: "
 
 _BCL=$(cat .bash_command_list)
-echo $_BCL
+printf $_BCL
 
 
 
