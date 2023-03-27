@@ -1,4 +1,5 @@
 #!/bin/sh
+echo "sourcing: $HOME/.bash_network"
 
 #------------- _HAS_WIFI ? ----------------------------------{{
 #sudo rfkill unblock wifi
