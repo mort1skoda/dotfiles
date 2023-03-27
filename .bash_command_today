@@ -1,17 +1,20 @@
 #!/bin/sh
 
 _BCL_R=$(cat .bash_command_list |shuf -n1)
+if [[ $_BCL_R != "-" ]]
+then
+    printf "$col_yellow"
+    printf "Learn shell command: "
+    echo $_BCL_R
 
-printf "$col_yellow"
-printf "Learn shell command: "
-echo $_BCL_R
+    echo "for more info try: "
+    echo "which   $_BCL_R"  
+    echo "whereis $_BCL_R"  
+    echo "man     $_BCL_R"  
+    echo "$_BCL_R --help"  
+    echo "check for alias with: ag '$_BCL_R'"
+    ag '$_BCL_R'
+    printf "$col_00"
+fi
 
-echo "for more info try: "
-echo "which   $_BCL_R"  
-echo "whereis $_BCL_R"  
-echo "man     $_BCL_R"  
-echo "$_BCL_R --help"  
-echo "check for alias with: ag '$_BCL_R'"
-ag '$_BCL_R'
-printf "$col_00"
 
