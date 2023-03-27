@@ -63,11 +63,15 @@ static const char *dmenucmd[]    = { "dmenu_run", "-m", dmenumon, "-fn", dmenufo
 static const char *term_ST[]     = { "st", NULL };
 static const char *term_LX[]     = { "lxterminal", NULL };
 static const char *www_browser[] = { "firefox", NULL };
+static const char *vim_edit[]    = { "st", "vim", NULL };
+static const char *lf_cmd[]      = { "st", "lf", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ SUPER,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ SUPER,                       XK_v,      spawn,          {.v = "st vim" } },
+	{ SUPER,                       XK_r,      spawn,          {.v = dmenucmd } },
+	{ SUPER,                       XK_e,      spawn,          {.v = lf_cmd   } },
+	{ SUPER,                       XK_v,      spawn,          {.v = vim_edit } },
 	{ SUPER,                       XK_w,      spawn,          {.v = www_browser } },
 	{ SUPER,                       XK_t,      spawn,          {.v = term_ST  } },
 	{ SUPER|ShiftMask,             XK_t,      spawn,          {.v = term_LX  } },
