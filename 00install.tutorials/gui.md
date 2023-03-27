@@ -1,19 +1,5 @@
 ## gui.md
 
-### tested with:
-    
-    archlinux legacy bios boot systemd  asus.k50
-    archlinux uefi boot systemd         giga.am1
-
-    artix legacy bios boot runit        asus.k50
-
-
-
-#### -- following archlinux wiki
-
-    [wiki](https://wiki.archlinux.org/title/General_recommendations)
-
-
 
 #### -- install xorg
 
