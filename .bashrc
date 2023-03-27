@@ -1,4 +1,4 @@
-printf "    sourcing: /home/m/.bashrc\n"
+printf "in: $HOME/.bashrc \n"
 
 
 # ----- set & shopt -----{{
