@@ -1,8 +1,9 @@
 #!/bin/sh
 
+_BCL_R=$(cat .bash_command_list |shuf -n1)
+
 printf "$col_yellow"
 printf "Learn shell command: "
-_BCL_R=$(cat .bash_command_list |shuf -n1)
 echo $_BCL_R
 
 echo "for more info try: "
