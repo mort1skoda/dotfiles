@@ -34,7 +34,8 @@
     cd dmenu-5.2
     s make clean install
 
-
+    pm -S feh
+    pm -S imlib2    (if you want feh to load .webp images)
 
 #### -- install yay
 

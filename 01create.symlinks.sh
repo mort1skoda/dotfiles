@@ -69,8 +69,8 @@ ls -lah --color                                         /etc             |grep p
 echo
 
 
-#echo "/usr/share/fonts ->"
-#sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts/font-ubuntu-mono-nerd/
+echo "/usr/share/fonts ->"
+sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts/font-ubuntu-mono-nerd
 ls -lah --color                                           /usr/share/fonts
 echo
 
