@@ -1,4 +1,4 @@
-printf "sourcing: $HOME/.bash_aliases \n"
+ printf "sourcing: $HOME/.bash_aliases \n"
 unalias -a
 
 #--- /home/m/.aliases directories navigate ---{{{
@@ -245,7 +245,7 @@ alias sw='st swarp 1300 1200'
 alias grub='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 alias q='exit'
 alias rb='ur'
-alias sd="gs && sudo shutdown -h now"
+alias sd="gaa && gc && gp && sudo shutdown -h now"
 # }}}
 
 #--- footer ------------------------------------------------{{{
