@@ -8,7 +8,7 @@ source ~/.bash_network
 source ~/.bashrc
 source ~/.bash_aliases
 
-if [[ $SHLVL -lt 6 ]]
+if [[ $SHLVL -lt 4 ]]
 then
     source   /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
     source  ~/.bash_command_today

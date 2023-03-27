@@ -14,9 +14,9 @@ shopt -s expand_aliases
 IS_TTY=$(echo $(tty) | grep tty)
 if [ $IS_TTY ] || [ $TMUX ]
 then
-    PS1="\[$col_green\w\[\033[00m\]\n"
+    PS1="\[$SHLVL \[$col_green\w\[\033[00m\]\n"
 else
-    PS1=" \[$col_green\w\[\033[00m\]\n"
+    PS1=" \[$SHLVL \[$col_green\w\[\033[00m\]\n"
 fi
 
 # root
