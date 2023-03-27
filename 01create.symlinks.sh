@@ -42,10 +42,6 @@ ls -lah --color                                         /etc             |grep l
 echo
 
 
-echo "/etc/vconsole.conf ->"
-sudo ln -sf     /dat.mnt/dotfiles/etc.vconsole.conf     /etc/vconsole.conf
-ls -lah --color                                         /etc             |grep vconsole.conf
-echo
 
 
 echo "/etc/dhcpcd.conf ->"
@@ -88,5 +84,15 @@ ln -sf /dat.mnt/Pictures                      /home/m
 ls -lah --color                      /home/m            |grep --color Documents
 ls -lah --color                      /home/m            |grep --color Downloads
 ls -lah --color                      /home/m            |grep --color Pictures
+echo
+
+
+
+
+echo
+echo
+echo "Needed early by os, and therefore should not be symlinked."
+sudo cp -vf     /dat.mnt/dotfiles/etc.vconsole.conf     /etc/vconsole.conf
+ls -lah --color                                         /etc             |grep vconsole.conf
 echo
 
