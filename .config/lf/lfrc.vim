@@ -53,6 +53,7 @@ map e :echo "e"
 #}}}
 
 
+#
 #--- options -----------------------------------------{{{
 set autoquit on 
 set shell sh 
@@ -252,16 +253,16 @@ cmd _move :{{
 
 # make sure lf_ folder exists
 # % = shell-pipe 
-%mkdir -p /dat.mnt/dotfiles/.lf_trash
+%mkdir -p /dat.mnt/.lf_trash
 # move current file or selected files to  folder
 # (also see 'man mv' for backup/overwrite options)
 map D _trash
 cmd _trash %{{
     # set -f  disable the globbing. (/
     set -f
-    mv $fx /dat.mnt/dotfiles/.lf_trash
+    mv $fx /dat.mnt/.lf_trash
 
-    echo "D = Delete or T = Trash /  move to /dat.mnt/dotfiles/.lf_trash"
+    echo "D = Delete or T = Trash  /  move to /dat.mnt/.lf_trash"
 }}
 #----------------------------------------------------------}}}
 

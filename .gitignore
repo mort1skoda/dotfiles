@@ -1,6 +1,6 @@
 .config/gh/
-.lf_trash
 .vim/plugged/
-font-adobe*
+#.lf_trash
+#font-adobe*
 
 
