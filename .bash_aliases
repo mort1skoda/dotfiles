@@ -89,7 +89,7 @@ alias sl='echo "Shell level = $SHLVL"'
 #---------------------------------------------------------}}}
 
 #--- cat/bat then grep <token> ---{{{
-alias alg='alias | grep -i --color '
+alias alg='alias | grep -i --color'
 alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
 alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 alias hg='cat ~/.bash_history | grep -i '
@@ -113,7 +113,7 @@ alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
 # arch:
 alias u='sudo pacman --noconfirm -Syyu'
 alias ur='echo -e "$col_red    #### REBOOTING ####    $col_00" && ud && sudo pacman --noconfirm -Syyu && sleep 1 && reboot'
-alias i='sudo pacman -Syyu '
+alias ui='sudo pacman -Syyu '
 alias pm='sudo pacman '
 #
 alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && bat /etc/pacman.d/mirrorlist'
@@ -239,7 +239,7 @@ alias disa='sudo systemctl disable '
 #.........................................................}}}
 
 #--- X11 ---{{{
-alias sw='st swarp 1300 1200'
+alias sw='st -e swarp 1300 1190'
 #---}}}
 
 #--- GRUB QUIT REBOOT SHUTDOWN ---{{{
