@@ -48,7 +48,7 @@ fi
 if [[ $_GUI ]]
 then
     source ~/.bash_aliases
-    xset q |grep --color rate
-    xset q |grep --color -G "DPMS is Disabled"
+    #xset q |grep --color rate
+    #xset q |grep --color -G "DPMS is Disabled"
 
 fi

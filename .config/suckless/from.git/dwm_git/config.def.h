@@ -67,6 +67,7 @@ static const char *www_browser[] = { "firefox", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ SUPER,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ SUPER,                       XK_v,      spawn,          {.v = "st vim" } },
 	{ SUPER,                       XK_w,      spawn,          {.v = www_browser } },
 	{ SUPER,                       XK_t,      spawn,          {.v = term_ST  } },
 	{ SUPER|ShiftMask,             XK_t,      spawn,          {.v = term_LX  } },
