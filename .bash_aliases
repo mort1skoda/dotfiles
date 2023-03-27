@@ -44,14 +44,15 @@ alias rd='rmdir -pv '
 
 #--- files edit ------------------------------------------------{{{
 alias ,='vim'
-alias e='vim'
 alias ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
+alias ,ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
-alias ebn='vim ~/.bash_network '
 alias ebc='echo && vim ~/.bash_colors && source ~/.bash_colors'
 alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
+alias ebn='vim ~/.bash_network '
 alias ebp='vim ~/.bash_profile && sbp'
 alias ecdh='vim config.def.h'
+alias eg='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 alias elf='vim ~/.config/lf/lfrc'
 alias enf='vim ~/.config/neofetch/config.conf'
 alias et='vim ~/.tmux.conf'
@@ -63,10 +64,6 @@ alias vi='vim'
 #---------------------------------------------------------------}}}
 
 #--- files source ------------------------{{{ 
-alias s1='sbp'
-alias s2='sb'
-alias s3='sa'
-alias s4='sbl'
 alias sa='source ~/.bash_aliases'
 alias sb='source ~/.bashrc'
 alias sbc='source ~/.bash_colors'
@@ -244,11 +241,11 @@ alias disa='sudo systemctl disable '
 alias sw='st swarp 1900 1200'
 #---}}}
 
-#--- BOOT GRUB QUIT REBOOT SHUTDOWN ---{{{
+#--- GRUB QUIT REBOOT SHUTDOWN ---{{{
+alias grub='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 alias q='exit'
 alias rb='ur'
 alias sd="ud && sudo shutdown -h now"
-alias grub='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 # }}}
 
 #--- footer ------------------------------------------------{{{

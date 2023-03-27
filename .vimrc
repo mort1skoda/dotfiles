@@ -28,7 +28,7 @@
 "-------------------------------------------------------------}}}
 
 "--- environment --------------------{{{
-let $ALIASES        = '~/.aliases'
+let $ALIASES        = '~/.bash_aliases'
 let $BASHRC         = '~/.bashrc'
 let $BASH_ENV       = "~/.aliases"
 let $BASH_PROFILE   = '~/.bash_profile'
