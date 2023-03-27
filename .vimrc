@@ -36,6 +36,7 @@ let $LFRC           = "/home/m/.config/lf/lfrc.vim"
 let $TMUX           = '~/.tmux.conf'
 let $VIFMRC         = '~/.vifm/vifmrc.vim' 
 let $VIMRC          = '~/.vimrc'
+let $XINITRC        = '~/.xinitrc'
 nnoremap <c-z> :shell<cr>
 "------------------------------------------------------------------}}}
 
@@ -48,7 +49,7 @@ nnoremap <Leader>elf :vs $LFRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ev :vs $VIMRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ex :vs ~/.xinitr<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ex :vs $XINITRC<CR>:echo expand('%:p')<CR>
 "---------------------}}}
 
 "--- folds -------------------{{{
@@ -344,6 +345,7 @@ set ttimeoutlen=300    " esc timeout
 set timeoutlen=700     " mapleader timeout
 nnoremap <esc> <esc>:nohlsearch<cr>:echo"-N-  esc"<cr>
 inoremap <esc> <esc>:echo"-N-  esc"<cr>l
+inoremap jj <esc>:echo"-N-  esc"<cr>l
 vnoremap <esc> <esc>:echo"-N-  esc"<cr>
 cnoremap <esc> <esc>:echo"-N-  esc"<cr>
 

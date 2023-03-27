@@ -24,9 +24,9 @@ git pull
 git remote -v | grep --color -i -m1 dotfiles
 git add --all
 git status --short
-DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
-git commit -m "$DATE"
-git push -u origin $ORIGIN
+#DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
+#git commit -m "$DATE"
+#git push -u origin $ORIGIN
 
 #cd /dat.mnt/dotfiles
 

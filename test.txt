@@ -1,3 +1,0 @@
-Hi this is my test in vim
-
-asdfasdf

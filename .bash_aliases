@@ -238,7 +238,7 @@ alias disa='sudo systemctl disable '
 #.........................................................}}}
 
 #--- X11 ---{{{
-alias sw='st swarp 1900 1200'
+alias sw='st swarp 1300 1200'
 #---}}}
 
 #--- GRUB QUIT REBOOT SHUTDOWN ---{{{
