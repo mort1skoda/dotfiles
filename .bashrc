@@ -45,3 +45,7 @@ then
 fi
 
 
+if [[ $_GUI ]]
+then
+    source ~/.bash_aliases
+fi

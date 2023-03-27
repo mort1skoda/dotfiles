@@ -12,8 +12,8 @@ feh --bg-fill /dat.mnt/Wallpapers/$_W_PAPER &
 #
 #slstatus &
 #
-source ~/.bash_aliases
-
+export _GUI="true"
+#
 dwm
 #
 
