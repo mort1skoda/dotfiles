@@ -2,7 +2,7 @@
 clear
 echo "sourcing: $HOME/.bash_profile"
 
-export _bool_dbg=true
+export _bool_dbg=false
 export _GUI=false
 #echo "_bool_dbg=$_bool_dbg"
 
