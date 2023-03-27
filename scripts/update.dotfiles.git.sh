@@ -1,4 +1,6 @@
 #!/bin/sh
+echo "sourcing: $PWD/update.dotfiles.git.sh"
+
 # This shell script can also be run with the
 # alias ud [update dotfiles]
 if [ "$EUID" -eq 0 ]
