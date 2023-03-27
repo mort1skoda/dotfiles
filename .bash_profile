@@ -1,5 +1,15 @@
 #!/bin/sh
 clear
+
+export DEBUG=1
+
+
+
+
+
+
+
+
 printf "linux shell $0 \n"
 printf "sourcing: $HOME/.bash_profile \n"
 
@@ -14,5 +24,7 @@ then
     source  ~/.bash_command_today
 fi
 
-echo "you are @ SHLVL=$SHLVL"
+
+echo "SHLVL = $SHLVL"
+echo "DEBUG = $DEBUG"
 

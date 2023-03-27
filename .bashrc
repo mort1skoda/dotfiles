@@ -36,7 +36,7 @@ export       BAT_THEME='gruvbox-dark'
 export    LESSHISTFILE=-
 export XDG_CONFIG_HOME='/home/m/.config'
 
-expor tLF_ICONS=""
+export LF_ICONS=""
 
 
 # }}}
