@@ -5,9 +5,9 @@
 startx
 
 clear
-source ~/.bashrc
-source ~/.bash_aliases
-neofetch
+#source ~/.bashrc
+#source ~/.bash_aliases
+#neofetch
 echo "back on tty"
 
 
