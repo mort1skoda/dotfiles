@@ -10,7 +10,7 @@ source ~/.bash_aliases
 
 if [[ $SHLVL -lt 6 ]]
 then
-    source   /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh
+    source   /dat.mnt/dotfiles/update.dotfiles.git.sh
     source  ~/.bash_command_today
 fi
 
