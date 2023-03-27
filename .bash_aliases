@@ -187,7 +187,7 @@ alias ud='/dat.mnt/dotfiles/update.dotfiles.git.sh'
 
 #--- tmux --------------------------------------------------{{{
 # tm = tmux, start a new tmux session
-alias tm="/dat.mnt/dotfiles/scripts/wrap_tmux.sh"
+alias tm="$DOTFILES/scripts/wrap_tmux.sh"
 # tl = tmux list
 alias tl='tmux ls'
 # ta=tmux attach -t [enter session-name from tl]
