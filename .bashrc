@@ -49,7 +49,8 @@ fi
 if [[ $_GUI ]]
 then
     source ~/.bash_aliases
+    xset r rate 300 50 &
     xset q |grep --color rate
     xset q |grep --color -G "DPMS is Disabled"
-
+    setxkbmap no &
 fi

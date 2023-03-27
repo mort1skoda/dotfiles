@@ -36,11 +36,11 @@ printf "\$col_red "
        printf "$col_white"
        printf "\$col_white "
 
-        printf "$col_asdf"
-        printf "\$col_asdf "
-
-         printf "$col_qwer"
-         printf "\$col_qwer "
+        #printf "$col_asdf"
+        #printf "\$col_asdf "
+#
+         #printf "$col_qwer"
+         #printf "\$col_qwer "
 
 printf "$col_red"
 printf "\$col_red "
