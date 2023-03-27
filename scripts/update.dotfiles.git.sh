@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "sourcing: $PWD/update.dotfiles.git.sh"
+echo "sourcing: /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh"
 
 # This shell script can also be run with the
 # alias ud [update dotfiles]
@@ -8,14 +8,15 @@ then
    exit
 fi 
 
+_user_email="mort1skoda@gmail.com"
 ORIGIN='main'
 #echo $ORIGIN
 #exit
 
 cd /dat.mnt/dotfiles
 
-git config --global user.email "mort1skoda@gmail.com"
-git config --global user.name "mort1skoda"
+git config --global user.email $_user_email
+git config --global user.name  "mort1skoda"
 
 #git status
 git pull 
@@ -28,3 +29,4 @@ git commit -m "$DATE"
 git push -u origin $ORIGIN
 
 #cd /dat.mnt/dotfiles
+
