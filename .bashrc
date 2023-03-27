@@ -2,6 +2,7 @@ printf "sourcing: $HOME/.bashrc \n"
 
 
 # ----- set & shopt -----{{
+sudo loadkeys no
 set -o vi
 shopt -s autocd
 shopt -s expand_aliases
