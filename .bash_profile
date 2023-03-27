@@ -3,7 +3,7 @@ clear
 echo "sourcing: $HOME/.bash_profile"
 
 export _bool_dbg=false
-export _GUI=false
+#export _GUI=false
 #echo "_bool_dbg=$_bool_dbg"
 
 # if "_bool_dbg" is equal to "true" echo linux shell:
