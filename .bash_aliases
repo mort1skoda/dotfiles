@@ -89,9 +89,9 @@ alias sl='echo "Shell level = $SHLVL"'
 
 #--- cat/bat then grep <token> ---{{{
 alias ag='alias | grep -i --color '
-alias cag='source ~/.aliases && cat ~/.aliases | grep -i --color '
+alias cag='source ~/.bash_aliases && cat ~/.aliases | grep -i --color '
 alias lg='ls -lah --color --group-directories-first | grep -i --color '
-alias bag='source ~/.aliases && b ~/.aliases | grep -i --color '
+alias bag='source ~/.bash_aliases && b ~/.aliases | grep -i --color '
 alias hg='cat ~/.bash_history | grep -i '
 # }}}
 
@@ -166,7 +166,7 @@ alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
 alias gsv="git status --verbose"
 alias gpl="git pull"
 alias gr='git remote -v'
-alias gc='source ~/.aliases && git commit -m "$DATE"'
+alias gc='source ~/.bash_aliases && git commit -m "$DATE"'
 alias gco='git checkout '
 #TODO: make gc a function so it updates the date correctly
 alias ga='git add'
