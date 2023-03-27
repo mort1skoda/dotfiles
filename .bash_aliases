@@ -22,9 +22,9 @@ alias .wp='cd /dat.mnt/Wallpapers && l'
 #--- .aliases directories list ---{{{
 alias  .='ls'
 alias  l='ls -lah --color --group-directories-first'
-alias ll='ls -lh  --color --group-directories-first'
 alias la='ls -ah  --color --group-directories-first'
-alias ls='ls      --color --group-directories-first'
+alias ll='ls -lh  --color --group-directories-first'
+#alias ls='ls      --color --group-directories-first'
 # }}}
 
 #--- .aliases directories watch ---{{{
@@ -181,7 +181,7 @@ alias gacp='git add --all && gc && gp'
 # mapleader = , here , is vim 
 alias egi='vim .gitignore'
 alias egc='vim ~/.gitconfig'
-alias ud='/dat.mnt/dotfiles/scripts/update.dotfiles.git.sh'
+alias ud='/dat.mnt/dotfiles/update.dotfiles.git.sh'
 
 #---------------------------------------------------------}}}
 

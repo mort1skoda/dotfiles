@@ -1,8 +1,5 @@
-date
 -
 -
-less
-env
 -
 -
 -
@@ -37,12 +34,15 @@ cat
 curl
 curl wttr.in/Helgeroa
 date
+date
 echo
+env
 feh
 fzf
 gcc
 git
 grep
+less
 ls
 make
 man
@@ -52,6 +52,7 @@ nl
 pacman
 rmdir
 sensors
+setxkbmap
 sxiv
 time
 vimtutor
@@ -59,3 +60,6 @@ watch
 whereis
 which
 whoami
+xdg-open
+xset
+xsetroot

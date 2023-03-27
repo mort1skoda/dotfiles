@@ -27,15 +27,17 @@ fi
 
 
 # export{{
-export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 #export            TERM='xterm-256color'
-export           PAGER='less'
+export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl' export           PAGER='less'
 export          EDITOR='vim'
 export          OPENER='xdg-open'
+export        DOTFILES='/dat.mnt/dotfiles'
 export       BAT_THEME='gruvbox-dark'
+export    LESSHISTFILE=-
 export XDG_CONFIG_HOME='/home/m/.config'
 
-export LF_ICONS=""
+expor tLF_ICONS=""
+
 
 # }}}
 
