@@ -18,3 +18,6 @@ cd st*
 ,mci
 cd ..
 
+cd swarp*
+,mci
+cd ..
