@@ -245,7 +245,7 @@ alias sw='st swarp 1300 1200'
 alias grub='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 alias q='exit'
 alias rb='ur'
-alias sd="gaa && gc && gp && sudo shutdown -h now"
+alias sd="cd $DOTFILES; gaa; gc; gp; sudo shutdown -h now"
 # }}}
 
 #--- footer ------------------------------------------------{{{
