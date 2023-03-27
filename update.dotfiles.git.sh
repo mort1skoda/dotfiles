@@ -1,22 +1,21 @@
 #!/bin/sh
-echo "sourcing: /dat.mnt/dotfiles/scripts/update.dotfiles.git.sh"
+echo "running.: $DOTFILES/update.dotfiles.git.sh"
 
-# This shell script can also be run with the
-# alias ud [update dotfiles]
-if [ "$EUID" -eq 0 ]
-then
-   exit
-fi 
+# This shell script can be run with the alias:
+# ud [update dotfiles]
+# or edit this script with the alias:
+# eud [edit update dotfiles]
 
-_user_email="mort1skoda@gmail.com"
-ORIGIN='main'
-#echo $ORIGIN
-#exit
+# if user is equal to 0 i.e. the user is root: the exit
+[ "$EUID" -eq 0 ] && exit
+
+my_user_name="mort1skoda"
+my_user_email="mort1skoda@gmail.com"
 
 cd $DOTFILES
-
-git config --global user.email $_user_email
-git config --global user.name  "mort1skoda"
+ORIGIN='main'
+git config --global user.name  $my_user_name
+git config --global user.email $my_user_email
 
 #git status
 git pull 
@@ -28,5 +27,4 @@ git status --short
 #git commit -m "$DATE"
 #git push -u origin $ORIGIN
 
-#cd /dat.mnt/dotfiles
 

@@ -12,12 +12,12 @@ _HAS_WIFI=$(ip link | grep -i wlp)
 #sleep 1
 
 if [ "$_HAS_WIFI" ]; then
-    printf " Starting wpa_supplicant from ~/.bash_profile\n"
+    [ "$_bool_dbg" == true ] && printf " Starting wpa_supplicant from ~/.bash_profile\n"
     #sudo wpa_supplicant -s -B -i wlp2s0 -c /etc/wpa_supplicant/wpa_supplicant-wlp2s0.conf
     sudo wpa_supplicant  -s -B -i wlp2s0 -c /etc/wpa_supplicant/wlp2s0.conf
     #sudo wpa_supplicant    -B -i wlp2s0 -c /etc/wpa_supplicant/wlp2s0.conf
 else
-    printf "    No wifi, using ethernet\n"
+    [ "$_bool_dbg" == true ] && printf "    No wifi, using ethernet\n"
 fi
 
 #sudo ip link set wlan0 up
@@ -32,11 +32,11 @@ _IP_TOKEN="noprefixroute"
 _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 while [ -z "$_GOT_IP_ADDRESS" ]
 do
-    printf "  Waiting for ip address... \n"
+    [ "$_bool_dbg" == true ] && printf "  Waiting for ip address... \n"
     sleep 1
     _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
 _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
-    printf "  Local ip: $col_purple $_IP_ADDRESS $col_restore \n"
+    [ "$_bool_dbg" == true ] && printf "  Local ip: $col_purple $_IP_ADDRESS $col_restore \n"
 #----------------------------------------------------------------}}}
 

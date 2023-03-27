@@ -15,38 +15,35 @@ export        col_qwer="\033[39m"
 export          col_00=$col_restore
 
 
-printf "$col_red"
-printf "\$col_red "
+if [ "$_bool_dbg" == true ]
+then
+  printf "$col_red"
+  printf "\$col_red "
 
-  printf "$col_green"
-  printf "\$col_green "
+    printf "$col_green"
+    printf "\$col_green "
 
-   printf "$col_yellow"
-   printf "\$col_yellow "
+     printf "$col_yellow"
+     printf "\$col_yellow "
 
-    printf "$col_blue"
-    printf "\$col_blue "
+      printf "$col_blue"
+      printf "\$col_blue "
 
-     printf "$col_purple"
-     printf "\$col_purple "
+       printf "$col_purple"
+       printf "\$col_purple "
 
-      printf "$col_cyan"
-      printf "\$col_cyan "
+        printf "$col_cyan"
+        printf "\$col_cyan "
 
-       printf "$col_white"
-       printf "\$col_white "
+         printf "$col_white"
+         printf "\$col_white "
 
-        #printf "$col_asdf"
-        #printf "\$col_asdf "
-#
-         #printf "$col_qwer"
-         #printf "\$col_qwer "
+  printf "$col_red"
+  printf "\$col_red "
 
-printf "$col_red"
-printf "\$col_red "
+  printf "$col_00"
+  printf "\$col_00 "
 
-printf "$col_00"
-printf "\$col_00 "
+  printf "\n"
 
-printf "\n"
-
+fi

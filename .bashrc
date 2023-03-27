@@ -9,12 +9,13 @@ shopt -s expand_aliases
 # }}}
 
 
-# prompt {{{
+# prompt {{
 # regular user
 IS_TTY=$(echo $(tty) | grep tty)
 if [ $IS_TTY ] || [ $TMUX ]
 then
-    PS1="\[$SHLVL \[$col_green\w\[\033[00m\]\n"
+    PS1="\[$col_green\w\[\033[00m\]\n"
+    #PS1="\[$SHLVL \[$col_green\w\[\033[00m\]\n"
 else
     PS1=" \[$SHLVL \[$col_green\w\[\033[00m\]\n"
 fi
@@ -48,11 +49,16 @@ then
 fi
 
 
-if [[ $_GUI ]]
+if [[ "$_GUI" == "true" ]]
 then
     source ~/.bash_aliases
-    xset r rate 300 50 &
-    xset q |grep --color rate
-    xset q |grep --color -G "DPMS is Disabled"
+    xset r rate 300 50
     setxkbmap no 
 fi
+
+if [ "$_GUI" == "true" ] && [ $_bool_dbg == "true" ]
+then
+    xset q |grep --color rate
+    xset q |grep --color -G "DPMS is Disabled"
+fi 
+
