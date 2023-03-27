@@ -40,7 +40,7 @@ export LF_ICONS=""
 
 
 echo "tmux is: $TMUX"
-if [[ !$TMUX ]]
+if [[ $TMUX  ]]
 then
     echo asdfasdfasdf
 
