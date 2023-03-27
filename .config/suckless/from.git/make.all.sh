@@ -3,7 +3,7 @@
 echo "sudo make clean install all the suckless utils"
 echo
 
-source ~/.aliases
+source ~/.bash_aliases
 shopt -s expand_aliases
 
 cd dwm*
