@@ -13,7 +13,7 @@ ORIGIN='main'
 #echo $ORIGIN
 #exit
 
-cd /dat.mnt/dotfiles
+cd $DOTFILES
 
 git config --global user.email $_user_email
 git config --global user.name  "mort1skoda"
