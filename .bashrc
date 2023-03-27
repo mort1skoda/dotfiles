@@ -42,6 +42,8 @@ export LF_ICONS=""
 echo "tmux is: $TMUX"
 if [[ !$TMUX ]]
 then
+    echo asdfasdfasdf
+
     source ~/.bash_aliases
 fi
 
