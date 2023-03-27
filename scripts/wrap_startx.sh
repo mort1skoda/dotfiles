@@ -9,6 +9,6 @@ clear
 #source ~/.bash_aliases
 #neofetch
 echo "back on tty"
-echo "_GUI = $_GUI"
-echo "_bool_dbg = $_bool_dbg"
+#echo "_GUI = $_GUI"
+#echo "_bool_dbg = $_bool_dbg"
 

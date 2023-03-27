@@ -14,7 +14,7 @@ source ~/.bash_network
 source ~/.bashrc
 source ~/.bash_aliases
 
-if [ "$SHLVL" -lt 6 ]
+if [ "$SHLVL" -lt 7 ]
 then
     source $DOTFILES/update.dotfiles.git.sh
     source $DOTFILES/bash_today

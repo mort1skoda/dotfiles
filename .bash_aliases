@@ -89,11 +89,11 @@ alias sl='echo "Shell level = $SHLVL"'
 #---------------------------------------------------------}}}
 
 #--- cat/bat then grep <token> ---{{{
-alias ag='alias | grep -i --color '
-alias cag='source ~/.bash_aliases && cat ~/.aliases | grep -i --color '
-alias lg='ls -lah --color --group-directories-first | grep -i --color '
-alias bag='source ~/.bash_aliases && b ~/.aliases | grep -i --color '
+alias alg='alias | grep -i --color '
+alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
+alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 alias hg='cat ~/.bash_history | grep -i '
+alias lg='ls -lah --color --group-directories-first | grep -i --color '
 # }}}
 
 #--- shortcuts ---{{{
