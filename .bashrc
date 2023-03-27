@@ -48,4 +48,6 @@ fi
 if [[ $_GUI ]]
 then
     source ~/.bash_aliases
+    xset q |grep --color rate
+
 fi
