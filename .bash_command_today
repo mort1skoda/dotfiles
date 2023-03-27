@@ -12,5 +12,6 @@ echo "whereis $_BCL_R"
 echo "man     $_BCL_R"  
 echo "$_BCL_R --help"  
 echo "check for alias with: ag '$_BCL_R'"
+ag '$_BCL_R'
 printf "$col_00"
 
