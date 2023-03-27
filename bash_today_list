@@ -1,11 +1,16 @@
 alias
+awk
 bat
+blkid
 cal
 cat
+cfdisk
 curl
 curl wttr.in/Helgeroa
 date
 date
+df
+du
 echo
 env
 feh
@@ -15,6 +20,7 @@ git
 grep
 less
 ls
+lsblk
 make
 man
 mkdir
