@@ -1,3 +1,6 @@
+lscpu
+lspci
+lsusb
 uptime
 xterm
 alias
