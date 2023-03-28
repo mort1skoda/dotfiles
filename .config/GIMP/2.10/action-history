@@ -1,0 +1,13 @@
+# GIMP action-history
+
+(history-item "dialogs-tips" 0)
+(history-item "help-help" 0)
+(history-item "file-save-as" 1)
+(history-item "file-open" 0)
+(history-item "help-context-help" 0)
+(history-item "plug-in-screenshot" 0)
+(history-item "text-tool-load" 0)
+(history-item "file-export-as" 0)
+(history-item "file-quit" 1)
+
+# end of action-history

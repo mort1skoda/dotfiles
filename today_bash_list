@@ -1,8 +1,3 @@
-lscpu
-lspci
-lsusb
-uptime
-xterm
 alias
 awk
 bat
@@ -32,6 +27,9 @@ lessecho
 loadkeys
 ls
 lsblk
+lscpu
+lspci
+lsusb
 make
 man
 mkdir
@@ -50,6 +48,7 @@ swarp
 sxiv
 time
 type
+uptime
 vim
 vimtutor
 virtualbox
@@ -63,3 +62,5 @@ xclip
 xdg-open
 xset
 xsetroot
+xterm
+xxd
