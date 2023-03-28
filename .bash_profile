@@ -2,7 +2,7 @@
 clear
 echo "sourcing: $HOME/.bash_profile"
 
-export _bool_dbg=false
+export _bool_dbg=true
 #export _GUI=false
 #echo "_bool_dbg=$_bool_dbg"
 
@@ -10,7 +10,7 @@ export _bool_dbg=false
 [ "$_bool_dbg" == "true" ] && echo "linux shell $0"
 
 source ~/.bash_colors
-source ~/.bash_network
+source ~/.bash_network &
 source ~/.bashrc
 source ~/.bash_aliases
 
