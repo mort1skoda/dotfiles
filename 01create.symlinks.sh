@@ -81,9 +81,11 @@ echo "more home links ->"
 ln -sf /dat.mnt/Documents                     /home/m
 ln -sf /dat.mnt/Downloads                     /home/m
 ln -sf /dat.mnt/Pictures                      /home/m
+ln -sf /dat.mnt/Wallpapers                    /home/m
 ls -lah --color                      /home/m            |grep --color Documents
 ls -lah --color                      /home/m            |grep --color Downloads
 ls -lah --color                      /home/m            |grep --color Pictures
+ls -lah --color                      /home/m            |grep --color Wallpapers
 echo
 
 
@@ -91,7 +93,8 @@ echo
 
 echo
 echo
-echo "Needed early by os, and therefore should not be symlinked."
+echo "!INFO: Needed early by os, and therefore should not be symlinked!!!"
+echo "this will copy the file from $DOTFILES into the correct location."
 sudo cp -vf     /dat.mnt/dotfiles/etc.vconsole.conf     /etc/vconsole.conf
 ls -lah --color                                         /etc             |grep vconsole.conf
 echo

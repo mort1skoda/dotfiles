@@ -1,5 +1,4 @@
+.config/dconf/user
 .config/gh/
+.config/pulse/
 .vim/plugged/
-#.lf_trash
-#font-adobe*
-pulse*
