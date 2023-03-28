@@ -2,7 +2,7 @@
 clear
 echo "sourcing: $HOME/.bash_profile"
 
-export _bool_dbg=false
+export _bool_dbg=true
 #export _GUI=false
 #echo "_bool_dbg=$_bool_dbg"
 
@@ -16,7 +16,7 @@ source ~/.bash_aliases
 
 if [ "$SHLVL" -lt 7 ]
 then
-    source $DOTFILES/update.dotfiles.git.sh
+    source $DOTFILES/02update_git_repos.sh
     source $DOTFILES/today_bash
 fi
 
