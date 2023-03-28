@@ -30,7 +30,11 @@ git commit -m "$DATE"
 #git push -u origin $ORIGIN
 
 
+
+
+# here we take care of devel_C repo:
 cd $DATA_MOUNT/devel_c
+git pull
 git add --all
 git commit -m "$DATE"
 git push -u origin $ORIGIN
