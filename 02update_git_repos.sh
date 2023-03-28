@@ -27,7 +27,7 @@ git add --all
 git status --short
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
 git commit -m "$DATE"
-#git push -u origin $ORIGIN
+git push -u origin $ORIGIN
 
 
 
