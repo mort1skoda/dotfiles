@@ -25,8 +25,19 @@ git pull
 git remote -v | grep --color -i -m1 dotfiles
 git add --all
 git status --short
-#DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
-#git commit -m "$DATE"
+DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
+git commit -m "$DATE"
 #git push -u origin $ORIGIN
 
+
+cd $DATA_MOUNT/devel_c
+ls -la
+git status
+git add --all
+git commit -m "$DATE"
+
+sleep 1
+cd $DOTFILES
+ls -la
+sleep 1
 

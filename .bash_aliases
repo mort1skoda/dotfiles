@@ -1,4 +1,4 @@
- printf "sourcing: $HOME/.bash_aliases \n"
+ pdotfiles.git.rintf "sourcing: $HOME/.bash_aliases \n"
 unalias -a
 
 #--- /home/m/.aliases directories navigate ---{{{
@@ -7,7 +7,7 @@ alias ..='cd .. && ls -lah --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
-alias .dwm='cd /dat.mnt/dotfiles/.config/suckless/from.git/dwm_git && l' 
+alias .dwm='cd /dat.mnt' 
 alias .h='cd ~ && ls -lah --color --group-directories-first'
 alias .lf='cd ~/.config/lf && l'
 alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
@@ -50,7 +50,7 @@ alias ,ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ebc='echo && vim ~/.bash_colors && source ~/.bash_colors'
 alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
-alias eud='vim $DOTFILES/update.dotfiles.git.sh && source $DOTFILES/update.dotfiles.git.sh'
+alias eug='vim $DOTFILES/02update_git_repos.sh && source $DOTFILES/02update_git_repos.sh '
 alias ebn='vim ~/.bash_network '
 alias ebp='vim ~/.bash_profile && sbp'
 alias ecd='vim config.def.h'
@@ -185,7 +185,7 @@ alias gacp='git add --all && gc && gp'
 # mapleader = , here , is vim 
 alias egi='vim .gitignore'
 alias egc='vim ~/.gitconfig'
-alias ud='/dat.mnt/dotfiles/update.dotfiles.git.sh'
+alias ug='$DOTFILES/02update_git_repos.sh'
 
 #---------------------------------------------------------}}}
 

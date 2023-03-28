@@ -35,6 +35,7 @@ export          EDITOR='vim'
 export          OPENER='xdg-open'
 export        DOTFILES='/dat.mnt/dotfiles'
 export       BAT_THEME='gruvbox-dark'
+export      DATA_MOUNT='/dat.mnt'
 export    LESSHISTFILE=-
 export XDG_CONFIG_HOME='/home/m/.config'
 

@@ -286,6 +286,7 @@ cmd _source_reload :{{
 
 map <c-q> :quit
 map q :quit
+map ZZ :quit
 #.................................................}}}
 
 

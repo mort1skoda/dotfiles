@@ -24,5 +24,3 @@ CTRL:       main modifier for vim
             v       =   vertical split
 
 
-
-
