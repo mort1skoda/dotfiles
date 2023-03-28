@@ -31,13 +31,8 @@ git commit -m "$DATE"
 
 
 cd $DATA_MOUNT/devel_c
-ls -la
-git status
 git add --all
 git commit -m "$DATE"
-
-sleep 1
+git push -u origin $ORIGIN
 cd $DOTFILES
-ls -la
-sleep 1
 
