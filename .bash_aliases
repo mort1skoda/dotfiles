@@ -18,6 +18,7 @@ alias .sl='cd /dat.mnt/dotfiles/.config/suckless/from.git && l'
 alias .ss='cd /dat.mnt/Screenshots && l'
 alias .st='cd /dat.mnt/dotfiles/.config/suckless/from.git/st_git && l' 
 alias .wp='cd /dat.mnt/Wallpapers && l'
+alias .dev='$DATA_MOUNT/devel_c '
 # }}}
 
 #--- .aliases directories list ---{{{
