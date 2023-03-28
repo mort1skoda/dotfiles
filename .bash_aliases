@@ -33,7 +33,7 @@ alias wl='watch --color ls -lah --color --group-directories-first'
 # }}}
 
 #--- .aliases directories make remove ---{{{
-alias md='sudo mkdir -pv '
+alias md='mkdir -pv '
 alias rd='rmdir -pv '
 # }}}
 
@@ -126,6 +126,7 @@ alias blkid='sudo blkid'
 alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
 alias cp="cp -iv"
+alias df="df -h"
 alias mv='mv -iv '
 alias rm='sudo rm -ivrf '
 alias co='sudo chown -vR m:m'
@@ -139,7 +140,7 @@ alias ht="htop"
 alias vf='vifm /home/m /dat.mnt/'
 alias x='/dat.mnt/dotfiles/scripts/wrap_startx.sh'
 alias a='alias && alias | wc -l && echo "Total aliases" ' #list all aliases
-alias s='sudo'
+alias s='sudo '
 alias gv='gvim '
 # clear screen:
 alias cs='clear'
