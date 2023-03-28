@@ -27,8 +27,7 @@ fi
 # }}}
 
 sleep 2
-
-
+echo "--- start of export ---"
 # export{{
 #export            TERM='xterm-256color'
 export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
@@ -43,9 +42,8 @@ export XDG_CONFIG_HOME='/home/m/.config'
 
 export LF_ICONS=""
 
-
 # }}}
-
+echo "--- end of export ---"
 
 if [[ $TMUX ]]
 then
