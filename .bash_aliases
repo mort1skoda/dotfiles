@@ -1,4 +1,4 @@
- pdotfiles.git.rintf "sourcing: $HOME/.bash_aliases \n"
+printf "sourcing: $HOME/.bash_aliases \n"
 unalias -a
 
 #--- /home/m/.aliases directories navigate ---{{{
