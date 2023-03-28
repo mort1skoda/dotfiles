@@ -1,4 +1,5 @@
 .config/dconf/user
 .config/gh/
+.config/GIMP/
 .config/pulse/
 .vim/plugged/
