@@ -1,9 +1,6 @@
 #!/bin/sh
 
-source ~/.bash_aliases
-
-l
-
-sleep 3
-
+#sleep 3
+swarp 1300 1190
+#sleep 3
 
