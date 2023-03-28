@@ -65,16 +65,18 @@ static const char *term_LX[]     = { "lxterminal", NULL };
 static const char *www_browser[] = { "firefox", NULL };
 static const char *vim_edit[]    = { "st", "vim", NULL };
 static const char *lf_cmd[]      = { "st", "lf", NULL };
+static const char *swarp_cmd[]   = { "st", "/dat.mnt/dotfiles/scripts/cmd_swarp.sh", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ SUPER,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ SUPER,                       XK_r,      spawn,          {.v = dmenucmd } },
-	{ SUPER,                       XK_e,      spawn,          {.v = lf_cmd   } },
-	{ SUPER,                       XK_v,      spawn,          {.v = vim_edit } },
+	{ SUPER,                       XK_s,      spawn,          {.v = swarp_cmd } },
+	{ SUPER,                       XK_p,      spawn,          {.v = dmenucmd  } },
+	{ SUPER,                       XK_r,      spawn,          {.v = dmenucmd  } },
+	{ SUPER,                       XK_e,      spawn,          {.v = lf_cmd    } },
+	{ SUPER,                       XK_v,      spawn,          {.v = vim_edit  } },
 	{ SUPER,                       XK_w,      spawn,          {.v = www_browser } },
-	{ SUPER,                       XK_t,      spawn,          {.v = term_ST  } },
-	{ SUPER|ShiftMask,             XK_t,      spawn,          {.v = term_LX  } },
+	{ SUPER,                       XK_t,      spawn,          {.v = term_ST   } },
+	{ SUPER|ShiftMask,             XK_t,      spawn,          {.v = term_LX   } },
 	{ SUPER,                       XK_b,      togglebar,      {0} },
 	{ SUPER,                       XK_j,      focusstack,     {.i = +1 } },
 	{ SUPER,                       XK_k,      focusstack,     {.i = -1 } },
@@ -85,7 +87,6 @@ static const Key keys[] = {
 	{ SUPER,                       XK_Return, zoom,           {0} },
 	{ SUPER,                       XK_Tab,    view,           {0} },
 	{ SUPER|ShiftMask,             XK_c,      killclient,     {0} },
-	{ SUPER,                       XK_s,      setlayout,      {.v = &layouts[0]} },
 	{ SUPER,                       XK_n,      setlayout,      {.v = &layouts[0]} },
 	{ SUPER,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ SUPER,                       XK_m,      setlayout,      {.v = &layouts[2]} },

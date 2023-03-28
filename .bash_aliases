@@ -7,15 +7,16 @@ alias ..='cd .. && ls -lah --color --group-directories-first'
 alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
-alias .h='cd ~ && ls -lah --color --group-directories-first'
 alias .dwm='cd /dat.mnt/dotfiles/.config/suckless/from.git/dwm_git && l' 
-alias .st='cd /dat.mnt/dotfiles/.config/suckless/from.git/st_git && l' 
+alias .h='cd ~ && ls -lah --color --group-directories-first'
 alias .lf='cd ~/.config/lf && l'
 alias .pi='cd /dat.mnt/Pictures && ls -lah --color --group-directories-first'
 alias .r='cd / && ls -lah --color --group-directories-first'
 alias .rr='cd /root && ls -lah --color --group-directories-first'
+alias .scr='cd /dat.mnt/dotfiles/scripts && l'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless/from.git && l'
 alias .ss='cd /dat.mnt/Screenshots && l'
+alias .st='cd /dat.mnt/dotfiles/.config/suckless/from.git/st_git && l' 
 alias .wp='cd /dat.mnt/Wallpapers && l'
 # }}}
 
@@ -89,7 +90,7 @@ alias sl='echo "Shell level = $SHLVL"'
 #---------------------------------------------------------}}}
 
 #--- cat/bat then grep <token> ---{{{
-alias alg='alias | grep -i --color'
+alias ag='alias | grep -i --color'
 alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
 alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
 alias hg='cat ~/.bash_history | grep -i '
