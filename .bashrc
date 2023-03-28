@@ -48,12 +48,13 @@ then
 fi
 
 
+# things to when we start a terminal emulator in GUI mode
 if [[ "$_GUI" == "true" ]]
 then
     source ~/.bash_aliases
     xset r rate 300 50
     setxkbmap no 
-    exec $DOTFILES/today_https
+    $DOTFILES/today_https
 fi
 
 if [ "$_GUI" == "true" ] && [ $_bool_dbg == "true" ]
