@@ -14,7 +14,7 @@ then
     echo "type    $_BCL_R"  
     echo "whereis $_BCL_R"  
     echo "which   $_BCL_R"  
-    echo "check for alias with: ag '$_BCL_R'"
+    echo "check for alias with: ag $_BCL_R"
     printf "$col_00"
 fi
 
