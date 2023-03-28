@@ -33,7 +33,7 @@ git push -u origin $ORIGIN
 
 
 # here we take care of devel_C repo:
-echo;echo " devel_c:"
+echo;echo " $DATA_MOUNT/devel_c:"
 cd $DATA_MOUNT/devel_c
 git pull
 git add --all
