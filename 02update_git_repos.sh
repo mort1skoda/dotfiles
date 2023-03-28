@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "running.: $DOTFILES/update.dotfiles.git.sh"
+echo "running.: $DOTFILES/02update_git_repos.sh"
 
 # This shell script can be run with the alias:
 # ud [update dotfiles]
