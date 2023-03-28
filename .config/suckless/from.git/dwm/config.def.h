@@ -59,35 +59,37 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
 static const char *firefox[]  = { "firefox", NULL };
+static const char *term_lx[]  = { "lxterminal", NULL };
+static const char *term_st[]  = { "st", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ SUPER,                       XK_r,      spawn,          {.v = dmenucmd } },
-	{ SUPER,                       XK_w,      spawn,          {.v = firefox } },
-	{ SUPER|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ SUPER,                       XK_b,      togglebar,      {0} },
-	{ SUPER,                       XK_j,      focusstack,     {.i = +1 } },
-	{ SUPER,                       XK_k,      focusstack,     {.i = -1 } },
-	{ SUPER,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ SUPER,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ SUPER,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ SUPER,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ META,                        XK_f,      spawn,          {.v = firefox } },
+	{ META,                        XK_l,      spawn,          {.v = term_lx } },
+	{ META,                        XK_s,      spawn,          {.v = term_st } },
+	{ SUPER,                       XK_0,      view,           {.ui = ~0 } },
 	{ SUPER,                       XK_Return, zoom,           {0} },
 	{ SUPER,                       XK_Tab,    view,           {0} },
-	{ SUPER|ShiftMask,             XK_c,      killclient,     {0} },
-	{ SUPER,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ SUPER,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ SUPER,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ SUPER,                       XK_space,  setlayout,      {0} },
-	{ SUPER|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ SUPER,                       XK_0,      view,           {.ui = ~0 } },
-	{ SUPER|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	{ SUPER,                       XK_b,      togglebar,      {0} },
 	{ SUPER,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ SUPER,                       XK_d,      incnmaster,     {.i = -1 } },
+	{ SUPER,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ SUPER,                       XK_h,      setmfact,       {.f = -0.05} },
+	{ SUPER,                       XK_i,      incnmaster,     {.i = +1 } },
+	{ SUPER,                       XK_j,      focusstack,     {.i = +1 } },
+	{ SUPER,                       XK_k,      focusstack,     {.i = -1 } },
+	{ SUPER,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ SUPER,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ SUPER,                       XK_period, focusmon,       {.i = +1 } },
+	{ SUPER,                       XK_r,      spawn,          {.v = dmenucmd } },
+	{ SUPER,                       XK_space,  setlayout,      {0} },
+	{ SUPER,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+	{ SUPER|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	{ SUPER|ShiftMask,             XK_c,      killclient,     {0} },
 	{ SUPER|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ SUPER|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	{ SUPER|ShiftMask,             XK_space,  togglefloating, {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -108,7 +110,7 @@ static const Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
-	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
+	//{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         SUPER,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         SUPER,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         SUPER,         Button3,        resizemouse,    {0} },
