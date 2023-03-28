@@ -20,8 +20,8 @@ git config --global user.name  $my_user_name
 git config --global user.email $my_user_email
 git config --global init.$DEFAULT_BRANCH $ORIGIN
 #git status
+echo;echo " $DOTFILES :"
 git pull 
-
 git remote -v | grep --color -i -m1 dotfiles
 git add --all
 git status --short
