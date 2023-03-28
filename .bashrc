@@ -26,6 +26,8 @@ if [ "$EUID" -eq 0 ]
 fi
 # }}}
 
+sleep 2
+
 
 # export{{
 #export            TERM='xterm-256color'
