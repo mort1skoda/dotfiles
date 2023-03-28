@@ -66,7 +66,7 @@ echo
 
 
 echo "/usr/share/fonts ->"
-sudo ln -sf     /dat.mnt/dotfiles/font-ubuntu-mono-nerd   /usr/share/fonts/font-ubuntu-mono-nerd
+sudo ln -sf     /dat.mnt/Fonts/font-ubuntu-mono-nerd   /usr/share/fonts/font-ubuntu-mono-nerd
 ls -lah --color                                           /usr/share/fonts
 echo
 
