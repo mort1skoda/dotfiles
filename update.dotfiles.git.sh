@@ -14,9 +14,11 @@ my_user_email="mort1skoda@gmail.com"
 
 cd $DOTFILES
 ORIGIN='main'
+DEFAULT_BRANCH="main"
+
 git config --global user.name  $my_user_name
 git config --global user.email $my_user_email
-
+git config --global init.$DEFAULT_BRANCH $ORIGIN
 #git status
 git pull 
 

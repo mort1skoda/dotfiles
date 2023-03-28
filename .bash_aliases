@@ -29,7 +29,7 @@ alias ll='ls -lh  --color --group-directories-first'
 # }}}
 
 #--- .aliases directories watch ---{{{
-alias wl='watch --color ls -lah --color --group-directories-first'
+alias wl='watch --color --differences ls -lah --color --group-directories-first '
 # }}}
 
 #--- .aliases directories make remove ---{{{
@@ -105,6 +105,7 @@ alias g='grep -i --color=auto '
 alias os='cat /etc/os-release'
 alias wa='whoami'
 alias wai='whoami'
+alias wt='watch --color -d '
 # }}}
 
 #--- package managers ---{{{
@@ -125,7 +126,7 @@ alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort ra
 alias blkid='sudo blkid'
 alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
-alias cp="cp -iv"
+alias cp="cp -riv"
 alias df="df -h"
 alias mv='mv -iv '
 alias rm='sudo rm -ivrf '
