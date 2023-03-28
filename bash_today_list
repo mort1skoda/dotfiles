@@ -10,6 +10,7 @@ curl wttr.in/Helgeroa
 date
 date
 df
+dmenu
 du
 echo
 env
@@ -19,6 +20,8 @@ gcc
 git
 grep
 less
+lessecho
+loadkeys
 ls
 lsblk
 make
@@ -29,6 +32,7 @@ nl
 pacman
 rmdir
 sensors
+setfont
 setxkbmap
 swarp
 sxiv
@@ -40,6 +44,7 @@ watch
 whereis
 which
 whoami
+xclip
 xdg-open
 xset
 xsetroot

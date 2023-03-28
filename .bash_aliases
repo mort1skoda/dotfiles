@@ -121,7 +121,7 @@ alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort ra
 # }}}
 
 #--- filesystem --------------------{{{
-#alias blkid='sudo blkid'
+alias blkid='sudo blkid'
 alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
 alias cp="cp -iv"
