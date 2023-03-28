@@ -1,0 +1,28 @@
+SUPER:      controls dwm
+            enter   =   focus window
+            f       =   floating mode
+            m       =   monocle mode
+            p,d,r   =   dmenu
+            t       =   tiling mode
+        
+
+META:       used with dwm (we try to avoid same keys as used in tmux)
+            l       =   lxterminal
+            s       =   st (suckless simple terminal)    
+            f       =   firefox
+
+
+META/SHIFT:
+            q   =   quit dwm
+
+META:       used in tmux (we try to avoid same keys as used in dwm)
+            Then again tmux is mostly used in tty so lets think about it...
+            v       =   vertical split
+
+
+CTRL:       main modifier for vim
+            v       =   vertical split
+
+
+
+

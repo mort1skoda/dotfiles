@@ -20,11 +20,11 @@ map .wp cd /dat.mnt/Wallpapers
 
 
 #--- movement ---{{{
-map j _down
-cmd _down :{{
-    down
-    echo "j = down"
-}}
+#map j _down
+#cmd _down :{{
+    #down
+    #echo "j = down"
+#}}
 
 
 map J :half-down :echo "hd"
