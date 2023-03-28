@@ -17,9 +17,10 @@ source ~/.bash_aliases
 if [ "$SHLVL" -lt 7 ]
 then
     source $DOTFILES/update.dotfiles.git.sh
-    source $DOTFILES/bash_today
+    source $DOTFILES/today_bash
 fi
 
 echo "SHLVL     = $SHLVL"
-#echo "_bool_dbg = $_bool_dbg"
+uptime
+
 

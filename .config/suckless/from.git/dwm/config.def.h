@@ -99,7 +99,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
-	{ SUPER|ShiftMask,             XK_q,      quit,           {0} },
+	//{ SUPER|ShiftMask,             XK_q,      quit,           {0} },
 	{ META|ShiftMask,             XK_q,      quit,           {0} },
 };
 
