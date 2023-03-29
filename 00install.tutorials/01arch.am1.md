@@ -50,6 +50,7 @@
 
     pacstrap -iK /mnt base linux linux-firmware amd-ucode
     pacstrap -iK /mnt sudo vim bat htop git github-cli grub efibootmgr  (dosfstools mtools)
+    pacstrap -IK /mnt dhcpcd
 
     genfstab -U /mnt >> /mnt/etc/fstab
 
@@ -84,9 +85,12 @@
     reboot
 
 
+
     login as root
+    stty -ixon
     set -o vi
-    alias l='ls -la --color --group-directories-first'
+    shopt -s autocd
+    alias l='ls -lah --color --group-directories-first'
 
     ip -color a
     ping -c4 -D archlinux.org
@@ -95,8 +99,8 @@
     passwd m
 
 
-    EDITOR=/usr/bin/vim visudo
-        [add at top: Defaults editor=/usr/bin/vim]
+    EDITOR=/bin/vim visudo
+        [add at top: Defaults editor=/bin/vim]
         [uncomment %wheel]
 
     exit to logout
