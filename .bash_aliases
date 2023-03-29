@@ -152,7 +152,7 @@ alias cs='clear'
 alias nf='clear && neofetch && echo "Shell level = $SHLVL" && clear -V && e $PATH'
 alias wnf="watch --color -n5 neofetch --backend off"
 
-alias st='st'
+#alias st='st'
 alias lf='lf'
 alias vf='vifm'
 alias ff='firefox &'
