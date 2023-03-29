@@ -11,16 +11,18 @@
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
       <ExtraDataItem name="GUI/GuestControl/FileManagerVisiblePanels" value="LogPanel"/>
       <ExtraDataItem name="GUI/LastItemSelected" value="m=c4b23ed7-87bb-412f-979d-fcf83d1decc1"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="-2669,18,1333,1032"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="-1727,18,862,1181"/>
       <ExtraDataItem name="GUI/LogWindowGeometry" value="3,22,954,1175"/>
       <ExtraDataItem name="GUI/MediumSelector/DialogGeometry" value="1299,118,383,441"/>
       <ExtraDataItem name="GUI/NotificationCenter/Alignment" value="Bottom"/>
+      <ExtraDataItem name="GUI/NotificationCenter/KeepSuccessfullProgresses" value="true"/>
+      <ExtraDataItem name="GUI/NotificationCenter/Order" value="Ascending"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/m/Downloads"/>
       <ExtraDataItem name="GUI/RecentListCD" value="/home/m/Downloads/archlinux-2023.03.01-x86_64.iso,/home/m/Downloads/arch.iso"/>
       <ExtraDataItem name="GUI/SessionInformationDialogGeometry" value="1,18,1918,589"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="195,639"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmPowerOffMachine,confirmInputCapture,confirmACPIShutdownMachine,confirmGoingFullscreen"/>
-      <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Activities,FileManager"/>
+      <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Activities,Details"/>
     </ExtraData>
     <MachineRegistry>
       <MachineEntry uuid="{c4b23ed7-87bb-412f-979d-fcf83d1decc1}" src="/home/m/VirtualBox VMs/arch/arch.vbox"/>
