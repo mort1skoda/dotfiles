@@ -4,7 +4,7 @@
 #
 
 GRUB_DEFAULT=0
-GRUB_TIMEOUT=1
+GRUB_TIMEOUT=10
 GRUB_DISTRIBUTOR="March"
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=1 quiet"
 GRUB_CMDLINE_LINUX=""
@@ -42,7 +42,7 @@ GRUB_DISABLE_RECOVERY=true
 
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper
 # modes only.  Entries specified as foreground/background.
-#GRUB_COLOR_NORMAL="light-blue/black"
+GRUB_COLOR_NORMAL="light-blue/black"
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
