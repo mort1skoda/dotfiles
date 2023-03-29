@@ -6,7 +6,7 @@ echo
 source ~/.bash_aliases
 shopt -s expand_aliases
 
-cd dwm*
+cd dwm
 ,mci
 cd ..
 
