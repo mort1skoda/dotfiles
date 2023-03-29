@@ -9,16 +9,17 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=127c55c7-8e6c-42dd-a65f-7fc04f2145cf"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="960,19,954,1175"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=c4b23ed7-87bb-412f-979d-fcf83d1decc1"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="-1673,18,835,599"/>
       <ExtraDataItem name="GUI/LogWindowGeometry" value="3,22,954,1175"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/m/Downloads"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/m/Downloads/arch.iso"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/m/Downloads/archlinux-2023.03.01-x86_64.iso,/home/m/Downloads/arch.iso"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="195,639"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmPowerOffMachine,confirmInputCapture"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Activities,Activity"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{127c55c7-8e6c-42dd-a65f-7fc04f2145cf}" src="/home/m/VirtualBox VMs/arch 2023 03 28/arch 2023 03 28.vbox"/>
+      <MachineEntry uuid="{c4b23ed7-87bb-412f-979d-fcf83d1decc1}" src="/home/m/VirtualBox VMs/arch/arch.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>
