@@ -32,11 +32,13 @@ _IP_TOKEN="noprefixroute"
 _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 while [ -z "$_GOT_IP_ADDRESS" ]
 do
-    [ "$_bool_dbg" == true ] && printf "  Waiting for ip address... \n"
+    #[ "$_bool_dbg" == true ] && printf "  Waiting for ip address... \n"
+    printf "  Waiting for ip address... \n"
     sleep 1
     _GOT_IP_ADDRESS=$(ip a |grep -E "$_IP_TOKEN" )
 done
 _IP_ADDRESS=$(echo $_GOT_IP_ADDRESS | awk '{print $2}')
-    [ "$_bool_dbg" == true ] && printf "  Local ip: $col_purple $_IP_ADDRESS $col_restore \n"
+    #[ "$_bool_dbg" == true ] && printf "  Local ip: $col_purple $_IP_ADDRESS $col_restore \n"
+    printf "  Local ip: $col_purple $_IP_ADDRESS $col_restore \n"
 #----------------------------------------------------------------}}}
 
