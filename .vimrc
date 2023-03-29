@@ -265,8 +265,8 @@ nnoremap <Leader>mh :!make help<CR>
 nnoremap <Leader>mv :!make vars<CR>
 nnoremap <Leader>mc :!make clean<CR> :!ls -gGah --color<cr>
 nnoremap <Leader>ma :!make all<CR>
-nnoremap <Leader>mr <esc>:w<cr>:!make run<CR>
-inoremap <Leader>mr <esc>:w<cr>:!make run<CR>
+nnoremap <Leader>mr <esc>:w<cr>:!make clean run<CR>
+inoremap <Leader>mr <esc>:w<cr>:!make clean run<CR>
 nnoremap <Leader>md :!make dbg<CR>
 
 

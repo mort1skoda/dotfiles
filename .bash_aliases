@@ -33,7 +33,7 @@ alias ll='ls -lh  --color --group-directories-first'
 alias wl='watch --color --differences ls -lah --color --group-directories-first '
 # }}}
 
-#--- .aliases directories make remove ---{{{
+#--- .aliases directories mkdir rmdir ---{{{
 alias md='mkdir -pv '
 alias rd='rmdir -pv '
 # }}}
@@ -47,6 +47,7 @@ alias rd='rmdir -pv '
 #--- files edit ------------------------------------------------{{{
 alias ,='vim'
 alias ,ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
+alias ,egc='vim ~/.gitconfig'
 alias ,ev='vim ~/.vimrc'
 alias ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
@@ -56,6 +57,7 @@ alias ebn='vim ~/.bash_network '
 alias ebp='vim ~/.bash_profile && sbp'
 alias ecd='vim config.def.h'
 alias eg='sudo vim /dat.mnt/dotfiles/etc.default.grub'
+alias egc='vim ~/.gitconfig'
 alias elf='vim ~/.config/lf/lfrc'
 alias enf='vim ~/.config/neofetch/config.conf'
 alias et='vim ~/.tmux.conf'
@@ -163,33 +165,33 @@ alias lx='lxterminal &'
 alias rx='urxvt &'
 #--------------------------------------------------------------------}}}#
 
-#--- git ---------------------------------------------------{{{
-DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
-#echo $DATE  
-alias date='source .bash_aliases && echo $DATE  sunrise:  sunset: '
-alias gss="git status --short"
-alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
-alias gsv="git status --verbose"
-alias gpl="git pull"
-alias gr='git remote -v'
-alias gc='source ~/.bash_aliases && git commit -m "$DATE"'
-alias gco='git checkout '
+#--- git run cmd ---------------------------------------------------{{{
 #TODO: make gc a function so it updates the date correctly
+DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
+alias date='source .bash_aliases && echo $DATE  sunrise:  sunset: '
+alias egc='vim ~/.gitconfig'
+alias egi='vim .gitignore'
 alias ga='git add'
 alias gaa='git add --all && git status --short'
-alias gp='git push'
-
+alias gacp='git add --all && gc && gp'
 alias gb='git branch'
+alias gc='source ~/.bash_aliases && git commit -m "$DATE"'
+alias gcl='git clone'
+alias gco='git checkout '
+alias gp='git push'
+alias gpl="git pull"
+alias gr='git remote -v'
 alias grc='git rm -r --cached '
 alias grl='git reflog '
-alias gcl='git clone'
-alias gacp='git add --all && gc && gp'
-# mapleader = , here , is vim 
-alias egi='vim .gitignore'
-alias egc='vim ~/.gitconfig'
+alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
+alias gss="git status --short"
+alias gsv="git status --verbose"
 alias ug='$DOTFILES/02update_git_repos.sh'
-
 #---------------------------------------------------------}}}
+
+#- files edit git -{{{
+alias egc='vim ~/.gitconfig'
+#-}}}
 
 #--- tmux --------------------------------------------------{{{
 # tm = tmux, start a new tmux session
@@ -214,7 +216,7 @@ alias trm='transmission-remote'
 #-----------------------------------------------------------}}}
 
 #--- make --------------------------------------------------{{{
-alias ,ma='make all && l'
+alias ,ma='make all '
 alias ,mc='make clean && l'
 alias ,mci='sudo rm -vf config.h && sudo make clean install && make clean && rm config.h && l'
 alias ,md='make dbg && l'
