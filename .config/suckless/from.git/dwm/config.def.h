@@ -68,6 +68,8 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ META,                        XK_f,      spawn,          {.v = firefox } },
 	{ META,                        XK_l,      spawn,          {.v = term_lx } },
+	{ SUPER|META,                  XK_l,      spawn,          {.v = term_lx } },
+	{ SUPER|ControlMask,           XK_a,      spawn,          {.v = term_st } },
 	{ META,                        XK_s,      spawn,          {.v = term_st } },
 	{ SUPER,                       XK_0,      view,           {.ui = ~0 } },
 	{ SUPER,                       XK_Return, zoom,           {0} },

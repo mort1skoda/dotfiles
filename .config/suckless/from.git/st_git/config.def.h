@@ -204,6 +204,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 };
 
+
 /*
  * Special keys (change & recompile st.info accordingly)
  *
