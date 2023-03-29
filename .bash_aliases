@@ -46,12 +46,12 @@ alias rd='rmdir -pv '
 
 #--- files edit ------------------------------------------------{{{
 alias ,='vim'
-alias ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias ,ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
+alias ,ev='vim ~/.vimrc'
+alias ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias eb='vim ~/.bashrc && source ~/.bashrc'
 alias ebc='echo && vim ~/.bash_colors && source ~/.bash_colors'
 alias ebl='vim ~/.bash_logout && source ~/.bash_profile'
-alias eug='vim $DOTFILES/02update_git_repos.sh && source $DOTFILES/02update_git_repos.sh '
 alias ebn='vim ~/.bash_network '
 alias ebp='vim ~/.bash_profile && sbp'
 alias ecd='vim config.def.h'
@@ -59,6 +59,7 @@ alias eg='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 alias elf='vim ~/.config/lf/lfrc'
 alias enf='vim ~/.config/neofetch/config.conf'
 alias et='vim ~/.tmux.conf'
+alias eug='vim $DOTFILES/02update_git_repos.sh && source $DOTFILES/02update_git_repos.sh '
 alias ev='vim ~/.vimrc'
 alias evf='vim ~/.vifm/vifmrc.vim'
 alias ex='vim ~/.xinitrc'
@@ -213,14 +214,14 @@ alias trm='transmission-remote'
 #-----------------------------------------------------------}}}
 
 #--- make --------------------------------------------------{{{
-alias ,mh='make help'
-alias ,mv='make vars'
+alias ,ma='make all && l'
 alias ,mc='make clean && l'
 alias ,mci='sudo rm -vf config.h && sudo make clean install && make clean && rm config.h && l'
-alias ,ma='make all && l'
-alias ,mm='make all'
-alias ,mr='make run'
-alias ,md='make dbg'
+alias ,md='make dbg && l'
+alias ,mh='make help && l'
+alias ,mm='make all && l'
+alias ,mr='make run && l'
+alias ,mv='make vars && l'
 #-----------------------------------------------------------}}}
 
 #--- debug ------------------------------------------------{{{

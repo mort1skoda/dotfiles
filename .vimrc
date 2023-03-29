@@ -112,7 +112,7 @@ set expandtab     "Use space characters instead of tabs.
 " Enable auto completion menu after pressing TAB.
 set wildmenu
 
-" Make wildmenu behave like similar to Bash completion.
+" let wildmenu behave similar to Bash completion.
 set wildmode=list:longest
 
 " There are certain files that we would never want to edit with Vim.
@@ -238,7 +238,7 @@ nnoremap da da
 " di = delete inner
 " da = delete other
 
-" make cw behave like dw and yw
+" let cw behave like dw and yw
 "nnoremap cw dwi
 nnoremap C c$
 ":echo'C = change from cursor to end of line'<cr>
@@ -263,10 +263,28 @@ nnoremap u u:echo"u=undo"<cr>
 "--- compiling -------------------------------------{{{
 nnoremap <Leader>mh :!make help<CR>
 nnoremap <Leader>mv :!make vars<CR>
-nnoremap <Leader>mc :!make clean<CR>
-nnoremap <Leader>mm :!make all<CR>
-nnoremap <Leader>mr :!make run<CR>
+nnoremap <Leader>mc :!make clean<CR> :!ls -gGah --color<cr>
+nnoremap <Leader>ma :!make all<CR>
+nnoremap <Leader>mr <esc>:w<cr>:!make run<CR>
+inoremap <Leader>mr <esc>:w<cr>:!make run<CR>
 nnoremap <Leader>md :!make dbg<CR>
+
+
+"map <F1> :!make help<cr>
+"nmap <F1> <esc>:!make help<cr>
+"imap <F1> <esc>:!make help<cr>
+"inoremap <F1> <esc>:w<cr>:!make help<cr>
+"map <F1> :!make help<cr>
+"map <F1> :!make help<cr>
+"map <F2> :!make vars<cr>
+"map <F3> :!make clean<cr>
+"map <F4> :!make all<cr>
+"map <F5> <esc> :w<cr> :!make run<cr                      >
+"nnoremap<F5> <esc>:w<cr>
+"inoremap<F5> <esc>:w<cr>
+"vnoremap<F5> <esc>:w<cr>
+"onoremap<F5> <esc>:w<cr>
+
 "---------------------------------------------------}}}
 
 "--- open programs -----------------------------{{{
