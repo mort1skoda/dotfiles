@@ -22,7 +22,7 @@ alias .dev='$DATA_MOUNT/devel_c '
 # }}}
 
 #--- .aliases directories list ---{{{
-alias  .='ls'
+alias  .='ls -gGah --color'
 alias  l='ls -lah --color --group-directories-first'
 alias la='ls -ah  --color --group-directories-first'
 alias ll='ls -lh  --color --group-directories-first'
