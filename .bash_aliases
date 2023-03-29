@@ -166,7 +166,7 @@ alias rx='urxvt &'
 #--------------------------------------------------------------------}}}#
 
 #--- git run cmd ---------------------------------------------------{{{
-#TODO: make gc a function so it updates the date correctly
+#TODO: try to let gc be a function, so it updates the date correctly
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
 alias date='source .bash_aliases && echo $DATE  sunrise:  sunset: '
 alias egc='vim ~/.gitconfig'
@@ -219,11 +219,11 @@ alias trm='transmission-remote'
 alias ,ma='make all '
 alias ,mc='make clean && l'
 alias ,mci='sudo rm -vf config.h && sudo make clean install && make clean && rm config.h && l'
-alias ,md='make dbg && l'
-alias ,mh='make help && l'
-alias ,mm='make all && l'
-alias ,mr='make run && l'
-alias ,mv='make vars && l'
+alias ,md='make dbg'
+alias ,mh='make help'
+alias ,ma='make all && l'
+alias ,mr='make run'
+alias ,mv='make vars'
 #-----------------------------------------------------------}}}
 
 #--- debug ------------------------------------------------{{{
