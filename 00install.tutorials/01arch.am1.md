@@ -54,9 +54,10 @@
     genfstab -U /mnt >> /mnt/etc/fstab
 
     arch-chroot /mnt
+    stty -ixon
     set -o vi
-    alias l='ls -lah --color --group-directories-first'
     shopt -s autocd
+    alias l='ls -lah --color --group-directories-first'
 
     ln -svf /usr/share/zoneinfo/Europe/Oslo /etc/localtime
     hwclock --systohc

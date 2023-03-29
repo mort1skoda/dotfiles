@@ -265,3 +265,34 @@
 00:34:09.310909 nspr-5   Finished saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml"
 00:34:09.314698 nspr-6   Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
 00:34:09.362249 nspr-10  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:36:06.204102 nspr-8   Saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:36:06.215315 nspr-8   Finished saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml"
+00:36:06.215927 nspr-4   Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:36:06.222781 nspr-4   Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:36:06.294805 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:37:15.181314 nspr-11  Saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:37:15.190757 nspr-11  Finished saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml"
+00:37:19.170280 nspr-3   Saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:37:19.178714 nspr-3   Finished saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml"
+00:37:20.899310 nspr-8   Saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:37:20.908561 nspr-8   Finished saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml"
+00:37:56.390823 nspr-12  Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:37:56.401187 nspr-12  Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:37:56.448191 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:38:00.379398 nspr-8   Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:38:00.387951 nspr-8   Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:38:00.422998 nspr-12  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:38:02.816825 nspr-2   Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:38:02.825609 nspr-2   Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:38:02.879050 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:38:05.011944 nspr-9   Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:38:05.020580 nspr-9   Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:38:05.064790 nspr-11  ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:38:06.220814 nspr-10  Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:38:06.229121 nspr-10  Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:38:06.265312 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
+00:42:22.794945 nspr-9   Saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:42:22.802409 nspr-2   Saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox" with version "1.19-linux"
+00:42:22.803012 nspr-9   Finished saving settings file "/home/m/.config/VirtualBox/VirtualBox.xml"
+00:42:22.810503 nspr-2   Finished saving settings file "/home/m/VirtualBox VMs/arch/arch.vbox"
+00:42:22.850776 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
