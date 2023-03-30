@@ -375,6 +375,8 @@ cnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>ss :nohlsearch<cr>:source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 nnoremap <c-a> :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 
+inoremap <s-z><s-z> <esc>:wq<cr>
+vnoremap <s-z><s-z> <esc>:wq<cr>
 "nnoremap <c-q> :wq<cr>
 "nnoremap q :q<cr>
 "inoremap <c-q> <ESC>:wq<cr>
