@@ -385,10 +385,10 @@ vnoremap <s-z><s-z> <esc>:wq<cr>
 "----------------------------------------------------------------------------------}}}
 
 "--- statusline -----------------------------------{{{
-set statusline=
-set laststatus=2
-"set statusline+=%F
-"set statusline+=%=
-"set statusline+=row:%l\ col:%c\ percent:%p%%
+"set statusline=
+"set laststatus=2
+set statusline=\ \ %F
+set statusline+=%=
+set statusline+=%l,\ %c\ \ %p\%%\ 
 "--------------------------------------------------}}}
        
