@@ -1,3 +1,4 @@
+map n
 
 # --- dir navigate ------------------ {{{
 map .1 cd ..
