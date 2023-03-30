@@ -9,7 +9,7 @@ export _bool_dbg=false
 [ "$_bool_dbg" == "true" ] && echo "linux shell $0"
 
 source ~/.bash_colors
-source ~/.bash_network 
+source ~/.bash_network & 
 source ~/.bashrc
 source ~/.bash_aliases
 
