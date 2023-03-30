@@ -35,7 +35,7 @@ cd $DATA_MOUNT/dotfiles
  #git remote -v | grep --color -i -m1 dotfiles
  git pull 
  git add --all
- #git status --short
+ git status --short
  git commit -m "$DATE"
  git push -u origin $ORIGIN
 cd $DOTFILES
@@ -50,6 +50,7 @@ echo;echo " $DATA_MOUNT/devel_c:"
 cd $DATA_MOUNT/devel_c
  git pull
  git add --all
+ git status --short
  git commit -m "$DATE"
  git push -u origin $ORIGIN
 cd $DOTFILES
