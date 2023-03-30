@@ -59,7 +59,7 @@ then
     source ~/.bash_aliases
     xset r rate 300 50
     setxkbmap no 
-    $DOTFILES/today_https
+    $DOTFILES/web_https
 fi
 
 if [ "$_GUI" == "true" ] && [ $_bool_dbg == "true" ]
