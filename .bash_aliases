@@ -253,7 +253,7 @@ alias gr='sudo vim /dat.mnt/dotfiles/etc.default.grub'
 alias ZZ='exit'
 alias shutdown='exit'
 alias ur='cs && echo -e "$col_red    #### REBOOTING ####    $col_00"; ug && sudo pacman --noconfirm -Syyu; reboot '
-alias us='cs && echo -e "$col_red    #### SHUTDOWN ####     $col_00"; ug && sudo pacman --noconfirm -Syyu; shutdown -h now'
+alias us='cs && echo -e "$col_red    #### SHUTDOWN ####     $col_00"; ug && sudo pacman --noconfirm -Syyu; shutdown -h now '
 alias u='sudo pacman --noconfirm -Syyu'
 # ................... }}}
 
