@@ -1,3 +1,4 @@
+
 printf "sourcing: $HOME/.bashrc \n"
 
 
@@ -30,6 +31,7 @@ fi
 # export{{
 #export            TERM='xterm-256color'
 export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
+#export            PATH='/dat.mnt/devel_c/xlib:/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 export           PAGER='less'
 export          EDITOR='vim'
 export          OPENER='xdg-open'
