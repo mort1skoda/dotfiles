@@ -12,6 +12,7 @@ ln -sf /dat.mnt/dotfiles/.bashrc              /home/m
 ln -sf /dat.mnt/dotfiles/.config              /home/m
 ln -sf /dat.mnt/dotfiles/.tmux.conf           /home/m
 ln -sf /dat.mnt/dotfiles/.vim                 /home/m
+ln -sf /dat.mnt/dotfiles/.vifm                /home/m
 ln -sf /dat.mnt/dotfiles/.vimrc               /home/m
 ln -sf /dat.mnt/dotfiles/.xinitrc             /home/m
 ls -lah --color                      /home/m            |grep --color dotfiles
