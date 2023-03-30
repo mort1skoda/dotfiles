@@ -6,18 +6,18 @@ echo
 source ~/.bash_aliases
 shopt -s expand_aliases
 
-cd dwm
+cd dwm/
 ,mci
 cd ..
 
-cd dmenu
+#cd dmenu
+#,mci
+#cd ..
+
+cd st/
 ,mci
 cd ..
 
-cd st
-,mci
-cd ..
-
-cd swarp
-,mci
-cd ..
+#cd swarp
+#,mci
+#cd ..
