@@ -1,6 +1,3 @@
-perl
-pkg-config
-systemctl
 alias
 awk
 bat
@@ -31,6 +28,7 @@ lessecho
 loadkeys
 ls
 lsblk
+lsblk --json
 lscpu
 lspci
 lsusb
@@ -41,6 +39,8 @@ mkdir
 neofetch
 nl
 pacman
+perl
+pkg-config
 rmdir
 sensors
 setfont
@@ -52,6 +52,7 @@ stest
 sudo hwclock
 swarp
 sxiv
+systemctl
 time
 type
 uptime
