@@ -18,7 +18,7 @@ source ~/.bash_aliases
 if [ "$SHLVL" -lt 7 ]
 then
     source $DOTFILES/02update_git_repos.sh
-    source $DOTFILES/today_bash
+    source $DOTFILES/bash_today
 fi
 
 echo "SHLVL     = $SHLVL"
