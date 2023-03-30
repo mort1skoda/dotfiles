@@ -97,10 +97,10 @@ alias sl='echo "Shell level = $SHLVL"'
 
 #--- cat/bat then grep <token> ---{{{
 alias ag='alias | grep -i --color'
-alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color '
-alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color '
-alias hg='cat ~/.bash_history | grep -i '
-alias lg='ls -lah --color --group-directories-first | grep -i --color '
+alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color'
+alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color'
+alias hg='cat ~/.bash_history | grep -i'
+alias lg='ls -lah --color --group-directories-first | grep -i --color'
 # }}}
 
 #--- shortcuts ---{{{
@@ -120,8 +120,6 @@ alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
 # arch:
 alias u='sudo pacman --noconfirm -Syyu'
-alias ur='cs && echo -e "$col_red    #### REBOOTING ####    $col_00" && ug && sudo pacman --noconfirm -Syyu && echo "rebooting in 1s." && sleep 1 && reboot'
-alias ui='sudo pacman -Syyu '
 alias pm='sudo pacman '
 #
 alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && bat /etc/pacman.d/mirrorlist'
@@ -251,15 +249,22 @@ alias disa='sudo systemctl disable '
 alias sw='st -e swarp 1300 1190'
 #---}}}
 
-#--- GRUB QUIT REBOOT SHUTDOWN ---{{{
-alias grub='sudo vim /dat.mnt/dotfiles/etc.default.grub'
-alias q='exit'
-alias rb='ur'
-alias sd="cd $DOTFILES; gaa; gc; gp; sudo shutdown -h now"
+# -- GRUB
+# -- QUIT
+# -- UPDATE 
+# -- UPDATE REBOOT
+# -- UPDATE SHUTDOWN
+# {{{
+alias gr='sudo vim /dat.mnt/dotfiles/etc.default.grub'
+alias ZZ='exit'
+alias ur='cs && echo -e "$col_red    #### REBOOTING ####    $col_00"; ug && sudo pacman --noconfirm -Syyu; reboot '
+alias us='cs && echo -e "$col_red    #### SHUTDOWN ####     $col_00"; ug && sudo pacman --noconfirm -Syyu; shutdown -h now'
 # }}}
 
 #--- footer ------------------------------------------------{{{
 shopt -s expand_aliases
 #-----------------------------------------------------------}}}
 
+
+alias bank='firefox sbanken.no & '
 

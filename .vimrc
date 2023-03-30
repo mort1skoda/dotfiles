@@ -391,4 +391,8 @@ set statusline=\ \ %F
 set statusline+=%=
 set statusline+=%l,\ %c\ \ %p\%%\ 
 "--------------------------------------------------}}}
-       
+
+
+map <s-q> :echo "shift + q"<cr>
+
+"nmap qq :echo "qq = recording"<cr>              
