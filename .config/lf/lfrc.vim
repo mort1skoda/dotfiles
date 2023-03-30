@@ -284,8 +284,8 @@ cmd _source_reload :{{
     echo 'sourced: /home/m/.config/lf/lfrc  reloaded: lf'
 }}
 
-map <c-q> :quit
-map q :quit
+#map <c-q> :quit
+#map q :quit
 map ZZ :quit
 #.................................................}}}
 
