@@ -24,7 +24,7 @@ alias .xlib='cd $DATA_MOUNT/devel_c/xlib/ && l '
 # }}}
 
 # ---.aliases directories list  --- {{{
-alias  .='ls -gGah --color'
+alias  .='cs; ls -gGah --color --group-directories-first '
 alias  l='ls -lah --color --group-directories-first'
 alias la='ls -ah  --color --group-directories-first'
 alias ll='ls -lh  --color --group-directories-first'
