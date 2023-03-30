@@ -31,11 +31,12 @@ fi
 # export{{
 #export            TERM='xterm-256color'
 #export            PATH='/dat.mnt/devel_c/xlib:/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
-export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 #export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl'
+export            PATH='/usr/bin:/usr/local/bin:/usr/local/sbin:usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl'
 export           PAGER='less'
 export          EDITOR='vim'
 export          OPENER='xdg-open'
+export        BASH_ENV='.bash_aliases'
 export        DOTFILES='/dat.mnt/dotfiles'
 export       BAT_THEME='gruvbox-dark'
 export      DATA_MOUNT='/dat.mnt'

@@ -1,5 +1,5 @@
 
-#--- /home/m/.config/lf/lfrc directories navigate ---{{{
+# --- dir navigate ------------------ {{{
 map .. cd ..
 map ... cd ...
 map .df cd /dat.mnt/dotfiles
@@ -14,7 +14,7 @@ map .rr cd /root
 map .sl cd ~/.config/suckless
 map .ss cd /dat.mnt/Screenshots
 map .wp cd /dat.mnt/Wallpapers
-# }}}
+# .............................. }}}
 
 
 

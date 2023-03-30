@@ -1,4 +1,4 @@
-"--- ~/.vimrc -------------------------------------------------{{{
+" --- ~/.vimrc ---------------------------------------------- {{{
 " Author: Morty Hawk <mort1skoda@gmail.com>
 " Email:  <mort1skoda@gmail.com>
 "         <mort1prog@gmail.com>
@@ -27,29 +27,29 @@
 " echom"~/.vimrc"
 "-------------------------------------------------------------}}}
 
-"--- environment --------------------{{{
-let $ALIASES        = '~/.bash_aliases'
-let $BASHRC         = '~/.bashrc'
-let $BASH_ENV       = "~/.aliases"
-let $BASH_PROFILE   = '~/.bash_profile'
-let $LFRC           = "/home/m/.config/lf/lfrc.vim"
-let $TMUX           = '~/.tmux.conf'
-let $VIFMRC         = '~/.vifm/vifmrc.vim' 
-let $VIMRC          = '~/.vimrc'
-let $XINITRC        = '~/.xinitrc'
+" --- environment -------------------- {{{
+let $BASHRC       = '~/.bashrc'
+let $BASH_ALIASES = '~/.bash_aliases'
+let $BASH_ENV     = '~/.bash_aliases'
+let $BASH_PROFILE = '~/.bash_profile'
+let $LFRC         = '~/.config/lf/lfrc.vim'
+let $TMUX         = '~/.tmux.conf'
+let $VIFMRC       = '~/.vifm/vifmrc.vim' 
+let $VIMRC        = '~/.vimrc'
+let $XINITRC      = '~/.xinitrc'
 nnoremap <c-z> :shell<cr>
-"------------------------------------------------------------------}}}
+" ------------------------------------------------------------------ }}}
 
 "--- edit dotfiles ---{{{
 let mapleader = ","     " mapleader = ,
-nnoremap <Leader>ea :vs $ALIASES<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ea  :vs $BASH_ALIASES<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>eb  :vs $BASHRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>ebp :vs $BASH_PROFILE<cr>:echo expand('%:p')<cr>
 nnoremap <Leader>elf :vs $LFRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>et :vs $TMUX<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ev :vs $VIMRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>et  :vs $TMUX<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ev  :vs $VIMRC<CR>:echo expand('%:p')<CR>
 nnoremap <Leader>evf :vs $VIFMRC<CR>:echo expand('%:p')<CR>
-nnoremap <Leader>ex :vs $XINITRC<CR>:echo expand('%:p')<CR>
+nnoremap <Leader>ex  :vs $XINITRC<CR>:echo expand('%:p')<CR>
 "---------------------}}}
 
 "--- folds -------------------{{{

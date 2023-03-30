@@ -1,9 +1,9 @@
 printf "sourcing: $HOME/.bash_aliases \n"
 unalias -a
 
-# --- /home/m/.bahs_aliases directories navigate ---{{{
+# --- dir navigate  --- {{{
 alias ...='cd ../.. && ls -lah --color --group-directories-first'
-alias ..='cd .. && ls -lah --color --group-directories-first'
+alias  ..='cd .. && ls -lah --color --group-directories-first'
 alias .dev='$DATA_MOUNT/devel_c && l'
 alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
@@ -23,7 +23,7 @@ alias .wp='cd /dat.mnt/Wallpapers && l'
 alias .xlib='cd $DATA_MOUNT/devel_c/xlib/ && l '
 # }}}
 
-# ---.aliases directories list ---{{{
+# ---.aliases directories list  --- {{{
 alias  .='ls -gGah --color'
 alias  l='ls -lah --color --group-directories-first'
 alias la='ls -ah  --color --group-directories-first'
@@ -31,11 +31,11 @@ alias ll='ls -lh  --color --group-directories-first'
 #alias ls='ls      --color --group-directories-first'
 # }}}
 
-# ---.aliases directories watch ---{{{
+# ---.aliases directories watch  --- {{{
 alias wl='watch --color --differences ls -lah --color --group-directories-first '
 # }}}
 
-# ---.aliases directories mkdir rmdir ---{{{
+# ---.aliases directories mkdir rmdir  --- {{{
 alias md='mkdir -pv '
 alias rd='rmdir -pv '
 # }}}
@@ -43,8 +43,7 @@ alias rd='rmdir -pv '
 
 
 
-
-# ---files edit ------------------------------------------------{{{
+# ---files edit --------------------------------------------- --- {{{
 alias ,='vim'
 alias ,ea='echo && vim ~/.bash_aliases && source ~/.bash_aliases'
 alias ,egc='vim ~/.gitconfig'
@@ -69,7 +68,7 @@ alias v='vim'
 alias vi='vim'
 #---------------------------------------------------------------}}}
 
-# ---files source ------------------------{{{ 
+# ---files source --------------------- --- {{{ 
 alias sa='source ~/.bash_aliases'
 alias sb='source ~/.bashrc'
 alias sbc='source ~/.bash_colors'
@@ -79,18 +78,18 @@ alias sbp='source ~/.bash_profile'
 
 
 
-# ---audio ------------------------------------------------{{{
+# ---audio --------------------------------------------- --- {{{
 alias vol='pavucontrol &'
 #----------------------------------------------------------}}}
 
-# ---shell --------------------------------------------------{{{
+# ---shell ----------------------------------------------- --- {{{
 alias bl='bash --login'
 alias zl='zsh --login'
 alias sl='echo "Shell level = $SHLVL"'
 #alias su='su root zsh'
 #---------------------------------------------------------}}}
 
-# ---cat/bat then grep <token> ---{{{
+# ---cat/bat then grep <token>  --- {{{
 alias ag='alias | grep -i --color'
 alias bag='source ~/.bash_aliases && b ~/.bash_aliases | grep -i --color'
 alias cag='source ~/.bash_aliases && cat ~/.bash_aliases | grep -i --color'
@@ -98,7 +97,7 @@ alias hg='cat ~/.bash_history | grep -i'
 alias lg='ls -lah --color --group-directories-first | grep -i --color'
 # }}}
 
-# ---shortcuts ---{{{
+# ---shortcuts  --- {{{
 alias b='~/.config/lf/batc.sh '
 alias c='cat '
 alias e="echo "
@@ -109,7 +108,7 @@ alias wai='whoami'
 alias wt='watch --color -d '
 # }}}
 
-# ---package managers ---{{{
+# ---package managers  --- {{{
 # debian:
 alias sai='sudo apt install '
 alias sau='sudo apt update -y && sudo apt upgrade -y && autoremove'
@@ -121,7 +120,7 @@ alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort ra
 #
 # }}}
 
-# ---filesystem --------------------{{{
+# ---filesystem ----------------- --- {{{
 alias blkid='sudo blkid'
 alias lbl="lsblk -o NAME,MODEL,PARTTYPENAME,LABEL,FSTYPE,SIZE,FSUSED,MOUNTPOINTS,SERIAL"
 alias lsblk='lsblk'
@@ -135,7 +134,7 @@ alias mount='sudo mount --mkdir '
 #... .......... ....................}}}
 
 
-# ---start programs -------------------------------------------------{{{
+# ---start programs ---------------------------------------------- --- {{{
 alias ht="htop"
 alias vf='vifm /home/m /dat.mnt/'
 alias x='/dat.mnt/dotfiles/scripts/wrap_startx.sh'
@@ -160,7 +159,7 @@ alias lx='lxterminal &'
 alias rx='urxvt &'
 #--------------------------------------------------------------------}}}#
 
-# ---git run cmd ---------------------------------------------------{{{
+# ---git run cmd ------------------------------------------------ --- {{{
 #TODO: try to let gc be a function, so it updates the date correctly
 DATE=$(date +"[%Y-%m-%d %H:%M:%S]")
 alias date='source .bash_aliases && echo $DATE  sunrise:  sunset: '
@@ -188,7 +187,7 @@ alias ug='$DOTFILES/02update_git_repos.sh'
 alias egc='vim ~/.gitconfig'
 #-}}}
 
-# ---tmux --------------------------------------------------{{{
+# ---tmux ----------------------------------------------- --- {{{
 # tm = tmux, start a new tmux session
 alias tm="$DOTFILES/scripts/wrap_tmux.sh"
 # tl = tmux list
@@ -199,18 +198,18 @@ alias ta='cd ~/ && tmux a -t '
 alias et='vim ~/.tmux.conf'
 #-----------------------------------------------------------}}}
 
-# ---kernel ---{{{
+# ---kernel  --- {{{
 alias un='uname -a'
 alias dm='sudo dmesg'
 #--------------}}}
 
-# ---network -----------------------------------------------{{{
+# ---network -------------------------------------------- --- {{{
 alias ip="ip -color=auto"
 alias wip='watch --color -n15 ip -color a'
 alias trm='transmission-remote'
 #-----------------------------------------------------------}}}
 
-# ---make --------------------------------------------------{{{
+# ---make ----------------------------------------------- --- {{{
 alias ,ma='make all '
 alias ,mc='make clean && l'
 alias ,mci='sudo rm -vf config.h && sudo make clean install && make clean && rm config.h && l'
@@ -221,7 +220,7 @@ alias ,mr='make run'
 alias ,mv='make vars'
 #-----------------------------------------------------------}}}
 
-# ---debug ------------------------------------------------{{{
+# ---debug --------------------------------------------- --- {{{
 alias keycodes="sed -n l"
 alias dbgvim='vim -V20 2>&1 | tee vim.log.vim'
 
@@ -232,7 +231,7 @@ alias Qdtq='sudo pacman -R "$(pacman -Qdtq)"'
 alias kill='sudo kill '
 #----------------------------------------------------------}}}
 
-# ---systemd -----------------------------------------------{{{
+# ---systemd -------------------------------------------- --- {{{
 alias stat='sudo systemctl status '
 alias enab='sudo systemctl enable '
 alias star='sudo systemctl start '
