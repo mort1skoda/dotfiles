@@ -375,11 +375,11 @@ cnoremap <C-s> <esc>:w<cr>
 nnoremap <Leader>ss :nohlsearch<cr>:source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 nnoremap <c-a> :source ~/.vimrc<cr>:echo"sourced: ~/.vimrc"<cr>
 
-nnoremap <c-q> :wq<cr>
-nnoremap q :q<cr>
-inoremap <c-q> <ESC>:wq<cr>
-vnoremap <c-q> <ESC>:wq<cr>
-cnoremap <c-q> <ESC>:wq<cr>
+"nnoremap <c-q> :wq<cr>
+"nnoremap q :q<cr>
+"inoremap <c-q> <ESC>:wq<cr>
+"vnoremap <c-q> <ESC>:wq<cr>
+"cnoremap <c-q> <ESC>:wq<cr>
 "----------------------------------------------------------------------------------}}}
 
 "--- statusline -----------------------------------{{{

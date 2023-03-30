@@ -286,12 +286,14 @@ cmd _source_reload :{{
 
 #map <c-q> :quit
 #map q :quit
+map q
+map <c-q>
 map ZZ :quit
 #.................................................}}}
 
 
 #--- statusline -----------------------------------------{{{
-:echo 'Welcome to lf'
+:echo 'Welcome to lf  use shift-zz to quit'
 #--------------------------------------------------------}}}
 
 
