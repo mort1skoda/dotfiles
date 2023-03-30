@@ -1,7 +1,8 @@
 
 # --- dir navigate ------------------ {{{
-map .. cd ..
-map ... cd ...
+map .1 cd ..
+map .2 cd ../..
+map .3 cd ../../..
 map .df cd /dat.mnt/dotfiles
 map .dl cd /dat.mnt/Downloads
 map .dm cd /dat.mnt
