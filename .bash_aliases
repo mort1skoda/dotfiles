@@ -4,6 +4,7 @@ unalias -a
 #--- /home/m/.aliases directories navigate ---{{{
 alias ...='cd ../.. && ls -lah --color --group-directories-first'
 alias ..='cd .. && ls -lah --color --group-directories-first'
+alias .dev='$DATA_MOUNT/devel_c && l'
 alias .df='cd /dat.mnt/dotfiles && ls -lah --color --group-directories-first'
 alias .dl='cd /dat.mnt/Downloads && ls -lah --color --group-directories-first'
 alias .dm='cd /dat.mnt/ && ls -lah --color --group-directories-first'
@@ -17,8 +18,9 @@ alias .scr='cd /dat.mnt/dotfiles/scripts && l'
 alias .sl='cd /dat.mnt/dotfiles/.config/suckless/from.git && l'
 alias .ss='cd /dat.mnt/Screenshots && l'
 alias .st='cd /dat.mnt/dotfiles/.config/suckless/from.git/st_git && l' 
+alias .ulb='cd /usr/local/bin && l '
 alias .wp='cd /dat.mnt/Wallpapers && l'
-alias .dev='$DATA_MOUNT/devel_c '
+alias .xlib='cd $DATA_MOUNT/devel_c/xlib/ && l '
 # }}}
 
 #--- .aliases directories list ---{{{
