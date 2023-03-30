@@ -10,14 +10,14 @@ cd dwm
 ,mci
 cd ..
 
-cd dmenu*
+cd dmenu
 ,mci
 cd ..
 
-cd st*
+cd st
 ,mci
 cd ..
 
-cd swarp*
+cd swarp
 ,mci
 cd ..
