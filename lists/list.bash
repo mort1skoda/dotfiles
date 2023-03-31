@@ -1,3 +1,4 @@
+ctrl-d  (logs out from bash shell from all shell levels)
 alias
 awk
 awk
