@@ -1,4 +1,6 @@
 #!/bin/sh
+DAT_MOUNT='/dat.mnt'
+DOTFILES='$DAT_MOUNT/dotfiles'
 echo "running.: $DOTFILES/02update_git_repos.sh"
 
 # This shell script can be run with the alias:
@@ -6,9 +8,8 @@ echo "running.: $DOTFILES/02update_git_repos.sh"
 # or edit this script with the alias:
 # eud [edit update dotfiles]
 
-# if user is equal to 0 i.e. the user is root: the exit
+# if user is equal to 0 i.e. the user is root: we exit
 [ "$EUID" -eq 0 ] && exit
-
 
 
 

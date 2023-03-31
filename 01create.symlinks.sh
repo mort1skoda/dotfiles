@@ -1,20 +1,20 @@
 #!/bin/sh
+set -e
 clear
 
 echo "/home/m ->"
 ln -sf /dat.mnt/dotfiles/.bash_aliases        /home/m
-ln -sf /dat.mnt/dotfiles/.bash_command_today  /home/m
 ln -sf /dat.mnt/dotfiles/.bash_colors         /home/m
 ln -sf /dat.mnt/dotfiles/.bash_logout         /home/m
 ln -sf /dat.mnt/dotfiles/.bash_network        /home/m
 ln -sf /dat.mnt/dotfiles/.bash_profile        /home/m
 ln -sf /dat.mnt/dotfiles/.bashrc              /home/m
-ln -sf /dat.mnt/dotfiles/.config              /home/m
-ln -sf /dat.mnt/dotfiles/.tmux.conf           /home/m
-"ln -sf /dat.mnt/dotfiles/.vim                 /home/m
-ln -sf /dat.mnt/dotfiles/.vifm                /home/m
-ln -sf /dat.mnt/dotfiles/.vimrc               /home/m
-ln -sf /dat.mnt/dotfiles/.xinitrc             /home/m
+#ln -sf /dat.mnt/dotfiles/.config              /home/m
+#ln -sf /dat.mnt/dotfiles/.tmux.conf           /home/m
+#ln -sf /dat.mnt/dotfiles/.vifm                /home/m
+#ln -sf /dat.mnt/dotfiles/.vim                 /home/m
+#ln -sf /dat.mnt/dotfiles/.vimrc               /home/m
+#ln -sf /dat.mnt/dotfiles/.xinitrc             /home/m
 ls -lah --color                      /home/m            |grep --color dotfiles
 echo
 
