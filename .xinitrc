@@ -1,5 +1,5 @@
 #!/bin/sh
-#
+
 setxkbmap no &
 xset -dpms &
 xset s 0 0 &

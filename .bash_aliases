@@ -1,4 +1,4 @@
-printf "sourcing: $HOME/.bash_aliases \n"
+printf "sourcing: ~/.bash_aliases \n"
 unalias -a
 
 # --- dir navigate  --- {{{
