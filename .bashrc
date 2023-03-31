@@ -57,7 +57,7 @@ fi
 # things to when we start a terminal emulator in GUI mode
 if [[ "$_GUI" == "true" ]]
 then
-    source ~/.bash_aliases
+    #source ~/.bash_aliases
     xset r rate 300 50
     setxkbmap no 
     $DOTFILES/tips.web
