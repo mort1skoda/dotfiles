@@ -71,8 +71,6 @@ then
 fi 
 
 source ~/.bash_aliases
-
-
 source $DOTFILES/tip/shell.tip.sh
 source $DOTFILES/tip/shop.tip.sh
 source $DOTFILES/tip/vim.tip.sh
