@@ -21,6 +21,10 @@ then
     #source $DOTFILES/tips.bash
 fi
 source $DOTFILES/tips.bash
+source $DOTFILES/tips.shop
+source $DOTFILES/tips.vim
+source $DOTFILES/tips.web
+
 
 echo "SHLVL     = $SHLVL"
 uptime -p
