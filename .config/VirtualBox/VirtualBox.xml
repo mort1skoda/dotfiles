@@ -9,24 +9,24 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
+      <ExtraDataItem name="GUI/Details/Elements/Preview/UpdateInterval" value="disabled"/>
       <ExtraDataItem name="GUI/GuestControl/FileManagerVisiblePanels" value="LogPanel"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=3545f5cf-4649-48cd-abc4-e29f328e88ce"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="538,159,924,864"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=3f334180-332c-4126-a4b4-17857f1dc667"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="544,12,833,429"/>
       <ExtraDataItem name="GUI/LogWindowGeometry" value="3,22,954,1175"/>
       <ExtraDataItem name="GUI/MediumSelector/DialogGeometry" value="1299,118,383,441"/>
       <ExtraDataItem name="GUI/NotificationCenter/Alignment" value="Bottom"/>
       <ExtraDataItem name="GUI/NotificationCenter/KeepSuccessfullProgresses" value="true"/>
       <ExtraDataItem name="GUI/NotificationCenter/Order" value="Ascending"/>
-      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/m/Downloads"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/m/Downloads/install72.iso,/home/m/Downloads/cd72.iso,/home/m/Downloads/archlinux-2023.03.01-x86_64.iso,/home/m/Downloads/arch.iso"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/dat.mnt/Downloads"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/dat.mnt/Downloads/archlinux-2023.03.31-x86_64.iso,/home/m/Downloads/install72.iso,/home/m/Downloads/cd72.iso,/home/m/Downloads/archlinux-2023.03.01-x86_64.iso,/home/m/Downloads/arch.iso"/>
       <ExtraDataItem name="GUI/SessionInformationDialogGeometry" value="1,18,1918,589"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="195,639"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="confirmPowerOffMachine,confirmInputCapture,confirmACPIShutdownMachine,confirmGoingFullscreen"/>
-      <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Activities,Details"/>
+      <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{c4b23ed7-87bb-412f-979d-fcf83d1decc1}" src="/home/m/VirtualBox VMs/arch/arch.vbox"/>
-      <MachineEntry uuid="{3545f5cf-4649-48cd-abc4-e29f328e88ce}" src="/home/m/VirtualBox VMs/openBSD/openBSD.vbox"/>
+      <MachineEntry uuid="{3f334180-332c-4126-a4b4-17857f1dc667}" src="/dat.mnt/virtboxVMs/archMarch/archMarch.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

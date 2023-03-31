@@ -4,15 +4,17 @@
 
 #### quick guide
 
-    curl --output arch.iso https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso
+    curl --output arch.iso
+    https://mirrors.dotsrc.org/archlinux/iso/2023.03.01/archlinux-2023.03.01-x86_64.iso
     sudo cp arch.iso /dev/sdb
 
+    echo $0
     bash
     loadkeys no             (/usr/share/kbd/keymaps/**.*.map.gz)
     set -o vi
     shopt -s autocd
     alias l='ls -lah --color --group-directoires-first'
-    setfont dr*8x14       (/usr/share/kbd/consolefonts) setfont gr737b-8x11
+    setfont drdos8x14       (cd /usr/share/kbd/consolefonts) setfont gr737b-8x11
     tmux
     ctrl+b %      (vert split)
     ctrl+b arrow  (navigate to pane)
@@ -25,7 +27,7 @@
     ip -color a
     ping -c4 -D archlinux.org       (-D shows epoc time with high resolution 1.000.000/s)
         tip: regarding random numbers:   ping -D    | awk '{print $1}'
-    timedatectl Europe/Oslo
+    timedatectl set-timezone Europe/Oslo
     timedatectl
     cfdisk
         example 870 EVO 250GB
@@ -58,7 +60,7 @@
     stty -ixon
     set -o vi
     shopt -s autocd
-    alias l='ls -lah --color --group-directories-first'
+    alias l='ls -gGahl --color --group-directories-first'
 
     ln -svf /usr/share/zoneinfo/Europe/Oslo /etc/localtime
     hwclock --systohc
@@ -75,7 +77,11 @@
     pacman -S grub efibootmgr     dosfstools mtools
     mkdir /boot/EFI
     mount /dev/sda1 /boot/EFI
-    grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB
+      UEFI:
+        grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB
+      BIOS:
+        grub-install --target=i386-pc /dev/sda
+
     grub-mkconfig -o /boot/grub/grub.cfg
 
     passwd root
@@ -87,6 +93,7 @@
 
 
     login as root
+    loadkeys no
     stty -ixon
     set -o vi
     shopt -s autocd
