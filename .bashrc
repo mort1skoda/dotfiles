@@ -47,11 +47,11 @@ export LF_ICONS=""
 
 # }}}
 
-if [[ $TMUX ]]
-then
-    #source ~/.bash_aliases
-    echo
-fi
+#if [[ $TMUX ]]
+#then
+#    #source ~/.bash_aliases
+#    echo
+#fi
 
 
 # things to when we start a terminal emulator in GUI mode
@@ -60,8 +60,8 @@ then
     #source ~/.bash_aliases
     xset r rate 300 50
     setxkbmap no 
-    $DOTFILES/tips.web
-    $DOTFILES/tips.shop
+    #$DOTFILES/tips.web
+    #$DOTFILES/tips.shop
 fi
 
 if [ "$_GUI" == "true" ] && [ $_bool_dbg == "true" ]
@@ -71,4 +71,11 @@ then
 fi 
 
 source ~/.bash_aliases
+
+
+source $DOTFILES/tip/shell.tip.sh
+source $DOTFILES/tip/shop.tip.sh
+source $DOTFILES/tip/vim.tip.sh
+source $DOTFILES/tip/vixen.tip.sh
+source $DOTFILES/tip/web.tip.sh
 
