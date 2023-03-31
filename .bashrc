@@ -1,5 +1,5 @@
 
-printf "sourcing: $HOME/.bashrc \n"
+printf "sourcing: ~/.bashrc \n"
 
 
 # ----- set & shopt -----{{
