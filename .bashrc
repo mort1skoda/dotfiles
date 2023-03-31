@@ -50,6 +50,7 @@ export LF_ICONS=""
 if [[ $TMUX ]]
 then
     #source ~/.bash_aliases
+    echo
 fi
 
 
