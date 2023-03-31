@@ -11,7 +11,7 @@ export _bool_dbg=false
 source ~/.bash_colors
 source ~/.bash_network
 source ~/.bashrc
-source ~/.bash_aliases
+#source ~/.bash_aliases      #### .bashrc sources .bash_aliases ####
 
 # when we are at shell levels below 7 i.e less than 7 (1 through 6)
 # do update git repos and show linux shell bash tip of the day!
