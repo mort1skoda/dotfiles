@@ -4,7 +4,7 @@ _BCL_R=$(cat $DOTFILES/tip/shell.lst |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
     printf "$col_yellow"
-    printf "Shell tip....:"
+    printf "Shell tip....: "
     echo $_BCL_R
 
     echo "for more info try: "
