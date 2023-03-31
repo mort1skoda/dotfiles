@@ -20,6 +20,7 @@ then
     source $DOTFILES/02update_git_repos.sh
     source $DOTFILES/tips.bash
 fi
+source $DOTFILES/tips.bash
 
 echo "SHLVL     = $SHLVL"
 uptime -p
