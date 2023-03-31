@@ -1,6 +1,6 @@
 #!/bin/sh
 DATA_MOUNT='/dat.mnt'
-DOTFILES='$DATA_MOUNT/dotfiles'
+DOTFILES='DATA_MOUNT/dotfiles'
 echo "running.: $DOTFILES/02update_git_repos.sh"
 
 # This shell script can be run with the alias:
