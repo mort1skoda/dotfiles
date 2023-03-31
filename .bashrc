@@ -49,7 +49,7 @@ export LF_ICONS=""
 
 if [[ $TMUX ]]
 then
-    source ~/.bash_aliases
+    #source ~/.bash_aliases
 fi
 
 
