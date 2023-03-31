@@ -68,3 +68,5 @@ then
     xset q |grep --color -G "DPMS is Disabled"
 fi 
 
+source ~/.bash_aliases
+
