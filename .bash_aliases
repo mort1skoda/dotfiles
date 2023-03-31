@@ -20,6 +20,7 @@ alias .ss='cd /dat.mnt/Screenshots && l'
 alias .st='cd /dat.mnt/dotfiles/.config/suckless/from.git/st_git && l' 
 alias .ulb='cd /usr/local/bin && l '
 alias .wp='cd /dat.mnt/Wallpapers && l'
+alias .tip='cd $DOTFILES/tip; l'
 alias .xlib='cd $DATA_MOUNT/devel_c/xlib/ && l '
 # }}}
 
