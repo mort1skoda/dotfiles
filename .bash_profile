@@ -11,19 +11,15 @@ export _bool_dbg=true
 source ~/.bash_colors
 source ~/.bash_network
 source ~/.bashrc
-#source ~/.bash_aliases      #### .bashrc sources .bash_aliases ####
+#### .bashrc sources .bash_aliases ####
+#### .bashrc sources tip ####
 
 # when we are at shell levels below 7 i.e less than 7 (1 through 6)
 # DO update git repos and show linux shell bash tip of the day!
 if [ "$SHLVL" -lt 7 ]
 then
     source $DOTFILES/02update_git_repos.sh
-    #source $DOTFILES/tips.bash
 fi
-source $DOTFILES/tips.bash
-source $DOTFILES/tips.shop
-source $DOTFILES/tips.vim
-source $DOTFILES/tips.web
 
 
 echo "SHLVL     = $SHLVL"
