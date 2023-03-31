@@ -3,7 +3,7 @@ clear
 echo "sourcing: $HOME/.bash_profile"
 
 # for verbosity set _bool_dgb to true
-export _bool_dbg=false
+export _bool_dbg=true
 
 # if "_bool_dbg" is equal to "true" echo linux shell:
 [ "$_bool_dbg" == "true" ] && echo "linux shell $0"
