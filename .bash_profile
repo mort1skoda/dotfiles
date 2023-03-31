@@ -22,6 +22,4 @@ then
 fi
 
 
-echo "SHLVL     = $SHLVL"
-uptime -p
 

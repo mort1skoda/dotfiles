@@ -77,3 +77,5 @@ source $DOTFILES/tip/vim.tip.sh
 source $DOTFILES/tip/vixen.tip.sh
 source $DOTFILES/tip/web.tip.sh
 
+echo "SHLVL     = $SHLVL"
+uptime -p
