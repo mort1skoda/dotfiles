@@ -1,10 +1,10 @@
 #!/bin/sh
 
-_BCL_R=$(cat $DOTFILES/lists/list.bash |shuf -n1)
+_BCL_R=$(cat $DOTFILES/tip/shell.lst |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
     printf "$col_yellow"
-    printf "Leran this linux shell bash command: "
+    printf "Shell tip....:"
     echo $_BCL_R
 
     echo "for more info try: "
