@@ -1,5 +1,5 @@
-stty
 alias
+awk
 awk
 bat
 blkid
@@ -7,7 +7,9 @@ cal
 cat
 cfdisk
 curl
+curl grep sed awk cut
 curl wttr.in/Helgeroa
+cut
 date
 date
 df
@@ -23,6 +25,7 @@ firefox
 fzf
 gcc
 git
+grep
 grep
 less
 lessecho
@@ -43,6 +46,7 @@ pacman
 perl
 pkg-config
 rmdir
+sed
 sensors
 setfont
 setxkbmap
@@ -50,6 +54,7 @@ slstatus
 st
 st_float
 stest
+stty
 sudo hwclock
 swarp
 sxiv
