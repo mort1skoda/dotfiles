@@ -1,4 +1,4 @@
-ctrl-d  (logs out from bash shell from all shell levels)
+ctrl-d EOF=End Of File   (logs out from bash shell)
 alias
 awk
 awk
