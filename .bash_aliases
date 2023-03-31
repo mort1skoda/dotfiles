@@ -136,6 +136,7 @@ alias mount='sudo mount --mkdir '
 
 # ---start programs ---------------------------------------------- --- {{{
 alias ht="htop"
+alias ra="ranger"
 alias vf='vifm /home/m /dat.mnt/'
 alias x='/dat.mnt/dotfiles/scripts/wrap_startx.sh'
 alias a='alias && alias | wc -l && echo "Total aliases" ' #list all aliases
