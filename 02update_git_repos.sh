@@ -1,6 +1,4 @@
 #!/bin/sh
-DATA_MOUNT='/dat.mnt'
-DOTFILES='DATA_MOUNT/dotfiles'
 echo "running.: $DOTFILES/02update_git_repos.sh"
 
 # This shell script can be run with the alias:
@@ -10,7 +8,6 @@ echo "running.: $DOTFILES/02update_git_repos.sh"
 
 # if user is equal to 0 i.e. the user is root: we exit
 [ "$EUID" -eq 0 ] && exit
-
 
 
 # init:
@@ -29,7 +26,6 @@ git config --global user.email $my_user_email
 
 
 
-
 # here we take care of dotfiles repo:
 echo;echo " $DATA_MOUNT/dotfiles :"
 cd $DATA_MOUNT/dotfiles
@@ -40,7 +36,6 @@ cd $DATA_MOUNT/dotfiles
  git commit -m "$DATE"
  git push -u origin $ORIGIN
 cd $DOTFILES
-
 
 
 
