@@ -1,6 +1,6 @@
 #!/bin/sh
 
-_BCL_R=$(cat $DOTFILES/lists/bash_list |shuf -n1)
+_BCL_R=$(cat $DOTFILES/lists/list.bash |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
     printf "$col_yellow"
