@@ -4,7 +4,7 @@ _BCL_R=$(cat $DOTFILES/lists/list.bash |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
     printf "$col_yellow"
-    printf "Learn shell command: "
+    printf "Leran this linux shell bash command: "
     echo $_BCL_R
 
     echo "for more info try: "

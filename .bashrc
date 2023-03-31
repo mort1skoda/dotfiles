@@ -61,6 +61,7 @@ then
     xset r rate 300 50
     setxkbmap no 
     $DOTFILES/tips.web
+    $DOTFILES/tips.shop
 fi
 
 if [ "$_GUI" == "true" ] && [ $_bool_dbg == "true" ]
