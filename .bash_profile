@@ -18,7 +18,7 @@ source ~/.bashrc
 if [ "$SHLVL" -lt 7 ]
 then
     source $DOTFILES/02update_git_repos.sh
-    source $DOTFILES/tips.bash
+    #source $DOTFILES/tips.bash
 fi
 source $DOTFILES/tips.bash
 
