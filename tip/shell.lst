@@ -1,4 +1,5 @@
-ctrl-d EOF=End Of File   (logs out from bash shell)
+CTRL+ALT+F(1,2,3)
+ALT+Left/Right move to tty
 alias
 awk
 awk
@@ -7,6 +8,7 @@ blkid
 cal
 cat
 cfdisk
+ctrl-d EOF=End Of File   (logs out from bash shell)
 curl
 curl grep sed awk cut
 curl wttr.in/Helgeroa
@@ -30,6 +32,7 @@ grep
 grep
 less
 lessecho
+ln
 loadkeys
 ls
 lsblk

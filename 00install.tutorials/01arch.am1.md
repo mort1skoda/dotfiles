@@ -28,6 +28,7 @@
     ping -c4 -D archlinux.org       (-D shows epoc time with high resolution 1.000.000/s)
         tip: regarding random numbers:   ping -D    | awk '{print $1}'
     timedatectl set-timezone Europe/Oslo
+    timedatectl set-ntp-true
     timedatectl
     cfdisk
         example 870 EVO 250GB
