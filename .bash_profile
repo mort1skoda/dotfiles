@@ -18,7 +18,7 @@ source ~/.bashrc
 # DO update git repos and show linux shell bash tip of the day!
 if [ "$SHLVL" -lt 7 ]
 then
-    source $DOTFILES/02update_git_repos.sh
+    source $DOTFILES/12update_git_repos.sh
 fi
 
 
