@@ -182,7 +182,7 @@ alias grl='git reflog '
 alias gs="git branch && git status && git remote -v | grep --color -m1 origin"
 alias gss="git status --short"
 alias gsv="git status --verbose"
-alias ug='$DOTFILES/02update_git_repos.sh'
+alias ug='$DOTFILES/12update_git_repos.sh'
 #---------------------------------------------------------}}}
 
 #- files edit git -{{{
