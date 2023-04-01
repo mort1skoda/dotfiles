@@ -27,9 +27,11 @@
     ip -color a
     ping -c4 -D archlinux.org       (-D shows epoc time with high resolution 1.000.000/s)
         tip: regarding random numbers:   ping -D    | awk '{print $1}'
-    timedatectl set-timezone Europe/Oslo
-    timedatectl set-ntp-true
     timedatectl
+    timedatectl set-ntp true
+    timedatectl set-timezone Europe/Oslo
+    timedatectl
+
     cfdisk
         example 870 EVO 250GB
         sda1          1G  efi
@@ -39,13 +41,13 @@
     lsblk
 
     mkfs.fat -F 32  /dev/sda1
-    mkswap          /dev/sda2
+    mkswap          /dev/sba2
     mkfs.ext4       /dev/sda3   upto  sda7
     lsblk /dev/sda -o NAME,SIZE,MOUNTPOINT,FSTYPE
 
-    mount --mkdir  /dev/sda1 /mnt/boot
-    swapon         /dev/sda2
-    mount          /dev/sda3 /mnt
+    mount --mkdir  /dev/sda1 /mnt/boot      SDA AAAA
+    swapon         /dev/sdb1                SDB BBBB
+    mount          /dev/sda5 /mnt
 
     cd /mnt
     mkdir /mnt/dat.mnt
