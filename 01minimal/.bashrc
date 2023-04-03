@@ -5,6 +5,7 @@ shopt -s autocd
 
 alias l='ls -ah --group-directories-first '
 
-export   DATA_MOUNT="/dat.mnt"
 export     DOTFILES="$DATA_MOUNT/dotfiles"
+export   DATA_MOUNT="/dat.mnt"
+export   XAUTHORITY=/home/m/.config/X11/.Xauthority
 export LESSHISTFILE=-
