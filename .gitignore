@@ -1,4 +1,5 @@
 .config/dconf/user
+.config/VirtualBox/
 .config/gh/
 .config/GIMP/
 .config/pulse/

@@ -3,12 +3,13 @@ sudo rm -vrf ~/.bash_history
 set -o vi
 shopt -s autocd
 
-alias l='ls -a --color '
-alias v='vim '
-alias rb='sudo reboot '
 alias ht='htop '
+alias l='ls -al --color '
 alias nf='clear; neofetch '
+alias rb='sudo reboot '
 alias sd='sudo shutdown -h now '
+alias v='vim '
+alias ,='vim '
 
 export     DOTFILES="$DATA_MOUNT/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
