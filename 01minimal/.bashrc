@@ -3,7 +3,8 @@ sudo rm -vrf ~/.bash_history
 set -o vi
 shopt -s autocd
 
-alias l='ls -ah --group-directories-first '
+alias l='ls -a --color'
+alias v='vim '
 
 export     DOTFILES="$DATA_MOUNT/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
