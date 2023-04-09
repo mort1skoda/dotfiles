@@ -40,7 +40,7 @@
     mount --mkdir  /dev/sda4 /mnt/dat.mnt       (So genfstab includes our data disk/partition)
 
     pacstrap -iKG /mnt base linux linux-firmware amd-ucode
-    pacstrap -iKG /mnt sudo vim bat htop dhcpcd git github-cli grub neofetch 
+    pacstrap -iKG /mnt sudo vim bat htop dhcpcd git github-cli grub neofetch tmux
 
     genfstab -L /mnt > /mnt/etc/fstab
     vim /mnt/etc/fstab
