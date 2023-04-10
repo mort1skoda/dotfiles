@@ -33,7 +33,7 @@
     mkswap          /dev/sba1
     mkfs.ext4       /dev/sda2
 
-    lsblk /dev/sda -o NAME,SIZE,MOUNTPOINT,FSTYPE,SERIAL
+    lsblk /dev/sda -o NAME,SIZE,MOUNTPOINTS,FSTYPE,SERIAL
 
     swapon         /dev/sda1
     mount          /dev/sda2 /mnt
@@ -57,12 +57,11 @@
     vim /etc/locale.gen     or echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
     locale-gen
 
-    vim /etc/locale.conf        LANG=en_US.UTF-8
+    vim /etc/locale.conf        LANG=en_US.UTF-8  or echo
     vim /etc/vconsole.conf      KEYMAP=no       FONT=gr737b-8x11
 
-    pacman -S dhcpcd
-    systemctl enable dhcpcd
     vim /etc/dhcpcd.conf        [add noarp]   or  echo "noarp" >> /etc/dhcpcd.conf
+    systemctl enable dhcpcd
 
     pacman -S grub 
      BIOS:
@@ -70,6 +69,9 @@
       grub-mkconfig -o /boot/grub/grub.cfg
 
     passwd root
+    
+    useradd -mG wheel m
+    passwd m
 
     ctrl-d
     umount -R /mnt
