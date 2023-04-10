@@ -11,6 +11,7 @@ alias sd='sudo shutdown -h now '
 alias v='vim '
 alias ,='vim '
 alias .df='cd /dat.mnt/dotfiles '
+alias .dm='cd /dat.mnt '
 
 export     DOTFILES="$DATA_MOUNT/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
