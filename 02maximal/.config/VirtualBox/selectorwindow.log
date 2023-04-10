@@ -1,0 +1,19 @@
+00:00:00.417675 VirtualBox GUI VM Selector Window 7.0.6 r155176 linux.amd64 (Feb 22 2023 15:36:54) release log
+00:00:00.417680 Log opened 2023-03-31T05:24:27.082368000Z
+00:00:00.417681 Build Type: release
+00:00:00.417685 OS Product: Linux
+00:00:00.417687 OS Release: 6.2.8-arch1-1
+00:00:00.417689 OS Version: #1 SMP PREEMPT_DYNAMIC Wed, 22 Mar 2023 22:52:35 +0000
+00:00:00.417736 DMI Product Name: AM1M-S2H
+00:00:00.417760 DMI Product Version: To be filled by O.E.M.
+00:00:00.417771 Firmware type: UEFI
+00:00:00.418005 Secure Boot: Disabled
+00:00:00.418082 Host RAM: 3353MB (3.2GB) total, 2790MB (2.7GB) available
+00:00:00.418087 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.418087 Process ID: 6460
+00:00:00.418088 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.418173 Qt version: 5.15.8
+00:00:00.419823 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.435245 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.914594 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1146x16 x 756x282
+00:00:01.939297 GUI: UIMediumEnumerator: Medium-enumeration finished!
