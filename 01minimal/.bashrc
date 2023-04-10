@@ -30,4 +30,5 @@ export   DATA_MOUNT="/dat.mnt"
 export   XAUTHORITY=/home/m/.config/X11/.Xauthority
 export LESSHISTFILE=-
 
+#asdf
 /$DOTFILES/tip/shell.tip.sh
