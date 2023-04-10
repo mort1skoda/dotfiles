@@ -19,6 +19,7 @@ alias pm='sudo pacman '
 alias rb='sudo reboot '
 alias sd='sudo shutdown -h now '
 alias v='vim '
+alias gs='git status '
 
 export     DOTFILES="/dat.mnt/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
