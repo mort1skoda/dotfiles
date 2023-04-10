@@ -1,5 +1,6 @@
 echo "~/.bashrc"
 sudo rm -vrf ~/.bash_history
+sudo rm -vrf ~/.lesshst
 set -o vi
 shopt -s autocd
 
@@ -13,7 +14,9 @@ alias ,='vim '
 alias .df='cd /dat.mnt/dotfiles '
 alias .dm='cd /dat.mnt '
 
-export     DOTFILES="$DATA_MOUNT/dotfiles"
+export     DOTFILES="/dat.mnt/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
 export   XAUTHORITY=/home/m/.config/X11/.Xauthority
 export LESSHISTFILE=-
+
+./dat.mnt/dotfiles/tip/shell.tip.sh

@@ -1,5 +1,5 @@
-CTRL+ALT+F(1,2,3)
 ALT+Left/Right move to tty
+CTRL+ALT+F(1,2,3)
 alias
 awk
 awk
@@ -14,8 +14,8 @@ curl grep sed awk cut
 curl wttr.in/Helgeroa
 cut
 date
-date
 df
+diff
 dmenu
 dmenu_path
 dmenu_run
@@ -47,6 +47,7 @@ mkdir
 neofetch
 nl
 pacman
+patch
 perl
 pkg-config
 rmdir
@@ -56,7 +57,6 @@ setfont
 setxkbmap
 slstatus
 st
-st_float
 stest
 stty
 sudo hwclock
