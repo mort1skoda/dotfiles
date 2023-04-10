@@ -20,6 +20,8 @@ alias rb='sudo reboot '
 alias sd='sudo shutdown -h now '
 alias v='vim '
 alias gs='git status '
+alias ra='ranger '
+alias vf='vifm '
 
 export     DOTFILES="/dat.mnt/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
