@@ -4,6 +4,9 @@
 
 #### quick guide
 
+    loadkeys no
+    cfdisk
+    
     curl --output arch.iso
        https://mirrors.dotsrc.org/archlinux/iso/2023.04.01/archlinux-2023.04.01-x86_64.iso
     sudo cp arch.iso /dev/sdb
