@@ -14,6 +14,7 @@ alias .df='cd /dat.mnt/dotfiles '
 alias .dm='cd /dat.mnt '
 alias cal='cal -3m '
 alias cs='clear '
+alias vd='vim -V20 2>&1 | tee vim.log.vim'
 alias g='grep -i --color '
 alias gaa='git add -A '
 alias gc='git commit -m "upd" '
@@ -28,6 +29,7 @@ alias rb='sudo reboot '
 alias sd='sudo shutdown -h now '
 alias v='vim '
 alias vf='vifm '
+alias watch='watch -d --color '
 
 export     DOTFILES="/dat.mnt/dotfiles"
 export   DATA_MOUNT="/dat.mnt"

@@ -1,11 +1,15 @@
-# archlinux install
-## VirtualBox: arch bios msdos
-### --
-
+## archlinux install
+### VirtualBox: arch bios msdos
 #### quick guide
 
     loadkeys no
     cfdisk
+      sda1         /		14G
+      sda2         /dat.mnt	 2G
+      sda3         swap		 1G
+      sda4         boot		 1G
+    tmux
+    ctrl+b >    choose h split
     
     curl --output arch.iso
        https://mirrors.dotsrc.org/archlinux/iso/2023.04.01/archlinux-2023.04.01-x86_64.iso
