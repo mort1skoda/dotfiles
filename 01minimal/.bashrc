@@ -1,6 +1,5 @@
 echo "~/.bashrc"
 
-
 sudo rm -vrf ~/.bash_history
 sudo rm -vrf ~/.lesshst
 
@@ -10,11 +9,12 @@ stty -ixon
 
 alias ,='vim '
 alias ,ebr='vim ~/.bashrc '
+alias ,evr='vim ~/.vimrc '
 alias .df='cd /dat.mnt/dotfiles '
 alias .dm='cd /dat.mnt '
 alias cal='cal -3m '
 alias cs='clear '
-alias vd='vim -V20 2>&1 | tee vim.log.vim'
+alias dbgvim='vim -V20 2>&1 | tee vim.log.vim'
 alias g='grep -i --color '
 alias gaa='git add -A '
 alias gc='git commit -m "upd" '
@@ -22,7 +22,7 @@ alias gp='git push '
 alias gs='git status '
 alias ht='htop '
 alias ip='ip -color '
-alias l='ls -gahl --color; ls -a | wc -l '
+alias l='ls -gahl --color; '
 alias nf='clear; neofetch '
 alias pm='sudo pacman '
 alias rb='sudo reboot '
