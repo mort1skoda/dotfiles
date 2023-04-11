@@ -1,3 +1,10 @@
+localectl
+sxhkd
+xbindkey
+showkey
+dumpkeys
+chvt
+bind
 ALT+Left/Right move to tty
 CTRL+ALT+F(1,2,3)
 alias
