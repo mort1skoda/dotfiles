@@ -1,2 +1,4 @@
+# make caps lock a 2nd. escape:
+# loadkeys .caps_to_esc
 keycode 1 = Escape
 keycode 58 = Escape
