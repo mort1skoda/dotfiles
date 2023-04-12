@@ -2,13 +2,30 @@
 ### VirtualBox: arch bios msdos
 #### quick guide
 
-    loadkeys no
+    set up a 16GB virtual HD
     cfdisk
-      sda1         /		14G
-      sda2         /dat.mnt	 2G
-      sda3         swap		 1G
-      sda4         boot		 1G
+      sda1         /		14G linux
+      sda2         /dat.mnt	 2G linux
+      sda3         swap		 1G swap
+      sda4         boot		 1G (make it efi for future use, do not mount when using BIOS legacy mode)
+
+    mkfs.ext4 /dev/sda1
+    mkfs.ext4 /dev/sda2
+    mkswap /dev/sda3
+    
+    swapon /dev/sda2
+    mount /dev/sda1 /mnt
+    mount --mkdir /dev/sda2 /mnt/dat.mnt
+    
+    cd /mnt/dat.mnt
+    pacman -Sy git
+    git clone https://github.com/mort1skoda/dotfiles.git
+    cd dotfiles/01minimal/
+
     tmux
+    source-file .tmux.conf
+    source .bashrc
+    
     ctrl+b >    choose h split
     
     curl --output arch.iso
