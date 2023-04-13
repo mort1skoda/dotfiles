@@ -1,4 +1,4 @@
-echo "/dat.mnt/dotfiles/11arch.min/.bashrc"
+echo "~/.bashrc -> $DOTFILES/11arch.min/.bashrc"
 
 export     DOTFILES="/dat.mnt/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
@@ -46,7 +46,7 @@ alias gp='git push '
 alias gs='git status '
 alias ht='htop '
 alias ip='ip -color '
-alias l='ls -gahl --color; '
+alias l='ls -gahl --color '
 alias nf='clear; neofetch '
 alias pm='sudo pacman '
 alias rb='sudo reboot '
