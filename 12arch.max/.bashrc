@@ -1,9 +1,8 @@
-
-printf "sourcing: ~/.bashrc \n"
-
+echo "/dat.mnt/dotfiles/12arch.max/.bashrc"
 
 # ----- set & shopt -----{{
-sudo loadkeys no
+sudo loadkeys us
+sudo loadkeys .swap.esc.caps
 stty -ixon
 set -o vi
 shopt -s autocd

@@ -1,14 +1,14 @@
 #!/bin/sh
 
 source $DOTFILES/.bash_colors
-_BCL_R=$(cat $DOTFILES/tip/shell.lst |shuf -n1)
+_BCL_R=$(cat $DOTFILES/tips/shell.lst |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
     printf "$col_yellow"
     printf "Shell tip....: "
     echo $_BCL_R
 
-    echo "for more info try: "
+    #echo "for more info try: "
     #alg '$_BCL_R'
     echo "$_BCL_R --help"  
     echo "man     $_BCL_R"  

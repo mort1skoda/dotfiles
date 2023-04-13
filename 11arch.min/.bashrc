@@ -1,4 +1,5 @@
-echo "~/.bashrc"
+echo "/dat.mnt/dotfiles/11arch.min/.bashrc"
+
 export     DOTFILES="/dat.mnt/dotfiles"
 export   DATA_MOUNT="/dat.mnt"
 export   XAUTHORITY=/home/m/.config/X11/.Xauthority
@@ -55,9 +56,9 @@ alias vf='vifm '
 alias watch='watch -d --color '
 
 
-echo "loadkeys .caps_to_esc"
-sudo loadkeys $DOTFILES/01minimal/.caps_to_esc
+echo "loadkeys .swap.esc.caps"
+sudo loadkeys $DOTFILES/.swap.esc.caps
 
-/$DOTFILES/tip/shell.tip.sh
+$DOTFILES/tips/shell.tip.sh
 
 #export PATH=/dat.mnt/mybins/bin:/sbin:/bin:/usr/sbin:/usr/bin

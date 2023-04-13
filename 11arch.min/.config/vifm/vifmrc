@@ -10,7 +10,7 @@
 " ------------------------------------------------------------------------------
 
 set dotfiles
-only
+"only "open only one pane as standard, :vs to get have two panes
 
 " Command used to edit files in various contexts.  The default is vim.
 " If you would like to use another vi clone such as Elvis or Vile
