@@ -1,7 +1,6 @@
 #!/bin/sh
 
-source /dat.mnt/dotfiles/01minimal/.bash_colors
-_BCL_R=$(cat $DOTFILES/tip/shell.lst |shuf -n1)
+_BCL_R=$(cat $DOTFILES/tip/Xcli.lst |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
     printf "$col_yellow"
@@ -18,4 +17,5 @@ then
     echo "check for alias with: ag $_BCL_R"
     printf "$col_00"
 fi
+
 

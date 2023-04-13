@@ -1,21 +1,16 @@
-localectl
-sxhkd
-xbindkey
-showkey
-dumpkeys
-chvt
-bind
 ALT+Left/Right move to tty
 CTRL+ALT+F(1,2,3)
 alias
 awk
 awk
 bat
+bind
 blkid
 cal
 cat
 cfdisk
-ctrl-d EOF=End Of File   (logs out from bash shell)
+chvt
+ctrl-d EOF=End Of File, log out shell
 curl
 curl grep sed awk cut
 curl wttr.in/Helgeroa
@@ -23,15 +18,10 @@ cut
 date
 df
 diff
-dmenu
-dmenu_path
-dmenu_run
 du
-dwm
+dumpkeys
 echo
 env
-feh
-firefox
 fzf
 gcc
 git
@@ -41,13 +31,13 @@ less
 lessecho
 ln
 loadkeys
+localectl
 ls
 lsblk
 lsblk --json
 lscpu
 lspci
 lsusb
-lxterminal
 make
 man
 mkdir
@@ -61,14 +51,9 @@ rmdir
 sed
 sensors
 setfont
-setxkbmap
-slstatus
-st
-stest
+showkey
 stty
 sudo hwclock
-swarp
-sxiv
 systemctl
 time
 type
@@ -80,12 +65,3 @@ watch
 whereis
 which
 whoami
-wtr
-www_browser
-xclip
-xdg-open
-xset
-xsetroot
-xsetroot
-xterm
-xxd

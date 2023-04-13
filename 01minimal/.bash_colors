@@ -1,0 +1,49 @@
+#!/bin/sh
+echo "sourcing: $HOME/.bash_colors"
+
+export     col_restore="\033[00m"
+export       col_black="\033[30m"
+export         col_red="\033[31m"
+export       col_green="\033[32m"
+export      col_yellow="\033[33m"
+export        col_blue="\033[34m"
+export      col_purple="\033[35m"
+export        col_cyan="\033[36m"
+export       col_white="\033[37m"
+export        col_asdf="\033[38m"
+export        col_qwer="\033[39m"
+export          col_00=$col_restore
+
+
+if [ "$_bool_dbg" == true ]
+then
+  printf "$col_red"
+  printf "\$col_red "
+
+    printf "$col_green"
+    printf "\$col_green "
+
+     printf "$col_yellow"
+     printf "\$col_yellow "
+
+      printf "$col_blue"
+      printf "\$col_blue "
+
+       printf "$col_purple"
+       printf "\$col_purple "
+
+        printf "$col_cyan"
+        printf "\$col_cyan "
+
+         printf "$col_white"
+         printf "\$col_white "
+
+  printf "$col_red"
+  printf "\$col_red "
+
+  printf "$col_00"
+  printf "\$col_00 "
+
+  printf "\n"
+
+fi

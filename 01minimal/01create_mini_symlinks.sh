@@ -14,3 +14,6 @@ ln -svf /dat.mnt/dotfiles/01minimal/.vim           /home/m/.vim
 ln -svf /dat.mnt/dotfiles/01minimal/.tmux.conf     /home/m/.tmux.conf
 
 ls -al --color /home/m
+
+./02copy_files.sh
+

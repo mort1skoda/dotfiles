@@ -36,6 +36,7 @@ export   DATA_MOUNT="/dat.mnt"
 export   XAUTHORITY=/home/m/.config/X11/.Xauthority
 export LESSHISTFILE=-
 
+echo "loadkeys .caps_to_esc"
 sudo loadkeys $DOTFILES/01minimal/.caps_to_esc
 
 /$DOTFILES/tip/shell.tip.sh
