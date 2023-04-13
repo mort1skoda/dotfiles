@@ -1,4 +1,4 @@
-echo "/dat.mnt/dotfiles/12arch.max/.bashrc"
+echo "~/.bashrc -> $PWD/.bashrc"
 
 # ----- set & shopt -----{{
 sudo loadkeys us
@@ -10,7 +10,7 @@ shopt -s expand_aliases
 # }}}
 
 
-# prompt {{
+# prompt {{{
 # regular user
 IS_TTY=$(echo $(tty) | grep tty)
 if [ $IS_TTY ] || [ $TMUX ]

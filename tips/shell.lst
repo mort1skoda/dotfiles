@@ -46,7 +46,9 @@ nl
 pacman
 patch
 perl
+pfetch
 pkg-config
+reflector
 rmdir
 sed
 sensors
@@ -60,7 +62,6 @@ type
 uptime
 vim
 vimtutor
-virtualbox
 watch
 whereis
 which

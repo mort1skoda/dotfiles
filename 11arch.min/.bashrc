@@ -1,8 +1,9 @@
+export     DOTFILES="/dat.mnt/dotfiles"
 echo "~/.bashrc -> $DOTFILES/11arch.min/.bashrc"
 
-export     DOTFILES="/dat.mnt/dotfiles"
+export       EDITOR="/bin/vim"
 export   DATA_MOUNT="/dat.mnt"
-export   XAUTHORITY=/home/m/.config/X11/.Xauthority
+export   XAUTHORITY=~/.config/X11/.Xauthority
 export LESSHISTFILE=-
 
 source $DOTFILES/.bash_colors
@@ -46,19 +47,22 @@ alias gp='git push '
 alias gs='git status '
 alias ht='htop '
 alias ip='ip -color '
-alias l='ls -gahl --color '
+alias l='ls -gGahlF --color '
 alias nf='clear; neofetch '
 alias pm='sudo pacman '
 alias rb='sudo reboot '
+alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && bat /etc/pacman.d/mirrorlist'
 alias sd='sudo shutdown -h now '
 alias v='vim '
 alias vf='vifm '
 alias watch='watch -d --color '
-
 
 echo "loadkeys .swap.esc.caps"
 sudo loadkeys $DOTFILES/.swap.esc.caps
 
 $DOTFILES/tips/shell.tip.sh
 
-#export PATH=/dat.mnt/mybins/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# original PATH:
+# /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
