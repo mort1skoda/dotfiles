@@ -1,4 +1,11 @@
 echo "~/.bashrc"
+export     DOTFILES="/dat.mnt/dotfiles"
+export   DATA_MOUNT="/dat.mnt"
+export   XAUTHORITY=/home/m/.config/X11/.Xauthority
+export LESSHISTFILE=-
+
+source $DOTFILES/.bash_colors
+uname -a
 
 sudo rm -vrf ~/.bash_history
 sudo rm -vrf ~/.lesshst
@@ -6,6 +13,22 @@ sudo rm -vrf ~/.lesshst
 set -o vi
 shopt -s autocd
 stty -ixon
+
+# prompt {{{
+# regular user
+IS_TTY=$(echo $(tty) | grep tty)
+if [ $IS_TTY ] || [ $TMUX ]
+then
+    PS1="\[$col_green\w\[\033[00m\]\n"
+    #PS1="\[$SHLVL \[$col_green\w\[\033[00m\]\n"
+else
+    PS1=" \[$SHLVL \[$col_green\w\[\033[00m\]\n"
+fi
+# root
+if [ "$EUID" -eq 0 ]
+    then PS1="#- \[$col_red\w\[\033[00m\] -#\n"
+fi
+# }}}
 
 alias ,='vim '
 alias ,ebr='vim ~/.bashrc '
@@ -31,12 +54,10 @@ alias v='vim '
 alias vf='vifm '
 alias watch='watch -d --color '
 
-export     DOTFILES="/dat.mnt/dotfiles"
-export   DATA_MOUNT="/dat.mnt"
-export   XAUTHORITY=/home/m/.config/X11/.Xauthority
-export LESSHISTFILE=-
 
 echo "loadkeys .caps_to_esc"
 sudo loadkeys $DOTFILES/01minimal/.caps_to_esc
 
 /$DOTFILES/tip/shell.tip.sh
+
+#export PATH=/dat.mnt/mybins/bin:/sbin:/bin:/usr/sbin:/usr/bin

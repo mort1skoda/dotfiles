@@ -1,19 +1,19 @@
 
-ln -svf /dat.mnt/dotfiles/01minimal/.bash_profile  /home/m/.bash_profile
-ln -svf /dat.mnt/dotfiles/01minimal/.bashrc        /home/m/.bashrc
+ln -svf /dat.mnt/dotfiles/01minimal/.bash_profile  ~/.bash_profile
+ln -svf /dat.mnt/dotfiles/01minimal/.bashrc        ~/.bashrc
 #exit
 rm -vrf ~/.config
-ln -svf /dat.mnt/dotfiles/01minimal/.config        /home/m/.config
+ln -svf /dat.mnt/dotfiles/01minimal/.config        ~/.config
 #exit
 rm -vrf ~/.vimrc
-ln -svf /dat.mnt/dotfiles/01minimal/.vimrc         /home/m/.vimrc
+ln -svf /dat.mnt/dotfiles/01minimal/.vimrc         ~/.vimrc
 #exit
 rm -vrf ~/.vim
-ln -svf /dat.mnt/dotfiles/01minimal/.vim           /home/m/.vim
+ln -svf /dat.mnt/dotfiles/01minimal/.vim           ~/.vim
 #exit
-ln -svf /dat.mnt/dotfiles/01minimal/.tmux.conf     /home/m/.tmux.conf
+ln -svf /dat.mnt/dotfiles/01minimal/.tmux.conf     ~/.tmux.conf
 
-ls -al --color /home/m
+ls -al --color ~
 
 ./02copy_files.sh
 

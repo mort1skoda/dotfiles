@@ -12,6 +12,7 @@ set relativenumber
 " set cursorline
 " set cursorcolumn
 
+set foldmethod=marker
 set shiftwidth=4
 set tabstop=4
 set expandtab

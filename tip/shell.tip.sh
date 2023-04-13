@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source /dat.mnt/dotfiles/01minimal/.bash_colors
+source $DOTFILES/.bash_colors
 _BCL_R=$(cat $DOTFILES/tip/shell.lst |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then
