@@ -40,6 +40,7 @@ call plug#end()
 
 " MAPPINGS --- {{{
 "esc timing
+nmap <c-j> <c-w><c-w>:echo "nmap c-j = c-w c-w"<cr>
 
 " }}}
 

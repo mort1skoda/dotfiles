@@ -35,7 +35,7 @@ fi
 alias ,='vim '
 alias ,ebr='vim ~/.bashrc '
 alias ,evr='vim ~/.vimrc '
-alias .df='cd /dat.mnt/dotfiles '
+alias .df='cd /dat.mnt/dotfiles ; l'
 alias .dm='cd /dat.mnt '
 alias cal='cal -3m '
 alias cs='clear '

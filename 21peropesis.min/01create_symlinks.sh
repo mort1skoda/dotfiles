@@ -28,5 +28,5 @@ ln -svf $PWD/.vim           ~/.vim
 
 ls -alhF --color ~
 
-./02copy_files.sh
+#./02copy_files.sh
 
