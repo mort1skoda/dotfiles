@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source $DOTFILES/.bash_colors
+#source $DOTFILES/.bash_colors
 _BCL_R=$(cat $DOTFILES/tips/shell.lst |shuf -n1)
 if [[ $_BCL_R != "-" ]]
 then

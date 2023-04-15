@@ -1,3 +1,5 @@
+ifconfig
+sudo
 ALT+Left/Right move to tty
 CTRL+ALT+F(1,2,3)
 alias
@@ -29,6 +31,7 @@ grep
 grep
 less
 lessecho
+links
 ln
 loadkeys
 localectl

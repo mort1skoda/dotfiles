@@ -1,25 +1,25 @@
 
-ln -svf $PWD/.bash_profile  ~/.bash_profile
+ln -svf /dat.mnt/dotfiles/11arch.min/.bash_profile  ~/.bash_profile
 #exit
 
-ln -svf $PWD/.bashrc        ~/.bashrc
+ln -svf /dat.mnt/dotfiles/11arch.min/.bashrc        ~/.bashrc
 #exit
 
 rm -vrf ~/.config
-ln -svf $PWD/.config        ~/.config
+ln -svf /dat.mnt/dotfiles/11arch.min/.config        ~/.config
 #exit
 
 rm -vrf ~/.vimrc
-ln -svf $PWD/.vimrc         ~/.vimrc
+ln -svf /dat.mnt/dotfiles/11arch.min/.vimrc         ~/.vimrc
 #exit
 
 rm -vrf ~/.vim
-ln -svf $PWD/.vim           ~/.vim
+ln -svf /dat.mnt/dotfiles/11arch.min/.vim           ~/.vim
 #exit
 
-ln -svf $PWD/.tmux.conf     ~/.tmux.conf
+ln -svf /dat.mnt/dotfiles/11arch.min/.tmux.conf     ~/.tmux.conf
 
 ls -al --color ~
 
-./02copy_files.sh
+#./02copy_files.sh
 

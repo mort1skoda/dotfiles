@@ -2,8 +2,8 @@
 ## Computing
 ####
 
-    This is my folder of bare minimum yet
-    useable dotfiles setup of arch linux.
-
-    asdfasdf
+    custom settings for Peropesis
+    These setting are very specific for
+    Peropesis
+  
 

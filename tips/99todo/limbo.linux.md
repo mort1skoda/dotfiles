@@ -3,13 +3,12 @@
 ### Linux shell script bash
 #### Abstractions are everywhere
 
-Everything is an abstraction
-Almost everything is relative
-and close to zero you will find what is relevant.
+Everything is relative.
+Almost everything is an abstraction.
+Almost nothing is relevant.
 
-Limbo Linux (LL)    ]How low can you go?
+Limbo Linux (LL)    How low can you go?
 the art of minimalism.
-
 
 so you heard the phrase 'in limbo?
 

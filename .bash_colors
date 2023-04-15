@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "sourcing: $HOME/.bash_colors"
+#echo "start: $DOTFILES/.bash_colors"
 
 export     col_restore="\033[00m"
 export       col_black="\033[30m"
@@ -14,7 +14,7 @@ export        col_asdf="\033[38m"
 export        col_qwer="\033[39m"
 export          col_00=$col_restore
 
-
+_bool_dbg=false
 if [ "$_bool_dbg" == true ]
 then
   printf "$col_red"
@@ -47,3 +47,7 @@ then
   printf "\n"
 
 fi
+
+printf "$col_purple"
+printf "sourced: $HOME/.bash_colors"
+printf "$col_white \n"

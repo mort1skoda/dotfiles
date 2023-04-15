@@ -1,0 +1,5 @@
+root::0:0:Super User:/root:/bin/bash
+bin:x:1:1:Legacy UID:/bin:/bin/false
+daemon:x:2:2:Legacy UID:/sbin:/bin/false
+dhcpcd:x:52:52:Legacy UID:/var/lib/dhcpcd:/bin/false
+m:d0YYf4lugMYFA:1000:1001::/home/m:/bin/bash
