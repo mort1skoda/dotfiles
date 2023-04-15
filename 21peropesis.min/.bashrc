@@ -35,7 +35,7 @@ fi
 alias ,='vim '
 alias ,ebr='vim ~/.bashrc '
 alias ,evr='vim ~/.vimrc '
-alias .df='cd /dat.mnt/dotfiles/ ; l '
+alias .df='cd /dat.mnt/dotfiles/21peropesis.min ; l '
 alias .dm='cd /dat.mnt && ls -gGahlF --color'
 alias .h='cd ~ && ls -gGahlF --color'
 alias cal='cal -3m '
@@ -61,7 +61,12 @@ alias vf='vifm '
 alias wget='wget --no-hsts '
 
 echo "loadkeys .swap.esc.caps"
-loadkeys $DOTFILES/.swap.esc.caps
+if [ $EUID == 0 ]
+then
+    loadkeys $DOTFILES/.swap.esc.caps
+else
+    sudo loadkeys $DOTFILES/.swap.esc.caps
+fi
 
 $DOTFILES/tips/shell.tip.sh
 

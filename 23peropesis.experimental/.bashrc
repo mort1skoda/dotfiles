@@ -1,2 +1,2 @@
-echo "~/.bashrc -> $PWD/.bashrc"
+echo "~/.bashrc -> $DOTFILES/23peropesis.experimantal/.bashrc"
 
