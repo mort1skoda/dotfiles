@@ -6,7 +6,7 @@ filetype plugin on
 filetype indent on
 
 syntax on
-colorscheme desert
+colorscheme elflord
 
 set number
 set relativenumber
@@ -30,7 +30,6 @@ set history=1000
 set wildmenu
 set wildmode=list:longest
 
-
 " PLUGINS --- {{{
 "call plug#begin('~/.vim/plugged')
     "Plug 'dense-analysis/ale'
@@ -38,14 +37,17 @@ set wildmode=list:longest
 "call plug#end()
 " }}}
 
-
 " MAPPINGS --- {{{
+let mapleader=','
+nmap <leader>ebr :e ~/.bashrc<cr>
+
+nmap <c-j> <c-w><c-w>:echo "nmap c-j = c-w c-w"<cr>
+
 "esc timing
 nmap <esc> :echo "nmap esc"<cr>
 cmap <esc> <esc>:echo "cmap esc"<cr>
 vmap <esc> <esc>:echo "vmap esc"<cr>
 imap <esc> <esc>:echo "imap esc"<cr>
-
 
 " }}}
 

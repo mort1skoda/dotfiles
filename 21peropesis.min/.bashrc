@@ -54,11 +54,23 @@ alias l='ls -gGahlF --color '
 alias mkdir='mkdir -pv '
 alias nf='clear; neofetch '
 alias rb='reboot '
-alias sd='shutdown -h now '
+
+if [ $EUID == 0 ]
+then
+    alias sd='shutdown -h now '
+else
+    alias sd='sudo shutdown -h now '
+fi
+
 alias v='vim '
 alias vf='vifm '
 #alias watch='watch -d --color '
 alias wget='wget --no-hsts '
+
+$DOTFILES/tips/shell.tip.sh
+
+export PATH=/dat.mnt/mybins/bin:/dat.mnt/mybins/sbin:/sbin:$PATH
+echo $PATH
 
 echo "loadkeys .swap.esc.caps"
 if [ $EUID == 0 ]
@@ -67,10 +79,3 @@ then
 else
     sudo loadkeys $DOTFILES/.swap.esc.caps
 fi
-
-$DOTFILES/tips/shell.tip.sh
-
-echo $PATH
-export PATH=/dat.mnt/mybins/bin:/dat.mnt/mybins/sbin:$PATH
-echo $PATH
-
