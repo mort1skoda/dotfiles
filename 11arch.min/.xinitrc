@@ -55,5 +55,7 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 setxkbmap -option caps:swapescape &
+xset -dpms
+xset s off
 dwm
 

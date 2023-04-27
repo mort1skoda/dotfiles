@@ -1,0 +1,12 @@
+to encrypt:
+zip -r --encrypt encrypted_qodes.zip /mnt/sdc1/pw_qodes_gh/
+
+
+
+To open just
+vim encryped_qodes.zip 
+and search for login
+and you will be asked to enter passwd
+
+
+
