@@ -32,6 +32,8 @@ ln -svf /dat.mnt/dotfiles/11arch.min/.tmux.conf     ~/.tmux.conf
 
 ln -svf /dat.mnt/dotfiles/11arch.min/.xinitrc     ~/.xinitrc
 
+ln -svf /dat.mnt/Downloads  /home/m/Downloads
+
 ls -al --color ~
 
 #./02copy_files.sh

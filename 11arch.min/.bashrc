@@ -56,7 +56,9 @@ alias reflector='sudo reflector --verbose --latest 20 --protocol https --sort ra
 alias sd='sudo shutdown -h now '
 alias tm='tmux '
 alias mount='sudo mount --mkdir '
+alias umount='sudo umount '
 alias v='vim '
+alias x='startx '
 alias vf='vifm '
 alias watch='watch -d --color '
 
